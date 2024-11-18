@@ -1,0 +1,72 @@
+.cta {
+  background-color: $secondary;
+
+  &--content {
+    color: $white;
+    padding: 140px 0;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &--img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+  &.cta--alt {
+    .cta--img img {
+      object-position: center;
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .cta {
+    &--content {
+      padding: 100px 0 40px;
+    }
+
+    &--img {
+      position: relative;
+      left: 0;
+      margin: 0 auto;
+    }
+
+    &.cta--alt {
+      .cta--img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .cta {
+    &--content {
+      padding-top: 60px;
+    }
+  }
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+  .cta {
+    &--img {
+      width: 90%;
+    }
+  }
+}

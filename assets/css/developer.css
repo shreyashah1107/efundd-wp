@@ -1,0 +1,13 @@
+.btn-rd-15{
+    border-radius: 15px;
+}
+.components-section{
+    padding: 100px 0;
+    background-color: #00423C;
+    color: #fff;
+}
+.four-col-text--grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 50px 30px;
+}

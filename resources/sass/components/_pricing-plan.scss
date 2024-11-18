@@ -1,0 +1,123 @@
+.pricing-plan {
+  padding: 70px 0 30px;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 20px;
+  }
+
+  .card-pricing {
+    position: relative;
+    padding: 50px 20px 100px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+
+    &--header {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #D9D9D9;
+
+      .saving {
+        position: absolute;
+        top: -14px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        line-height: 1;
+
+        span {
+          display: inline-block;
+          background-color: #AFF8C8;
+          border-radius: 30px;
+          padding: 8px 12px;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+
+      .price {
+        margin-bottom: 30px;
+
+        .amount {
+          font-size: 3.6rem;
+          line-height: 1;
+        }
+      }
+    }
+
+    &--img {
+      height: 150px;
+      margin-bottom: 30px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &--body {
+      margin-top: 30px;
+
+      h5 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+    }
+
+    &:hover {
+      .btn {
+        background-color: $light-green;
+        border-color: $light-green;
+        color: $body-color;
+      }
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .pricing-plan .card-pricing {
+    padding-bottom: 30px;
+
+    &--header {
+      .price {
+        font-size: 1.4rem;
+
+        .amount {
+          font-size: 2.8rem;
+        }
+      }
+    }
+
+    &--img {
+      height: 100px;
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .pricing-plan--grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .pricing-plan {
+    padding-top: 0;
+
+    &--grid {
+      grid-template-columns: auto;
+    }
+  }
+}

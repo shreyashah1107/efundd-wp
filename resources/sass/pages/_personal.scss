@@ -1,0 +1,98 @@
+.payments {
+  &--slider {
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+
+  &--swiper {
+    padding-bottom: 100px;
+    overflow: visible;
+
+    .swiper-nav {
+      .swiper-button-next, 
+      .swiper-button-prev {
+        background-color: $black;
+
+        &:hover:not(.swiper-button-disabled) {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.monitor-transactions {
+  &--img {
+    background-color: $secondary;
+    padding: 50px 25px;
+    height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.money-in-account {
+  overflow: hidden;
+  padding: 100px 0;
+  background-color: $primary;
+
+  .card-account-management {
+    background-color: $secondary;
+    color: $white;
+
+    &--img {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-height: 250px;
+      }
+
+      >* {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .account-management--swiper .swiper-nav {
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: $white;
+
+      &::after {
+        color: $body-color;
+      }
+
+      &:hover:not(.swiper-button-disabled) {
+        background-color: $light-green;
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .payments--slider {
+    padding-bottom: 60px;
+  }
+
+  .monitor-transactions {
+    &--img {
+      padding: 25px;
+      height: auto;
+    }
+  }
+  
+  .money-in-account {
+    padding: 60px 0;
+  }
+}

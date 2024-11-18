@@ -1,0 +1,147 @@
+.fees {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    max-width: 75%;
+    margin: 100px auto 30px;
+    font-size: 2.4rem;
+  }
+
+  h6 {
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+}
+
+.valuable-pricing {
+  padding: 150px 0;
+
+  .table {
+    tr {
+      th,
+      td {
+        border-color: #D9D9D9;
+        vertical-align: middle;
+        width: 25%;
+      }
+
+      th {
+        padding: 20px;
+        font-weight: normal;
+
+        >div {          
+          border-radius: 10px;
+          border: 1px solid transparent;
+        }
+
+        .title {
+          display: block;
+          font-size: 2.4rem;
+          font-weight: 500;
+          line-height: 1.2;
+          color: $secondary;
+          margin-bottom: 15px;
+        }
+
+        .plan-name {
+          color: #909090;
+        }
+
+        &.suggested-plan {
+          padding: 10px;
+
+          >div {
+            padding: 20px;
+            background-color: #AFF8C8;
+            border-color: #D9D9D9;
+          }
+          .plan-name {
+            color: $body-color;
+          }
+        }
+      }
+
+      td {
+        padding: 22px 20px;
+
+        .badge {
+          color: $body-color;
+          background-color: #AFF8C8;
+          border-radius: 4px;
+          padding: 8px 12px;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .fees {
+    h3 {
+      margin-top: 50px;
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .valuable-pricing {
+    .table {
+      tr {
+        th,
+        td {
+          min-width: 200px;
+        }
+
+        th {
+          padding: 10px;
+
+          .title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+          }
+
+          &.suggested-plan {
+            >div {
+              padding: 10px;
+            }
+          }
+        }
+        td {
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .fees {
+    h3 {
+      max-width: 100%;
+      margin-top: 30px;
+      font-size: 2rem;
+    }
+
+    h6 {
+      max-width: 100%;
+    }
+  }
+
+  .valuable-pricing {
+    padding: 60px 0;
+
+    .table {
+      tr {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,400 @@
+.modular-solutions {
+  padding: 150px 0;
+}
+
+.online-payments {
+  padding: 100px 0;
+  background-color: $secondary;
+  color: $white;
+
+  .title-row {
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    color: $body-color;
+  }
+
+  .payment-conversion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &--top {
+      &-card {
+        background-color: $white;
+        border-radius: 12px;
+        padding: 15px;
+        color: $body-color;
+
+        &-header {
+          .subtext {
+            color: #909090;
+            font-weight: 500;
+          }
+          .amount {
+            font-size: 3.6rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-top: 15px;
+          }
+        }
+
+        &-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          margin-top: 25px;
+          padding-top: 25px;
+          border-top: 1px solid #CECFD2;
+
+          &-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .flag {
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              border-radius: 50%;
+              flex-shrink: 0;
+            }
+
+            .currency {
+              font-size: 1.8rem;
+              font-weight: 500;
+            }
+          }
+
+          &-right {
+            color: #909090;
+            font-size: 1.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    &--bottom {
+      position: relative;
+      background-color: $primary;
+      padding: 40px 20px;
+      border-radius: 7px;
+      color: $white;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+
+      .currency-conversion {
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+          width: 64px;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.in-person-payments {
+  background-color: $primary;
+  padding: 100px 0;
+  color: $white;
+
+  .section-title {
+    background: linear-gradient(90deg, #FFFFFF 0%, #24EC7E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .subtitle {
+    color: $body-color;
+  }
+}
+
+.one-api .payments--swiper {
+  .payments--col {
+    background-color: $gray;
+  }
+
+  .swiper-button-next, 
+    .swiper-button-prev {
+      background-color: $primary;
+    }
+}
+
+.business-services {
+  padding-bottom: 150px;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+.digital-solution {
+  &--with-bg {
+    background-color: #AFF8C8;
+  }
+  &--list {
+    &-items {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 50px 20px;
+    }
+
+    &-item {
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background-color: $secondary;
+        border-radius: 50%;
+        margin-bottom: 20px;
+
+        img {
+          max-height: 19px;
+        }
+      }
+
+      &-content {
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 1.4;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.global-payment-process {
+  padding: 150px 0;
+
+  .app-feature--list-icons {
+    gap: 0;
+
+    li {
+      padding: 30px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 2px solid transparent;
+      transition: all .3s ease-in;
+
+      &:hover {
+        background-color: #AFF8C8;
+        border-bottom-color: $secondary;
+      }
+    }
+  }
+
+  .mobile-app--img {
+    padding: 120px 80px;
+    background-color: $gray;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.payment-acquiring-solution {
+  &--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    background-color: #AFF8C8;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.payment-processing {
+  padding: 150px 0;
+
+  .payment-process {
+    &--items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 16px;
+      border-radius: 6px;
+      border: 1px solid #D9D9D9;
+      text-decoration: none;
+
+      .icon {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: $secondary;
+        border-radius: 6px;
+      }
+
+      .text {
+        font-weight: 600;
+      }
+
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+}
+
+.partners {
+  background-color: $gray;
+  padding: 50px 0;
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .partner-list {
+    @extend .list-unstyled;
+    margin: 60px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 70px;
+
+    li {
+      img {
+        max-height: 55px;
+      }
+    }
+  }
+}
+
+// < 1400px
+@include media-breakpoint-down(xxl) {
+  .global-payment-process {
+    .mobile-app--img {
+      padding: 50px;
+      height: 500px;
+    }
+    .app-feature--list-icons li {
+      padding: 15px;
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .online-payments .payment-conversion--top-card-header .amount {
+    font-size: 2.4rem;
+  }
+  .business-services--grid,
+  .digital-solution--list-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .global-payment-process .mobile-app--img {
+    height: auto;
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .payment-acquiring-solution {
+    &--img {
+      display: inline-flex;
+      height: auto;
+      padding: 30px;
+      margin-bottom: 30px;
+
+      img {
+        max-height: 400px;
+      }
+    }
+  }
+
+  .partners .partner-list {
+    gap: 15px 30px;
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .business-services {
+    padding-bottom: 60px;
+  }
+  .modular-solutions,
+  .online-payments,
+  .in-person-payments,
+  .payment-processing,
+  .global-payment-process {
+    padding: 60px 0;
+  }
+  .payment-acquiring-solution {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .payment-processing .payment-process--items {
+    grid-template-columns: auto;
+  }
+  .partners {
+    h4 {
+      font-size: 1.8rem;
+    }
+
+    .partner-list {
+      gap: 15px;
+      
+      li img {
+        max-height: 25px;
+      }
+    }
+  }
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+  .online-payments .payment-conversion--top-card-header .amount {
+    font-size: 1.8rem;
+  }
+  .business-services--grid,
+  .digital-solution--list-items {
+    grid-template-columns: auto;
+  }
+  .digital-solution--list-items {
+    gap: 25px;
+  }
+}
