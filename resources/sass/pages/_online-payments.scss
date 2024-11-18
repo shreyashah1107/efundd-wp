@@ -8,7 +8,7 @@
 
 .payment-link {
   padding: 100px 0;
-  background-color: #EDEFEC;
+  background-color: #edefec;
 
   .share-link {
     background-color: $white;
@@ -63,7 +63,7 @@
       .type {
         font-size: 2rem;
         font-weight: 500;
-        color: #73808C;
+        color: #73808c;
       }
     }
   }
@@ -103,6 +103,16 @@
   p {
     margin-bottom: 30px;
   }
+
+  &--components {
+    ~ .payment-processing {
+      padding-top: 0;
+
+      .payment-process--items {
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 .components {
@@ -124,7 +134,7 @@
     background-color: transparent;
 
     .card-transaction-overview {
-      background-color: #EDEFEC;
+      background-color: #edefec;
     }
 
     p {
@@ -132,8 +142,8 @@
     }
   }
 
-  ~.payment-processing {
-    border-top: 1px solid #EDEFEC;
+  ~ .payment-processing {
+    border-top: 1px solid #edefec;
   }
 }
 
