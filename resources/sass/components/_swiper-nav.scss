@@ -1,0 +1,43 @@
+.swiper {
+  &-slide {
+    height: initial;
+  }
+
+  &-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      position: static;
+      width: 40px;
+      height: 40px;
+      background-color: $primary;
+      border-radius: 50%;
+
+      &::after {
+        color: $white;
+        font-size: 1.4rem;
+      }
+
+      &:hover:not(.swiper-button-disabled) {
+        background-color: $body-color;
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .swiper {
+    &-nav {
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+    }
+  }
+}

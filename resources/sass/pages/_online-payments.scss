@@ -1,0 +1,224 @@
+.features {
+  padding: 100px 0;
+
+  .security-text--grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.payment-link {
+  padding: 100px 0;
+  background-color: #EDEFEC;
+
+  .share-link {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+    .icon {
+      flex-shrink: 0;
+      width: 40px;
+
+      img {
+        max-width: 40px;
+      }
+    }
+
+    .text {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: #e2e2e2;
+    }
+  }
+
+  .card-info {
+    background-color: $white;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 15px 0;
+
+    &--img {
+      flex-shrink: 0;
+      width: 80px;
+    }
+
+    &--content {
+      .number {
+        font-size: 2.7rem;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+
+      .type {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #73808C;
+      }
+    }
+  }
+
+  .btn {
+    &.has-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      border-radius: 8px;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 28px 25px;
+
+      .icon {
+        flex-shrink: 0;
+        width: 30px;
+
+        img {
+          width: 25px;
+        }
+      }
+
+      &:hover {
+        background-color: #e2e2e2;
+        border-color: transparent;
+        color: $body-color;
+      }
+    }
+  }
+}
+
+.checkout {
+  padding: 80px 0;
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.components {
+  background-color: $primary;
+  padding: 100px 0;
+
+  p {
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  &--img {
+    margin-top: 50px;
+  }
+}
+
+.transaction-overview {
+  &.ebannc-api {
+    background-color: transparent;
+
+    .card-transaction-overview {
+      background-color: #EDEFEC;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  ~.payment-processing {
+    border-top: 1px solid #EDEFEC;
+  }
+}
+
+// < 1400px
+@include media-breakpoint-down(xxl) {
+  .features {
+    .security-text--grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .transaction-overview {
+    &.ebannc-api {
+      .transaction-overview--grid {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .checkout {
+    &--img {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .features,
+  .checkout,
+  .components,
+  .payment-link {
+    padding: 60px 0;
+  }
+  .features {
+    .security-text--grid {
+      grid-template-columns: auto;
+    }
+  }
+  .payment-link {
+    .share-link {
+      padding: 20px;
+
+      .text {
+        font-size: 1.6rem;
+      }
+      .icon {
+        width: 30px;
+
+        img {
+          max-width: 30px;
+        }
+      }
+    }
+    .card-info {
+      padding: 20px;
+      gap: 15px;
+
+      &--img {
+        width: 50px;
+      }
+      &--content {
+        .number {
+          font-size: 1.8rem;
+        }
+        .type {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .btn.has-icon {
+      font-size: 1.6rem;
+      gap: 10px;
+      padding: 20px;
+
+      .icon {
+        width: 20px;
+      }
+    }
+  }
+}

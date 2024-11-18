@@ -1,0 +1,75 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: rgba($primary, .8);
+	color: $white;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 10px;
+	font-weight: $font-weight-base;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $body-color;
+	scroll-padding-top: 150px;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-weight: $font-weight-base;
+	margin: 0;
+	padding: 0;
+	background-color: $body-bg;
+	color: $body-color;
+}
+
+a,
+a:focus,
+a:active,
+a:visited {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition: 0.2s ease-in-out;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	margin-top: 130px;
+	transition: 500ms $cubic-transition;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+	main {
+		margin-top: 77px;
+	}
+}

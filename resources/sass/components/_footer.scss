@@ -1,0 +1,239 @@
+.footer {
+  padding: 100px 0;
+  background-color: $primary;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: 45% auto max-content;
+    gap: 60px 40px;
+  }
+
+  &--company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    .logo {
+      width: 120px;
+    }
+
+    .contact-info {
+      margin-top: 70px;
+      
+
+      &--col {
+        display: grid;
+        gap: 5px;
+        color: $white;
+        line-height: 1.5;
+
+        h5 {
+          font-size: 1.6rem;
+          margin: 0;
+        }
+
+        a {
+          &:hover {
+            color: $light-green;
+          }
+        }
+
+        +.contact-info--col {
+          margin-top: 25px;
+        }
+      }
+    }
+
+    &-bottom {
+      color: $white;
+      
+      p {
+        margin: 0;
+        color: $white;
+      }
+    }
+  }
+
+  &--nav {
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 70px 20px;
+    }
+
+    &-col {
+      color: $white;
+
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        @extend .list-unstyled;
+        display: grid;
+        gap: 8px;
+
+        li {
+          a {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            text-decoration: none;
+
+            &:hover,
+            &.active {
+              color: $light-green;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--awards {
+    h4 {
+      color: $white;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .achievements {
+      &--list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+
+        .image {
+          overflow: hidden;
+          height: 120px;
+          width: 120px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  &--copyright {
+    color: $white;
+      
+    p {
+      margin: 0;
+      color: $white;
+    }
+    
+    // > 1200px
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+}
+
+// < 1400px
+@include media-breakpoint-down(xxl) {
+  .footer {
+    &--grid {
+      grid-template-columns: 32% auto max-content;
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .footer {
+    &--grid {
+      grid-template-columns: 1fr max-content;
+    }
+
+    &--company {
+      .contact-info {
+        margin-top: 30px;
+      }
+
+      &-bottom {
+        display: none;
+      }
+    }
+
+    &--nav {
+      grid-row: 2;
+      grid-column: 1/span 2;
+
+      &-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    &--awards {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .footer {
+    padding: 60px 0;
+
+    &--awards {
+      h4 {
+        font-size: 1.8rem;
+      }
+      .achievements {
+        &--list {
+          gap: 10px;
+
+          .image {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+  .footer {
+    font-size: 1.4rem;
+
+    &--grid {
+      grid-template-columns: auto;
+      gap: 30px;
+    }
+
+    &--nav {
+      grid-column: 1;
+      margin-top: 10px;
+
+      &-grid {
+        gap: 20px;
+        grid-template-columns: auto;
+      }
+
+      &-col {
+        ul {
+          gap: 5px;
+
+          li {
+            a {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    &--awards {
+      grid-column: 1;
+      grid-row: 3;
+
+      .achievements--list {
+        grid-template-columns: repeat(2, max-content);
+      }
+    }
+  }
+}
