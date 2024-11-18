@@ -25,6 +25,22 @@
     }
   }
 
+  &.btn-outline-light-green {
+    color: $white;
+    background-color: transparent;
+    border-color: $light-green;
+
+    &:hover {
+      color: $body-color;
+      background-color: $light-green;
+      border-color: $light-green;
+    }
+
+    &.text-dark {
+      color: $body-color;
+    }
+  }
+
   &.btn-black {
     color: $white;
     background-color: $body-color;

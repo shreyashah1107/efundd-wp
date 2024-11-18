@@ -168,6 +168,23 @@
       }
     }
   }
+
+  &--components {
+    padding: 50px 0;
+
+    // > 992px
+    @include media-breakpoint-up(lg) {
+      .hero--content {
+        h1 {
+          font-size: 6rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
 }
 
 // < 1400px

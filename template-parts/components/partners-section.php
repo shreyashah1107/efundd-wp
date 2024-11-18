@@ -1,10 +1,9 @@
 <?php
 $payment_processing_fees_section = get_field('payment_processing_fees_section');
 ?>
-<?php if(isset($payment_processing_fees_section)):
+<?php if (isset($payment_processing_fees_section)):
     $partners = $payment_processing_fees_section["partners"];
-    ?>
-    <!-- Start: Payment Processing -->
+?>
     <section class="payment-processing">
         <div class="container">
             <div class="row justify-content-center">
@@ -13,7 +12,7 @@ $payment_processing_fees_section = get_field('payment_processing_fees_section');
                         <h3 class="section-title"><?php echo $payment_processing_fees_section["title"] ?></h3>
                         <p><?php echo $payment_processing_fees_section["text"] ?></p>
                     </div>
-                    <?php if(isset($partners)): ?>
+                    <?php if (isset($partners)): ?>
                         <div class="payment-process--items">
                             <?php foreach ($partners as $partner): ?>
                                 <a href="<?php echo $partner["link"] ?>" title="<?php echo $partner["text"] ?>" class="payment-process--item">
@@ -31,5 +30,4 @@ $payment_processing_fees_section = get_field('payment_processing_fees_section');
             </div>
         </div>
     </section>
-    <!-- End: Payment Processing -->
 <?php endif; ?>
