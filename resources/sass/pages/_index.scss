@@ -39,7 +39,7 @@
 
         &-alias {
           font-size: 1.6rem;
-          color: #5F6368;
+          color: #5f6368;
           text-transform: uppercase;
         }
       }
@@ -54,7 +54,7 @@
 
         .small {
           font-size: 1.6rem;
-          color: #5F6368;
+          color: #5f6368;
         }
       }
     }
@@ -73,7 +73,7 @@
 
   &--col {
     height: 100%;
-    background-color: #AFF8C8;
+    background-color: #aff8c8;
     padding: 30px;
     border-radius: 10px;
     display: flex;
@@ -224,7 +224,7 @@
           .text {
             padding: 7px 10px;
             font-weight: 500;
-            background-color: #24EC7E;
+            background-color: #24ec7e;
             border-radius: 4px;
             text-transform: uppercase;
           }
@@ -266,7 +266,7 @@
           }
 
           .account-number {
-            color: #CECFD2;
+            color: #cecfd2;
 
             .icon {
               img {
@@ -288,6 +288,18 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 50px 30px;
+
+      &.security-text--grid-four-col {
+        // > 1200px
+        @include media-breakpoint-up(xl) {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+        // > 1400px
+        @include media-breakpoint-up(xxl) {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
     }
 
     &--col {
@@ -425,7 +437,7 @@
 
 .account-management {
   padding: 150px 0 0;
-  overflow: hidden;  
+  overflow: hidden;
 
   &--swiper {
     padding-bottom: 100px;
@@ -544,13 +556,13 @@
       }
     }
 
-    &:nth-child(2n+2) {
+    &:nth-child(2n + 2) {
       .card-transaction-overview {
         margin-top: 100px;
       }
     }
 
-     &:nth-child(2n+3) {
+    &:nth-child(2n + 3) {
       .card-transaction-overview {
         margin-top: -100px;
       }
@@ -797,7 +809,7 @@
   .transaction-overview,
   .worldwide-payments,
   .mobile-app {
-    padding: 60px 0;    
+    padding: 60px 0;
   }
 
   .digital-solution,
@@ -838,7 +850,7 @@
         padding: 30px;
       }
     }
-    
+
     &--grid {
       margin-top: 50px;
     }
@@ -928,15 +940,15 @@
     &--grid {
       flex-direction: column;
 
-      >* {
+      > * {
         flex: none;
         max-width: 100%;
       }
     }
 
     &--col {
-      &:nth-child(2n+2),
-      &:nth-child(2n+3) {
+      &:nth-child(2n + 2),
+      &:nth-child(2n + 3) {
         .card-transaction-overview {
           margin-top: 0;
         }
