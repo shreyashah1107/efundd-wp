@@ -1,0 +1,19 @@
+.why-choose-us {
+  padding: 100px 0;
+  overflow: hidden;
+
+  &--swiper {
+    overflow: visible;
+
+    .swiper-slide {
+      height: initial;
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .why-choose-us {
+    padding: 60px 0;
+  }
+}

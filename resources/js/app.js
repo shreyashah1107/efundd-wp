@@ -103,3 +103,24 @@ var swiper = new Swiper(".payments--swiper", {
     },
   },
 });
+
+// Why Choose Us Card Slider
+var swiper = new Swiper(".why-choose-us--swiper", {
+  slidesPerView: 1.01,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1.8,
+    },
+    992: {
+      slidesPerView: 2.75,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
+});
