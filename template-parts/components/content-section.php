@@ -1,6 +1,7 @@
 <?php
 $content_section = get_field("content_section");
 if (isset($content_section)):
+    $key_features = $content_section["key_features"];
 ?>
     <section class="component-content">
         <div class="container">
@@ -8,29 +9,16 @@ if (isset($content_section)):
                 <div class="col-xxl-11">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-xl-6 col-xxl-5">
+                            <?php if (!empty($key_features)): ?>
                             <div class="key-features">
+                                <?php foreach ($key_features as $key_feature): ?>
                                 <div class="key-features--item">
-                                    <h4>Pre-built payment link</h4>
-                                    <p>Launch same day with our ready to go payment link:Embed on your own site or redirect to a Bann hosted payment page. Customise all fonts and colours to match your unique brandEasily add recurring payments and applicable Tax</p>
+                                    <h4><?php echo $key_feature["title"] ?></h4>
+                                    <p><?php echo $key_feature["text"] ?></p>
                                 </div>
-
-                                <div class="key-features--item">
-                                    <h4>Share-able payment links</h4>
-                                    <p>The quickest way to accept payments – no code required Share your payment link over email, Whatsapp, SMS, or any other channelAccept one-time, recurring, or pay-what-you-want payments Convert your link into an embeddable buy button or QR code</p>
-                                </div>
-
-                                <div class="key-features--item">
-                                    <h4>Built-in payments</h4>
-                                    <p>Use our Speedy Checkout Component to display multiple single click payment buttons. We support multiple payment methods including Google Pay, Apple Pay, Paypal and Click - Bannc's single click checkout component.</p>
-                                </div>
-
-                                <div class="key-features--item">
-                                    <h4>Automatic address collection</h4>
-                                    <p>Verify users identities to reduce fraud</p>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
-
-                            <?php echo $content_section["list"] ?>
+                            <?php endif; ?>
                             <div class="btn-grp">
                                 <?php if (!empty($content_section["button_title"])): ?>
                                     <a href="<?php echo @$content_section["button_link"] ?>"
