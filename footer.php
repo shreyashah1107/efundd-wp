@@ -97,7 +97,7 @@ $main_footer_menu = render_menu('footer');
 
             <?php if (isset($col_3)):
                 $awards_and_cerificates = $col_3["awards_and_cerificates"];
-                if (isset($awards_and_cerificates)):
+                if (!empty($awards_and_cerificates)):
                     ?>
                     <!-- Awards Information -->
                     <div class="footer--awards">
