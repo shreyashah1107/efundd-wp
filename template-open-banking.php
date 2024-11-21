@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 $hero_section = get_field('hero_section');
-$features = get_field('features');
+$cards = get_field('cards');
 $payment_link_section = get_field('payment_link_section');
 $checkout_section = get_field('checkout_section');
 $payment_link_section_dark = get_field('payment_link_section_dark');
@@ -20,7 +20,7 @@ get_header(); ?>
             <!-- Active Page Text: Show < 576px -->
             <!--            <div class="d-sm-none text-center">-->
             <!--                <div class="subtitle">--><?php //echo $hero_section["highlighted_text"] 
-                                                            ?><!--</div>-->
+            ?><!--</div>-->
             <!--            </div>-->
             <!-- Active Page Text -->
 
@@ -32,13 +32,13 @@ get_header(); ?>
                         <div class="btn-grp justify-content-center justify-content-xl-start">
                             <?php if (!empty($hero_section["button_title"])): ?>
                                 <a href="<?php echo @$hero_section["button_link"] ?>"
-                                    title="<?php echo $hero_section["button_title"] ?>"
-                                    class="btn btn-light-green"><?php echo $hero_section["button_title"] ?></a>
+                                   title="<?php echo $hero_section["button_title"] ?>"
+                                   class="btn btn-light-green"><?php echo $hero_section["button_title"] ?></a>
                             <?php endif; ?>
                             <?php if (!empty($hero_section["secondary_button_title"])): ?>
                                 <a href="<?php echo $hero_section["secondary_button_link"] ?>"
-                                    title="<?php echo $hero_section["secondary_button_title"] ?>"
-                                    class="btn btn-outline-light-green"><?php echo $hero_section["secondary_button_title"] ?></a>
+                                   title="<?php echo $hero_section["secondary_button_title"] ?>"
+                                   class="btn btn-outline-light-green"><?php echo $hero_section["secondary_button_title"] ?></a>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ get_header(); ?>
                         <div class="hero--img mt-5 mt-xl-0 pt-5 pt-xl-0">
                             <?php if (!empty($hero_section["image"])): ?>
                                 <img src="<?php echo $hero_section["image"]["url"] ?>"
-                                    alt="<?php echo @$hero_section["image"]["alt"] ?>">
+                                     alt="<?php echo @$hero_section["image"]["alt"] ?>">
                             <?php endif; ?>
                         </div>
                     </div>
@@ -57,99 +57,33 @@ get_header(); ?>
     </section>
     <!-- End: Hero -->
 <?php endif; ?>
-
-<!-- Start: Why Choose Us -->
-<section class="why-choose-us">
-    <div class="container">
-        <div class="why-choose-us--swiper swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Payment initiation">
+<?php if (!empty($cards)): ?>
+    <!-- Start: Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="why-choose-us--swiper swiper">
+                <div class="swiper-wrapper">
+                    <?php foreach ($cards as $card): ?>
+                    <div class="swiper-slide">
+                        <div class="card-why-us">
+                            <div class="card-why-us--icon">
+                                <img src="<?php echo @$card["icon"]["url"] ?>"
+                                     alt="<?php echo @$card["icon"]["alt"] ?>">
+                            </div>
+                            <div class="card-why-us--title"><?php echo $card["title"] ?></div>
+                            <div class="card-why-us--text"><?php echo $card["text"] ?></div>
                         </div>
-                        <div class="card-why-us--title">Payment initiation</div>
-                        <div class="card-why-us--text">Initiate payments within your platform</div>
                     </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Payment initiation">
-                        </div>
-                        <div class="card-why-us--title">Seamless user experience</div>
-                        <div class="card-why-us--text">Our seamless onboarding experience converts more sales</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Balance">
-                        </div>
-                        <div class="card-why-us--title">Balance</div>
-                        <div class="card-why-us--text">Get real-time account balance</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Identity">
-                        </div>
-                        <div class="card-why-us--title">Identity</div>
-                        <div class="card-why-us--text">Verify users identities to reduce fraud</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Auth">
-                        </div>
-                        <div class="card-why-us--title">Auth</div>
-                        <div class="card-why-us--text">Enable a fast setup for direct debits and payouts</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Payment initiation">
-                        </div>
-                        <div class="card-why-us--title">Seamless user experience</div>
-                        <div class="card-why-us--text">Our seamless onboarding experience converts more sales</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Balance">
-                        </div>
-                        <div class="card-why-us--title">Balance</div>
-                        <div class="card-why-us--text">Get real-time account balance</div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-why-us">
-                        <div class="card-why-us--icon">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/card.svg" alt="Identity">
-                        </div>
-                        <div class="card-why-us--title">Identity</div>
-                        <div class="card-why-us--text">Verify users identities to reduce fraud</div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- End: Why Choose Us -->
+    </section>
+    <!-- End: Why Choose Us -->
+<?php endif; ?>
 
 <?php if (isset($payment_link_section)):
-?>
+    ?>
     <!-- Start: Payment Link -->
     <section class="payment-link">
         <div class="container">
@@ -165,13 +99,13 @@ get_header(); ?>
                             <div class="btn-grp">
                                 <?php if (!empty($payment_link_section["button_text_1"])): ?>
                                     <a href="<?php echo @$payment_link_section["button_link_1"] ?>"
-                                        title="<?php echo $payment_link_section["button_text_1"] ?>"
-                                        class="btn btn-light-green"><?php echo $payment_link_section["button_text_1"] ?></a>
+                                       title="<?php echo $payment_link_section["button_text_1"] ?>"
+                                       class="btn btn-light-green"><?php echo $payment_link_section["button_text_1"] ?></a>
                                 <?php endif; ?>
                                 <?php if (!empty($payment_link_section["button_text_2"])): ?>
                                     <a href="<?php echo $payment_link_section["button_link_2"] ?>"
-                                        title="<?php echo $payment_link_section["button_text_2"] ?>"
-                                        class="btn btn-light-green"><?php echo $payment_link_section["button_text_2"] ?></a>
+                                       title="<?php echo $payment_link_section["button_text_2"] ?>"
+                                       class="btn btn-light-green"><?php echo $payment_link_section["button_text_2"] ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -179,7 +113,7 @@ get_header(); ?>
                             <?php if (!empty($payment_link_section["image"])): ?>
                                 <div>
                                     <img src="<?php echo $payment_link_section["image"]["url"] ?>"
-                                        alt="<?php echo @$payment_link_section["image"]["alt"] ?>">
+                                         alt="<?php echo @$payment_link_section["image"]["alt"] ?>">
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -202,7 +136,7 @@ get_header(); ?>
                             <div class="modular-solutions--img text-lg-center">
                                 <?php if (!empty($checkout_section["image"])): ?>
                                     <img src="<?php echo @$checkout_section["image"]["url"] ?>"
-                                        alt="<?php echo @$checkout_section["image"]["alt"] ?>">
+                                         alt="<?php echo @$checkout_section["image"]["alt"] ?>">
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -213,13 +147,13 @@ get_header(); ?>
                             <div class="btn-grp">
                                 <?php if (!empty($checkout_section["button_title"])): ?>
                                     <a href="<?php echo @$checkout_section["button_link"] ?>"
-                                        title="<?php echo $checkout_section["button_title"] ?>"
-                                        class="btn btn-light-green"><?php echo $checkout_section["button_title"] ?></a>
+                                       title="<?php echo $checkout_section["button_title"] ?>"
+                                       class="btn btn-light-green"><?php echo $checkout_section["button_title"] ?></a>
                                 <?php endif; ?>
                                 <?php if (!empty($checkout_section["secondary_button_title"])): ?>
                                     <a href="<?php echo $checkout_section["secondary_button_link"] ?>"
-                                        title="<?php echo $checkout_section["secondary_button_title"] ?>"
-                                        class="btn btn-light-green"><?php echo $checkout_section["secondary_button_title"] ?></a>
+                                       title="<?php echo $checkout_section["secondary_button_title"] ?>"
+                                       class="btn btn-light-green"><?php echo $checkout_section["secondary_button_title"] ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -244,8 +178,8 @@ get_header(); ?>
                             <?php if ($payment_link_section_dark["button_text_1"]): ?>
                                 <div class="btn-grp">
                                     <a href="<?php echo @$payment_link_section_dark["button_link_1"] ?>"
-                                        title="<?php echo $payment_link_section_dark["button_text_1"] ?>"
-                                        class="btn btn-light-green"><?php echo $payment_link_section_dark["button_text_1"] ?></a>
+                                       title="<?php echo $payment_link_section_dark["button_text_1"] ?>"
+                                       class="btn btn-light-green"><?php echo $payment_link_section_dark["button_text_1"] ?></a>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -253,7 +187,7 @@ get_header(); ?>
                             <div class="text-lg-center">
                                 <?php if ($payment_link_section_dark["image"]): ?>
                                     <img src="<?php echo $payment_link_section_dark["image"]["url"] ?>"
-                                        alt="<?php echo @$payment_link_section_dark["image"]["alt"] ?>">
+                                         alt="<?php echo @$payment_link_section_dark["image"]["alt"] ?>">
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -267,7 +201,7 @@ get_header(); ?>
 <?php
 if ($open_banking_integration):
     $links = $open_banking_integration["links"];
-?>
+    ?>
     <section class="payment-processing">
         <div class="container">
             <div class="row justify-content-center">
@@ -279,11 +213,11 @@ if ($open_banking_integration):
                         <div class="payment-process--items">
                             <?php foreach ($links as $link): ?>
                                 <a href="<?php echo @$link["url"] ?>"
-                                    title="<?php echo @$link["text"] ?>" class="payment-process--item">
+                                   title="<?php echo @$link["text"] ?>" class="payment-process--item">
                                     <div class="icon">
                                         <?php if (!empty($link["icon"])): ?>
                                             <img src="<?php echo @$link["icon"]["url "] ?>"
-                                                alt="<?php echo @$link["icon"]["alt"] ?>">
+                                                 alt="<?php echo @$link["icon"]["alt"] ?>">
                                         <?php endif; ?>
                                     </div>
                                     <div class="text"><?php echo @$link["text"] ?></div>
