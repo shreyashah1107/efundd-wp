@@ -6,8 +6,8 @@ if ($checkout_section):
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-11">
-                    <div class="row align-items-center">
-                        <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-5 offset-xxl-1 mb-5 mb-xl-0 pb-5 pb-lg-0 order-first order-lg-last">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-5 mb-5 mb-xl-0 pb-5 pb-lg-0">
                             <div>
                                 <?php if ($checkout_section["image"]): ?>
                                     <img src="<?php echo $checkout_section["image"]["url"] ?>"

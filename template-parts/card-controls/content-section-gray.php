@@ -28,7 +28,7 @@ if (isset($payment_link_section)):
                             </div>
 
                         </div>
-                        <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-5 mb-5 mb-xl-0 pb-5 pb-lg-0">
+                        <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-5 mb-5 mb-xl-0 pb-5 pb-lg-0 order-first order-lg-last">
                             <?php if (!empty($payment_link_section["image"])): ?>
                                 <div>
                                     <img src="<?php echo $payment_link_section["image"]["url"] ?>"
