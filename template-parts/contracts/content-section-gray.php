@@ -16,7 +16,7 @@ if (isset($payment_link_section)):
                                 </div>
                             <?php endif; ?>
                         </div>
-                        <div class="col-lg-7 col-xl-6 col-xxl-6">
+                        <div class="col-lg-7 col-xl-6 col-xxl-6 offset-xxl-1">
                             <div class="title-row">
                                 <div class="subtitle"><?php echo $payment_link_section["highlighted_text"] ?></div>
                                 <h3 class="section-title has-bg-gradient"><?php echo $payment_link_section["title"] ?></h3>
