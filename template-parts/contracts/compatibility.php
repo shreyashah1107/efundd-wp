@@ -27,7 +27,7 @@ if ($checkout_section):
                 </div>
               </div>
             </div>
-            <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-6 mb-5 mb-xl-0 pb-5 pb-lg-0 order-first order-lg-last">
+            <div class="col-md-8 col-lg-5 col-xl-6 col-xxl-5 offset-xxl-1 mb-5 mb-xl-0 pb-5 pb-lg-0 order-first order-lg-last">
               <div>
                 <?php if ($checkout_section["image"]): ?>
                   <img src="<?php echo $checkout_section["image"]["url"] ?>"
