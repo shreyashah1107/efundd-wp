@@ -216,7 +216,7 @@ if ($open_banking_integration):
                                    title="<?php echo @$link["text"] ?>" class="payment-process--item">
                                     <div class="icon">
                                         <?php if (!empty($link["icon"])): ?>
-                                            <img src="<?php echo @$link["icon"]["url "] ?>"
+                                            <img src="<?php echo @$link["icon"]["url"] ?>"
                                                  alt="<?php echo @$link["icon"]["alt"] ?>">
                                         <?php endif; ?>
                                     </div>
