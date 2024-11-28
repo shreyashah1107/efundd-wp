@@ -2,7 +2,7 @@
 $hero_section = get_field('hero_section');
 if ($hero_section):
 ?>
-    <section class="hero">
+    <section class="hero hero--online-payment">
         <div class="container">
             <div class="hero--content">
                 <div class="row align-items-center justify-content-center justify-content-xl-between">
