@@ -1,17 +1,17 @@
 .mega-menu {
   position: absolute;
-  left: $grid-gutter-width/2 !important;
-  right: $grid-gutter-width/2;
-  padding: 50px 100px;
+  right: 0;
+  left: auto !important;
+  padding: 30px;
   display: none;
   background-color: $white;
   border-radius: 10px;
   box-shadow: 0px 4px 12px 0px #00000033;
   z-index: 1000;
+  min-width: 360px;
 
   &--container {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
   }
 
@@ -19,53 +19,85 @@
     line-height: 1;
 
     .title {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 10px;
-      line-height: 1;
+      font-size: 1.6rem;
+      font-weight: $header-font-weight;
+      color: $secondary;
+      margin-bottom: 30px;
 
-      .icon {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #AFF8C8;
-        border-radius: 4px;
+      span {
+        position: relative;
 
-        img {
-          width: 24px;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          right: -30px;
+          width: 20px;
+          height: 20px;
+          background-image: url(../img/other/menu-right.svg);
+          background-repeat: no-repeat;
+          background-size: 8px;
         }
-      }
-
-      .text {
-        font-size: 1.4rem;
-        font-weight: $header-font-weight;
-        color: $body-color;
       }
     }
 
     ul {
-      margin-left: 45px;
+      display: grid;
+      gap: 30px;
 
       li {
         a {
-          font-size: 1.2rem;
-          font-weight: 400;
+          display: inline-flex;
+          align-items: center;
+          gap: 15px;
+          font-size: 1.6rem;
+          font-weight: 600;
           line-height: 1.3;
           color: $body-color;
-          padding: 8px;
-          border-radius: 4px;
           background: transparent;
           text-decoration: none;
 
+          .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background-color: #AFF8C8;
+            border-radius: 50%;
+    
+            img {
+              width: 24px;
+            }
+          }
+
+          .text {
+            span {
+              display: block;
+            }
+          }
+
+          .link-subtext {
+            color: #909090;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-top: 5px;
+          }
+
           &:hover,
           &.active {
-            background: #AFF8C8;
+            color: $secondary;
           }
         }
       }
     }
+  }
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+  .mega-menu {
+    min-width: initial;
   }
 }

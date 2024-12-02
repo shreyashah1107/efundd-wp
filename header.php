@@ -79,70 +79,197 @@
             </button>
             <div class="collapse navbar-collapse" id="headerNav">
                 <ul class="navbar-nav ms-auto">
-                    <?php
-                    $main_menu = render_menu('main');
-                    if (isset($main_menu)):
-                        foreach ($main_menu as $menu_item) {
-                            if (!empty($menu_item['children']) && isset($menu_item['title'])) {
-                                $menu_children = $menu_item["children"];
-                                ?>
-                                <li class="nav-item dropdown">
-                                    <a href="<?php echo esc_url($menu_item['url']); ?>" class="nav-link dropdown-toggle"
-                                       role="button" data-bs-toggle="dropdown"
-                                       aria-expanded="false" title="<?php echo esc_html($menu_item['title']); ?>">
-                                        <?php echo esc_html($menu_item['title']); ?>
-                                    </a>
-                                    <div class="dropdown-menu mega-menu">
-                                        <div class="mega-menu--container">
-                                            <?php
-                                            foreach ($menu_children as $child_item) {
-                                                if (!empty($child_item['children'])) {
-                                                    $third_level_children = $child_item["children"];
-                                                    $menu_icon = get_field('menu_icon', $child_item['ID']);
-                                                    ?>
-                                                    <div class="mega-menu--col">
-                                                        <div class="title">
-                                                            <?php if (!empty($menu_icon)): ?>
-                                                                <div class="icon">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Global Payments">Global Payments</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu--container">
+                                <div class="mega-menu--col">
+                                    <div class="title"><span>Global Payments</span></div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" title="International Payments">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="International Payments">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">International Payments</span>
+                                                    <span class="link-subtext">Send money globally</span>
+                                                </div>
+                                            </a>
+                                        </li>
 
-                                                                    <img src="<?php echo $menu_icon["url"] ?>"
-                                                                         alt="<?php echo @$menu_icon["alt"] ?>">
+                                        <li>
+                                            <a href="#" title="Pay abroad">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/receive_money.svg" alt="Pay abroad">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Pay abroad</span>
+                                                    <span class="link-subtext">Pay suppliers ahead</span>
+                                                </div>
+                                            </a>
+                                        </li>
 
-                                                                </div>
-                                                            <?php endif; ?>
-                                                            <div class="text"><?php echo esc_html($child_item['title']); ?></div>
-                                                        </div>
-                                                        <ul class="list-unstyled">
-                                                            <?php foreach ($third_level_children as $third_item) { ?>
-                                                                <li><a href="<?php echo esc_url($third_item['url']); ?>"
-                                                                       title="<?php echo esc_html($third_item['title']); ?>">
-                                                                        <?php echo esc_html($third_item['title']); ?>
-                                                                    </a>
-                                                                </li>
-                                                            <?php } ?>
-                                                        </ul>
-                                                    </div>
-                                                <?php } else { ?>
-                                                    <div class="mega-menu--col">
-                                                        <a href="<?php echo esc_url($child_item['url']); ?>"
-                                                           title="<?php echo esc_html($child_item['title']); ?>">
-                                                            <?php echo esc_html($child_item['title']); ?>
-                                                        </a>
-                                                    </div>
-                                                <?php }
-                                            } ?>
-                                        </div>
-                                    </div>
-                                </li>
-                            <?php } else { ?>
-                                <li class="nav-item">
-                                    <a href="<?php echo esc_url($menu_item['url']); ?>"
-                                       title="<?php echo esc_html($menu_item['title']); ?>"
-                                       class="nav-link"><?php echo esc_html($menu_item['title']); ?></a>
-                                </li>
-                            <?php }
-                        }
-                    endif; ?>
+                                        <li>
+                                            <a href="#" title="Receive Money">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/account_balance.svg" alt="Receive Money">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Receive Money</span>
+                                                    <span class="link-subtext">Receive International Payments</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Issue Cards">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Issue Cards">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Issue Cards</span>
+                                                    <span class="link-subtext">Issue Cards for your team</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Multi currency wallet">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Multi currency wallet">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Multi currency wallet</span>
+                                                    <span class="link-subtext">Hold funds in multiple currencies</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Local account details">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Local account details">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Local account details</span>
+                                                    <span class="link-subtext">Receive local account details</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Multi Currency Account">Multi Currency Account</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu--container">
+                                <div class="mega-menu--col">
+                                    <div class="title"><span>Multi Currency Account</span></div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" title="Send money globally">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Send money globally">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Send money globally</span>
+                                                    <span class="link-subtext">Send money in over 20+ currencies</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Receive Money">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/receive_money.svg" alt="Receive Money">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Receive Money</span>
+                                                    <span class="link-subtext">Receive funds</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Manage your Account">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/account_balance.svg" alt="Manage your Account">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Manage your Account</span>
+                                                    <span class="link-subtext">Manage your account in realtime</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="PaayCo Card">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="PaayCo Card">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">PaayCo Card</span>
+                                                    <span class="link-subtext">Receive a Paayco spend card</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Cards">Cards</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu--container">
+                                <div class="mega-menu--col">
+                                    <div class="title"><span>Cards</span></div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" title="Issue Cards">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Issue Cards">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Issue Cards</span>
+                                                    <span class="link-subtext">Issue Cards for your team</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Expense Cards">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="Expense Cards">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Expense Cards</span>
+                                                    <span class="link-subtext">Track company expenses</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" title="Employeee Card">
+                                                <div class="icon">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/receive_money.svg" alt="Employeee Card">
+                                                </div>
+                                                <div class="text">
+                                                    <span class="link-text">Employeee Card</span>
+                                                    <span class="link-subtext">Track Employeee Cards</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <li class="nav-item lang-selector--wrapper">
                         <div class="flag-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flag/uk.svg" alt="Flag">
@@ -154,6 +281,7 @@
                             </select>
                         </div>
                     </li>
+                    
                     <?php if (!empty($button_text)): ?>
                         <li class="nav-item">
                             <a href="<?php echo esc_url($button_link); ?>" title="<?php echo esc_html($button_text); ?>"
@@ -161,7 +289,6 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-
             </div>
         </div>
     </nav>
