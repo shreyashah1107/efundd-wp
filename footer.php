@@ -8,115 +8,173 @@ $main_footer_menu = render_menu('footer');
 <footer class="footer">
     <div class="container">
         <div class="footer--grid">
-            <!-- Company Info & Contact Details -->
-            <?php if (isset($col_1)): ?>
-                <div class="footer--company">
-                    <div class="footer--company-top">
-                        <?php if (!empty($col_1["logo"])): ?>
-                            <div class="logo">
-                                <img src="<?php echo $col_1["logo"]["url"] ?>"
-                                     alt="<?php echo @$col_1["logo"]["alt"] ?>">
-                            </div>
-                        <?php endif; ?>
-                        <div class="contact-info">
-                            <?php if (!empty($col_1["phone"]) || !empty($col_1["support_email"])): ?>
-                                <div class="contact-info--col">
-                                    <h5>Support</h5>
-                                    <?php if (!empty($col_1["support_email"])): ?>
-                                        <div><a href="mailto:<?php echo $col_1["support_email"] ?>"
-                                                title="<?php echo $col_1["support_email"] ?>"><?php echo $col_1["support_email"] ?></a>
-                                        </div>
-                                    <?php endif; ?>
-                                    <?php if (!empty($col_1["phone"])): ?>
-                                        <div><a href="tel:<?php echo $col_1["phone"] ?>"
-                                                title="<?php echo $col_1["phone"] ?>"><?php echo $col_1["phone"] ?></a>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                            <?php endif; ?>
-                            <?php if (!empty($col_1["developers_email"])): ?>
-                                <div class="contact-info--col">
-                                    <h5>Developers</h5>
-                                    <div><a href="mailto:<?php echo $col_1["developers_email"] ?>"
-                                            title="<?php echo $col_1["developers_email"] ?>"><?php echo $col_1["developers_email"] ?></a>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
-                            <?php if (!empty($col_1["sales_email"])): ?>
-                                <div class="contact-info--col">
-                                    <h5>Sales</h5>
-                                    <div><a href="mailto:<?php echo $col_1["sales_email"] ?>"
-                                            title="<?php echo $col_1["sales_email"] ?>"><?php echo $col_1["sales_email"] ?></a>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <!-- Hide < 1200px -->
-                    <div class="footer--company-bottom">
-                        <p>Copyright &copy; <?= date('Y') ?> | All Rights Reserved </p>
-                    </div>
-                </div>
-            <?php endif; ?>
-
-            <!-- Quick Links -->
+            <!-- Nav Links -->
             <div class="footer--nav">
                 <div class="footer--nav-grid">
-                    <?php
-                    foreach ($main_footer_menu as $menu_item) {
-                        if (!empty($menu_item['children']) && isset($menu_item['title'])) {
-                            $menu_childrens = $menu_item["children"];
-                            ?>
-                            <div class="footer--nav-col">
-                                <h4><?php echo $menu_item["title"] ?></h4>
-                                <ul>
-                                    <?php foreach ($menu_childrens as $menu_item) { ?>
-                                        <li><a href="<?php echo $menu_item["url"] ?>"
-                                               title="<?php echo $menu_item["title"] ?>"><?php echo $menu_item["title"] ?></a>
-                                        </li>
-                                    <?php } ?>
-                                </ul>
-                            </div>
-                        <?php }
-                    } ?>
-                    <div class="footer--nav-col">
-                        <ul>
-                            <?php
-                            foreach ($main_footer_menu as $menu_item) {
-                            if (empty($menu_item['children']) && isset($menu_item['title'])) {
-                                ?>
-                                <li><a href="<?php echo $menu_item["url"] ?>"
-                                       title="<?php echo $menu_item["title"] ?>"><?php echo $menu_item["title"] ?></a>
-                                </li>
-                            <?php } } ?>
-                        </ul>
+                    <div>
+                        <div class="footer--nav-col">
+                            <h4>Business Accounts</h4>
+                            <ul>
+                                <li><a href="#" title="Multi currency Accounts">Multi currency Accounts</a></li>
+                                <li><a href="#" title="Bulk Payments">Bulk Payments</a></li>
+                                <li><a href="#" title="Currency Converter">Currency Converter</a></li>
+                                <li><a href="#" title="Business debit card">Business debit card</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--nav-col">
+                            <h4>Plus CRM</h4>
+                            <ul>
+                                <li><a href="#" title="Accounting">Accounting</a></li>
+                                <li><a href="#" title="Biling">Biling</a></li>
+                                <li><a href="#" title="Team Management">Team Management</a></li>
+                                <li><a href="#" title="Project management">Project management</a></li>
+                                <li><a href="#" title="Contratcs">Contratcs</a></li>
+                            </ul>
+                        </div>
                     </div>
 
+                    <div>
+                        <div class="footer--nav-col">
+                            <h4>Card Machines</h4>
+                            <ul>
+                                <li><a href="#" title="Mini Card Machine">Mini Card Machine</a></li>
+                                <li><a href="#" title="Medi Card Machine">Medi Card Machine</a></li>
+                                <li><a href="#" title="Max Card Machine">Max Card Machine</a></li>
+                                <li><a href="#" title="Unattended Terminal">Unattended Terminal</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--nav-col">
+                            <h4>Ecommerce Payments</h4>
+                            <ul>
+                                <li><a href="#" title="Online payments">Online payments</a></li>
+                                <li><a href="#" title="Payment link">Payment link</a></li>
+                                <li><a href="#" title="Components">Components</a></li>
+                                <li><a href="#" title="Linked Accounts">Linked Accounts</a></li>
+                                <li><a href="#" title="Payment Methods">Payment Methods</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <h4>Personal Account</h4>
+                            <ul>
+                                <li><a href="#" title="Paayco Account">Paayco Account</a></li>
+                                <li><a href="#" title="International money transfer">International money transfer</a></li>
+                                <li><a href="#" title="Receive money">Receive money</a></li>
+                                <li><a href="#" title="Send money">Send money</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--nav-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#" title="Our company">Our company</a></li>
+                                <li><a href="#" title="Developers">Developers</a></li>
+                                <li><a href="#" title="Security">Security</a></li>
+                                <li><a href="#" title="Careers">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <div class="footer--company">
+                                <div class="footer--company-top">
+                                    <div class="contact-info">
+                                        <div class="contact-info--col">
+                                            <h5>Support</h5>
+                                            <div><a href="mailto:support@paayco.com" title="support@paayco.com">support@paayco.com</a>
+                                            </div>
+                                            <div><a href="tel:+4402039761111" title="+44 0203.976.1111">+44 0203.976.1111</a>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info--col">
+                                            <h5>Developers</h5>
+                                            <div><a href="mailto:integrations@paayco.com" title="integrations@paayco.com">integrations@paayco.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer--nav-col">
+                            <h4>Help Centre</h4>
+                            <ul>
+                                <li><a href="#" title="Sending money">Sending money</a></li>
+                                <li><a href="#" title="Holding money">Holding money</a></li>
+                                <li><a href="#" title="Receiving money">Receiving money</a></li>
+                                <li><a href="#" title="Processing payments">Processing payments</a></li>
+                                <li><a href="#" title="Service status">Service status</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <?php if (isset($col_3)):
-                $awards_and_cerificates = $col_3["awards_and_cerificates"];
-                if (!empty($awards_and_cerificates)):
-                    ?>
-                    <!-- Awards Information -->
-                    <div class="footer--awards">
-                        <h4><?php _e("Awards & Certificates", "fundd") ?></h4>
-                        <div class="achievements-wrapper">
-                            <div class="achievements--list">
-                                <?php foreach ($awards_and_cerificates as $award): ?>
-                                    <div class="image">
-                                        <img src="<?php echo $award["url"] ?>" alt="<?php echo @$award["alt"] ?>">
-                                    </div>
-                                <?php endforeach; ?>
+            <!-- Quick Links -->
+            <div class="footer--quick-links">
+                <div class="footer--nav-grid">
+                    <div>
+                        <div class="footer--nav-col">
+                            <ul>
+                                <li><a href="#" title="Legal">Legal</a></li>
+                                <li><a href="#" title="Privacy policy">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <ul>
+                                <li><a href="#" title="Terms of Use">Terms of Use</a></li>
+                                <li><a href="#" title="Cookie Policy">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <ul>
+                                <li><a href="#" title="Railsbank Terms">Railsbank Terms</a></li>
+                                <li><a href="#" title="Modern slavery statement">Modern slavery statement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <h4>Download the Paayco app</h4>
+                            <div class="download-list">
+                                <div>
+                                    <a href="#" title="Download on App Store">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/app-store.png" alt="Download on App Store">
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#" title="Download on Google Pay">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/google-pay.png" alt="Download on Google Pay">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                <?php endif; endif; ?>
-            <!-- Hide > 1200px -->
-            <div class="footer--copyright">
-                <p>Copyright &copy; <?= date('Y') ?> | All Rights Reserved </p>
+                </div>
             </div>
+        </div>
+
+        <div class="footer--text">
+            <p>Paayco Ltd (registration number 15991797) is a distributor of PayrNet Ltd which is an Electronic Money Institution authorised by the FCA under the Electronic Money Regulations 2011 (EMR’s) with Firm Reference Number 900594</p>
+
+            <p>The Financial Services Compensation Scheme does not cover electronic money products. No other compensation scheme exists to cover losses from your electronic money account. Your funds will be held in one or more segregated bank accounts with a regulated third party credit institution, in accordance with the provisions of the Electronic Money Regulations 2011.</p>
+        </div>
+
+        <div class="footer--copyright">
+            <p>Copyright &copy; 2025 All Rights Reserved </p>
         </div>
     </div>
 </footer>
@@ -143,4 +201,5 @@ $main_footer_menu = render_menu('footer');
     });
 </script>
 </body>
+
 </html>
