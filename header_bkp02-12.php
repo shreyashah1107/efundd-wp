@@ -46,31 +46,22 @@
                         <?php
                         global $post;
                         $current_slug = $post->post_name;
-                        $menu_type="";
                         ?>
-                        <?php if (is_front_page()) { 
-                            $menu_type ="corporate_menu";
-                            ?>
+                        <?php if (is_front_page()) { ?>
                             <input type="radio" id="corporate-tab" name="tabs" checked/>
                             <label class="tab" for="corporate-tab">Corporate</label>
-                        <?php } else { 
-                            $menu_type ="corporate_menu";
-                            ?>
+                        <?php } else { ?>
                             <input type="radio" id="corporate-tab" name="tabs"/>
                             <label class="tab" for="corporate-tab">Corporate</label>
                         <?php } ?>
-                        <?php if ($current_slug == 'business-landing-page') {
-                            $menu_type ="main";
-                         ?>
+                        <?php if ($current_slug == 'business-landing-page') { ?>
                             <input type="radio" id="business-tab" name="tabs" checked/>
                             <label class="tab" for="business-tab">Business</label>
                         <?php } else { ?>
                             <input type="radio" id="business-tab" name="tabs"/>
                             <label class="tab" for="business-tab">Business</label>
                         <?php } ?>
-                        <?php if ($current_slug == 'personal-landing-page') {
-                            $menu_type ="personal_menu";
-                         ?>
+                        <?php if ($current_slug == 'personal-landing-page') { ?>
                             <input type="radio" id="personal-tab" name="tabs" checked/>
                             <label class="tab" for="personal-tab">Personal</label>
                         <?php } else { ?>
@@ -89,55 +80,36 @@
             <div class="collapse navbar-collapse" id="headerNav">
                 <ul class="navbar-nav ms-auto">
                     <?php
-                    $main_menu = render_menu($menu_type);
-                    if (isset($main_menu)){
+                    $main_menu = render_menu('main');
+                    if (isset($main_menu)):
                         foreach ($main_menu as $menu_item) {
                             if (!empty($menu_item['children']) && isset($menu_item['title'])) {
                                 $menu_children = $menu_item["children"];
                                 ?>
-                    <li class="nav-item dropdown">
-                        <a href="<?php echo esc_url($menu_item['url']); ?>" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php echo esc_html($menu_item['title']); ?>"><?php echo esc_html($menu_item['title']); ?></a>
-                        <div class="dropdown-menu mega-menu">
-                            <div class="mega-menu--container">
-                                <div class="mega-menu--col">
-                                    <div class="title"><span><?php echo esc_html($menu_item['title']); ?></span></div>
-                                    <ul class="list-unstyled">
+                                <li class="nav-item dropdown">
+                                    <a href="<?php echo esc_url($menu_item['url']); ?>" class="nav-link dropdown-toggle"
+                                       role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false" title="<?php echo esc_html($menu_item['title']); ?>">
+                                        <?php echo esc_html($menu_item['title']); ?>
+                                    </a>
+                                    <ul>
                                         <?php
-                                            foreach ($menu_children as $child_item) { 
-                                                $menu_icon = get_field('menu_icon', $child_item['ID']);
-                                                $menu_text = get_field('menu_text', $child_item['ID']);
-                                                ?>
-                                        <li>
-                                            <a href="<?php echo esc_html($child_item['url']); ?>" title="<?php echo esc_html($child_item['title']); ?>">
-                                                <div class="icon">
-                                                    <?php if (!empty($menu_icon)) { ?>
-                                                       <img src="<?php echo $menu_icon["url"] ?>" alt="<?php echo esc_html($child_item['title']); ?>">
-                                                  <?php } else{ ?>
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/menu/send_money.svg" alt="<?php echo esc_html($child_item['title']); ?>">
-                                                <?php } ?>
-                                                </div>
-                                                <div class="text">
-                                                    <span class="link-text"><?php echo esc_html($child_item['title']); ?></span>
-                                                    <?php if ($menu_text) { ?>
-                                                    <span class="link-subtext"><?php echo $menu_text ?></span>
-                                                <?php } ?>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    <?php } ?>
+                                            foreach ($menu_children as $child_item) {
+                                                    $menu_icon = get_field('menu_icon', $child_item['ID']);
+                                                    ?>
+                                                    <li><a href="<?php echo esc_html($child_item['url']); ?>" title="<?php echo esc_html($child_item['title']); ?>"><?php echo esc_html($child_item['title']); ?></a></li>
+                                                <?php  } ?>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                <?php }else{ ?>
-                    <li class="nav-item">
+                                </li>
+                            <?php } else { ?>
+                                <li class="nav-item">
                                     <a href="<?php echo esc_url($menu_item['url']); ?>"
                                        title="<?php echo esc_html($menu_item['title']); ?>"
                                        class="nav-link"><?php echo esc_html($menu_item['title']); ?></a>
                                 </li>
-                <?php } } } ?>
-
+                            <?php }
+                        }
+                    endif; ?>
                     <li class="nav-item lang-selector--wrapper">
                         <div class="flag-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flag/uk.svg" alt="Flag">
@@ -149,7 +121,6 @@
                             </select>
                         </div>
                     </li>
-                    
                     <?php if (!empty($button_text)): ?>
                         <li class="nav-item">
                             <a href="<?php echo esc_url($button_link); ?>" title="<?php echo esc_html($button_text); ?>"
@@ -157,6 +128,7 @@
                         </li>
                     <?php endif; ?>
                 </ul>
+
             </div>
         </div>
     </nav>

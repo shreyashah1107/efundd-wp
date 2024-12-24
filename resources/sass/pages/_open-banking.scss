@@ -15,39 +15,6 @@
       height: initial;
     }
   }
-
-  &.contract-management-solution {
-    .why-choose-us--items {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-
-      .card-why-us {
-        background-color: $secondary;
-        border-radius: 16px;
-        padding: 20px 20px 40px;
-        min-height: 100%;
-      
-        &--icon {
-          width: 80px;
-          height: 80px;
-          display: block;
-          background-color: transparent;
-          border-radius: 0;
-          margin-bottom: 20px;
-      
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            max-width: 100%;
-          }
-        }
-      
-        &--title {
-          font-size: 3.2rem;
-        }
-      }
-    }
-  }
 }
 
 // < 1200px
@@ -55,21 +22,6 @@
   .why-choose-us {
     &--items {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    &.contract-management-solution {
-      .why-choose-us--items {
-        .card-why-us {
-          &--icon {
-            width: 50px;
-            height: 50px;
-          }
-        
-          &--title {
-            font-size: 2rem;
-          }
-        }
-      }
     }
   }
 }
@@ -81,24 +33,6 @@
 
     &--items {
       grid-template-columns: auto;
-    }
-
-    &.contract-management-solution {
-      .why-choose-us--items {
-        grid-template-columns: auto;
-  
-        .card-why-us {
-          &--icon {
-            width: 30px;
-            height: 30px;
-          }
-        
-          &--title {
-            font-size: 1.8rem;
-            line-height: 1.2;
-          }
-        }
-      }
     }
   }
 }

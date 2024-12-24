@@ -12,7 +12,9 @@ if ( ! function_exists( 'fundd_theme_setup' ) ) :
          * Create Custom Menus
          */
         register_nav_menus( array(
-            'main'   => __( 'Main Menu', 'fundd' ),
+            'main'   => __( 'Business Menu', 'fundd' ),
+            'corporate_menu'   => __( 'Corporate Menu', 'fundd' ),
+            'personal_menu'   => __( 'Personal Menu', 'fundd' ),
          //   'top-header-menu'   => __( 'Top Header Menu', 'fundd' ),
             'footer' => __( 'Footer Menu', 'fundd' ),
          //   'privacy-menu' => __( 'Privacy Menu', 'fundd' ),
