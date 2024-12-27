@@ -1,7 +1,6 @@
 <?php
 $col_1 = get_field("col_1", "options");
-$col_2 = get_field("col_2", "options");
-$col_3 = get_field("col_3", "options");
+$applications_section = get_field("applications_section", "options");
 $main_footer_menu = render_menu('footer');
 ?>
 <!-- Start: Footer -->
@@ -13,69 +12,73 @@ $main_footer_menu = render_menu('footer');
                 <div class="footer--nav-grid">
                     <div>
                         <div class="footer--nav-col">
-                            <h4>Business Accounts</h4>
-                            <ul>
-                                <li><a href="#" title="Multi currency Accounts">Multi currency Accounts</a></li>
-                                <li><a href="#" title="Bulk Payments">Bulk Payments</a></li>
-                                <li><a href="#" title="Currency Converter">Currency Converter</a></li>
-                                <li><a href="#" title="Business debit card">Business debit card</a></li>
-                            </ul>
+                            <h4><?php _e('Business Accounts', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_business_accounts',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
                         </div>
 
                         <div class="footer--nav-col">
-                            <h4>Plus CRM</h4>
-                            <ul>
-                                <li><a href="#" title="Accounting">Accounting</a></li>
-                                <li><a href="#" title="Biling">Biling</a></li>
-                                <li><a href="#" title="Team Management">Team Management</a></li>
-                                <li><a href="#" title="Project management">Project management</a></li>
-                                <li><a href="#" title="Contratcs">Contratcs</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="footer--nav-col">
-                            <h4>Card Machines</h4>
-                            <ul>
-                                <li><a href="#" title="Mini Card Machine">Mini Card Machine</a></li>
-                                <li><a href="#" title="Medi Card Machine">Medi Card Machine</a></li>
-                                <li><a href="#" title="Max Card Machine">Max Card Machine</a></li>
-                                <li><a href="#" title="Unattended Terminal">Unattended Terminal</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer--nav-col">
-                            <h4>Ecommerce Payments</h4>
-                            <ul>
-                                <li><a href="#" title="Online payments">Online payments</a></li>
-                                <li><a href="#" title="Payment link">Payment link</a></li>
-                                <li><a href="#" title="Components">Components</a></li>
-                                <li><a href="#" title="Linked Accounts">Linked Accounts</a></li>
-                                <li><a href="#" title="Payment Methods">Payment Methods</a></li>
-                            </ul>
+                            <h4><?php _e('Plus CRM', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_plus_crm',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
                         </div>
                     </div>
 
                     <div>
                         <div class="footer--nav-col">
-                            <h4>Personal Account</h4>
-                            <ul>
-                                <li><a href="#" title="Paayco Account">Paayco Account</a></li>
-                                <li><a href="#" title="International money transfer">International money transfer</a></li>
-                                <li><a href="#" title="Receive money">Receive money</a></li>
-                                <li><a href="#" title="Send money">Send money</a></li>
-                            </ul>
+                            <h4><?php _e('Card Machines', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_card_machines',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
                         </div>
 
                         <div class="footer--nav-col">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#" title="Our company">Our company</a></li>
-                                <li><a href="#" title="Developers">Developers</a></li>
-                                <li><a href="#" title="Security">Security</a></li>
-                                <li><a href="#" title="Careers">Careers</a></li>
-                            </ul>
+                            <h4><?php _e('Ecommerce Payments', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_ecommerce_payments',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="footer--nav-col">
+                            <h4><?php _e('Personal Account', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_personal_account',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
+                        </div>
+
+                        <div class="footer--nav-col">
+                            <h4><?php _e('Company', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_company',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
                         </div>
                     </div>
 
@@ -83,33 +86,47 @@ $main_footer_menu = render_menu('footer');
                         <div class="footer--nav-col">
                             <div class="footer--company">
                                 <div class="footer--company-top">
-                                    <div class="contact-info">
-                                        <div class="contact-info--col">
-                                            <h5>Support</h5>
-                                            <div><a href="mailto:support@paayco.com" title="support@paayco.com">support@paayco.com</a>
-                                            </div>
-                                            <div><a href="tel:+4402039761111" title="+44 0203.976.1111">+44 0203.976.1111</a>
-                                            </div>
+                                    <?php if ($col_1):
+                                        $support_email = $col_1["support_email"];
+                                        $phone = $col_1["phone"];
+                                        $developers_email = $col_1["developers_email"];
+                                        $sales_email = $col_1["sales_email"];
+                                        ?>
+                                        <div class="contact-info">
+                                            <?php if ($support_email || $phone): ?>
+                                                <div class="contact-info--col">
+                                                    <h5><?php _e("Support", "darwin") ?></h5>
+                                                    <div><a href="tel:<?php echo $phone ?>"
+                                                            title="<?php echo $phone ?>"><?php echo $phone ?></a>
+                                                    </div>
+                                                    <div><a href="mailto:<?php echo $support_email ?>"
+                                                            title="<?php echo $support_email ?>"><?php echo $support_email ?></a>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php if ($developers_email): ?>
+                                                <div class="contact-info--col">
+                                                    <h5><?php _e("Developers", "darwin") ?></h5>
+                                                    <div><a href="mailto:<?php echo $developers_email ?>"
+                                                            title="<?php echo $developers_email ?>"><?php echo $developers_email ?></a>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
-                                        <div class="contact-info--col">
-                                            <h5>Developers</h5>
-                                            <div><a href="mailto:integrations@paayco.com" title="integrations@paayco.com">integrations@paayco.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
 
                         <div class="footer--nav-col">
-                            <h4>Help Centre</h4>
-                            <ul>
-                                <li><a href="#" title="Sending money">Sending money</a></li>
-                                <li><a href="#" title="Holding money">Holding money</a></li>
-                                <li><a href="#" title="Receiving money">Receiving money</a></li>
-                                <li><a href="#" title="Processing payments">Processing payments</a></li>
-                                <li><a href="#" title="Service status">Service status</a></li>
-                            </ul>
+                            <h4><?php _e('Help Centre', 'fundd'); ?></h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer_help_centre',
+                                'container' => false,
+                                'menu_class' => 'footer--nav-list',
+                            ));
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -118,46 +135,53 @@ $main_footer_menu = render_menu('footer');
             <!-- Quick Links -->
             <div class="footer--quick-links">
                 <div class="footer--nav-grid">
-                    <div>
-                        <div class="footer--nav-col">
-                            <ul>
-                                <li><a href="#" title="Legal">Legal</a></li>
-                                <li><a href="#" title="Privacy policy">Privacy policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <?php
+                    // Fetch the menu items
+                    $menu_name = 'footer_quick_links'; // Replace with your menu's theme location
+                    $menu_items = wp_get_nav_menu_items(get_nav_menu_locations()[$menu_name]);
 
-                    <div>
-                        <div class="footer--nav-col">
-                            <ul>
-                                <li><a href="#" title="Terms of Use">Terms of Use</a></li>
-                                <li><a href="#" title="Cookie Policy">Cookie Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    if ($menu_items) {
+                        // Divide menu items into equal parts
+                        $items_per_column = ceil(count($menu_items) / 3); // Adjust '3' for the number of columns
+                        $chunks = array_chunk($menu_items, $items_per_column);
 
+                        foreach ($chunks as $chunk) {
+                            echo '<div>';
+                            echo '<div class="footer--nav-col">';
+                            echo '<ul>';
+                            foreach ($chunk as $menu_item) {
+                                echo '<li><a href="' . esc_url($menu_item->url) . '" title="' . esc_attr($menu_item->title) . '">' . esc_html($menu_item->title) . '</a></li>';
+                            }
+                            echo '</ul>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                    } else {
+                        // Display fallback message if no menu is assigned
+                        echo '<p>' . __('No menu items found.', 'fundd') . '</p>';
+                    }
+                    ?>
                     <div>
                         <div class="footer--nav-col">
-                            <ul>
-                                <li><a href="#" title="Railsbank Terms">Railsbank Terms</a></li>
-                                <li><a href="#" title="Modern slavery statement">Modern slavery statement</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="footer--nav-col">
-                            <h4>Download the Paayco app</h4>
+                            <?php if ($applications_section["title"]): ?>
+                                <h4><?php echo $applications_section["title"] ?></h4>
+                            <?php else: ?>
+                                <h4><?php _e("Download the Paayco app", "darwin") ?></h4>
+                            <?php endif; ?>
                             <div class="download-list">
                                 <div>
-                                    <a href="#" title="Download on App Store">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/app-store.png" alt="Download on App Store">
+                                    <a href="<?php echo $applications_section["ios_app_url"] ?>"
+                                       title="<?php _e("Download on App Store", "darwin") ?>" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/app-store.png"
+                                             alt="<?php _e("Download on App Store", "darwin") ?>">
                                     </a>
                                 </div>
 
                                 <div>
-                                    <a href="#" title="Download on Google Pay">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/google-pay.png" alt="Download on Google Pay">
+                                    <a href="<?php echo $applications_section["android_app_url"] ?>"
+                                       title="<?php _e("Download on Google Play", "darwin") ?>" target="_blank">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/google-pay.png"
+                                             alt="<?php _e("Download on Google Play", "darwin") ?>">
                                     </a>
                                 </div>
                             </div>
@@ -168,13 +192,11 @@ $main_footer_menu = render_menu('footer');
         </div>
 
         <div class="footer--text">
-            <p>Paayco Ltd (registration number 15991797) is a distributor of PayrNet Ltd which is an Electronic Money Institution authorised by the FCA under the Electronic Money Regulations 2011 (EMR’s) with Firm Reference Number 900594</p>
-
-            <p>The Financial Services Compensation Scheme does not cover electronic money products. No other compensation scheme exists to cover losses from your electronic money account. Your funds will be held in one or more segregated bank accounts with a regulated third party credit institution, in accordance with the provisions of the Electronic Money Regulations 2011.</p>
+            <?php echo get_field("footer_text", "options") ?>
         </div>
 
         <div class="footer--copyright">
-            <p>Copyright &copy; 2025 All Rights Reserved </p>
+            <p>Copyright &copy; <?php echo date("Y") ?> All Rights Reserved </p>
         </div>
     </div>
 </footer>
@@ -183,7 +205,7 @@ $main_footer_menu = render_menu('footer');
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper-bundle.min.js"></script>
 <?php wp_footer(); ?>
 <script>
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         // Define the URLs for each tab
         var tabUrls = {
             'corporate-tab': '<?php echo home_url() ?>',
@@ -192,7 +214,7 @@ $main_footer_menu = render_menu('footer');
         };
 
         // Listen for changes on the radio inputs
-        $('.sliding-tabs input[type="radio"]').change(function() {
+        $('.sliding-tabs input[type="radio"]').change(function () {
             var selectedTab = $(this).attr('id');
             if (tabUrls[selectedTab]) {
                 window.location.href = tabUrls[selectedTab];
