@@ -17,8 +17,14 @@ if ( ! function_exists( 'fundd_theme_setup' ) ) :
             'personal_menu'   => __( 'Personal Menu', 'fundd' ),
          //   'top-header-menu'   => __( 'Top Header Menu', 'fundd' ),
             'footer' => __( 'Footer Menu', 'fundd' ),
-         //   'privacy-menu' => __( 'Privacy Menu', 'fundd' ),
-         //   'social-menu' => __( 'Social Menu', 'fundd' ),
+            'footer_business_accounts' => __('Footer Business Accounts', 'fundd'),
+            'footer_plus_crm' => __('Footer Plus CRM', 'fundd'),
+            'footer_card_machines' => __('Footer Card Machines', 'fundd'),
+            'footer_ecommerce_payments' => __('Footer Ecommerce Payments', 'fundd'),
+            'footer_personal_account' => __('Footer Personal Account', 'fundd'),
+            'footer_company' => __('Footer Company', 'fundd'),
+            'footer_help_centre' => __('Footer Help Centre', 'fundd'),
+            'footer_quick_links' => __('Footer Quick Links', 'fundd'),
         ) );
         /**
          * Load translations for fundd
