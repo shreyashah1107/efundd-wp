@@ -6,9 +6,9 @@ if (isset($worldwide_account_section)):
     <section class="worldwide-payments">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-10">
+                <div class="col-xxl-12">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-xl-6 col-xxl-5">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="currency--list">
                                 <?php if (!empty($transactions)):
                                     foreach ($transactions as $transaction): ?>
@@ -33,8 +33,8 @@ if (isset($worldwide_account_section)):
                                     <?php endforeach; endif; ?>
                             </div>
                         </div>
-                        <div class="col-xl-6 order-first order-xl-last">
-                            <h3 class="section-title"><?php echo $worldwide_account_section["title"] ?></h3>
+                        <div class="col-xl-6 col-xxl-7 order-first order-xl-last">
+                            <h3 class="section-title section-title--xl"><?php echo $worldwide_account_section["title"] ?></h3>
                             <p><?php echo $worldwide_account_section["text"] ?></p>
                             <div class="btn-grp">
                                 <?php if (!empty($worldwide_account_section["button_text_1"])): ?>
@@ -45,7 +45,7 @@ if (isset($worldwide_account_section)):
                                 <?php if (!empty($worldwide_account_section["button_text_2"])): ?>
                                     <a href="<?php echo $worldwide_account_section["button_link_2"] ?>"
                                        title="<?php echo $worldwide_account_section["button_text_2"] ?>"
-                                       class="btn btn-light-green"><?php echo $worldwide_account_section["button_text_2"] ?></a>
+                                       class="btn btn-outline-light-green text-dark"><?php echo $worldwide_account_section["button_text_2"] ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>

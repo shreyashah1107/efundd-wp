@@ -67,19 +67,19 @@
       margin-top: 30px;
 
       h5 {
-        font-size: 1.6rem;
+        font-size: 3rem;
         font-weight: 600;
         margin-bottom: 20px;
       }
     }
 
-    &:hover {
-      .btn {
-        background-color: $light-green;
-        border-color: $light-green;
-        color: $body-color;
-      }
-    }
+    // &:hover {
+    //   .btn {
+    //     background-color: $light-green;
+    //     border-color: $light-green;
+    //     color: $body-color;
+    //   }
+    // }
   }
 }
 

@@ -9,7 +9,7 @@ if (isset($services_section)):
                 <?php if (!empty($services_section["highlighted_text"])): ?>
                     <div class="subtitle"><?php echo $services_section["highlighted_text"] ?></div>
                 <?php endif; ?>
-                <h3 class="section-title"><?php echo $services_section["title"] ?></h3>
+                <h3 class="section-title section-title--xl has-bg-gradient"><?php echo $services_section["title"] ?></h3>
                 <p><?php echo $services_section["subtitle"] ?></p>
             </div>
             <div class="payments--swiper swiper">
