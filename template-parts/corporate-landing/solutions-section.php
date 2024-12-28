@@ -6,7 +6,7 @@ if (isset($solutions_section)):
     <section class="digital-solution digital-solution--with-bg">
         <div class="container">
             <div class="title-row text-center">
-                <h3 class="section-title"><?php echo $solutions_section["title"] ?></h3>
+                <h3 class="section-title section-title--lg"><?php echo $solutions_section["title"] ?></h3>
                 <p><?php echo $solutions_section["text"] ?></p>
             </div>
             <?php if (!empty($solutions)): ?>
