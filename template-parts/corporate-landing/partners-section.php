@@ -5,15 +5,22 @@ if (isset($partners_section)):
     ?>
     <section class="partners">
         <div class="container">
-            <h4 class="text-center"><?php echo $partners_section["title"] ?></h4>
+            <div class="title-row text-center">
+                <h3 class="section-title section-title--xl"><?php echo $partners_section["title"] ?></h3>
+                <p>With Paayco you can ccept more than 20+ payment methods, offering both major <br> international and local payment options.</p>
+            </div>
 
-            <ul class="partner-list">
-                <?php foreach ($partners as $partner): ?>
-                    <li>
-                        <img src="<?php echo $partner["image"]["url"] ?>" alt="<?php echo @$partner["image"]["alt"] ?>">
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+            <div class="partner--swiper swiper">
+                <div class="swiper-wrapper">
+                    <?php foreach ($partners as $partner): ?>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="<?php echo $partner["image"]["url"] ?>" alt="<?php echo @$partner["image"]["alt"] ?>">
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
     </section>
 <?php endif; ?>

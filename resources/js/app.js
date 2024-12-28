@@ -124,3 +124,43 @@ var swiper = new Swiper(".why-choose-us--swiper", {
     },
   },
 });
+
+// Payments Card Slider
+var swiper = new Swiper(".payments--slider.one-api--global .payments--swiper", {
+  slidesPerView: 1.01,
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1.01,
+    },
+    992: {
+      slidesPerView: 2.2,
+    },
+    1400: {
+      slidesPerView: 2.75,
+    },
+  },
+});
+
+// Partner Slider
+var swiper = new Swiper(".partner--swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+
+  breakpoints: {
+    576: {
+      spaceBetween: 100,
+    },
+  }
+});

@@ -24,7 +24,7 @@ if (isset($hero_section)):
                                class="btn btn-light-green"><?php echo $hero_section["button_text_1"] ?></a>
                             <a href="<?php echo $hero_section["button_link_2"] ?>"
                                title="<?php echo $hero_section["button_text_2"] ?>"
-                               class="btn btn-light-green"><?php echo $hero_section["button_text_2"] ?></a>
+                               class="btn btn-outline-light-green"><?php echo $hero_section["button_text_2"] ?></a>
                         </div>
 
                         <div class="text-certified">

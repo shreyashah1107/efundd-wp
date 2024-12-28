@@ -6,8 +6,8 @@ if (isset($mobile_app_section)):
     <section class="mobile-app global-payment-process">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-6 col-xxl-5">
-                    <h3 class="section-title has-bg-gradient"><?php echo $mobile_app_section["title"] ?></h3>
+                <div class="col-xl-6 col-xxl-6">
+                    <h3 class="section-title section-title--xl"><?php echo $mobile_app_section["title"] ?></h3>
 
                     <?php if ($features): ?>
                         <ul class="app-feature--list app-feature--list-icons">
