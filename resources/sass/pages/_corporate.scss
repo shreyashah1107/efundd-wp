@@ -130,7 +130,7 @@
 			width: 65%;
 		}
 	}
-}
+} 
 
 .in-person-payments {
 	background-color: $primary;
@@ -355,9 +355,9 @@
 	overflow: hidden;
 	padding: 100px 0;
 
-	h4 {
-		font-size: 2rem;
-	}
+	// h4 {
+	// 	font-size: 2rem;
+	// }
 
 	.partner--swiper {
 		margin-top: 100px;
@@ -379,21 +379,21 @@
 		}
 	}
 
-	.partner-list {
-		@extend .list-unstyled;
-		margin: 60px 0 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 15px 70px;
+	// .partner-list {
+	// 	@extend .list-unstyled;
+	// 	margin: 60px 0 0;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	flex-wrap: wrap;
+	// 	gap: 15px 70px;
 
-		li {
-			img {
-				max-height: 55px;
-			}
-		}
-	}
+	// 	li {
+	// 		img {
+	// 			max-height: 55px;
+	// 		}
+	// 	}
+	// }
 }
 
 // < 1400px
@@ -472,9 +472,9 @@
 		}
 	}
 
-	.partners .partner-list {
-		gap: 15px 30px;
-	}
+	// .partners .partner-list {
+	// 	gap: 15px 30px;
+	// }
 }
 
 // < 768px
@@ -486,7 +486,8 @@
 	.online-payments,
 	.in-person-payments,
 	.payment-processing,
-	.global-payment-process {
+	.global-payment-process,
+  .partners {
 		padding: 60px 0;
 	}
 	.payment-acquiring-solution {
@@ -498,17 +499,21 @@
 		grid-template-columns: auto;
 	}
 	.partners {
-		h4 {
-			font-size: 1.8rem;
-		}
+    .partner--swiper {
+      margin-top: 60px;
+    }
 
-		.partner-list {
-			gap: 15px;
+		// h4 {
+		// 	font-size: 1.8rem;
+		// }
 
-			li img {
-				max-height: 25px;
-			}
-		}
+		// .partner-list {
+		// 	gap: 15px;
+
+		// 	li img {
+		// 		max-height: 25px;
+		// 	}
+		// }
 	}
 }
 
