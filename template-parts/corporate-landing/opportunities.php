@@ -7,11 +7,11 @@ if (isset($opportunities_section)):
         <div class="container">
             <div class="title-row text-center">
                 <div class="subtitle"><?php echo $opportunities_section["highlighted_text"] ?></div>
-                <h3 class="section-title has-bg-gradient"><?php echo $opportunities_section["title"] ?></h3>
+                <h3 class="section-title section-title--xl has-bg-gradient"><?php echo $opportunities_section["title"] ?></h3>
                 <p><?php echo $opportunities_section["text"] ?></p>
             </div>
             <?php if ($slides): ?>
-                <div class="payments--swiper swiper">
+                <div class="payments--swiper swiper pb-0">
                     <div class="swiper-wrapper">
                         <?php foreach ($slides as $slide): ?>
                             <div class="swiper-slide">
@@ -31,11 +31,6 @@ if (isset($opportunities_section)):
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                    </div>
-
-                    <div class="swiper-nav">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             <?php endif; ?>

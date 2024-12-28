@@ -19,7 +19,7 @@ get_header(); ?>
 <!-- End: Online Payments -->
 
 <!-- Start: Payments -->
-<?php include "template-parts/corporate-landing/payment-slider.php"; ?>;
+<?php include "template-parts/corporate-landing/payment-slider.php"; ?>
 <!-- End: Payments -->
 
 <!-- Start: In Person Payments -->
@@ -27,7 +27,7 @@ get_header(); ?>
 <!-- End: In Person Payments -->
 
 <!-- Start: Payments -->
-<?php include "template-parts/corporate-landing/opportunities.php"; ?>
+<?php include "template-parts/corporate-landing/opportunities-global.php"; ?>
 <!-- End: Payments -->
 
 <!-- Start: Business Services -->
@@ -43,8 +43,12 @@ get_header(); ?>
 <!-- End: Mobile App -->
 
 <!-- Start: Payment acquiring solution -->
-<?php include "template-parts/corporate-landing/payment-acquiring-solution-section.php" ?>
+<?php //include "template-parts/corporate-landing/payment-acquiring-solution-section.php" ?>
 <!-- End: Payment acquiring solution -->
+
+<!-- Start: Payments -->
+<?php include "template-parts/corporate-landing/opportunities.php"; ?>
+<!-- End: Payments -->
 
 <!-- Start: Payment Processing -->
 <?php include "template-parts/corporate-landing/payment-processing.php" ?>
