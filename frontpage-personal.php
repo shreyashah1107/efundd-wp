@@ -14,6 +14,10 @@ get_header(); ?>
 <?php include "template-parts/personal-landing/banking-slider.php" ?>
     <!-- End: Payments -->
 
+    <!-- Start: Multi Currency -->
+    <?php include "template-parts/personal-landing/multi-currency-cards.php" ?>
+    <!-- End: Multi Currency -->
+
     <!-- Start: Monitor Transactions -->
 <?php include "template-parts/personal-landing/account-management.php" ?>
     <!-- End: Monitor Transactions -->

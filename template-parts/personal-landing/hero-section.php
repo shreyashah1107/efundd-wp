@@ -26,7 +26,7 @@ if (isset($hero_section)):
                             <?php if (!empty($hero_section["button_text_2"])): ?>
                                 <a href="<?php echo $hero_section["button_link_2"] ?>"
                                    title="<?php echo $hero_section["button_text_2"] ?>"
-                                   class="btn btn-light-green"><?php echo $hero_section["button_text_2"] ?></a>
+                                   class="btn btn-outline-light-green"><?php echo $hero_section["button_text_2"] ?></a>
                             <?php endif; ?>
                         </div>
                     </div>

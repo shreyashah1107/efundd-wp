@@ -12,9 +12,10 @@ if(isset($account_management)):
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-xl-6 col-xxl-5 offset-xxl-1">
-                <div class="title-row mb-5">
-                    <h3 class="section-title section-title--lg"><?php echo $account_management["title"] ?></h3>
+            <div class="col-xl-6 col-xxl-6 offset-xxl-1">
+                <div class="title-row">
+                    <div class="subtitle">JOINT ACCOUNTS</div>
+                    <h3 class="section-title section-title--xl"><?php echo $account_management["title"] ?></h3>
                     <p><?php echo $account_management["text"] ?></p>
                 </div>
                 <div class="btn-grp">
@@ -26,7 +27,7 @@ if(isset($account_management)):
                     <?php if (!empty($account_management["button_text_2"])): ?>
                         <a href="<?php echo $account_management["button_link_2"] ?>"
                            title="<?php echo $account_management["button_text_2"] ?>"
-                           class="btn btn-light-green"><?php echo $account_management["button_text_2"] ?></a>
+                           class="btn btn-outline-light-green text-dark"><?php echo $account_management["button_text_2"] ?></a>
                     <?php endif; ?>
                 </div>
             </div>

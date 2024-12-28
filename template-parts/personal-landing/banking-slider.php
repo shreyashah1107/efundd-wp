@@ -6,7 +6,8 @@ if (isset($banking_slider_section)):
     <section class="payments payments--slider">
         <div class="container">
             <div class="title-row text-center">
-                <h3 class="section-title has-bg-gradient"><?php echo $banking_slider_section["title"] ?></h3>
+                <div class="subtitle">PERSONAL ACCOUNT</div>
+                <h3 class="section-title section-title--xl has-bg-gradient"><?php echo $banking_slider_section["title"] ?></h3>
             </div>
             <?php  if ($slides): ?>
             <div class="payments--swiper swiper pb-0">

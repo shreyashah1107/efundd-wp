@@ -6,7 +6,7 @@ if (isset($solutions_section)):
     <section class="money-in-account">
         <div class="container">
             <div class="title-row text-center">
-                <h3 class="section-title text-white"><?php echo $solutions_section["title"] ?></h3>
+                <h3 class="section-title section-title--xl text-white"><?php echo $solutions_section["title"] ?></h3>
             </div>
             <?php if (!empty($solutions_slides)): ?>
                 <div class="account-management--swiper swiper">
