@@ -13,7 +13,7 @@ if (isset($modular_solutions_section)):
 
                     <div class="btn-grp mt-5">
                         <a href="#" title="Accept payments" class="btn btn-light-green">Accept payments</a>
-                        <a href="#" title="Learn More" class="btn btn-light-green">Learn More</a>
+                        <a href="#" title="Learn More" class="btn btn-outline-light-green text-dark">Learn More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 col-xl-5 col-xxl-5 order-first order-lg-last mb-5 mb-lg-0 pb-5 pb-lg-0">
