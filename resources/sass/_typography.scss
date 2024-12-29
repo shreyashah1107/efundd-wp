@@ -75,7 +75,8 @@
 // < 1200px
 @include media-breakpoint-down(xl) {
   .section-title {
-    &--xl {
+    &--xl,
+    &--lg {
       font-size: 3.6rem;
     }
   }

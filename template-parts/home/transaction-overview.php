@@ -8,8 +8,8 @@ if (isset($transaction_overview_section)):
             <div class="row justify-content-center">
                 <div class="col-xxl-10">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-7 col-xl-5">
-                            <h3 class="section-title"><?php echo $transaction_overview_section["title"] ?></h3>
+                        <div class="col-lg-7 col-xl-6">
+                            <h3 class="section-title section-title--lg"><?php echo $transaction_overview_section["title"] ?></h3>
                             <p><?php echo $transaction_overview_section["text"] ?></p>
                             <?php if (!empty($transaction_overview_section["button_text"])): ?>
                                 <div class="btn-grp">

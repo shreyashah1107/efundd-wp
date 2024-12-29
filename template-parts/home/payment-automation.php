@@ -3,7 +3,7 @@ $payment_automation_section = get_field("payment_automation_section");
 if (isset($payment_automation_section)):
     $features = $payment_automation_section["features"];
     ?>
-    <section class="payment-automation">
+    <section class="payment-automation pb-5">
         <div class="container">
             <div class="title-row text-center">
                 <?php if (!empty($payment_automation_section["highlighted_text"])): ?>
@@ -27,13 +27,16 @@ if (isset($payment_automation_section)):
                             <div class="payment-automation--col-content">
                                 <h4><?php echo $feature["title"] ?></h4>
                                 <p><?php echo $feature["text"] ?></p>
-                                <?php if (!empty($feature["button_link"])): ?>
+
+                                <div class="mt-4"><a href="#" title="Learn more" class="btn btn-light-green px-5">Learn more</a></div>
+
+                                <!-- <?php if (!empty($feature["button_link"])): ?>
                                     <a href="<?php echo $feature["button_link"] ?>" title="Learn more"
                                        class="btn btn-link">
                                         <span class="text">Learn more</span>
                                         <span class="icon"></span>
                                     </a>
-                                <?php endif; ?>
+                                <?php endif; ?> -->
                             </div>
                         </div>
                     <?php endforeach; ?>
