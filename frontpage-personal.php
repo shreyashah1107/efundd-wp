@@ -38,9 +38,17 @@ get_header(); ?>
 <?php include "template-parts/personal-landing/mobile-app-section.php" ?>
     <!-- End: Mobile App -->
 
+    <!-- Start: Trusted Account -->
+    <?php include "template-parts/personal-landing/trusted-account.php" ?>
+    <!-- Start: Trusted Account -->
+
     <!-- Start: Pricing -->
 <?php include "template-parts/personal-landing/pricing-plans.php" ?>
     <!-- End: Pricing -->
+
+    <!-- Start: Biometric -->
+    <?php include "template-parts/personal-landing/biometric.php" ?>
+    <!-- Start: Biometric -->
 
     <!-- Start: Security -->
 <?php include "template-parts/home/security.php" ?>

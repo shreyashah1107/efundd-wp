@@ -128,10 +128,15 @@
 			right: 0;
 			bottom: 0;
 			width: 65%;
+			height: 500px;
 			text-align: right;
+
+			img {
+				max-height: 100%;
+			}
 		}
 	}
-} 
+}
 
 .in-person-payments {
 	background-color: $primary;
@@ -446,6 +451,7 @@
 			position: initial;
 			max-width: 650px;
 			width: 100%;
+			height: auto;
 			margin: 30px auto 0;
 			text-align: center;
 		}
@@ -489,7 +495,7 @@
 	.in-person-payments,
 	.payment-processing,
 	.global-payment-process,
-  .partners {
+	.partners {
 		padding: 60px 0;
 	}
 	.payment-acquiring-solution {
@@ -501,9 +507,9 @@
 		grid-template-columns: auto;
 	}
 	.partners {
-    .partner--swiper {
-      margin-top: 60px;
-    }
+		.partner--swiper {
+			margin-top: 60px;
+		}
 
 		// h4 {
 		// 	font-size: 1.8rem;
