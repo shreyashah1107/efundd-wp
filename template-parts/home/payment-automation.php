@@ -9,7 +9,7 @@ if (isset($payment_automation_section)):
                 <?php if (!empty($payment_automation_section["highlighted_text"])): ?>
                     <div class="subtitle"><?php echo $payment_automation_section["highlighted_text"] ?></div>
                 <?php endif; ?>
-                <h3 class="section-title has-bg-gradient"><?php echo $payment_automation_section["title"] ?></h3>
+                <h3 class="section-title section-title--xl has-bg-gradient"><?php echo $payment_automation_section["title"] ?></h3>
                 <p><?php echo $payment_automation_section["text"] ?></p>
             </div>
             <?php if (!empty($features)): ?>
