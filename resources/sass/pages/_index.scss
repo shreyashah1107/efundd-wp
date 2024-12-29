@@ -433,6 +433,14 @@
     font-size: 2rem;
     margin-bottom: 30px;
   }
+
+  &--biometric {
+    padding-top: 100px;
+
+    .tagline {
+      color: $green;
+    }
+  }
 }
 
 .account-management {
@@ -778,7 +786,7 @@
   }
 
   .security {
-    padding: 60px 0 0;
+    padding: 60px 0 30px;
 
     &.security--alt {
       padding-bottom: 60px;
@@ -860,6 +868,10 @@
         font-size: 1.8rem;
       }
     }
+  }
+
+  .fingerpay-solution--biometric {
+    padding-top: 60px;
   }
 }
 

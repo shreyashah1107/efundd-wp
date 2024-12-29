@@ -169,6 +169,10 @@
 @include media-breakpoint-down(md) {
   .card-account-management {
     gap: 30px;
+
+    &--title {
+      font-size: 2.4rem;
+    }
   }
   .card-help {
     &--grid {
