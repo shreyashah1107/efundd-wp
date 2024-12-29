@@ -63,6 +63,16 @@
 				width: 100%;
 			}
 		}
+
+		&--title {
+      font-size: 3rem;
+      color: #24EC7E;
+    }
+
+    &--text {
+      line-height: 1.5;
+      font-size: 1.8rem;
+    }
 	}
 
 	.account-management--swiper .swiper-nav {
@@ -116,5 +126,11 @@
 
 	.money-in-account {
 		padding: 60px 0;
+
+		.card-account-management {	
+			&--title {
+				font-size: 2.4rem;
+			}
+		}
 	}
 }

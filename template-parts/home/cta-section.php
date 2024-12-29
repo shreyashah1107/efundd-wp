@@ -5,12 +5,12 @@ if (isset($cta_section)):
     <section class="cta">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-12">
+                <div class="col-xxl-10">
                     <div class="cta--content-wrapper">
                         <div class="cta--content">
                             <div class="row">
-                                <div class="col-lg-7 col-xl-6">
-                                    <h3 class="section-title section-title--xl"><?php echo $cta_section["title"] ?></h3>
+                                <div class="col-lg-7 col-xl-7">
+                                    <h3 class="section-title section-title--lg"><?php echo $cta_section["title"] ?></h3>
 
                                     <div class="btn-grp">
                                         <?php if (!empty($cta_section["button_text_1"])): ?>

@@ -164,3 +164,24 @@ var swiper = new Swiper(".partner--swiper", {
     },
   }
 });
+
+// Digital Solution Slider
+var swiper = new Swiper(".digital-solution--swiper", {
+  slidesPerView: 1.01,
+  spaceBetween: 20,
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+    992: {
+      slidesPerView: 2.6,
+    },
+    1400: {
+      slidesPerView: 3.9,
+    },
+  },
+});
