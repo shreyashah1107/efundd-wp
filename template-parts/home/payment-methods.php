@@ -15,9 +15,11 @@ if (isset($payment_sections)):
                             <h3 class="section-title section-title--xl text-uppercase"><?php echo $payment_section["title"] ?></h3>
                             <p><?php echo $payment_section["text"] ?></p>
                         </div>
+                        <?php if (!empty($payment_section["button_text"])): ?>
                         <div class="btn-grp mt-4">
-                            <a href="#" title="Explore Cards" class="btn btn-light-green px-5">Explore Cards</a>
+                            <a href="<?php echo $payment_section["button_link"] ?>" title="<?php echo $payment_section["button_text"] ?>" class="btn btn-light-green px-5"><?php echo $payment_section["button_text"] ?></a>
                         </div>
+                        <?php endif; ?>
                     </div>
                     <div class="col-xxl-5 order-first order-xxl-last">
                         <?php if (!empty($payment_section["image"])): ?>

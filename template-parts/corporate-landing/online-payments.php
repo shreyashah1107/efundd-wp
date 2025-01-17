@@ -1,8 +1,7 @@
 <?php
 $online_payments_section = get_field('online_payments_section');
 if (isset($online_payments_section)):
-    $card_section = $online_payments_section["card_section"];
-    $flag = $card_section["flag"];
+    $image = $online_payments_section["image"];
     ?>
     <section class="online-payments online-payments-smart--cards">
         <div class="container">
@@ -14,16 +13,19 @@ if (isset($online_payments_section)):
                     </div>
                     <div class="btn-grp">
                         <a href="<?php echo $online_payments_section["button_link_1"] ?>"
-                        title="<?php echo $online_payments_section["button_text_1"] ?>"
-                        class="btn btn-light-green"><?php echo $online_payments_section["button_text_1"] ?></a>
+                           title="<?php echo $online_payments_section["button_text_1"] ?>"
+                           class="btn btn-light-green"><?php echo $online_payments_section["button_text_1"] ?></a>
                         <a href="<?php echo $online_payments_section["button_link_2"] ?>"
-                        title="<?php echo $online_payments_section["button_text_2"] ?>"
-                        class="btn btn-outline-light-green"><?php echo $online_payments_section["button_text_2"] ?></a>
+                           title="<?php echo $online_payments_section["button_text_2"] ?>"
+                           class="btn btn-outline-light-green"><?php echo $online_payments_section["button_text_2"] ?></a>
                     </div>
                 </div>
             </div>
             <div class="smart-card--img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/smart-card-1.png" alt="<?php _e("Image", "darwin") ?>">
+                <?php if (!empty($image)): ?>
+                    <img src="<?php echo $image["url"] ?>"
+                         alt="<?php echo @$image["alt"] ?>">
+                <?php endif; ?>
             </div>
         </div>
     </section>

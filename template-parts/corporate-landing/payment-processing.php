@@ -8,13 +8,21 @@ if ($saving_on_payment_processing_fees_section):
             <div class="col-lg-10 col-xxl-8">
                 <div class="title-row text-center">
                     <h3 class="section-title section-title--xl"><?php echo $saving_on_payment_processing_fees_section["title"] ?></h3>
-                    <p>Accept online, payments in person, or over the phone payments and let your clients pay anytime, anyway. Work with single Payment Solutions provider to accept, process, settle and payout your card payments.</p>
+                    <p><?php echo $saving_on_payment_processing_fees_section["text"] ?></p>
                 </div>
 
                 <div class="payment-process--items d-block">
                     <div class="btn-grp justify-content-center">
-                        <a href="#" title="Get a quote" class="btn btn-light-green">Get a quote</a>
-                        <a href="#" title="Learn more" class="btn btn-outline-light-green text-dark">Learn more</a>
+                        <?php if (!empty($in_person_payment_section["button_text_1"])): ?>
+                            <a href="<?php echo @$in_person_payment_section["button_link_1"] ?>"
+                               title="<?php echo $in_person_payment_section["button_text_1"] ?>"
+                               class="btn btn-light-green"><?php echo $in_person_payment_section["button_text_1"] ?></a>
+                        <?php endif; ?>
+                        <?php if (!empty($in_person_payment_section["button_text_2"])): ?>
+                            <a href="<?php echo $in_person_payment_section["button_link_2"] ?>"
+                               title="<?php echo $in_person_payment_section["button_text_2"] ?>"
+                               class="btn btn-outline-light-green text-dark"><?php echo $in_person_payment_section["button_text_2"] ?></a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

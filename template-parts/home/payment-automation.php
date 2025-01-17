@@ -27,16 +27,10 @@ if (isset($payment_automation_section)):
                             <div class="payment-automation--col-content">
                                 <h4><?php echo $feature["title"] ?></h4>
                                 <p><?php echo $feature["text"] ?></p>
-
-                                <div class="mt-4"><a href="#" title="Learn more" class="btn btn-light-green px-5">Learn more</a></div>
-
-                                <!-- <?php if (!empty($feature["button_link"])): ?>
-                                    <a href="<?php echo $feature["button_link"] ?>" title="Learn more"
-                                       class="btn btn-link">
-                                        <span class="text">Learn more</span>
-                                        <span class="icon"></span>
-                                    </a>
-                                <?php endif; ?> -->
+                                <?php if (!empty($feature["button_link"])): ?>
+                                    <div class="mt-4"><a href="<?php echo $feature["button_link"] ?>" title="Learn more" class="btn btn-light-green px-5">Learn
+                                            more</a></div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     <?php endforeach; ?>

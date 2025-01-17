@@ -12,8 +12,16 @@ if (isset($modular_solutions_section)):
                     <div class="title-row"><p><?php echo $modular_solutions_section["text"] ?></p></div>
 
                     <div class="btn-grp mt-5">
-                        <a href="#" title="Accept payments" class="btn btn-light-green">Accept payments</a>
-                        <a href="#" title="Learn More" class="btn btn-outline-light-green text-dark">Learn More</a>
+                        <?php if (!empty($modular_solutions_section["button_text_1"])): ?>
+                            <a href="<?php echo @$modular_solutions_section["button_link_1"] ?>"
+                               title="<?php echo $modular_solutions_section["button_text_1"] ?>"
+                               class="btn btn-light-green"><?php echo $modular_solutions_section["button_text_1"] ?></a>
+                        <?php endif; ?>
+                        <?php if (!empty($modular_solutions_section["button_text_2"])): ?>
+                            <a href="<?php echo $modular_solutions_section["button_link_2"] ?>"
+                               title="<?php echo $modular_solutions_section["button_text_2"] ?>"
+                               class="btn btn-outline-light-green text-dark"><?php echo $modular_solutions_section["button_text_2"] ?></a>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 col-xl-5 col-xxl-5 order-first order-lg-last mb-5 mb-lg-0 pb-5 pb-lg-0">

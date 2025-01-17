@@ -14,7 +14,7 @@ if(isset($account_management)):
             </div>
             <div class="col-xl-6 col-xxl-6 offset-xxl-1">
                 <div class="title-row">
-                    <div class="subtitle">JOINT ACCOUNTS</div>
+                    <div class="subtitle"><?php echo $account_management["highlighted_text"] ?></div>
                     <h3 class="section-title section-title--xl"><?php echo $account_management["title"] ?></h3>
                     <p><?php echo $account_management["text"] ?></p>
                 </div>

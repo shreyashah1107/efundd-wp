@@ -12,14 +12,22 @@ $in_person_payment_section = get_field('in_person_payment_section');
                     <div class="title-row"><p><?php echo $in_person_payment_section["text"] ?></p></div>
                 </div>
                 <div class="btn-grp">
-                    <a href="#" title="Order now" class="btn btn-light-green">Order now</a>
-                    <a href="#" title="Process payments" class="btn btn-outline-light-green">Process payments</a>
+                    <?php if (!empty($in_person_payment_section["button_text_1"])): ?>
+                        <a href="<?php echo @$in_person_payment_section["button_link_1"] ?>"
+                           title="<?php echo $in_person_payment_section["button_text_1"] ?>"
+                           class="btn btn-light-green"><?php echo $in_person_payment_section["button_text_1"] ?></a>
+                    <?php endif; ?>
+                    <?php if (!empty($in_person_payment_section["button_text_2"])): ?>
+                        <a href="<?php echo $in_person_payment_section["button_link_2"] ?>"
+                           title="<?php echo $in_person_payment_section["button_text_2"] ?>"
+                           class="btn btn-outline-light-green"><?php echo $in_person_payment_section["button_text_2"] ?></a>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-6 col-xxl-6 order-first order-lg-last mb-5 mb-lg-0 pb-5 pb-lg-0">
                 <?php if(isset($in_person_payment_section_image)): ?>
                 <div class="in-person-payment--img text-lg-center">
-                    <img src="<?php echo $in_person_payment_section_image["url"] ?>" alt="<?php echo @$in_person_payment_section_image["slt"] ?>">
+                    <img src="<?php echo $in_person_payment_section_image["url"] ?>" alt="<?php echo @$in_person_payment_section_image["alt"] ?>">
                 </div>
                 <?php endif; ?>
             </div>

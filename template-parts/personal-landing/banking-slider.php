@@ -6,30 +6,33 @@ if (isset($banking_slider_section)):
     <section class="payments payments--slider">
         <div class="container">
             <div class="title-row text-center">
-                <div class="subtitle">PERSONAL ACCOUNT</div>
+                <?php if ($banking_slider_section["highlighted_text"]): ?>
+                    <div class="subtitle"><?php echo $banking_slider_section["highlighted_text"] ?></div>
+                <?php endif; ?>
                 <h3 class="section-title section-title--xl has-bg-gradient"><?php echo $banking_slider_section["title"] ?></h3>
             </div>
-            <?php  if ($slides): ?>
-            <div class="payments--swiper swiper pb-0">
-                <div class="swiper-wrapper">
-                   <?php foreach ($slides as $slide): ?>
-                    <div class="swiper-slide">
-                        <div class="payments--col">
-                            <div class="payments--col-header">
-                                <h4><?php echo $slide["title"] ?></h4>
-                            </div>
-                            <div class="payments--col-footer">
-                                <?php if (!empty($slide["image"])): ?>
-                                <div class="image">
-                                    <img src="<?php echo $slide["image"]["url"] ?>" alt="<?php echo @$slide["image"]["alt"] ?>">
+            <?php if ($slides): ?>
+                <div class="payments--swiper swiper pb-0">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($slides as $slide): ?>
+                            <div class="swiper-slide">
+                                <div class="payments--col">
+                                    <div class="payments--col-header">
+                                        <h4><?php echo $slide["title"] ?></h4>
+                                    </div>
+                                    <div class="payments--col-footer">
+                                        <?php if (!empty($slide["image"])): ?>
+                                            <div class="image">
+                                                <img src="<?php echo $slide["image"]["url"] ?>"
+                                                     alt="<?php echo @$slide["image"]["alt"] ?>">
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
-                                <?php endif; ?>
                             </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                    <?php endforeach; ?>
                 </div>
-            </div>
             <?php endif; ?>
     </section>
 <?php endif; ?>

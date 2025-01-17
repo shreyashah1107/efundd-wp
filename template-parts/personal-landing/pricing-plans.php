@@ -21,10 +21,12 @@ if (isset($pricing_plans_section)):
                                 <span class="amount"><?php echo $plan["amount"] ?></span>
                                 <span> Monthly</span>
                             </div>
-                            <div class="card-pricing--cta">
-                                <a href="<?php echo $plan["button_link"] ?>" title="Open an account"
-                                   class="btn btn-light-green btn-block">Open an account</a>
-                            </div>
+                            <?php if ($plan["button_link"]): ?>
+                                <div class="card-pricing--cta">
+                                    <a href="<?php echo $plan["button_link"] ?>" title="Open an account"
+                                       class="btn btn-light-green btn-block">Open an account</a>
+                                </div>
+                            <?php endif; ?>
                         </div>
                         <div class="card-pricing--body">
                             <?php echo $plan["text"] ?>
