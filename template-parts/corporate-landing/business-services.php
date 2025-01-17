@@ -7,7 +7,7 @@ if ($business_payment_services_section):
         <div class="container">
             <div class="title-row text-center">
                 <h3 class="section-title section-title--lg"><?php echo $business_payment_services_section["title"] ?></h3>
-                <p>No monthly or subscription fees. Only pay for what you use.</p>
+                <p><?php echo $business_payment_services_section["subtitle"] ?></p>
             </div>
             <?php if (!empty($services)): ?>
                 <div class="business-services--grid">

@@ -7,7 +7,7 @@ if (isset($partners_section)):
         <div class="container">
             <div class="title-row text-center">
                 <h3 class="section-title section-title--xl"><?php echo $partners_section["title"] ?></h3>
-                <p>With Paayco you can ccept more than 20+ payment methods, offering both major <br> international and local payment options.</p>
+                <p><?php echo $partners_section["subtitle"] ?></p>
             </div>
 
             <div class="partner--swiper swiper">

@@ -26,24 +26,29 @@ if (isset($solutions_section)):
                                     </div>
                                     <div class="card-account-management--footer">
                                         <div class="card-account-management--img">
-                                            <div class="crm-cta--list">
-                                                <div class="crm-cta--list-item">
-                                                    <div class="payment-info">
-                                                        <div class="payment-info--title">
-                                                            <div class="flag">
-                                                                <?php if (!empty($card["icon"])): ?>
-                                                                    <img src="<?php echo $card["icon"]["url"] ?>"
-                                                                         alt="<?php echo @$card["icon"]["alt"] ?>">
-                                                                <?php endif; ?>
-                                                            </div>
-                                                            <div class="currency"><?php echo $card["side_title"] ?></div>
-                                                        </div>
-                                                        <div class="payment-info--account">
-                                                            <div class="amount"><?php echo $card["text"] ?></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+<!--                                            <div class="crm-cta--list">-->
+<!--                                                <div class="crm-cta--list-item">-->
+                                                    <?php if (!empty($card["icon"])): ?>
+                                                        <img src="<?php echo $card["icon"]["url"] ?>"
+                                                             alt="<?php echo @$card["icon"]["alt"] ?>">
+                                                    <?php endif; ?>
+
+<!--                                                    <div class="payment-info">-->
+<!--                                                        <div class="payment-info--title">-->
+<!--                                                            <div class="flag">-->
+<!--                                                                --><?php //if (!empty($card["icon"])): ?>
+<!--                                                                    <img src="--><?php //echo $card["icon"]["url"] ?><!--"-->
+<!--                                                                         alt="--><?php //echo @$card["icon"]["alt"] ?><!--">-->
+<!--                                                                --><?php //endif; ?>
+<!--                                                            </div>-->
+<!--                                                            <div class="currency">--><?php //echo $card["side_title"] ?><!--</div>-->
+<!--                                                        </div>-->
+<!--                                                        <div class="payment-info--account">-->
+<!--                                                            <div class="amount">--><?php //echo $card["text"] ?><!--</div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
                                         </div>
                                     </div>
                                 </div>
