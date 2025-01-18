@@ -53,6 +53,18 @@
     }
   }
 
+  &.btn-outline-gray {
+    color: #004520;
+    background-color: transparent;
+    border-color: #D0D5DD;
+
+    &:hover {
+      color: $body-color;
+      background-color: #D0D5DD;
+      border-color: #D0D5DD;
+    }
+  }
+
   &.btn-link {
     position: relative;
     display: inline-flex;
