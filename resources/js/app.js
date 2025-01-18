@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 document.addEventListener("DOMContentLoaded", function () {
   const navbarToggler = document.querySelector(".navbar-toggler");
   const body = document.body;
@@ -18,6 +20,117 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("headerNav").addEventListener("shown.bs.collapse", function () {
     body.classList.add("no-scroll");
+  });
+
+  // GSAP timeline
+  const heroTimeline = gsap.timeline();
+
+  // Animate the center images first
+  heroTimeline.fromTo(
+    ".hero--personal-updated .hero--content-images .images--center img",
+    {
+      opacity: 0,
+      y: 50,
+      scale: 0.8,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.8,
+      ease: "power1.out",
+      stagger: 0.3,
+    }
+  );
+
+  // Animate the left images
+  heroTimeline.fromTo(
+    ".hero--personal-updated .hero--content-images .images--left img",
+    {
+      opacity: 0,
+      x: -60,
+      scale: 0.9,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      duration: 0.7,
+      ease: "power2.out",
+      stagger: 0.2,
+    },
+    "-=0.3"
+  );
+
+  // Animate the right images
+  heroTimeline.fromTo(
+    ".hero--personal-updated .hero--content-images .images--right img",
+    {
+      opacity: 0,
+      x: 60,
+      scale: 0.9,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      duration: 0.7,
+      ease: "power2.out",
+      stagger: 0.2,
+    },
+    "-=0.3"
+  );
+
+  // Mouse movement parallax effect
+  document.addEventListener("mousemove", (e) => {
+    const { clientX, clientY } = e;
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    const xRatio = (clientX / windowWidth) * 2 - 1;
+    const yRatio = (clientY / windowHeight) * 2 - 1;
+
+    // Center Images Movement
+    document
+      .querySelectorAll(".hero--personal-updated .hero--content-images .images--center img")
+      .forEach((img, index) => {
+        const intensity = (index + 1) * 5;
+        gsap.to(img, {
+          x: xRatio * intensity,
+          y: yRatio * intensity,
+          scale: 1 + xRatio * 0.05,
+          duration: 0.4,
+          ease: "power2.out",
+        });
+      });
+
+    // Left Images Movement
+    document
+      .querySelectorAll(".hero--personal-updated .hero--content-images .images--left img")
+      .forEach((img, index) => {
+        const intensity = (index + 1) * 10;
+        gsap.to(img, {
+          x: xRatio * -intensity,
+          y: yRatio * intensity,
+          scale: 1 + yRatio * 0.05,
+          duration: 0.4,
+          ease: "power2.out",
+        });
+      });
+
+    // Right Images Movement
+    document
+      .querySelectorAll(".hero--personal-updated .hero--content-images .images--right img")
+      .forEach((img, index) => {
+        const intensity = (index + 1) * 10;
+        gsap.to(img, {
+          x: xRatio * intensity,
+          y: yRatio * -intensity,
+          scale: 1 + xRatio * 0.05,
+          duration: 0.4,
+          ease: "power2.out",
+        });
+      });
   });
 });
 
@@ -162,7 +275,7 @@ var swiper = new Swiper(".partner--swiper", {
     576: {
       spaceBetween: 100,
     },
-  }
+  },
 });
 
 // Digital Solution Slider
