@@ -287,7 +287,7 @@
 		&--grid {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
-			gap: 50px 30px;
+			gap: 30px 50px;
 
 			&.security-text--grid-four-col {
 				// > 1200px
@@ -307,14 +307,14 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: 35px;
-				height: 35px;
-				background-color: $secondary;
+				width: 50px;
+				height: 50px;
+				background-color: #24EC7F;
 				border-radius: 50%;
 				margin-bottom: 20px;
 
 				img {
-					max-height: 19px;
+					max-height: 30px;
 				}
 			}
 
@@ -325,7 +325,7 @@
 					margin-bottom: 15px;
 				}
 				p {
-					line-height: 1.4;
+					line-height: 1.6;
 				}
 				&--cta {
 					margin-top: 20px;

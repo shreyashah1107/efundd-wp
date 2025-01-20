@@ -65,6 +65,18 @@
     }
   }
 
+  &.btn-white {
+    color: #00423C;
+    background-color: $white;
+    border-color: $white;
+
+    &:hover {
+      color: $body-color;
+      background-color: $light-green;
+      border-color: $light-green;
+    }
+  }
+
   &.btn-link {
     position: relative;
     display: inline-flex;

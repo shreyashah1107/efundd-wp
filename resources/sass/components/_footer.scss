@@ -1,6 +1,11 @@
 .footer {
-  background-color: $primary;
+  background-color: #001C0D;
+  color: $white;
   overflow: hidden;
+
+  p {
+    color: inherit;
+  }
 
   &--grid {
     display: grid;
@@ -68,6 +73,7 @@
       }
 
       h4 {
+        color: $white;
         font-size: 2rem;
         margin-bottom: 15px;
       }
