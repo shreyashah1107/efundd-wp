@@ -2,7 +2,7 @@
   display: inline-block;
   padding: 12px 24px;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   text-decoration: none;
   border-radius: 30px;
@@ -13,100 +13,108 @@
     text-decoration: none;
   }
 
-  &.btn-light-green {
-    color: $body-color;
-    background-color: $light-green;
-    border-color: $light-green;
+  &.btn-bright-green {
+    color: $content-link;
+    background-color: $bright-green;
+    border-color: $bright-green;
 
     &:hover {
       color: $white;
-      background-color: $body-color;
-      border-color: $body-color;
+      background-color: $content-link;
+      border-color: $content-link;
     }
   }
 
-  &.btn-outline-light-green {
-    color: $white;
+  &.btn-outline-bright-green {
+    color: $bright-green;
     background-color: transparent;
-    border-color: $light-green;
+    border-color: $bright-green;
 
     &:hover {
-      color: $body-color;
-      background-color: $light-green;
-      border-color: $light-green;
-    }
-
-    &.text-dark {
-      color: $body-color;
+      color: $content-link;
+      background-color: $bright-green;
+      border-color: $bright-green;
     }
   }
 
-  &.btn-black {
-    color: $white;
-    background-color: $body-color;
-    border-color: $body-color;
-
-    &:hover {
-      color: $body-color;
-      background-color: $light-green;
-      border-color: $light-green;
-    }
-  }
-
-  &.btn-outline-gray {
-    color: #004520;
+  &.btn-outline-content-link {
+    color: $content-link;
     background-color: transparent;
-    border-color: #D0D5DD;
+    border-color: $content-link;
 
     &:hover {
-      color: $body-color;
-      background-color: #D0D5DD;
-      border-color: #D0D5DD;
+      color: $white;
+      background-color: $content-link;
+      border-color: $content-link;
     }
   }
+
+  // &.btn-black {
+  //   color: $white;
+  //   background-color: $body-color;
+  //   border-color: $body-color;
+
+  //   &:hover {
+  //     color: $body-color;
+  //     background-color: $bright-green;
+  //     border-color: $bright-green;
+  //   }
+  // }
+
+  // &.btn-outline-gray {
+  //   color: #004520;
+  //   background-color: transparent;
+  //   border-color: #D0D5DD;
+
+  //   &:hover {
+  //     color: $body-color;
+  //     background-color: #D0D5DD;
+  //     border-color: #D0D5DD;
+  //   }
+  // }
 
   &.btn-white {
-    color: #00423C;
+    color: $content-link;
     background-color: $white;
     border-color: $white;
 
     &:hover {
-      color: $body-color;
-      background-color: $light-green;
-      border-color: $light-green;
+      color: $content-link;
+      background-color: $bright-green;
+      border-color: $bright-green;
     }
   }
 
-  &.btn-link {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0;
-    color: $body-color;
-    font-weight: 500;
+  // &.btn-link {
+  //   position: relative;
+  //   display: inline-flex;
+  //   align-items: center;
+  //   gap: 8px;
+  //   padding: 0;
+  //   color: $body-color;
+  //   font-weight: 500;
 
-    .icon {
-      display: block;
-      width: 12px;
-      height: 12px;
-      background: url(../img/other/angle-right-black.svg);
-      background-repeat: no-repeat;
-      background-size: 8px;
-    }
+  //   .icon {
+  //     display: block;
+  //     width: 12px;
+  //     height: 12px;
+  //     background: url(../img/other/angle-right-black.svg);
+  //     background-repeat: no-repeat;
+  //     background-size: 8px;
+  //   }
 
-    &:hover {
-      opacity: .7;
-    }
+  //   &:hover {
+  //     opacity: .7;
+  //   }
 
-    &--green {
-      color: $secondary;
+  //   &--green {
+  //     color: $secondary;
 
-      .icon {
-        background-image: url(../img/other/angle-right-green.svg);
-      }
-    }
-  }
+  //     .icon {
+  //       background-image: url(../img/other/angle-right-green.svg);
+  //     }
+  //   }
+  // }
 
   &-grp {
     display: flex;

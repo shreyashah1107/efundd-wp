@@ -1,16 +1,22 @@
-$grid-gutter-width: 60px !default;
+$grid-gutter-width: 48px !default;
 
 $body-bg: #ffffff;
-$primary: #00423C;
-$secondary: #097152;
-$light-green: #24EC7E;
-$body-color: #0C0A09;
-$gray: #EDEFEC;
+$bright-green: #24EC7E;
+$deep-green: #002913;
+
+$content-primary: #002913;
+$content-secondary: #5E605F;
+$content-tertiary: #EBF0ED;
+$content-link: #004520;
+
+$primary: $content-primary;
+$body-color: $content-secondary;
 
 // Font Variables
 $font-family-base: "Inter", sans-serif;
 
 $font-weight-base: 300;
-$header-font-weight: 600;
+$header-font-weight: 700;
+$header-font-color: $content-primary;
 
 $cubic-transition: cubic-bezier(0.6, 0.01, 0.1, 0.96);

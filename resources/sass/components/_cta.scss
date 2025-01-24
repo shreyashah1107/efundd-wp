@@ -7,11 +7,11 @@
     position: relative;
     z-index: 1;
     color: $white;
-    padding: 250px 0 300px;
+    padding: 250px 0 280px;
 
     p {
       color: #f3f6f4;
-      font-size: 2rem;
+      @extend .text-lg;
       width: 75%;
       margin: 0 auto 30px;
     }
@@ -43,19 +43,7 @@
 @include media-breakpoint-down(lg) {
   .cta {
     &--content {
-      padding: 100px 0 40px;
-    }
-
-    &--img {
-      position: relative;
-      left: 0;
-      margin: 0 auto;
-    }
-
-    &.cta--alt {
-      .cta--img {
-        margin-bottom: 30px;
-      }
+      padding: 100px 0;
     }
   }
 }
@@ -64,16 +52,11 @@
 @include media-breakpoint-down(md) {
   .cta {
     &--content {
-      padding-top: 60px;
-    }
-  }
-}
+      padding: 60px 0;
 
-// < 576px
-@include media-breakpoint-down(sm) {
-  .cta {
-    &--img {
-      width: 90%;
+      p {
+        width: 100%;
+      }
     }
   }
 }

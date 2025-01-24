@@ -1,22 +1,18 @@
 .hero {
-  padding: 100px 0;
-  background-color: $primary;
   overflow: hidden;
 
   &--content {
-    color: $white;
     text-align: center;
 
     h1 {
-      text-transform: uppercase;
-      font-size: 7rem;
-      font-weight: 700;
       margin-bottom: 15px;
+      text-transform: uppercase;
     }
 
     p {
-      font-size: 2.4rem;
-      margin-bottom: 30px;
+      max-width: 55%;
+      font-size: 2rem;
+      margin: 15px auto 30px;
     }
 
     .btn {
@@ -24,194 +20,12 @@
     }
   }
 
-  &--swiper {
-    margin-top: 70px;
-    overflow: visible;
-
-    .swiper-slide {
-      height: initial;
-    }
-
-    .card-hero {
-      background-color: $secondary;
-      padding: 30px;
-      border-radius: 10px;
-      color: $white;
-
-      &--title {
-        font-weight: 600;
-        margin-bottom: 30px;
-      }
-
-      &--img {
-        padding: 0 30px;
-        height: 280px;
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-        }
-      }
-    }
-  }
-
-  &--personal,
-  &--corporate {
-    padding-top: 50px;
-  }
-
-  &--corporate {
+  &--personal {
     position: relative;
-    padding: 200px 0;
-
-    .hero--img {
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 50px;
-      width: 55%;
-
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        object-position: right;
-      }
-    }
-
-    .text-certified {
-      display: inline-flex;
-      align-items: center;
-      text-align: left;
-      padding: 12px;
-      margin-top: 50px;
-      background-color: $secondary;
-      border-radius: 6px;
-      gap: 12px;
-
-      .icon {
-        display: flex;
-        flex-shrink: 0;
-        width: 20px;
-      }
-
-      .text {
-        color: $white;
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-    }
-  }
-
-  &--online-payment {
-    padding: 30px 0 60px;
-
-    .hero--content {
-      h1 {
-        text-transform: none;
-        font-size: 4.8rem;
-      }
-
-      p {
-        font-size: 1.8rem;
-      }
-
-      .email-wrapper {
-        position: relative;
-        max-width: 70%;
-
-        .form-control {
-          background-color: transparent;
-          padding: 20px 150px 20px 20px;
-          font-size: 1.6rem;
-          font-weight: 500;
-          color: $white;
-          border-radius: 8px;
-
-          &::-webkit-input-placeholder {
-            /* Chrome/Opera/Safari */
-            color: $white;
-          }
-          &::-moz-placeholder {
-            /* Firefox 19+ */
-            color: $white;
-          }
-          &:-ms-input-placeholder {
-            /* IE 10+ */
-            color: $white;
-          }
-          &:-moz-placeholder {
-            /* Firefox 18- */
-            color: $white;
-          }
-        }
-
-        .btn {
-          position: absolute;
-          right: 8px;
-          top: 50%;
-          transform: translateY(-50%);
-          border-radius: 8px;
-        }
-      }
-    }
-  }
-
-  &--in-person-payment {
-    padding: 50px 0 100px;
-    background: linear-gradient(180deg, #aff8c8 0%, #ffffff 100%);
-
-    .hero--content {
-      h1 {
-        color: $body-color;
-      }
-
-      .hero--img {
-        margin-top: 60px;
-
-        img {
-          max-height: 400px;
-        }
-      }
-    }
-  }
-
-  &--components,
-  &--checkout {
-    padding: 50px 0;
-
-    // > 992px
-    @include media-breakpoint-up(lg) {
-      .hero--content {
-        h1 {
-          font-size: 6rem;
-        }
-
-        p {
-          font-size: 1.8rem;
-        }
-      }
-    }
-  }
-
-  &--personal-updated {
     background-color: $white;
+    padding: 50px 0 0;
 
     .hero--content {
-      h1 {
-        text-transform: none;
-        color: #002913;
-        font-size: 7.2rem;
-      }
-
-      p {
-        font-size: 2rem;
-        max-width: 55%;
-        margin: 15px auto 30px;
-        color: #5e605f;
-      }
-
       &-images {
         position: relative;
 
@@ -247,7 +61,7 @@
             .left-top,
             .left-bottom {
               position: absolute;
-              left: 10%;
+              left: 15%;
             }
 
             .left-top {
@@ -264,7 +78,7 @@
             .right-top,
             .right-bottom {
               position: absolute;
-              right: 12%;
+              right: 16%;
             }
 
             .right-top {
@@ -281,47 +95,65 @@
   }
 }
 
-// < 1400px
+// < 1500px
 @include media-breakpoint-down(xxl) {
-  .hero--corporate {
-    padding: 50px 0 100px;
+  .hero--personal .hero--content-images {
+    .images {
+      &--left {
+        .left-top,
+        .left-bottom {
+          left: 5%;
+        }
+      }
 
-    .hero--img {
-      width: 50%;
-      bottom: 0;
+      &--right {
+        .right-top,
+        .right-bottom {
+          right: 5%;
+        }
+      }
     }
   }
 }
 
 // < 1200px
 @include media-breakpoint-down(xl) {
-  .hero {
-    padding-top: 50px;
+  .hero--personal .hero--content-images {
+    .images {
+      max-width: 720px;
+      margin: 0 auto;
 
-    &--swiper {
-      .card-hero {
-        &--img {
-          height: 150px;
+      &--left {
+        .left-top {
+          top: 48%;
+          transform: translateY(-100%);
+        }
+
+        .left-bottom {
+          bottom: 150px;
         }
       }
-    }
 
-    &--corporate {
-      .hero--img {
-        position: static;
-        width: 100%;
-        padding: 0 $grid-gutter-width/2;
-        text-align: center;
-
+      &--center {
         img {
-          max-width: 66.66666667%;
+          width: 150px;
         }
       }
-    }
 
-    &--online-payment {
-      .hero--content .email-wrapper {
-        margin: 0 auto;
+      &--right {
+        .right-top {
+          top: 130px;
+        }
+        .right-bottom {
+          bottom: 130px;
+        }
+      }
+
+      &--left,
+      &--right {
+        img {
+          width: 200px;
+        }
       }
     }
   }
@@ -332,10 +164,10 @@
   .hero {
     &--content {
       h1 {
-        font-size: 5rem;
+        text-transform: none;
       }
-
       p {
+        max-width: 80%;
         font-size: 1.8rem;
       }
     }
@@ -345,38 +177,54 @@
 // < 768px
 @include media-breakpoint-down(md) {
   .hero {
-    padding: 60px 0;
-
     &--content {
-      h1 {
-        font-size: 3.6rem;
-      }
-
       p {
+        max-width: 100%;
         font-size: 1.6rem;
       }
     }
 
-    &--swiper {
-      margin-top: 50px;
-    }
+    &--personal .hero--content-images {
+      .images {
+        padding: 40px 0;
+        max-width: 530px;
 
-    &--corporate {
-      .hero--img {
-        img {
-          max-width: 100%;
+        &--left {
+          .left-top {
+            top: 55%;
+          }
+
+          .left-bottom {
+            bottom: 0;
+          }
         }
-      }
-    }
 
-    &--online-payment {
-      .hero--content .email-wrapper {
-        max-width: 100%;
+        &--center {
+          gap: 20px;
 
-        .btn {
-          position: static;
-          transform: none;
-          margin-top: 20px;
+          img {
+            width: 120px;
+          }
+
+          .center-right {
+            margin-top: 50px;
+          }
+        }
+
+        &--right {
+          .right-top {
+            top: 30px;
+          }
+          .right-bottom {
+            bottom: 70px;
+          }
+        }
+
+        &--left,
+        &--right {
+          img {
+            width: 150px;
+          }
         }
       }
     }
@@ -385,33 +233,45 @@
 
 // < 576px
 @include media-breakpoint-down(sm) {
-  .hero {
-    &--content {
-      h1 {
-        font-size: 3rem;
-      }
-    }
+  .hero--personal .hero--content-images {
+    .images {
+      max-width: 270px;
 
-    &--corporate {
-      .hero--img {
+      &--left {
+        .left-top,
+        .left-bottom {
+          left: -20px;  
+        }
+
+        .left-top {
+          top: 50%;
+        }
+
+        .left-bottom {
+          bottom: 40px;
+        }
+      }
+
+      &--center {
+        gap: 10px;
+
         img {
-          max-width: 100%;
+          width: 100px;
         }
       }
-    }
 
-    &--online-payment {
-      .hero--content {
-        h1 {
-          font-size: 3rem;
+      &--right {
+        .right-top,
+        .right-bottom {
+          right: -20px;  
         }
       }
-    }
 
-    &--in-person-payment {
-      .subtitle {
-        background-color: #008664;
-        color: $white;
+      &--left,
+      &--right {
+        img {
+          width: 100px;
+        }
       }
     }
   }
