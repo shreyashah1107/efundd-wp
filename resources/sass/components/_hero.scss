@@ -1,5 +1,30 @@
 .hero {
+  position: relative;
   overflow: hidden;
+
+  &--img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($deep-green, 0.5);
+    }
+  }
 
   &--content {
     text-align: center;
@@ -18,6 +43,11 @@
     .btn {
       min-width: 150px;
     }
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
   }
 
   &--personal {
@@ -93,6 +123,17 @@
       }
     }
   }
+
+  &--corporate {
+    .hero--content {
+      padding: 200px 0;
+
+      h1,
+      p {
+        color: $white;
+      }
+    }
+  }
 }
 
 // < 1500px
@@ -118,42 +159,50 @@
 
 // < 1200px
 @include media-breakpoint-down(xl) {
-  .hero--personal .hero--content-images {
-    .images {
-      max-width: 720px;
-      margin: 0 auto;
+  .hero {
+    &--personal .hero--content-images {
+      .images {
+        max-width: 720px;
+        margin: 0 auto;
 
-      &--left {
-        .left-top {
-          top: 48%;
-          transform: translateY(-100%);
+        &--left {
+          .left-top {
+            top: 48%;
+            transform: translateY(-100%);
+          }
+
+          .left-bottom {
+            bottom: 150px;
+          }
         }
 
-        .left-bottom {
-          bottom: 150px;
+        &--center {
+          img {
+            width: 150px;
+          }
+        }
+
+        &--right {
+          .right-top {
+            top: 130px;
+          }
+          .right-bottom {
+            bottom: 130px;
+          }
+        }
+
+        &--left,
+        &--right {
+          img {
+            width: 200px;
+          }
         }
       }
+    }
 
-      &--center {
-        img {
-          width: 150px;
-        }
-      }
-
-      &--right {
-        .right-top {
-          top: 130px;
-        }
-        .right-bottom {
-          bottom: 130px;
-        }
-      }
-
-      &--left,
-      &--right {
-        img {
-          width: 200px;
-        }
+    &--corporate {
+      .hero--content {
+        padding: 150px 0;
       }
     }
   }
@@ -228,6 +277,12 @@
         }
       }
     }
+
+    &--corporate {
+      .hero--content {
+        padding: 80px 0;
+      }
+    }
   }
 }
 
@@ -240,7 +295,7 @@
       &--left {
         .left-top,
         .left-bottom {
-          left: -20px;  
+          left: -20px;
         }
 
         .left-top {
@@ -263,7 +318,7 @@
       &--right {
         .right-top,
         .right-bottom {
-          right: -20px;  
+          right: -20px;
         }
       }
 
