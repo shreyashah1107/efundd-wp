@@ -8,7 +8,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-7">
           <div class="title-row">
-            <h3 class="section-title">Enjoy the benefits everywhere Mastercard is accepted with cashback</h3>
+            <h3 class="section-title">Enjoy Exclusive Cashback Everywhere Mastercard is Accepted</h3>
           </div>
 
           <div class="images">

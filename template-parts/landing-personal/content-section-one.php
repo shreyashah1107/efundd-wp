@@ -9,7 +9,7 @@
           <div class="row align-items-center">
             <div class="col-lg-7 col-xl-6 text-center text-lg-start">
               <div class="title-row">
-                <h3 class="section-title section-title--lg"><span>Unbeatable</span> transfer rates that save you more</h3>
+                <h3 class="section-title"><span>Unbeatable</span> Transfer Rates (unbeatable to stay underlined)</h3>
                 <p>Enjoy seamless transactions with fees so low, you'll wonder why you ever paid more. No hidden fees—just clear, transparent pricing every time.</p>
               </div>
             </div>

@@ -1,0 +1,70 @@
+.card-payment {
+  &--img {
+    background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
+    border-radius: 16px;
+    text-align: center;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  &--text {
+    @extend .p;
+    margin: 10px 0 15px;
+  }
+
+  .btn {
+    min-width: 180px;
+  }
+}
+
+.card-sell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  background: linear-gradient(0deg, #c6f5a8, #c6f5a8),
+    linear-gradient(180deg, rgba(0, 28, 13, 0) 17%, rgba(0, 25, 12, 0.2) 85.95%);
+
+  &--img {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &--content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    background-color: rgba($black, 0.5);
+
+    .title,
+    .text {
+      color: $white;
+    }
+
+    .title {
+      font-weight: 500;
+    }
+
+    .text {
+      font-size: 1.4rem;
+      margin: 5px 0 0;
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .card-sell {
+    &--img {
+      height: 400px;
+    }
+  }
+}
