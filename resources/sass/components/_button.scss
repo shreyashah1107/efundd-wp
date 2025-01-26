@@ -85,36 +85,20 @@
     }
   }
 
-  // &.btn-link {
-  //   position: relative;
-  //   display: inline-flex;
-  //   align-items: center;
-  //   gap: 8px;
-  //   padding: 0;
-  //   color: $body-color;
-  //   font-weight: 500;
+  &.btn-link {
+    position: relative;
+    padding: 0;
+    color: $body-color;
+    font-weight: 500;
 
-  //   .icon {
-  //     display: block;
-  //     width: 12px;
-  //     height: 12px;
-  //     background: url(../img/other/angle-right-black.svg);
-  //     background-repeat: no-repeat;
-  //     background-size: 8px;
-  //   }
+    &:hover {
+      opacity: .7;
+    }
 
-  //   &:hover {
-  //     opacity: .7;
-  //   }
-
-  //   &--green {
-  //     color: $secondary;
-
-  //     .icon {
-  //       background-image: url(../img/other/angle-right-green.svg);
-  //     }
-  //   }
-  // }
+    &--bright-green {
+      color: $bright-green;
+    }
+  }
 
   &-grp {
     display: flex;
