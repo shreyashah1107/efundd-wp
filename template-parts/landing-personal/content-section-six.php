@@ -78,12 +78,18 @@
                 </div>
 
                 <div class="slider-controls">
-                  <button class="prev">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/left-arrow.svg" alt="Image">
-                  </button>
-                  <button class="next">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/right-arrow.svg" alt="Image">
-                  </button>
+                  <div class="slider-navigation">
+                    <button class="prev">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/left-arrow.svg" alt="Image">
+                    </button>
+                    <button class="next">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/right-arrow.svg" alt="Image">
+                    </button>
+                  </div>
+
+                  <div class="slider-pagination">
+                    1 of 4
+                  </div>
                 </div>
               </div>
               <!-- End Stacked Slider -->
@@ -101,8 +107,10 @@
   const cards = document.querySelectorAll(".stacked-slider .stacked-slider--card");
   const prevButton = document.querySelector(".slider-controls .prev");
   const nextButton = document.querySelector(".slider-controls .next");
+  const pagination = document.querySelector(".slider-controls .slider-pagination");
 
   let currentIndex = 0;
+  let autoPlayInterval;
 
   function updateSlider() {
     cards.forEach((card, index) => {
@@ -130,22 +138,39 @@
         card.style.zIndex = "0";
       }
     });
+
+    pagination.textContent = `${currentIndex + 1} of ${cards.length}`;
+  }
+
+  function autoPlaySlider() {
+    autoPlayInterval = setInterval(() => {
+      if (currentIndex === cards.length - 1) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      updateSlider();
+    }, 3000);
   }
 
   if (nextButton && prevButton) {
     nextButton.addEventListener("click", () => {
+      clearInterval(autoPlayInterval);
       currentIndex = (currentIndex + 1) % cards.length;
       updateSlider();
+      autoPlaySlider();
     });
 
     prevButton.addEventListener("click", () => {
+      clearInterval(autoPlayInterval);
       currentIndex = (currentIndex - 1 + cards.length) % cards.length;
       updateSlider();
+      autoPlaySlider();
     });
   } else {
     console.error("Error: Navigation buttons not found in the DOM.");
   }
 
-  // Initialize the slider
   updateSlider();
+  autoPlaySlider();
 </script>

@@ -157,14 +157,15 @@ document.addEventListener("DOMContentLoaded", function () {
     { trigger: ".personal-content-section--five", start: "top center", toggleActions: "play none none none" }
   );
 
-  // Animate country images horizontally
-  const countryImages = document.querySelector(".personal-content-section--five .country-images");
-  if (countryImages) {
-    gsap.to(countryImages, {
-      x: () => `-${countryImages.scrollWidth - window.innerWidth}px`,
+  // Animate flags horizontally as a whole
+  const scrollWrapper = document.querySelector(".business-content-section--twelve .scroll-wrapper");
+
+  if (scrollWrapper) {
+    gsap.to(scrollWrapper, {
+      x: () => `-${scrollWrapper.scrollWidth - window.innerWidth}px`,
       ease: "none",
       scrollTrigger: {
-        trigger: ".personal-content-section--five",
+        trigger: ".business-content-section--twelve",
         start: "top center",
         end: "bottom center",
         scrub: 1,
@@ -230,6 +231,128 @@ document.addEventListener("DOMContentLoaded", function () {
     freeMode: true,
     freeModeMomentum: false,
   });
+
+  // Digital solution Slider
+  var swiper = new Swiper(".digital-solution--swiper", {
+    slidesPerView: "1",
+    centeredSlides: true,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+
+    breakpoints: {
+      576: {
+        slidesPerView: 1.5,
+      },
+      768: {
+        slidesPerView: 2.2,
+      },
+      992: {
+        slidesPerView: 3.2,
+      },
+    },
+  });
+
+  // Animate the coin-slider on scroll
+  const coinsTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".corporate-content-section--nine",
+      start: "top +=50%",
+      end: "bottom +=50%",
+      scrub: 1.2,
+      invalidateOnRefresh: true,
+    },
+  });
+  coinsTl
+    .fromTo(
+      ".coin-slider--wrapper",
+      {
+        xPercent: -100,
+      },
+      { xPercent: 0 },
+      "coins"
+    )
+    .fromTo(
+      ".coin",
+      {
+        rotate: -720,
+      },
+      { rotate: 0 },
+      "coins"
+    );
   // End: Corporate page
+
+  // Start: Business page
+  // Flag images animation
+  const flagsTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".business-content-section--eight",
+      start: "top +=95%",
+      end: "bottom top",
+      scrub: 1.2,
+    },
+  });
+  flagsTl
+    .fromTo(
+      ".flags-row.flags-row--one",
+      {
+        xPercent: -10,
+      },
+      { xPercent: 10 },
+      "flag"
+    )
+    .fromTo(
+      ".flags-row.flags-row--two",
+      {
+        xPercent: 10,
+      },
+      { xPercent: -10 },
+      "flag"
+    );
+
+  // Country Swiper Slider
+  var swiperOne = new Swiper(".country-swiper--one, .country-swiper--three", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    freeModeMomentum: false,
+    breakpoints: {
+      576: {
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  var swiperTwo = new Swiper(".country-swiper--two", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+      reverseDirection: true,
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    freeModeMomentum: false,
+    breakpoints: {
+      576: {
+        spaceBetween: 30,
+      },
+    },
+  });
+  // End: Business page
 });
 
