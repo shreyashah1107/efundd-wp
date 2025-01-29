@@ -21,6 +21,18 @@
         <div class="coin">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/coin-5.png" alt="Image">
         </div>
+        <div class="coin">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/coin-6.png" alt="Image">
+        </div>
+        <div class="coin">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/coin-7.png" alt="Image">
+        </div>
+        <div class="coin">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/coin-8.png" alt="Image">
+        </div>
+        <div class="coin">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/coin-9.png" alt="Image">
+        </div>
       </div>
     </div>
   </div>
