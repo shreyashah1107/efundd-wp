@@ -1,6 +1,10 @@
 <section class="hero hero--corporate">
   <div class="hero--img">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero.png" alt="Image">
+    <video poster="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero.png" autoplay muted loop>
+      <source src=" <?php echo get_template_directory_uri(); ?>/assets/video/corporate.mp4" type="video/mp4">
+    </video>
+
+    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero.png" alt="Image"> -->
   </div>
   <div class="content-wrapper">
     <div class="container">

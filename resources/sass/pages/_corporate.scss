@@ -151,7 +151,7 @@
     padding: 50px 0;
 
     .section-title {
-      color: $bright-green;
+      color: $white;
     }
 
     .payment-list {
@@ -195,10 +195,39 @@
 
   &--nine {
     background-color: $content-link;
-    padding: 50px 0;
-    color: $white;
-    font-size: 3rem;
-    text-align: center;
+    padding: 100px 0;
+    overflow: hidden;
+
+    .content-wrapper {
+      gap: 20px;
+    }
+
+    .coin-swipe {
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+
+      img {
+        width: 440px;
+      }
+    }
+
+    .coin-slider {
+      display: flex;
+      gap: 20px;
+
+      &--wrapper {
+        position: relative;
+      }
+
+      .coin {
+        flex-shrink: 0;
+
+        img {
+          width: 160px;
+        }
+      }
+    }
   }
 
   &--ten {
@@ -207,7 +236,7 @@
 
     .title-row {
       h2 {
-        color: $bright-green;
+        color: $white;
       }
 
       p {
@@ -381,6 +410,20 @@
   }
 }
 
+// < 1400px
+@media (max-width: 1400px) {
+  .corporate-content-section--nine {
+    .coin-swipe img {
+      width: 300px;
+    }
+    .coin-slider {
+      .coin img {
+        width: 110px;
+      }
+    }
+  }
+}
+
 // < 1200px
 @include media-breakpoint-down(xl) {
   .corporate-content-section {
@@ -473,6 +516,7 @@
     &--two,
     &--five,
     &--seven,
+    &--nine,
     &--eleven,
     &--thirteen,
     &--fourteen {
@@ -513,6 +557,18 @@
           h4 {
             font-size: 1.6rem;
           }
+        }
+      }
+    }
+
+    &--nine {
+      .content-wrapper {
+        justify-content: center;
+      }
+
+      .coin-slider {
+        .coin img {
+          width: 100px;
         }
       }
     }
