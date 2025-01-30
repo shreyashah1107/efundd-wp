@@ -1,4 +1,8 @@
 <section class="personal-content-section--three">
+  <div class="section-bg section-bg--center">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-center-bg.svg" alt="Image">
+  </div>
+
   <div class="section-bg section-bg--right">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-right-bg.svg" alt="Image">
   </div>
@@ -8,7 +12,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-7">
           <div class="title-row">
-            <h3 class="section-title">Enjoy Exclusive Cashback Everywhere Mastercard is Accepted</h3>
+            <h3 class="section-title">Enjoy exclusive cashback everywhere Mastercard is accepted</h3>
           </div>
 
           <div class="images">

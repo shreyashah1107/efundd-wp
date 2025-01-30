@@ -1,6 +1,6 @@
 <section class="personal-content-section--six">
-  <div class="section-bg section-bg--left">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-left-bg.svg" alt="Image">
+  <div class="section-bg section-bg--right">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-right-bg.svg" alt="Image">
   </div>
 
   <div class="content-wrapper">
