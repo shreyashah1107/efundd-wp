@@ -26,6 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   // Start: Personal page
+  let slides = document.querySelectorAll(".slide-img");
+  let currentIndex = 0;
+
+  function showNextSlide() {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 3000);
+
   // Function to create GSAP animations
   function animateElement(selector, fromProps, toProps, scrollTrigger = null) {
     if (document.querySelector(selector)) {
@@ -48,68 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // If hero section exists
-  if (document.querySelector(".hero--personal")) {
-    const heroTimeline = gsap.timeline();
-
-    // Animate center images
-    heroTimeline.fromTo(
-      ".hero--personal .hero--content-images .images--center img",
-      { opacity: 0, y: 50, scale: 0.8 },
-      { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "power1.out", stagger: 0.3 }
-    );
-
-    // Animate left images
-    heroTimeline.fromTo(
-      ".hero--personal .hero--content-images .images--left img",
-      { opacity: 0, x: -60, scale: 0.9 },
-      { opacity: 1, x: 0, scale: 1, duration: 0.7, ease: "power2.out", stagger: 0.2 },
-      "-=0.3"
-    );
-
-    // Animate right images
-    heroTimeline.fromTo(
-      ".hero--personal .hero--content-images .images--right img",
-      { opacity: 0, x: 60, scale: 0.9 },
-      { opacity: 1, x: 0, scale: 1, duration: 0.7, ease: "power2.out", stagger: 0.2 },
-      "-=0.3"
-    );
-
-    // Parallax effect on mouse movement
-    document.querySelector(".hero--personal").addEventListener("mousemove", (e) => {
-      const { clientX, clientY } = e;
-      const windowWidth = window.innerWidth;
-      const windowHeight = window.innerHeight;
-
-      const xRatio = (clientX / windowWidth) * 2 - 1;
-      const yRatio = (clientY / windowHeight) * 2 - 1;
-
-      const parallaxEffect = (selector, xMultiplier, yMultiplier, scaleMultiplier = 0.05) => {
-        document.querySelectorAll(selector).forEach((img, index) => {
-          const intensity = (index + 1) * 5 * xMultiplier;
-          gsap.to(img, {
-            x: xRatio * intensity,
-            y: yRatio * intensity * yMultiplier,
-            scale: 1 + scaleMultiplier * (xRatio + yRatio),
-            duration: 0.4,
-            ease: "power2.out",
-          });
-        });
-      };
-
-      parallaxEffect(".hero--personal .hero--content-images .images--center img", 1, 1);
-      parallaxEffect(".hero--personal .hero--content-images .images--left img", -1, 1);
-      parallaxEffect(".hero--personal .hero--content-images .images--right img", 1, -1);
-    });
-  }
-
   // Section-based animations
   const sectionAnimations = [
     { selector: ".personal-content-section--one .image img", trigger: ".personal-content-section--one" },
     { selector: ".personal-content-section--two .image img", trigger: ".personal-content-section--two" },
     { selector: ".personal-content-section--four .image img", trigger: ".personal-content-section--four" },
     { selector: ".personal-content-section--seven .image img", trigger: ".personal-content-section--seven" },
-    { selector: ".personal-content-section--eight .image img", trigger: ".personal-content-section--eight" },
+    // { selector: ".personal-content-section--eight .image img", trigger: ".personal-content-section--eight" },
   ];
 
   sectionAnimations.forEach(({ selector, trigger }) => {
@@ -172,6 +128,20 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // Flag images animation
+  const flagsTlPersonal = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".personal-content-section--five",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 1.2,
+      markers: false,
+    },
+  });
+  flagsTlPersonal
+    .fromTo(".flags-row.flags-row--one", { xPercent: -30 }, { xPercent: 30 }, "flagMove")
+    .fromTo(".flags-row.flags-row--two", { xPercent: 30 }, { xPercent: -30 }, "flagMove");
   // End: Personal page
 
   // Start: Corporate page
@@ -237,9 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "1",
     centeredSlides: true,
     loop: true,
-    speed: 1000,
+    speed: 500,
     autoplay: {
-      delay: 2000,
+      delay: 800,
     },
 
     breakpoints: {
@@ -286,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Start: Business page
   // Flag images animation
-  const flagsTl = gsap.timeline({
+  const flagsTlBusiness = gsap.timeline({
     scrollTrigger: {
       trigger: ".business-content-section--eight",
       start: "top +=95%",
@@ -294,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrub: 1.2,
     },
   });
-  flagsTl
+  flagsTlBusiness
     .fromTo(
       ".flags-row.flags-row--one",
       {

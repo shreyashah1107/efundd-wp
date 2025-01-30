@@ -43,6 +43,10 @@ get_header(); ?>
 <?php include "template-parts/landing-personal/content-section-eight.php" ?>
 <!-- End: Content Section Eight -->
 
+<!-- Start: Content Section Nine -->
+<?php include "template-parts/landing-personal/content-section-nine.php" ?>
+<!-- End: Content Section Nine -->
+
 <!-- Start: Security -->
 <?php include "template-parts/landing-personal/security.php" ?>
 <!-- End: Security -->

@@ -20,7 +20,15 @@
 
             <div class="col-lg-5 col-xl-5">
               <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/eight.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/mobile-bg.png" alt="Image">
+
+                <div class="images--slider">
+                  <img class="slide-img active" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/eight-1.png" alt="Image">
+
+                  <img class="slide-img" src=" <?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/eight-2.png" alt="Image">
+
+                  <img class="slide-img" src=" <?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/eight-3.png" alt="Image">
+                </div>
               </div>
             </div>
           </div>
