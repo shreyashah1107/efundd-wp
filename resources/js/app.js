@@ -2,6 +2,16 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
   const navbarToggler = document.querySelector(".navbar-toggler");
   const body = document.body;
 

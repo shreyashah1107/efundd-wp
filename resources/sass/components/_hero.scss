@@ -143,6 +143,7 @@
   }
 
   &--business {
+    padding-top: 100px;
     background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
 
     .hero--content {
@@ -306,6 +307,8 @@
     }
 
     &--business {
+      padding-top: 60px;
+      
       .hero--content {
         padding-top: 50px;
       }

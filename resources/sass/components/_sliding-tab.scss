@@ -4,7 +4,7 @@
   .tabs {
     display: flex;
     position: relative;
-    background-color: #008664;
+    // background-color: #008664;
     padding: 3px;
     border-radius: 99px;
 
@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 37px;
+      height: 48px;
       width: 120px;
       font-size: 1.4rem;
       font-weight: 500;
@@ -30,29 +30,29 @@
 
       &:checked {
         & + label {
-          color: $body-color;
+          color: #00413b;
         }
       }
     }
 
-    input[id=business-tab]:checked ~ .glider {
+    input[id="business-tab"]:checked ~ .glider {
       transform: translateX(100%);
     }
 
-    input[id=corporate-tab]:checked ~ .glider {
+    input[id="corporate-tab"]:checked ~ .glider {
       transform: translateX(0);
     }
 
-    input[id=personal-tab]:checked ~ .glider {
+    input[id="personal-tab"]:checked ~ .glider {
       transform: translateX(200%);
     }
 
     .glider {
       position: absolute;
       display: flex;
-      height: 37px;
+      height: 48px;
       width: 120px;
-      background-color: #AFF8C8;
+      background-color: #24ec7e;
       z-index: 1;
       border-radius: 99px;
       transition: 0.25s ease-out;
@@ -62,9 +62,9 @@
   &.sliding-tabs--alt {
     .tabs {
       color: $body-color;
-      background-color: #AFF8C8;
+      background-color: #aff8c8;
 
-      input[type=radio]:checked + label {
+      input[type="radio"]:checked + label {
         color: $white;
       }
 
