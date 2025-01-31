@@ -121,7 +121,7 @@
                         <?php if (!empty($button_text)): ?>
                             <li class="nav-item">
                                 <a href="<?php echo esc_url($button_link); ?>" title="<?php echo esc_html($button_text); ?>"
-                                    class="btn btn-light-green"><?php echo esc_html($button_text); ?></a>
+                                    class="btn btn-bright-green"><?php echo esc_html($button_text); ?></a>
                             </li>
                         <?php endif; ?>
                     </ul>
