@@ -17,11 +17,23 @@
               <div class="swiper-slide">
                 <div class="card-sell">
                   <div class="card-sell--img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/payment-1.png" alt="Image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell1.png" alt="Image">
+                  </div>
+                  <div class="card-sell--content">
+                    <h4 class="title">Payment Links</h4>
+                    <div class="text">Share a payment link directly from your dashboard</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card-sell">
+                  <div class="card-sell--img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell2.png" alt="Image">
                   </div>
                   <div class="card-sell--content">
                     <h4 class="title">Website payments</h4>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="text">Start accepting payments with our no code integration tools on all e-commerce portals</div>
                   </div>
                 </div>
               </div>
@@ -29,11 +41,11 @@
               <div class="swiper-slide">
                 <div class="card-sell">
                   <div class="card-sell--img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/payment-1.png" alt="Image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell3.png" alt="Image">
                   </div>
                   <div class="card-sell--content">
-                    <h4 class="title">Payment links</h4>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <h4 class="title">Virtual Terminal</h4>
+                    <div class="text">Turns your computer into a payment card terminal instantly</div>
                   </div>
                 </div>
               </div>
@@ -41,23 +53,11 @@
               <div class="swiper-slide">
                 <div class="card-sell">
                   <div class="card-sell--img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/payment-1.png" alt="Image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell1.png" alt="Image">
                   </div>
                   <div class="card-sell--content">
-                    <h4 class="title">Virtual terminal</h4>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="card-sell">
-                  <div class="card-sell--img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/payment-1.png" alt="Image">
-                  </div>
-                  <div class="card-sell--content">
-                    <h4 class="title">Website payments</h4>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <h4 class="title">Payment Links</h4>
+                    <div class="text">Share a payment link directly from your dashboard</div>
                   </div>
                 </div>
               </div>

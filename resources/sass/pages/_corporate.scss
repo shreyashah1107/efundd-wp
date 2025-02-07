@@ -16,39 +16,11 @@
   }
 
   &--two {
-    padding: 50px 0 100px;
+    padding: 100px 0;
 
-    .image {
-      position: relative;
-      border-radius: 10px;
-      box-shadow: 0 37px 55px rgba($black, 0.1);
-      overflow: hidden;
-
-      &-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background-color: #00371a;
-        color: $white;
-        text-align: left;
-
-        h4,
-        p {
-          color: $white;
-        }
-
-        h4 {
-          font-weight: 600;
-          margin-bottom: 10px;
-        }
-
-        p {
-          margin-bottom: 15px;
-          line-height: 1.3;
-        }
-      }
+    p {
+      max-width: 70%;
+      margin: 0 auto;
     }
   }
 
@@ -74,6 +46,7 @@
       &-img {
         text-align: right;
         margin-top: -80px;
+        margin-right: 4vw;
       }
     }
 
@@ -83,11 +56,42 @@
   }
 
   &--four {
-    padding-top: 100px;
+    padding: 100px 0;
 
-    p {
-      max-width: 70%;
-      margin: 0 auto;
+    .image {
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 37px 55px rgba($black, 0.1);
+      overflow: hidden;
+
+      &-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: #004520;
+        color: $white;
+        text-align: left;
+
+        h4,
+        p {
+          color: $white;
+        }
+
+        h4 {
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        p {
+          opacity: 0.8;
+          margin-bottom: 15px;
+          font-size: 1.6rem;
+          line-height: 1.3;
+        }
+      }
     }
   }
 
@@ -107,7 +111,7 @@
 
   &--six {
     .main-content-wrapper {
-      background-color: #ccdad2;
+      background-color: #eff3f1;
       border-radius: 32px;
       overflow: hidden;
 
@@ -126,6 +130,7 @@
     .image {
       background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
       border-radius: 32px;
+      padding: 100px 30px 0;
     }
 
     .content {
@@ -148,7 +153,7 @@
 
   &--eight {
     background-color: $content-link;
-    padding: 50px 0;
+    padding: 100px 0;
 
     .section-title {
       color: $white;
@@ -232,7 +237,7 @@
 
   &--ten {
     background-color: $content-link;
-    padding: 50px 0;
+    padding: 50px 0 100px;
 
     .title-row {
       h2 {
@@ -427,20 +432,21 @@
 // < 1200px
 @include media-breakpoint-down(xl) {
   .corporate-content-section {
-    &--two {
+    &--three {
+      .content-img {
+        margin-top: -50px;
+        margin-right: 0;
+      }
+      .title-row {
+        width: 79%;
+      }
+    }
+
+    &--four {
       .image {
         &-content {
           position: relative;
         }
-      }
-    }
-
-    &--three {
-      .content-img {
-        margin-top: -50px;
-      }
-      .title-row {
-        width: 79%;
       }
     }
 
@@ -514,6 +520,7 @@
   .corporate-content-section {
     &--one,
     &--two,
+    &--four,
     &--five,
     &--seven,
     &--nine,
@@ -523,12 +530,11 @@
       padding: 50px 0;
     }
 
-    &--three,
-    &--four {
+    &--three {
       padding-top: 50px;
     }
 
-    &--four,
+    &--two,
     &--five,
     &--eleven,
     &--thirteen,

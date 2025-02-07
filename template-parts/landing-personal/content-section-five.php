@@ -19,15 +19,7 @@
     <div class="globe-img text-center">
       <div class="country--list-items">
         <div class="country--list--item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-1.png" alt="Image">
-        </div>
-
-        <div class="country--list--item">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-2.png" alt="Image">
-        </div>
-
-        <div class="country--list--item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-3.png" alt="Image">
         </div>
 
         <div class="country--list--item">
@@ -35,11 +27,19 @@
         </div>
 
         <div class="country--list--item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-6.png" alt="Image">
+        </div>
+
+        <div class="country--list--item">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-5.png" alt="Image">
         </div>
 
         <div class="country--list--item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-6.png" alt="Image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-3.png" alt="Image">
+        </div>
+
+        <div class="country--list--item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-1.png" alt="Image">
         </div>
       </div>
 
