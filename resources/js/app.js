@@ -235,6 +235,33 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // Flag images animation
+  const flagsTlCorporate = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".corporate-content-section--nine",
+      start: "top +=95%",
+      end: "bottom top",
+      scrub: 1.2,
+    },
+  });
+  flagsTlCorporate
+    .fromTo(
+      ".flags-row.flags-row--one",
+      {
+        xPercent: -10,
+      },
+      { xPercent: 10 },
+      "flagCorporate"
+    )
+    .fromTo(
+      ".flags-row.flags-row--two",
+      {
+        xPercent: 10,
+      },
+      { xPercent: -10 },
+      "flagCorporate"
+    );
+
   // Animate the coin-slider on scroll
   const coinsTl = gsap.timeline({
     scrollTrigger: {

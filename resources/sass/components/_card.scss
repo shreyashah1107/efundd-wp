@@ -44,8 +44,14 @@
 // < 992px
 @include media-breakpoint-down(lg) {
   .card-sell {
-    &--img {
-      height: 400px;
+    &--content {
+      .title {
+        font-size: 2rem;
+      }
+
+      .text {
+        font-size: 1.6rem;
+      }
     }
   }
 }
