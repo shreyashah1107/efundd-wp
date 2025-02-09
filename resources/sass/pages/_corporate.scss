@@ -204,35 +204,92 @@
     overflow: hidden;
 
     .content-wrapper {
-      gap: 20px;
-    }
-
-    .coin-swipe {
-      flex-shrink: 0;
       position: relative;
-      z-index: 1;
 
-      img {
-        width: 440px;
+      > div {
+        display: flex;
       }
     }
 
-    .coin-slider {
-      display: flex;
-      gap: 20px;
+    .fixed-text {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 400px;
+      padding: 0 30px;
+      display: inline-flex;
+      z-index: 1;
+      // background-color: $content-link;
 
-      &--wrapper {
-        position: relative;
+      h3 {
+        margin: 0;
+        color: $white;
+        font-size: 5rem;
       }
 
-      .coin {
+      &--bottom {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        align-items: flex-end;
+      }
+    }
+
+    .flags-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      .image {
+        display: flex;
         flex-shrink: 0;
 
         img {
-          width: 160px;
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
         }
       }
+
+      &--two {
+        justify-content: flex-end;
+      }
     }
+
+    // .content-wrapper {
+    //   gap: 20px;
+    // }
+
+    // .coin-swipe {
+    //   flex-shrink: 0;
+    //   position: relative;
+    //   z-index: 1;
+
+    //   img {
+    //     width: 440px;
+    //   }
+    // }
+
+    // .coin-slider {
+    //   display: flex;
+    //   gap: 20px;
+
+    //   &--wrapper {
+    //     position: relative;
+    //   }
+
+    //   .coin {
+    //     flex-shrink: 0;
+
+    //     img {
+    //       width: 160px;
+    //     }
+    //   }
+    // }
   }
 
   &--ten {
@@ -418,13 +475,17 @@
 // < 1400px
 @media (max-width: 1400px) {
   .corporate-content-section--nine {
-    .coin-swipe img {
-      width: 300px;
-    }
-    .coin-slider {
-      .coin img {
-        width: 110px;
-      }
+    // .coin-swipe img {
+    //   width: 300px;
+    // }
+    // .coin-slider {
+    //   .coin img {
+    //     width: 110px;
+    //   }
+    // }
+
+    .fixed-text h3 {
+      font-size: 3rem;
     }
   }
 }
@@ -446,6 +507,17 @@
       .image {
         &-content {
           position: relative;
+        }
+      }
+    }
+
+    &--nine {
+      .flags-row {
+        .image {
+          img {
+            width: 100px;
+            height: 100px;
+          }
         }
       }
     }
@@ -505,6 +577,14 @@
       }
     }
 
+    &--nine {
+      padding: 50px 0;
+
+      .fixed-text {
+        display: none;
+      }
+    }
+
     &--twelve {
       .option-list {
         &--items {
@@ -523,6 +603,7 @@
     &--four,
     &--five,
     &--seven,
+    &--eight,
     &--nine,
     &--eleven,
     &--thirteen,
@@ -568,15 +649,23 @@
     }
 
     &--nine {
-      .content-wrapper {
-        justify-content: center;
-      }
-
-      .coin-slider {
-        .coin img {
-          width: 100px;
+      .flags-row {
+        .image {
+          img {
+            width: 70px;
+            height: 70px;
+          }
         }
       }
+      // .content-wrapper {
+      //   justify-content: center;
+      // }
+
+      // .coin-slider {
+      //   .coin img {
+      //     width: 100px;
+      //   }
+      // }
     }
 
     &--ten {
