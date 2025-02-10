@@ -14,14 +14,28 @@
               <p>From cross-border payments to multi-currency accounts, we provide the tools to power your global transactions. </p>
             </div>
 
-            <div class="col-12 col-md-8 col-lg-5 col-xl-6">
-              <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/five.png" alt="Image">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-6 text-center">
+              <div class="content-img--swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/five-1.png" alt="Image">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/five-2.png" alt="Image">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/five-3.png" alt="Image">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/five-4.png" alt="Image">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </section>

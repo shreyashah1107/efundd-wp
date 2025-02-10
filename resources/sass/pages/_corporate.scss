@@ -16,11 +16,23 @@
   }
 
   &--two {
+    position: relative;
     padding: 100px 0;
 
     p {
       max-width: 70%;
       margin: 0 auto;
+    }
+
+    .section-bg--right {
+      left: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right;
+      }
     }
   }
 
