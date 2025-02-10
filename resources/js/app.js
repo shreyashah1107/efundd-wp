@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slides[currentIndex].classList.add("active");
   }
 
-  setInterval(showNextSlide, 3000);
+  setInterval(showNextSlide, 1000);
 
   // Function to create GSAP animations
   function animateElement(selector, fromProps, toProps, scrollTrigger = null) {
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2.2,
       },
       1400: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
       },
     },
   });
@@ -292,6 +292,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // End: Corporate page
 
   // Start: Business page
+  var swiper = new Swiper(".business-content-section--five .content-img--swiper", {
+    slidesPerView: 1,
+    effect: "fade",
+    speed: 800,
+    autoplay: {
+      delay: 1000,
+    },
+  });
+
   // Flag images animation
   const flagsTlBusiness = gsap.timeline({
     scrollTrigger: {

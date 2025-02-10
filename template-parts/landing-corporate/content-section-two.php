@@ -1,4 +1,7 @@
 <section class="corporate-content-section--two">
+  <div class="section-bg section-bg--right">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-right-bg.svg" alt="Image">
+  </div>
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">

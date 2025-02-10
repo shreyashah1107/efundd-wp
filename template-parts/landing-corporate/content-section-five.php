@@ -50,7 +50,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="card-payment">
                   <div class="card-payment--img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/payment-1.png" alt="Image">
@@ -61,7 +61,7 @@
                     <a href="#" title="Order now" class="btn btn-outline-content-link">Order now</a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

@@ -150,7 +150,7 @@
         currentIndex++;
       }
       updateSlider();
-    }, 3000);
+    }, 1000);
   }
 
   if (nextButton && prevButton) {
