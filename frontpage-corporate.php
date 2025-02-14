@@ -66,8 +66,4 @@ get_header(); ?>
 <!-- Start: Content Section Fourteen -->
 <?php include "template-parts/landing-corporate/content-section-fourteen.php" ?>
 <!-- End: Content Section Fourteen -->
-
-<!-- Start: Content Section Fifteen -->
-<?php include "template-parts/landing-corporate/content-section-fifteen.php" ?>
-<!-- End: Content Section Fifteen -->
 <?php get_footer(); ?>

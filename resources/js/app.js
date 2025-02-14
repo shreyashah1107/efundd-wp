@@ -184,6 +184,11 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 2000,
     },
 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
     breakpoints: {
       576: {
         slidesPerView: 1.5,
@@ -238,27 +243,29 @@ document.addEventListener("DOMContentLoaded", function () {
   // Flag images animation
   const flagsTlCorporate = gsap.timeline({
     scrollTrigger: {
-      trigger: ".corporate-content-section--nine",
-      start: "top +=95%",
-      end: "bottom top",
+      trigger: ".corporate-content-section--ten",
+      start: "top 95%",
+      end: "bottom",
       scrub: 1.2,
     },
   });
   flagsTlCorporate
     .fromTo(
       ".flags-row.flags-row--one",
-      {
-        xPercent: -10,
-      },
-      { xPercent: 10 },
+      { xPercent: -20 },
+      { xPercent: 20, immediateRender: false, overwrite: true },
       "flagCorporate"
     )
     .fromTo(
       ".flags-row.flags-row--two",
-      {
-        xPercent: 10,
-      },
-      { xPercent: -10 },
+      { xPercent: 20 },
+      { xPercent: -20, immediateRender: false, overwrite: true },
+      "flagCorporate"
+    )
+    .fromTo(
+      ".flags-row.flags-row--three",
+      { xPercent: -20 },
+      { xPercent: 20, immediateRender: false, overwrite: true },
       "flagCorporate"
     );
 

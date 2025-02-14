@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-7">
+        <div class="col-xl-10 col-xxl-9">
           <div class="title-row position-relative z-1">
-            <h3 class="section-title">Send or spend from a single account anywhere in the world</h3>
+            <h3 class="section-title section-title--xl">Send or spend from a single account anywhere in the world</h3>
             <p>Open a multi user account to ease your financial management</p>
 
             <div class="btn-grp justify-content-center mt-5">

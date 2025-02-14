@@ -339,6 +339,10 @@
         width: 100%;
       }
     }
+
+    .section-title {
+      line-height: 1;
+    }
   }
 
   &--eleven {
@@ -491,7 +495,7 @@
 .content-list {
   &--items {
     display: grid;
-    gap: 15px;
+    gap: 10px;
   }
 
   &--item {
@@ -513,11 +517,12 @@
     .text {
       h4 {
         font-size: 2rem;
-        margin-bottom: 5px;
+        margin-bottom: 2px;
       }
 
       p {
         font-size: 1.6rem;
+        line-height: 1.2;
         margin: 0;
       }
     }
