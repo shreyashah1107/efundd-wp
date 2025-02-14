@@ -14,7 +14,7 @@
                     <div class="col-xxl-9">
                         <div class="row">
                             <div class="col-xl-6">
-                                <h1>Send and receive payments instantly</h1>
+                                <h1>Send global payments instantly</h1>
                                 <p>Financial account management in a single platform</p>
 
                                 <div class="btn-grp">
