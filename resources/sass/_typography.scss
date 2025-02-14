@@ -73,6 +73,16 @@ p,
     text-decoration: underline;
     text-underline-offset: 8px;
   }
+
+  &--xl {
+    font-size: 7.2rem;
+
+    // > 1200px
+    @include media-breakpoint-up(xl) {
+      letter-spacing: -0.72px;
+      line-height: 1;
+    }
+  }
 }
 
 .title-row {

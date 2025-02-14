@@ -23,8 +23,20 @@
 }
 
 .card-sell {
+  background-color: #EFF3F1;
+  padding: 30px;
+  min-height: 100%;
+  border-radius: 24px;
+
   &--img {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    height: 295px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   &--content {
@@ -36,8 +48,17 @@
 
     .text {
       font-size: 1.8rem;
-      color: #777777;
+      font-weight: 500;
+      color: #09140E;
       margin: 10px 0 0;
+    }
+  }
+
+  &--cta {
+    margin-top: 50px;
+
+    a {
+      min-width: 180px;
     }
   }
 }
@@ -45,6 +66,10 @@
 // < 992px
 @include media-breakpoint-down(lg) {
   .card-sell {
+    &--img {
+      height: 185px;
+    }
+
     &--content {
       .title {
         font-size: 2rem;
@@ -53,6 +78,10 @@
       .text {
         font-size: 1.6rem;
       }
+    }
+
+    &--cta {
+      margin-top: 20px;
     }
   }
 }

@@ -2,59 +2,87 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xxl-8">
+        <div class="col-lg-9 col-xl-10 col-xxl-7">
           <div class="title-row">
-            <h3 class="section-title">Switch to Paayco or integrate with the e-commerce platforms you use</h3>
+            <h3 class="section-title section-title--xl">Accelerate your payments forward</h3>
 
-            <p>Trusted by major eCommerce brands worldwide.</p>
+            <p class="mt-4 mt-lg-5"> We assure you of instant transfers, advanced security, 24/7 customer support, and more. </p>
           </div>
         </div>
       </div>
 
-      <div class="row mt-5 mt-lg-0">
-        <div class="col-12">
-          <div class="partner--swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-1.png" alt="Image">
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-xxl-9">
+          <div class="payment-acceleration--items mt-5">
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>Go global</h4>
+                <p>Process payments globally, with local acquiring</p>
               </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-2.png" alt="Image">
-                </div>
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
               </div>
+            </div>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-3.png" alt="Image">
-                </div>
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>Authorisation</h4>
+                <p>Our intelligent authorization optimization system ensures maximum acceptance rates for your transactions.</p>
               </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-4.png" alt="Image">
-                </div>
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
               </div>
+            </div>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-5.png" alt="Image">
-                </div>
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>Linked accounts</h4>
+                <p>Link your accounts seamlessly to multiple platforms and payment systems with just a few clicks.</p>
               </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-6.png" alt="Image">
-                </div>
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
               </div>
+            </div>
 
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/partner-7.png" alt="Image">
-                </div>
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>Anti Fraud</h4>
+                <p>Your security is our top priority! We implement advanced measures to ensure your transactions and data are protected at all times.</p>
+              </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
+
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
+              </div>
+            </div>
+
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>24/7 Support</h4>
+                <p>Our dedicated team is always here to assist you, no matter the time or day.</p>
+              </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
+
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
+              </div>
+            </div>
+
+            <div class="payment-acceleration--item">
+              <div class="content-text">
+                <h4>Swift payments</h4>
+                <p>Paayco’s advanced technology offers 3x faster payouts with multi-currency accounts.</p>
+              </div>
+              <div class="content-cta">
+                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
+
+                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
               </div>
             </div>
           </div>

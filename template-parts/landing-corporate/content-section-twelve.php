@@ -4,14 +4,9 @@
       <div class="row justify-content-center">
         <div class="col-xxl-9">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-md-8 col-lg-5 col-xl-6 order-last order-lg-first">
-              <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/twelve.png" alt="Image">
-              </div>
-            </div>
-            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
+            <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0 p-lg-0 pe-lg-4">
               <div class="title-row mb-4">
-                <h3 class="section-title">Single API, Endless Options.</h3>
+                <h3 class="section-title section-title--xl">Single API, Endless Options.</h3>
               </div>
 
               <div class="option-list--items">
@@ -38,6 +33,12 @@
 
               <div class="btn-grp">
                 <a href="#" title="Explore API docs" class="btn btn-bright-green">Explore API docs</a>
+              </div>
+            </div>
+
+            <div class="col-md-8 col-lg-6 col-xl-6">
+              <div class="image text-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/twelve.png" alt="Image">
               </div>
             </div>
           </div>

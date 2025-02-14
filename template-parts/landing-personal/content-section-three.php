@@ -12,7 +12,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-7">
           <div class="title-row">
-            <h3 class="section-title">Enjoy exclusive cashback everywhere Mastercard is accepted</h3>
+            <h3 class="section-title section-title--xl">Enjoy exclusive cashback everywhere Mastercard is accepted</h3>
           </div>
 
           <div class="images">

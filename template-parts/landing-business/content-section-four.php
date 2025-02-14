@@ -6,7 +6,7 @@
           <div class="title-row mb-5">
             <h2>Send and receive money worldwide, in seconds</h2>
 
-            <p class="mt-4">Send, spend and get paid in over 20+ currencies. All you need in a single business account</p>
+            <p class="mt-4">Send, spend and get paid in over 28+ currencies. All you need in a single business account</p>
           </div>
           <div class="btn-grp justify-content-center">
             <a href="#" title="Open a business account" class="btn btn-bright-green">Open a business account</a>
