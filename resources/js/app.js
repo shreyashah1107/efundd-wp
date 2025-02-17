@@ -325,7 +325,6 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: 1,
         start: "top 30%",
         end: "bottom 80%",
-        markers: true,
       },
       duration: 1,
     });
