@@ -103,6 +103,9 @@
           top: 0;
           width: 550px;
           transition: transform 0.3s ease-in-out;
+          perspective: 2000px;
+
+          
 
           img {
             width: 100%;
