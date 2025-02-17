@@ -299,6 +299,104 @@ document.addEventListener("DOMContentLoaded", function () {
   // End: Corporate page
 
   // Start: Business page
+  // const cardsTl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".business-content-section--three",
+  //     start: "top 50%",
+  //     end: "bottom 50%",
+  //     scrub: 1.2,
+  //     invalidateOnRefresh: true,
+  //     ease: "power2.out",
+  //   },
+  // });
+
+  // cardsTl
+  //   .fromTo(".card-one", { x: "-100%", rotate: -360 }, { x: 0, rotate: 0, ease: "power1.out" }, "cards")
+  //   .fromTo(".card-two", { scale: 0.85 }, { scale: 1, ease: "power1.out" }, "cards")
+  //   .fromTo(".card-three", { x: "100%", rotate: 360 }, { x: 0, rotate: 0, ease: "power1.out" }, "cards");
+
+  const cardAnimations = [
+    {
+      target: ".business-content-section--three .card-one--inner",
+      from: { xPercent: -200, rotateY: 135 },
+      to: { xPercent: 0, rotateY: 0 },
+    },
+    {
+      target: ".business-content-section--three .card-three--inner",
+      from: { xPercent: 200, rotateY: 135 },
+      to: { xPercent: 0, rotateY: 0 },
+    },
+    {
+      target: ".business-content-section--three .card-two--inner",
+      from: { scale: 0.4 },
+      to: { scale: 1 },
+    },
+  ];
+
+  cardAnimations.forEach(({ target, from, to }) => {
+    gsap.fromTo(target, from, {
+      ...to,
+      scrollTrigger: {
+        trigger: ".business-content-section--three",
+        scrub: 1,
+        start: "top 80%",
+        end: "bottom 20%",
+        // markers: true,
+      },
+      duration: 1,
+    });
+  });
+
+  // gsap.fromTo(
+  //   ".business-content-section--three .card-one--inner",
+  //   { xPercent: -200, rotateY: 135 },
+  //   {
+  //     scrollTrigger: {
+  //       trigger: ".business-content-section--three",
+  //       scrub: 1,
+  //       start: "top 80%",
+  //       end: "bottom 20%",
+  //       markers: true,
+  //     },
+  //     xPercent: 0,
+  //     rotateY: 0,
+  //     duration: 1,
+  //   }
+  // );
+
+  // gsap.fromTo(
+  //   ".business-content-section--three .card-three--inner",
+  //   { xPercent: 200, rotateY: 135 },
+  //   {
+  //     scrollTrigger: {
+  //       trigger: ".business-content-section--three",
+  //       scrub: 1,
+  //       start: "top 80%",
+  //       end: "bottom 20%",
+  //       markers: true,
+  //     },
+  //     xPercent: 0,
+  //     rotateY: 0,
+  //     duration: 1,
+  //   }
+  // );
+
+  // gsap.fromTo(
+  //   ".business-content-section--three .card-two--inner",
+  //   { scale: 0.4 },
+  //   {
+  //     scrollTrigger: {
+  //       trigger: ".business-content-section--three",
+  //       scrub: 1,
+  //       start: "top 80%",
+  //       end: "bottom 20%",
+  //       markers: true,
+  //     },
+  //     scale: 1,
+  //     duration: 1,
+  //   }
+  // );
+
   var swiper = new Swiper(".business-content-section--five .content-img--swiper", {
     slidesPerView: 1,
     effect: "fade",
