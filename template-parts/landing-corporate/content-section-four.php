@@ -32,14 +32,14 @@
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">
                     <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/mobile-card-machine.png" alt="Image">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.png" alt="Image">
                     </div>
                   </div>
                   <div class="col-lg-6 col-xl-6 text-center text-lg-start">
                     <div class="content">
                       <div class="title-row mb-4">
-                        <h4 class="section-title">Mobile card machines</h4>
-                        <p>With a ready to accept payments setup, your portable POS terminal is ready for payments</p>
+                        <h4 class="section-title">Plus Card Machine</h4>
+                        <p>Manage sales, take orders and accept payments with our powerful Point of Sale.</p>
                       </div>
 
                       <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
@@ -80,14 +80,14 @@
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">
                     <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.png" alt="Image">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/mobile-card-machine.png" alt="Image">
                     </div>
                   </div>
                   <div class="col-lg-6 col-xl-6 text-center text-lg-start">
                     <div class="content">
                       <div class="title-row mb-4">
-                        <h4 class="section-title">Plus Card Machine</h4>
-                        <p>Manage sales, take orders and accept payments with our powerful Point of Sale.</p>
+                        <h4 class="section-title">Mobile card machines</h4>
+                        <p>With a ready to accept payments setup, your portable POS terminal is ready for payments</p>
                       </div>
 
                       <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
