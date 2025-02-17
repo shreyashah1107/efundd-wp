@@ -65,6 +65,7 @@
   &--three {
     position: relative;
     padding: 50px 0 100px;
+    overflow: hidden;
 
     .title-row p {
       max-width: 70%;
@@ -76,6 +77,60 @@
 
       img {
         width: 100%;
+      }
+    }
+
+    .three-card-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // position: relative;
+      // max-width: 100%;
+      // height: auto;
+
+      .card-image {
+        &--items {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 400px;
+          perspective: 1000px;
+        }
+
+        &--item {
+          position: absolute;
+          top: 0;
+          width: 550px;
+          transition: transform 0.3s ease-in-out;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: drop-shadow(-1px 11px 33px rgba(0, 0, 0, 0.3));
+          }
+
+          &.card {
+            &-one {
+              right: -12%;
+              z-index: 1;
+              transform: rotateY(10deg) scale(0.9) translateZ(-20px);
+            }
+
+            &-two {
+              z-index: 2;
+              transform: scale(1);
+            }
+
+            &-three {
+              left: -12%;
+              z-index: 1;
+              transform: rotateY(-10deg) scale(0.9) translateZ(-20px);
+            }
+          }
+        }
       }
     }
   }
@@ -565,15 +620,28 @@
   .business-content-section {
     &--one {
       padding-bottom: 50px;
+
+      .image {
+        width: 470px;
+        height: 260px;
+      }
     }
 
     &--two {
       padding-top: 50px;
     }
 
-    &--one .image {
-      width: 470px;
-      height: 260px;
+    &--three {
+      .three-card-images {
+        .card-image {
+          &--items {
+            height: 200px;
+          }
+          &--item {
+            width: 300px;
+          }
+        }
+      }
     }
 
     &--six {
@@ -816,6 +884,18 @@
       .location {
         width: 10px;
         height: 10px;
+      }
+    }
+    &--three {
+      .three-card-images {
+        .card-image {
+          &--items {
+            height: 100px;
+          }
+          &--item {
+            width: 150px;
+          }
+        }
       }
     }
   }
