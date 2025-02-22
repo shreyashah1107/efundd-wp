@@ -4,8 +4,8 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-9">
           <div class="title-row position-relative z-1">
-            <h3 class="section-title section-title--xl">Send or spend from a single account anywhere in the world</h3>
-            <p>Open a multi user account to ease your financial management</p>
+            <h3 class="section-title section-title--xl">One Account. Unlimited Possibilities.</h3>
+            <p>Spend, send, and manage your money from anywhere in the world.</p>
 
             <div class="btn-grp justify-content-center mt-5">
               <a href="#" title="Sign up for free" class="btn btn-bright-green">Sign up for free</a>

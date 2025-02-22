@@ -24,7 +24,7 @@
             <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
               <div class="title-row mb-0">
                 <h3 class="section-title text-white">Split Bills in Seconds</h3>
-                <p class="text-white">Share expenses with your group— split bills with just a few taps and keep everyone on the same page.</p>
+                <p class="text-white">Share expenses in seconds… No calculators required.</p>
 
                 <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
                   <a href="#" title="Try it now" class="btn btn-bright-green">Try it now</a>

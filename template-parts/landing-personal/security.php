@@ -6,10 +6,10 @@ if (isset($security_section)):
     <section class="security">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8 col-xxl-5">
+                <div class="col-xl-8 col-xxl-9">
                     <div class="title-row text-center">
-                        <h3 class="section-title"><?php echo $security_section["title"] ?></h3>
-                        <p><?php echo $security_section["text"] ?></p>
+                        <h3 class="section-title section-title--xl">Security You Can Trust</h3>
+                        <p>You’ve worked hard for your money. Here is how we work hard to keep your account safe.</p>
                     </div>
                 </div>
             </div>
