@@ -10,9 +10,15 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-7">
+        <div class="col-xl-10 col-xxl-8">
           <div class="title-row">
-            <h3 class="section-title section-title--xl">Enjoy exclusive cashback everywhere Mastercard is accepted</h3>
+            <h3 class="section-title section-title--xl">Get Paid to Spend</h3>
+            <p>Earn exclusive cashback everywhere Mastercard is accepted</p>
+
+            <div class="btn-grp justify-content-center mt-5">
+              <a href="#" title="Sign up for free" class="btn btn-bright-green">Sign up for free</a>
+              <a href="#" title="Tell me more" class="btn btn-outline-content-link">Tell me more</a>
+            </div>
           </div>
 
           <div class="images">
@@ -58,15 +64,15 @@
             </div>
 
             <div class="benefit--item">
-              <p>Google Pay - Pay with your mobile quickly, securely and easily.</p>
+              <p>Even safer shopping with physical & virtual cards</p>
             </div>
 
             <div class="benefit--item">
-              <p>Physical & Virtual cards - For an even safer shopping experience.</p>
+              <p>Pay with a tap - Easy, quick & secure payments with Google Pay</p>
             </div>
 
             <div class="benefit--item">
-              <p>Multiple cards per account</p>
+              <p>Manage your spending conveniently & flexibly with multiple cards for every account</p>
             </div>
           </div>
         </div>

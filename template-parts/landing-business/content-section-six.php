@@ -4,7 +4,8 @@
       <div class="row justify-content-center text-center">
         <div class="col-xxl-9">
           <div class="title-row mb-5">
-            <h2>Local and global payments that saves you money</h2>
+            <h2 class="section-title section-title--xl">Local and global payments that saves you money</h2>
+            <p> Receive a dedicated IBAN to transact with your clients, and suppliers in over 100 countries – from the America to the Middle East. Make and receive domestic payments in the UK, Europe, and the USA using local account details.</p>
           </div>
 
           <div class="payment-options--items">

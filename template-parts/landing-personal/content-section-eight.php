@@ -9,8 +9,9 @@
           <div class="row align-items-center">
             <div class="col-lg-7 col-xl-7 text-center text-lg-start mb-5 mb-lg-0">
               <div class="title-row">
-                <h3 class="section-title">Meet Paayed®</h3>
-                <p>Paayed® makes sending money very easy—even to people who bank elsewhere. Instantly pay and get paid back at no cost! All you need is their email, phone number, or Tag. Paayed® is expanding to more banking apps, so check if it’s available in yours today!</p>
+                <h3 class="section-title section-title--xl">FREE payments with Paayed®</h3>
+                <p>Send money effortlessly to anyone, anywhere, with Paayed®. Email, phone, or Tag, that's all you need. Instantly pay and get paid back for FREE!</p>
+                <p><strong>Paayed® is expanding to more banking apps, so please check if it's available in yours.</strong></p>
 
                 <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
                   <a href="#" title="Try it now" class="btn btn-bright-green">Try it now</a>

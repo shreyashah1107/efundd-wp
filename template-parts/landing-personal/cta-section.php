@@ -8,9 +8,9 @@ if (isset($cta_section)):
         <div class="col-xxl-8">
           <div class="cta--content-wrapper">
             <div class="cta--content">
-              <h3 class="section-title text-white">Everything you need to send and receive payments globally</h3>
+              <h3 class="section-title text-white">Global transactions made simpler, faster & secure</h3>
 
-              <p>Simplify your global transactions, and manage your personal finances conveniently — all in one place with PaayCo.</p>
+              <p>One account to send and receive payments worldwide. No hidden fees, no complex codes, just lightning-fast transfers across borders. Connect with friends and family all over the world, from Australia to Canada, and manage multiple currencies and your personal finances right from your Paayco dashboard.</p>
 
               <div class="btn-grp justify-content-center">
                 <?php if (!empty($cta_section["button_text_1"])): ?>

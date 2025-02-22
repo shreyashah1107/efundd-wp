@@ -27,7 +27,7 @@
           </ul>
 
           <div class="tab-content" id="paymentTabContent">
-            <div class="tab-pane fade show active" id="card-machines" role="tabpanel" aria-labelledby="card-machine-tab" tabindex="0">
+            <div class="tab-pane show active" id="card-machines" role="tabpanel" aria-labelledby="card-machine-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">
@@ -51,7 +51,7 @@
               </div>
             </div>
 
-            <div class="tab-pane fade" id="business-accounts" role="tabpanel" aria-labelledby="business-accounts-tab" tabindex="0">
+            <div class="tab-pane" id="business-accounts" role="tabpanel" aria-labelledby="business-accounts-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">
@@ -75,7 +75,7 @@
               </div>
             </div>
 
-            <div class="tab-pane fade" id="plus-cards" role="tabpanel" aria-labelledby="plus-cards-tab" tabindex="0">
+            <div class="tab-pane" id="plus-cards" role="tabpanel" aria-labelledby="plus-cards-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">
@@ -99,7 +99,7 @@
               </div>
             </div>
 
-            <div class="tab-pane fade" id="terminals" role="tabpanel" aria-labelledby="terminals-tab" tabindex="0">
+            <div class="tab-pane" id="terminals" role="tabpanel" aria-labelledby="terminals-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6">

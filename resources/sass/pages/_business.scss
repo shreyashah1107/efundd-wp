@@ -196,6 +196,11 @@
   &--six {
     padding: 50px 0 100px;
 
+    .title-row p {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+
     .payment-options {
       &--items {
         display: grid;
@@ -747,6 +752,7 @@
 
     &--three,
     &--four,
+    &--six,
     &--nine,
     &--twelve {
       .title-row p {

@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slides[currentIndex].classList.add("active");
   }
 
-  setInterval(showNextSlide, 1000);
+  setInterval(showNextSlide, 2000);
 
   // Function to create GSAP animations
   function animateElement(selector, fromProps, toProps, scrollTrigger = null) {
@@ -178,11 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sell Card Slider
   var swiper = new Swiper(".sell--swiper", {
-    slidesPerView: 1.01,
+    slidesPerView: 1,
     spaceBetween: 20,
-    autoplay: {
-      delay: 2000,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    // },
 
     pagination: {
       el: ".swiper-pagination",
@@ -190,14 +190,14 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      576: {
-        slidesPerView: 1.5,
-      },
-      768: {
-        slidesPerView: 2.2,
-      },
+      // 576: {
+      //   slidesPerView: 1.5,
+      // },
+      // 768: {
+      //   slidesPerView: 2.2,
+      // },
       1400: {
-        slidesPerView: 2.5,
+        slidesPerView: 1,
       },
     },
   });
@@ -296,6 +296,20 @@ document.addEventListener("DOMContentLoaded", function () {
       { rotate: 0 },
       "coins"
     );
+
+  gsap.from(".corporate-content-section--six .list--image", {
+    opacity: 0,
+    y: -50,
+    duration: 0.8,
+    stagger: 0.6,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".corporate-content-section--six",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: false,
+    },
+  });
   // End: Corporate page
 
   // Start: Business page
@@ -335,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
     effect: "fade",
     speed: 800,
     autoplay: {
-      delay: 1000,
+      delay: 2000,
     },
   });
 

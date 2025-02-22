@@ -5,7 +5,7 @@
         <div class="col-xxl-8">
           <div class="title-row text-center">
             <h3 class="section-title section-title--xl">Reach the world with Paayco</h3>
-            <p>Explore the countries you can send money to with Paayco.</p>
+            <p>Send and receive payments in 100+ countries with ease</p>
           </div>
         </div>
       </div>
