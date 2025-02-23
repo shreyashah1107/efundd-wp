@@ -48,14 +48,14 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-8.svg" alt="Image">
         </div>
 
-        <div class="image">
-          <h3>40+ <br> Currencies</h3>
+        <div>
+          <img class="title-text" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/40+Currencies.png" alt="Image">
         </div>
       </div>
 
-      <div class="flags-row flags-row--two my-5">
-        <div class="image">
-          <h3>28+ Payment<br> Methods</h3>
+      <div class="flags-row flags-row--two my-5 py-5">
+        <div>
+          <img class="title-text" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/28+PaymentMethods.png" alt="Image">
         </div>
 
         <div class="image">
@@ -112,8 +112,8 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-16.svg" alt="Image">
         </div>
 
-        <div class="image">
-          <h3>140+ Supported<br> Countries</h3>
+        <div>
+          <img class="title-text" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/140+SupportedCountries.png" alt="Image">
         </div>
       </div>
     </div>
