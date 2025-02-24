@@ -241,33 +241,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Flag images animation
-  const flagsTlCorporate = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".corporate-content-section--ten",
-      start: "top 95%",
-      end: "bottom",
-      scrub: 1.2,
-    },
-  });
-  flagsTlCorporate
-    .fromTo(
-      ".flags-row.flags-row--one",
-      { xPercent: -20 },
-      { xPercent: 20, immediateRender: false, overwrite: true },
-      "flagCorporate"
-    )
-    .fromTo(
-      ".flags-row.flags-row--two",
-      { xPercent: 20 },
-      { xPercent: -20, immediateRender: false, overwrite: true },
-      "flagCorporate"
-    )
-    .fromTo(
-      ".flags-row.flags-row--three",
-      { xPercent: -20 },
-      { xPercent: 20, immediateRender: false, overwrite: true },
-      "flagCorporate"
-    );
+  // Function to animate scrolling
+  function animateScrolling(selector, direction, speed) {
+    const xMovement = direction === "left" ? "-30%" : "30%"; 
+
+    gsap.to(selector, {
+      x: xMovement,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".corporate-content-section--ten",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: speed,
+      },
+    });
+  }
+
+  // Function to animate flag rotation
+  function animateRotationOnScroll(selector, rotationAngle) {
+    gsap.to(selector + " .image img:not(.title-text)", {
+      rotation: rotationAngle,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".corporate-content-section--ten",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.5,
+      },
+    });
+  }
+
+  // Apply scrolling effect
+  animateScrolling(".flags-row--one", "left", 1.5);
+  animateScrolling(".flags-row--two", "right", 1.5);
+  animateScrolling(".flags-row--three", "left", 1.5);
+
+  // Apply independent rotation to each flag
+  animateRotationOnScroll(".flags-row--one", 90);
+  animateRotationOnScroll(".flags-row--two", 90);
+  animateRotationOnScroll(".flags-row--three", 90);
 
   // Animate the coin-slider on scroll
   const coinsTl = gsap.timeline({

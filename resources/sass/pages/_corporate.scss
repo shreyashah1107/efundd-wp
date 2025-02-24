@@ -339,18 +339,28 @@
     .flags-row {
       display: flex;
       align-items: center;
-      flex-grow: 1;
       gap: 20px;
+      white-space: nowrap;
+      position: relative;
+
+      >div {
+        flex-shrink: 0;
+      }
 
       .image {
         display: flex;
         flex-shrink: 0;
 
-        img {
+        img:not(.title-text) {
           width: 140px;
           height: 140px;
           border-radius: 50%;
         }
+      }
+
+      .title-text {
+        width: auto;
+        height: 140px;
       }
 
       &--one {
