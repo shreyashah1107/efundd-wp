@@ -137,6 +137,16 @@
         color: $white;
       }
     }
+
+    .hero--img {
+      &::before {
+        opacity: .4;
+      }
+
+      video {
+        opacity: 1;
+      }
+    }
   }
 
   &--business {
