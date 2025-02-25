@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center mb-md-5">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="title-row mb-5">
             <h2>All payments, in one digital enterprise solution</h2>
           </div>

@@ -11,7 +11,7 @@
         <div class="container">
             <div class="hero--content text-start">
                 <div class="row justify-content-center">
-                    <div class="col-xxl-9">
+                    <div class="col-xxl-11">
                         <div class="row">
                             <div class="col-xl-7">
                                 <h1>Send money globally in seconds</h1>

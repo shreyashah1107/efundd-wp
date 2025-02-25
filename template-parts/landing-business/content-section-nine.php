@@ -7,7 +7,9 @@
             <h2>Multiple Accounts to Simplify Your Financial Management</h2>
             <p class="mt-4">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
           </div>
+        </div>
 
+        <div class="col-12">
           <div class="financial-management--items">
             <div class="financial-management--item">
               <div class="icon">

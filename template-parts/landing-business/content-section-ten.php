@@ -5,7 +5,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-5 col-xl-6 order-last order-lg-first">
               <div class="image text-center">
@@ -54,7 +54,7 @@
                   </div>
                   <div class="text">
                     <h4>24/7 protection</h4>
-                    <p>Every penny from your business is securely protected </p>
+                    <p>Our  fraud monitoring team, scan every transaction for suspicious activity</p>
                   </div>
                 </div>
               </div>

@@ -14,14 +14,14 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-between">
             <div class="col-md-6 col-lg-5 col-xl-5 order-last order-lg-first">
               <div class="image text-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/four.png" alt="Image">
               </div>
             </div>
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-5 text-center text-lg-start mb-5 mb-lg-0">
               <div class="title-row mb-0">
                 <h3 class="section-title text-white">Split Bills in Seconds</h3>
                 <p class="text-white">Share expenses in seconds… No calculators required.</p>

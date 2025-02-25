@@ -16,6 +16,10 @@ get_header(); ?>
 <?php include "template-parts/landing-business/content-section-two.php" ?>
 <!-- End: Content Section Two -->
 
+<!-- Start: Business account -->
+<?php include "template-parts/landing-business/business-account.php" ?>
+<!-- End: Business account -->
+
 <!-- Start: Content Section Three -->
 <?php include "template-parts/landing-business/content-section-three.php" ?>
 <!-- End: Content Section Three -->

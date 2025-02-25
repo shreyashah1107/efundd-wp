@@ -5,7 +5,7 @@
 
   <div class="content-wrapper">
     <div class="row justify-content-center text-center">
-      <div class="col-xxl-6">
+      <div class="col-xl-8 col-xxl-6">
         <div class="title-row">
           <h3 class="section-title section-title--xl">Send money anywhere, anytime</h3>
 
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="flags-row flags-row--two my-5 py-5">
+      <div class="flags-row flags-row--two my-lg-5 py-5">
         <div>
           <img class="title-text" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/28+PaymentMethods.png" alt="Image">
         </div>

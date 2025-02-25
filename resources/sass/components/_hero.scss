@@ -140,7 +140,7 @@
 
     .hero--img {
       &::before {
-        opacity: .1;
+        opacity: .15;
       }
 
       video {
@@ -169,7 +169,7 @@
       text-align: left;
       gap: 12px;
       padding: 10px 15px;
-      background-color: #0b5a2f;
+      background-color: rgba(#004520, .8);
       border-radius: 6px;
       margin-top: 30px;
 
@@ -198,7 +198,7 @@
   .hero--personal {
     .hero--content-images {
       img {
-        max-width: 65%;
+        max-width: 68%;
       }
     }
   }

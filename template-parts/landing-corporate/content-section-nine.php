@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 order-last order-lg-first">
               <div class="image">

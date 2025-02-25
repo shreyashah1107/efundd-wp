@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xxl-8">
+        <div class="col-xl-9 col-xxl-8">
           <div class="title-row">
             <h3 class="section-title section-title--xl">Accept 20+ payment methods</h3>
 

@@ -6,7 +6,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-7 text-center">
+        <div class="col-xl-9 col-xxl-7 text-center">
           <div class="title-row mb-5">
             <h3 class="section-title section-title--xl">Smart card machines for in-person payments</h3>
             <p>Find the perfect payment solution for your business, chose from mobile, medium and counter top card machines to accept in-person payments.. .</p>

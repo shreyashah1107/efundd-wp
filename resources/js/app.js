@@ -124,6 +124,37 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // Animate flags horizontally as a whole
+  function animateScrollingPersonal(selector, direction, speed, rotationAngle = 90) {
+    const xMovement = direction === "left" ? "-30%" : "30%";
+
+    gsap.to(selector, {
+      x: xMovement,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".personal-content-section--five",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: speed,
+      },
+    });
+
+    // Apply rotation to images inside the flag rows
+    gsap.to(selector + " .image img", {
+      rotation: rotationAngle,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".personal-content-section--five",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.5,
+      },
+    });
+  }
+
+  // Apply animations to flag rows
+  animateScrollingPersonal(".flags-row--one", "left", 1.5);
+  animateScrollingPersonal(".flags-row--two", "right", 1.5);
+
   const scrollWrapper = document.querySelector(".business-content-section--twelve .scroll-wrapper");
 
   if (scrollWrapper) {
@@ -138,20 +169,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-
-  // Flag images animation
-  const flagsTlPersonal = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".personal-content-section--five",
-      start: "top 80%",
-      end: "bottom 20%",
-      scrub: 1.2,
-      markers: false,
-    },
-  });
-  flagsTlPersonal
-    .fromTo(".flags-row.flags-row--one", { xPercent: -30 }, { xPercent: 30 }, "flagMove")
-    .fromTo(".flags-row.flags-row--two", { xPercent: 30 }, { xPercent: -30 }, "flagMove");
   // End: Personal page
 
   // Start: Corporate page
@@ -178,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sell Card Slider
   var swiper = new Swiper(".sell--swiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.01,
     spaceBetween: 20,
     // autoplay: {
     //   delay: 2000,
@@ -190,14 +207,14 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     breakpoints: {
-      // 576: {
-      //   slidesPerView: 1.5,
-      // },
-      // 768: {
-      //   slidesPerView: 2.2,
-      // },
+      576: {
+        slidesPerView: 1.5,
+      },
+      768: {
+        slidesPerView: 2.2,
+      },
       1400: {
-        slidesPerView: 1,
+        slidesPerView: 2.5,
       },
     },
   });
@@ -242,8 +259,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Flag images animation
   // Function to animate scrolling
-  function animateScrolling(selector, direction, speed) {
-    const xMovement = direction === "left" ? "-30%" : "30%"; 
+  function animateScrollingCorporate(selector, direction, speed) {
+    const xMovement = direction === "left" ? "-30%" : "30%";
 
     gsap.to(selector, {
       x: xMovement,
@@ -258,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Function to animate flag rotation
-  function animateRotationOnScroll(selector, rotationAngle) {
+  function animateRotationOnScrollCorporate(selector, rotationAngle) {
     gsap.to(selector + " .image img:not(.title-text)", {
       rotation: rotationAngle,
       ease: "none",
@@ -272,14 +289,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Apply scrolling effect
-  animateScrolling(".flags-row--one", "left", 1.5);
-  animateScrolling(".flags-row--two", "right", 1.5);
-  animateScrolling(".flags-row--three", "left", 1.5);
+  animateScrollingCorporate(".flags-row--one", "left", 1.5);
+  animateScrollingCorporate(".flags-row--two", "right", 1.5);
+  animateScrollingCorporate(".flags-row--three", "left", 1.5);
 
   // Apply independent rotation to each flag
-  animateRotationOnScroll(".flags-row--one", 90);
-  animateRotationOnScroll(".flags-row--two", 90);
-  animateRotationOnScroll(".flags-row--three", 90);
+  animateRotationOnScrollCorporate(".flags-row--one", 90);
+  animateRotationOnScrollCorporate(".flags-row--two", 90);
+  animateRotationOnScrollCorporate(".flags-row--three", 90);
 
   // Animate the coin-slider on scroll
   const coinsTl = gsap.timeline({

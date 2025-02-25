@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-lg-9 col-xl-10 col-xxl-7">
+        <div class="col-lg-9 col-xl-8 col-xxl-7">
           <div class="title-row">
             <h3 class="section-title section-title--xl">Accelerate your payments forward</h3>
 
@@ -12,7 +12,7 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="payment-acceleration--items mt-5">
             <div class="payment-acceleration--item">
               <div class="content-text">

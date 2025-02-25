@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xxl-9">
+        <div class="col-xl-10">
           <div class="title-row mb-5">
             <h2>Send and receive money worldwide, in seconds</h2>
 
@@ -12,7 +12,9 @@
             <a href="#" title="Open a business account" class="btn btn-bright-green">Open a business account</a>
             <a href="#" title="Receive Payments" class="btn btn-white">Receive Payments</a>
           </div>
+        </div>
 
+        <div class="col-12">
           <div class="payment-process--items">
             <div class="payment-process--item">
               <div class="image">

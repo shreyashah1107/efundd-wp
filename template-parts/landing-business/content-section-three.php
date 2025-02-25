@@ -6,7 +6,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xxl-9">
+        <div class="col-xl-10">
           <div class="title-row mb-5">
             <h2>Smart cards to unify company expenses</h2>
 

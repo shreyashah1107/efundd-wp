@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xxl-8">
+        <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
             <h3 class="section-title section-title--xl">Global payment processing for high performing merchants</h3>
 
@@ -13,10 +13,12 @@
             <a href="#" title="Learn more" class="btn btn-outline-white">Learn more</a>
           </div>
         </div>
-      </div>
 
-      <div class="image text-center mt-5">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/four.png" alt="Image">
+        <div class="col-xxl-11">
+          <div class="image text-center mt-5 pt-5">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/four.png" alt="Image">
+          </div>
+        </div>
       </div>
     </div>
   </div>

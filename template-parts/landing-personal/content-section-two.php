@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="option-list--item">
-                  <h4>Round the clock security</h4>
+                  <h4>24/7 protection</h4>
                 </div>
 
                 <div class="option-list--item">

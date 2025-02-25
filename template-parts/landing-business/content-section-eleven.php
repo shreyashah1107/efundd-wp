@@ -5,7 +5,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="content--items">
             <div class="content--item">
               <h3>Your money is always safeguarded</h3>

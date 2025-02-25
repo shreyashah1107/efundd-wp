@@ -2,16 +2,16 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row">
             <div class="col-xl-9 col-xxl-8">
               <div class="title-row mb-5">
-                <h3 class="section-title">Accept payments anytime, anywhere, on any device.</h3>
+                <h3 class="section-title section-title--xl">Accept payments anytime, anywhere, on any device.</h3>
               </div>
             </div>
           </div>
 
-          <ul class="nav nav-tabs" id="paymentTab" role="tablist">
+          <ul class="nav nav-tabs mt-5" id="paymentTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="card-machine-tab" data-bs-toggle="tab" data-bs-target="#card-machines" type="button" role="tab" aria-controls="card-machines" aria-selected="true">Card Machines</button>
             </li>

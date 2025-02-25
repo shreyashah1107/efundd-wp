@@ -10,7 +10,7 @@
     <div class="container">
       <div class="hero--content">
         <div class="row align-items-center justify-content-center">
-          <div class="col-xxl-9 text-center">
+          <div class="col-xl-10 col-xxl-9 text-center">
             <h1>Where the world does finance</h1>
             <p>Financial management made easy in a single platform</p>
 

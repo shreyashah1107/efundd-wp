@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0 p-lg-0 pe-lg-4">
               <div class="title-row mb-4">

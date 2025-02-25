@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xxl-11">
           <div class="title-row d-flex align-items-center justify-content-between flex-column flex-md-row">
-            <h3 class="section-title mb-md-0 w-50 text-center text-md-start">Sell anywhere and everywhere</h3>
+            <h3 class="section-title section-title--xl mb-md-0 w-50 text-center text-md-start">Sell anywhere and everywhere</h3>
 
             <div class="btn-grp justify-content-center justify-content-md-start flex-shrink-0">
               <a href="#" title="Get started" class="btn btn-bright-green">Get started</a>
@@ -53,7 +53,7 @@
                   </div>
                   <div class="card-sell--content">
                     <h4 class="title">Virtual Terminal</h4>
-                    <div class="text">Share a payment link directly from your dashboard</div>
+                    <div class="text">Use  our virtual terminals to accept customer payments by phone, or email</div>
 
                     <div class="card-sell--cta">
                       <a href="#" title="Start now" class="btn btn-outline-content-link">Start now</a>
