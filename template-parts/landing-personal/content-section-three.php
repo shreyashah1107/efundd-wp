@@ -10,7 +10,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-8">
+        <div class="col-xl-10 col-xxl-9">
           <div class="title-row">
             <h3 class="section-title section-title--xl">Get Paid to Spend</h3>
             <p>Earn exclusive cashback everywhere Mastercard is accepted</p>
@@ -21,39 +21,99 @@
             </div>
           </div>
 
-          <div class="images">
-            <div class="images--center">
-              <div class="center-left">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/three-one.png" alt="Image">
-              </div>
-              <div class="center-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/three-two.png" alt="Image">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xl-6">
+              <div class="images">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/3-card.png" alt="Image">
               </div>
             </div>
 
-            <div class="country--items">
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-1.png" alt="Image">
-              </div>
+            <div class="col-xl-6">
+              <div class="country--items">
+                <div class="country--item">
+                  <div class="country-info">
+                    <div class="d-flex align-items-center">
+                      <div class="flag-img-round">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-4.svg" alt="Image">
+                      </div>
+                      <div class="name">
+                        <h5>EUR</h5>
+                        <p>Euro</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency">
+                    €5900.00
+                  </div>
+                </div>
 
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-2.png" alt="Image">
-              </div>
+                <div class="country--item">
+                  <div class="country-info">
+                    <div class="d-flex align-items-center">
+                      <div class="flag-img-round">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-5.svg" alt="Image">
+                      </div>
+                      <div class="name">
+                        <h5>CAD</h5>
+                        <p>Canadian Dollar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency">
+                    $6000,.00
+                  </div>
+                </div>
 
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-3.png" alt="Image">
-              </div>
+                <div class="country--item">
+                  <div class="country-info">
+                    <div class="d-flex align-items-center">
+                      <div class="flag-img-round">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-7.svg" alt="Image">
+                      </div>
+                      <div class="name">
+                        <h5>NIS</h5>
+                        <p>Israeli New Shekel</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency">
+                    ₪300.00
+                  </div>
+                </div>
 
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-4.png" alt="Image">
-              </div>
+                <div class="country--item">
+                  <div class="country-info">
+                    <div class="d-flex align-items-center">
+                      <div class="flag-img-round">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-2.svg" alt="Image">
+                      </div>
+                      <div class="name">
+                        <h5>USD</h5>
+                        <p>US Dollar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency">
+                    $8,400.91
+                  </div>
+                </div>
 
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-5.png" alt="Image">
-              </div>
-
-              <div class="country--item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-6.png" alt="Image">
+                <div class="country--item">
+                  <div class="country-info">
+                    <div class="d-flex align-items-center">
+                      <div class="flag-img-round">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-1.svg" alt="Image">
+                      </div>
+                      <div class="name">
+                        <h5>GBP</h5>
+                        <p>British Pounds</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="currency">
+                    £3,600.00
+                  </div>
+                </div>
               </div>
             </div>
           </div>

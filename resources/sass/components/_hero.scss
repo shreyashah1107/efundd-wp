@@ -140,11 +140,12 @@
 
     .hero--img {
       &::before {
-        opacity: .15;
+        opacity: .5;
       }
 
       video {
         opacity: 1;
+        object-position: top;
       }
     }
   }

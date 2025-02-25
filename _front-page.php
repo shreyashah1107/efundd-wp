@@ -20,13 +20,13 @@ get_header(); ?>
 <?php include "template-parts/landing-business/business-account.php" ?>
 <!-- End: Business account -->
 
-<!-- Start: Content Section Three -->
-<?php include "template-parts/landing-business/content-section-three.php" ?>
-<!-- End: Content Section Three -->
-
 <!-- Start: Content Section Four -->
 <?php include "template-parts/landing-business/content-section-four.php" ?>
 <!-- End: Content Section Four -->
+
+<!-- Start: Content Section Three -->
+<?php include "template-parts/landing-business/content-section-three.php" ?>
+<!-- End: Content Section Three -->
 
 <!-- Start: Content Section Five -->
 <?php include "template-parts/landing-business/content-section-five.php" ?>

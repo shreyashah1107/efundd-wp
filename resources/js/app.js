@@ -88,32 +88,32 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Section three animations
-  if (document.querySelector(".personal-content-section--three")) {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".personal-content-section--three",
-        start: "top center+=100",
-        toggleActions: "play none none none",
-      },
-    });
+  // if (document.querySelector(".personal-content-section--three")) {
+  //   const timeline = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".personal-content-section--three",
+  //       start: "top center+=100",
+  //       toggleActions: "play none none none",
+  //     },
+  //   });
 
-    timeline
-      .fromTo(
-        ".personal-content-section--three .images--center .center-left",
-        { x: "-100%", opacity: 0 },
-        { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
-      )
-      .fromTo(
-        ".personal-content-section--three .images--center .center-right",
-        { x: "100%", opacity: 0 },
-        { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
-      )
-      .fromTo(
-        ".personal-content-section--three .country--item",
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out", stagger: 0.2 }
-      );
-  }
+  //   timeline
+  //     .fromTo(
+  //       ".personal-content-section--three .images--center .center-left",
+  //       { x: "-100%", opacity: 0 },
+  //       { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
+  //     )
+  //     .fromTo(
+  //       ".personal-content-section--three .images--center .center-right",
+  //       { x: "100%", opacity: 0 },
+  //       { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
+  //     )
+  //     .fromTo(
+  //       ".personal-content-section--three .country--item",
+  //       { opacity: 0, scale: 0.8 },
+  //       { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out", stagger: 0.2 }
+  //     );
+  // }
 
   // Section five animations
   animateElements(
