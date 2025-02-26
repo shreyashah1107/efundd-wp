@@ -187,6 +187,19 @@
   }
 }
 
+// > 2000px
+@media (min-width: 2001px) {
+  .hero--personal .hero--content-images {
+    right: -280px;
+    bottom: -270px;
+    top: 150px;
+
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
 // <= 2000px
 @media (max-width: 2000px) {
   .hero--personal .hero--content-images img {

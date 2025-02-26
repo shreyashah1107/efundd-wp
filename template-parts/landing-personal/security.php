@@ -14,22 +14,26 @@ if (isset($security_section)):
                 </div>
             </div>
 
-            <div class="security-text--grid">
-                <?php if (!empty($securities)): foreach ($securities as $security): ?>
-                        <div class="security-text--col">
-                            <?php if (!empty($security["icon"])) : ?>
-                                <div class="security-icon">
-                                    <img src="<?php echo $security["icon"]["url"] ?>"
-                                        alt="<?php echo @$security["icon"]["alt"] ?>">
+            <div class="row justify-content-center">
+                <div class="col-xxl-11">
+                    <div class="security-text--grid">
+                        <?php if (!empty($securities)): foreach ($securities as $security): ?>
+                                <div class="security-text--col">
+                                    <?php if (!empty($security["icon"])) : ?>
+                                        <div class="security-icon">
+                                            <img src="<?php echo $security["icon"]["url"] ?>"
+                                                alt="<?php echo @$security["icon"]["alt"] ?>">
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="security-content">
+                                        <h4><?php echo $security["title"] ?></h4>
+                                        <p><?php echo $security["text"] ?></p>
+                                    </div>
                                 </div>
-                            <?php endif; ?>
-                            <div class="security-content">
-                                <h4><?php echo $security["title"] ?></h4>
-                                <p><?php echo $security["text"] ?></p>
-                            </div>
-                        </div>
-                <?php endforeach;
-                endif; ?>
+                        <?php endforeach;
+                        endif; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

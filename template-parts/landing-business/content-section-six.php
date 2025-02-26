@@ -7,7 +7,9 @@
             <h2 class="section-title section-title--xl">Local and global payments that saves you money</h2>
             <p> Receive a dedicated IBAN to transact with your clients, and suppliers in over 100 countries – from the America to the Middle East. Make and receive domestic payments in the UK, Europe, and the USA using local account details.</p>
           </div>
+        </div>
 
+        <div class="col-12">
           <div class="payment-options--items">
             <div class="payment-options--item">
               <div class="image">

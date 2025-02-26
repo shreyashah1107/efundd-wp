@@ -144,7 +144,7 @@
           </div>
         </div>
 
-        <div class="flags-row flags-row--two mt-lg-5 pt-5">
+        <div class="flags-row flags-row--two">
           <div class="image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-9.svg" alt="Image">
           </div>

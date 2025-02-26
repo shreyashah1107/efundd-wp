@@ -5,7 +5,7 @@
 
     .section-title {
       .text-green {
-        color: #168E4C;
+        color: #168e4c;
         text-decoration: none;
       }
     }
@@ -73,10 +73,11 @@
         background-color: $white;
         padding: 15px;
         border-radius: 12px;
-        box-shadow: 0px 11.37px 25.57px 0px rgba($black, .05);
+        box-shadow: 0px 11.37px 25.57px 0px rgba($black, 0.05);
 
         .country-info {
           flex-grow: 1;
+          margin-right: 10px;
         }
 
         .flag-img-round {
@@ -99,12 +100,13 @@
           h5 {
             margin: 0;
             font-size: 2.2rem;
-            color: #09140E;
+            color: #09140e;
             font-weight: 500;
             text-transform: uppercase;
           }
 
           p {
+            color: #8d908e;
             margin: 0;
             font-size: 1.4rem;
           }
@@ -640,9 +642,29 @@
     }
 
     &--three {
+      .country {
+        &--items {
+          grid-template-columns: auto;
+          gap: 10px;
+        }
+
+        &--item {
+          .currency,
+          .name h5 {
+            font-size: 1.6rem;
+          }
+
+          .flag-img-round {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
       .benefit {
         &--items {
           grid-template-columns: auto;
+          gap: 10px;
         }
 
         &--item {
@@ -725,9 +747,6 @@
 // < 576px
 @include media-breakpoint-down(sm) {
   .personal-content-section {
-    &--three {
-    }
-
     &--five .globe-img {
       .country-images {
         .image {
