@@ -143,3 +143,13 @@ function render_menu($menu_name)
     }
     return [];
 }
+
+function remove_version_from_app_assets( $src ) {
+    if ( strpos( $src, 'app.css' ) !== false || strpos( $src, 'app.js' ) !== false ) {
+        $src = remove_query_arg( 'ver', $src );
+    }
+    return $src;
+}
+add_filter( 'style_loader_src', 'remove_version_from_app_assets', 10, 2 );
+add_filter( 'script_loader_src', 'remove_version_from_app_assets', 10, 2 );
+
