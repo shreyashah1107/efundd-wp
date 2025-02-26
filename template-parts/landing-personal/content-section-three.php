@@ -29,8 +29,8 @@
             </div>
 
             <div class="col-xl-6">
-              <div class="country--items">
-                <div class="country--item">
+              <div class="list-country--items">
+                <div class="list-country--item">
                   <div class="country-info">
                     <div class="d-flex align-items-center">
                       <div class="flag-img-round">
@@ -47,7 +47,7 @@
                   </div>
                 </div>
 
-                <div class="country--item">
+                <div class="list-country--item">
                   <div class="country-info">
                     <div class="d-flex align-items-center">
                       <div class="flag-img-round">
@@ -64,7 +64,7 @@
                   </div>
                 </div>
 
-                <div class="country--item">
+                <div class="list-country--item">
                   <div class="country-info">
                     <div class="d-flex align-items-center">
                       <div class="flag-img-round">
@@ -81,7 +81,7 @@
                   </div>
                 </div>
 
-                <div class="country--item">
+                <div class="list-country--item">
                   <div class="country-info">
                     <div class="d-flex align-items-center">
                       <div class="flag-img-round">
@@ -98,7 +98,7 @@
                   </div>
                 </div>
 
-                <div class="country--item">
+                <div class="list-country--item">
                   <div class="country-info">
                     <div class="d-flex align-items-center">
                       <div class="flag-img-round">
