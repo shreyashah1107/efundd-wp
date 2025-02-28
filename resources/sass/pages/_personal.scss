@@ -545,6 +545,18 @@
   }
 }
 
+// > 1500px
+@include media-breakpoint-up(xxl) {
+  .personal-content-section {
+    &--seven .section-title {
+      margin-right: -15px;
+    }
+    &--eight .section-title {
+      margin-right: -25px;
+    }
+  }
+}
+
 // < 1500px
 @include media-breakpoint-down(xxl) {
   .personal-content-section--nine .country-list--items {

@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sell Card Slider
   var swiper = new Swiper(".sell--swiper", {
-    slidesPerView: 1.01,
+    slidesPerView: 1,
     spaceBetween: 20,
     // autoplay: {
     //   delay: 2000,
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2.2,
       },
       1400: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
       },
     },
   });
