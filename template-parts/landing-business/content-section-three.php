@@ -6,9 +6,9 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-9">
+        <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h2>Smart cards to unify company expenses</h2>
+            <h3 class="section-title section-title--xl">Smart cards to unify company expenses</h3>
 
             <p class="mt-4"> Corporate Mastercard debit cards in 5 currencies across 32+ countries with team spend controls, and real-time spend data analysis. </p>
           </div>

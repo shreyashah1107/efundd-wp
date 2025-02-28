@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-11 col-xxl-9">
           <div class="title-row">
-            <h2>Hold funds in 28+ currencies</h2>
+            <h3 class="section-title section-title--xl">Hold funds in 28+ currencies</h3>
             <p class="mt-4">Manage your money effortlessly with multi-currency accounts, enabling you to hold, convert, and transact in over 20 currencies worldwide.</p>
           </div>
         </div>

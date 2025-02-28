@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10">
+        <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h2>Send and receive money worldwide, in seconds</h2>
+            <h3 class="section-title section-title--xl">Send and receive money worldwide, in seconds</h3>
 
             <p class="mt-4">Send, spend and get paid in over 28+ currencies. All you need in a single business account</p>
           </div>

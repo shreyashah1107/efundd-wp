@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-10 col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title">Always know what you pay</h3>
+                <h3 class="section-title section-title--xl">Always know what you pay</h3>
               </div>
               <p>Fees as low as 0.15%. Enjoy seamless transactions with fees so low, you'll wonder why you ever paid more.</p>
               <p> No hidden fees—just clear, transparent pricing every time.</p>

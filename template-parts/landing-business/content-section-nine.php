@@ -2,9 +2,9 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-9">
+        <div class="col-xl-11 col-xxl-9">
           <div class="title-row text-center mb-5">
-            <h2>Multiple Accounts to Simplify Your Financial Management</h2>
+            <h3 class="section-title section-title--xl text-white">Multiple Accounts to Simplify Your Financial Management</h3>
             <p class="mt-4">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
           </div>
         </div>

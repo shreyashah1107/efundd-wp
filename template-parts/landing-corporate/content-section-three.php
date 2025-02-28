@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-8">
+        <div class="col-xl-10 col-xxl-9">
           <div class="title-row mb-5">
             <h3 class="section-title section-title--xl">Global payment processing for high performing merchants</h3>
 

@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="row">
-            <div class="col-xl-9 col-xxl-8">
+            <div class="col-xl-9 col-xxl-9">
               <div class="title-row mb-5">
                 <h3 class="section-title section-title--xl">Accept payments anytime, anywhere, on any device.</h3>
               </div>

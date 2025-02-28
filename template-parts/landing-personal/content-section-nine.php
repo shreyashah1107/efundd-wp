@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-xxl-8">
+        <div class="col-xxl-9">
           <div class="title-row text-center">
             <h3 class="section-title section-title--xl">Reach the world with Paayco</h3>
             <p>Send and receive payments in 100+ countries with ease</p>

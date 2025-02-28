@@ -2,7 +2,7 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10 col-xxl-8">
+        <div class="col-xl-10 col-xxl-9">
           <div class="title-row">
             <h3 class="section-title section-title--xl">Switch to Paayco or integrate with the e-commerce platforms you use</h3>
 
