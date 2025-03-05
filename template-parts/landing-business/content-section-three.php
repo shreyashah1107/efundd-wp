@@ -17,14 +17,14 @@
             <a href="#" title="Learn more" class="btn btn-outline-content-link">Learn more</a>
           </div>
 
-          <!-- <div class="image text-center mt-5">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/three.png" alt="Image">
-          </div> -->
+          <div class="image text-center mt-5">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/content-three-cards.png" alt="Image">
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="three-card-images mt-lg-5 pt-5">
+    <!-- <div class="three-card-images mt-lg-5 pt-5">
       <div class="card-image--items">
         <div class="card-image--item card-one">
           <div class="card-one--inner">
@@ -44,6 +44,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

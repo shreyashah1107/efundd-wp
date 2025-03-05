@@ -104,11 +104,11 @@
       align-items: center;
       background: #004520;
       border-radius: 32px;
-      padding: 100px 30px 0;
+      // padding: 100px 30px 0;
 
       img {
-        max-height: 400px;
-        width: auto;
+        // max-height: 400px;
+        width: 100%;
       }
     }
 
@@ -154,6 +154,7 @@
   &--six {
     position: relative;
     background-color: #004520;
+    overflow: hidden;
 
     .section-title,
     p {
@@ -175,37 +176,43 @@
 
     .image {
       position: relative;
+      right: 110px;
 
-      .list {
-        &--images {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          margin-bottom: 20px;
-          gap: 20px;
-        }
-
-        &--image {
-          margin-left: -50px;
-
-          &:last-child {
-            margin-right: -50px;
-            margin-left: auto;
-          }
-
-          img {
-            border-radius: 8px;
-            box-shadow: 0px 143.494px 40.045px 0px rgba(0, 0, 0, 0), 0px 91.213px 36.708px 0px rgba(0, 0, 0, 0.01),
-              0px 51.169px 31.146px 0px rgba(0, 0, 0, 0.05), 0px 23.36px 23.36px 0px rgba(0, 0, 0, 0.09),
-              0px 5.562px 12.236px 0px rgba(0, 0, 0, 0.1);
-          }
-        }
+      img {
+        // height: 500px;
+        max-width: initial;
       }
+
+      // .list {
+      //   &--images {
+      //     position: absolute;
+      //     top: 0;
+      //     bottom: 0;
+      //     left: 0;
+      //     right: 0;
+      //     display: flex;
+      //     flex-direction: column;
+      //     justify-content: flex-end;
+      //     margin-bottom: 20px;
+      //     gap: 20px;
+      //   }
+
+      //   &--image {
+      //     margin-left: -50px;
+
+      //     &:last-child {
+      //       margin-right: -50px;
+      //       margin-left: auto;
+      //     }
+
+      //     img {
+      //       border-radius: 8px;
+      //       box-shadow: 0px 143.494px 40.045px 0px rgba(0, 0, 0, 0), 0px 91.213px 36.708px 0px rgba(0, 0, 0, 0.01),
+      //         0px 51.169px 31.146px 0px rgba(0, 0, 0, 0.05), 0px 23.36px 23.36px 0px rgba(0, 0, 0, 0.09),
+      //         0px 5.562px 12.236px 0px rgba(0, 0, 0, 0.1);
+      //     }
+      //   }
+      // }
     }
   }
 
@@ -565,12 +572,20 @@
 
 // < 1600px
 @include media-breakpoint-down(xxl) {
-  .corporate-content-section--fourteen .image {
-    right: 0;
-    width: 43%;
+  .corporate-content-section {
+    &--six {
+      .image img {
+        max-width: 850px;
+      }
+    }
 
-    img {
-      width: 100%;
+    &--fourteen .image {
+      right: 0;
+      width: 43%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -579,9 +594,8 @@
 @media (max-width: 1400px) {
   .corporate-content-section {
     &--six {
-      .image {
-        top: 0;
-        right: 0;
+      .image img {
+        max-width: 720px;
       }
     }
 
@@ -594,17 +608,17 @@
 }
 
 // >= 1200px and <= 1400px
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .corporate-content-section--six .image .list--image {
-    &:last-child {
-      margin-right: 0;
-    }
+// @media (min-width: 1200px) and (max-width: 1400px) {
+//   .corporate-content-section--six .image .list--image {
+//     &:last-child {
+//       margin-right: 0;
+//     }
 
-    img {
-      max-width: 250px;
-    }
-  }
-}
+//     img {
+//       max-width: 250px;
+//     }
+//   }
+// }
 
 // < 1200px
 @include media-breakpoint-down(xl) {
@@ -621,11 +635,16 @@
       }
 
       .image {
-        position: relative;
-        left: 0;
         right: 0;
-        width: 80%;
-        margin: 0 auto;
+      //   position: relative;
+      //   left: 0;
+      //   right: 0;
+      //   width: 80%;
+      //   margin: 0 auto;
+
+        img {
+          max-width: 100%;
+        }
       }
     }
 
@@ -798,9 +817,9 @@
         padding: 50px 0;
       }
 
-      .image {
-        width: 95%;
-      }
+      // .image {
+      //   width: 95%;
+      // }
     }
 
     &--seven {

@@ -120,7 +120,7 @@
 
           <div class="benefit--items">
             <div class="benefit--item">
-              <p>Safe online payments with 3D Secure.</p>
+              <p>Safe online payments with 3D Secure</p>
             </div>
 
             <div class="benefit--item">

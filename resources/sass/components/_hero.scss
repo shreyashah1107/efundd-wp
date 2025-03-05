@@ -129,8 +129,26 @@
   }
 
   &--corporate {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 135px;
+      background: linear-gradient(180deg, rgba(9, 20, 13, 0.8) 13.14%, rgba(9, 20, 13, 0.48) 78.7%, rgba(9, 20, 13, 0) 100%);
+      z-index: 1;
+    }
+    
     .hero--content {
       padding: 200px 0;
+
+      // > 1200px
+      @include media-breakpoint-up(xl) {
+        h1 {
+          line-height: 1.4;
+        }
+      }
 
       h1,
       p {
@@ -141,6 +159,7 @@
     .hero--img {
       &::before {
         opacity: .5;
+        background-color: #09140E;
       }
 
       video {
@@ -245,7 +264,7 @@
 
     &--corporate {
       .hero--content {
-        padding: 150px 0;
+        padding: 200px 0 150px;
       }
     }
 

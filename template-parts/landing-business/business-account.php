@@ -18,7 +18,7 @@
               </div>
 
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-1.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-1.gif" alt="Image">
               </div>
             </div>
 
@@ -28,7 +28,7 @@
               </div>
 
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-3.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-3.gif" alt="Image">
               </div>
             </div>
 
@@ -38,7 +38,7 @@
               </div>
 
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-2.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/business-acc-2.gif" alt="Image">
               </div>
             </div>
           </div>

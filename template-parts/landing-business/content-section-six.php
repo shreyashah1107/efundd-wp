@@ -13,7 +13,7 @@
           <div class="payment-options--items">
             <div class="payment-options--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-1.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-1.gif" alt="Image" />
               </div>
 
               <div class="content">
@@ -28,7 +28,7 @@
 
             <div class="payment-options--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-2.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-2.gif" alt="Image" />
               </div>
 
               <div class="content">
@@ -43,7 +43,7 @@
 
             <div class="payment-options--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-3.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-3.gif" alt="Image" />
               </div>
 
               <div class="content">

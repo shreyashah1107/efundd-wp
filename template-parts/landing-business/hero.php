@@ -22,7 +22,7 @@
 
           <div class="col-xl-10 col-xxl-8">
             <div class="image mt-5 pt-5">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/hero.png" alt="Image">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/hero.gif" alt="Image">
             </div>
           </div>
         </div>

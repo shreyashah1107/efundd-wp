@@ -38,7 +38,7 @@
 
             <div class="col-md-8 col-lg-6 col-xl-6">
               <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/twelve.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/twelve.gif" alt="Image">
               </div>
             </div>
           </div>

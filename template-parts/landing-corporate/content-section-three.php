@@ -16,7 +16,7 @@
 
         <div class="col-xxl-11">
           <div class="image text-center mt-5 pt-5">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/four.png" alt="Image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/four.gif" alt="Image">
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
             <div class="row align-items-end justify-content-center justify-content-xl-between">
-              <div class="col-xl-6 col-xl-6">
+              <div class="col-xl-6 col-xxl-6">
                 <div class="main-content">
                   <div class="title-row mb-5">
                     <h3 class="section-title section-title--xl mb-5">Switch your phone into a payment device</h3>
@@ -17,11 +17,11 @@
                 </div>
               </div>
 
-              <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-5">
+              <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-6">
                 <div class="image">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six-mobile.png" alt="Image">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six.gif" alt="Image">
 
-                  <div class="list--images">
+                  <!-- <div class="list--images">
                     <div class="list--image">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six-list-1.png" alt="Image">
                     </div>
@@ -37,7 +37,7 @@
                     <div class="list--image">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six-list-4.png" alt="Image">
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

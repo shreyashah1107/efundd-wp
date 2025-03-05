@@ -9,7 +9,7 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-5 col-xl-6 order-last order-lg-first">
               <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/ten.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/ten.gif" alt="Image" />
               </div>
             </div>
             <div class="col-lg-7 col-xl-6 text-lg-start mb-5 mb-lg-0">

@@ -18,7 +18,7 @@
           <div class="payment-process--items">
             <div class="payment-process--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-1.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-1.gif" alt="Image" />
               </div>
 
               <div class="content">
@@ -28,7 +28,7 @@
 
             <div class="payment-process--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-2.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-2.gif" alt="Image" />
               </div>
 
               <div class="content">
@@ -38,7 +38,7 @@
 
             <div class="payment-process--item">
               <div class="image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-3.png" alt="Image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/process-3.gif" alt="Image" />
               </div>
 
               <div class="content">

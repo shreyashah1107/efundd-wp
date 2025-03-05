@@ -21,7 +21,7 @@
 
             <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-6">
               <div class="image text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/one.png" alt="Image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/one.gif" alt="Image">
               </div>
             </div>
           </div>
