@@ -13,7 +13,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/seven.png" alt="Image">
               </div>
             </div>
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
                 <h3 class="section-title section-title--xl">Tap. Pay. Done.</h3>
                 <p>Experience a new way to pay. No cards, no PINs, no limits, just your unique print, and you're done. Security is literally at your fingertips!</p>

@@ -4,13 +4,13 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 order-last order-lg-first">
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/eight.png" alt="Image">
               </div>
             </div>
 
-            <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0 p-lg-0 ps-lg-4">
+            <div class="col-lg-6 col-xl-6 mt-5 mt-lg-0 p-lg-0 ps-lg-4">
               <div class="title-row mb-5">
                 <h3 class="section-title section-title--xl">Manage your global payments</h3>
               </div>

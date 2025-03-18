@@ -7,7 +7,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-9">
           <div class="row align-items-center">
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
                 <h3 class="section-title section-title--xl">FREE payments with Paayed<sup><small>®</small></sup></h3>
                 <p>Send money effortlessly to anyone, anywhere, with Paayed®. Email, phone, or Tag, that's all you need. Instantly pay and get paid back for FREE!</p>

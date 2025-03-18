@@ -10,7 +10,7 @@
           </div>
           <div class="btn-grp justify-content-center">
             <a href="#" title="Open free account" class="btn btn-bright-green">Open free account</a>
-            <a href="#" title="Learn more" class="btn btn-outline-white">Learn more</a>
+            <a href="#" title="Learn more" class="btn btn-white">Learn more</a>
           </div>
         </div>
 

@@ -12,7 +12,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/two.gif" alt="Image">
               </div>
             </div>
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
                 <h3 class="section-title section-title--xl">Infrastructure for financial payment solutions</h3>
               </div>
@@ -20,7 +20,7 @@
 
               <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
                 <a href="#" title="Open free account" class="btn btn-bright-green">Open free account</a>
-                <a href="#" title="View demo" class="btn btn-outline-content-link">View demo</a>
+                <a href="#" title="View demo" class="btn btn-white">View demo</a>
               </div>
             </div>
           </div>

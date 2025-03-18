@@ -12,7 +12,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/two.gif" alt="Image">
               </div>
             </div>
-            <div class="col-md-10 col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-md-10 col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
                 <h3 class="section-title section-title--xl">Always know what you pay</h3>
               </div>

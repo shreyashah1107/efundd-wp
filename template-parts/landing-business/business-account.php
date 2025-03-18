@@ -2,11 +2,11 @@
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-xl-10">
+        <div class="col-xl-10 col-xxl-9">
           <div class="title-row">
-            <h3 class="section-title section-title--xl">Connect With The World</h3>
+            <h3 class="section-title section-title--xl">Business account without borders</h3>
 
-            <p class="mt-4">Send and receive payments in 100+ countries with ease</p>
+            <p class="mt-4">Apply now to experience the power of simple business banking!</p>
           </div>
         </div>
 

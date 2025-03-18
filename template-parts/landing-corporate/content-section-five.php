@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="title-row d-flex align-items-center justify-content-between flex-column flex-md-row">
-            <h3 class="section-title section-title--xl mb-md-0 w-50 text-center text-md-start">Sell anywhere and everywhere</h3>
+            <h3 class="section-title section-title--xl mb-md-0 w-50">Sell anywhere and everywhere</h3>
 
             <div class="btn-grp justify-content-center justify-content-md-start flex-shrink-0">
               <a href="#" title="Get started" class="btn btn-bright-green">Get started</a>

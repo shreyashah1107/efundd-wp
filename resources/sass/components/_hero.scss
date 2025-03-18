@@ -129,17 +129,24 @@
   }
 
   &--corporate {
+    overflow: hidden;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       height: 135px;
-      background: linear-gradient(180deg, rgba(9, 20, 13, 0.8) 13.14%, rgba(9, 20, 13, 0.48) 78.7%, rgba(9, 20, 13, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(9, 20, 13, 0.5) 13.14%,
+        rgba(9, 20, 13, 0.2) 78.7%,
+        rgba(9, 20, 13, 0) 100%
+      );
       z-index: 1;
     }
-    
+
     .hero--content {
       padding: 200px 0;
 
@@ -158,13 +165,51 @@
 
     .hero--img {
       &::before {
-        opacity: .5;
-        background-color: #09140E;
+        background-color: rgba($content-link, 0.4);
+      }
+
+      img {
+        opacity: 1;
+        object-position: bottom;
       }
 
       video {
         opacity: 1;
         object-position: top;
+      }
+    }
+
+    .certificates {
+      &-row {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        padding-bottom: 50px;
+
+        .text {
+          color: $white;
+          font-size: 2rem;
+          font-weight: 700;
+          max-width: 250px;
+        }
+      }
+
+      &--swiper {
+        overflow: visible;
+        flex: 0 0 calc(100% - 330px);
+        max-width: calc(100% - 330px);
+
+        .swiper-slide {
+          height: 100px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            height: auto;
+          }
+        }
       }
     }
   }
@@ -189,7 +234,7 @@
       text-align: left;
       gap: 12px;
       padding: 10px 15px;
-      background-color: rgba(#004520, .8);
+      background-color: rgba(#004520, 0.8);
       border-radius: 6px;
       margin-top: 30px;
 
@@ -266,6 +311,17 @@
       .hero--content {
         padding: 200px 0 150px;
       }
+
+      .certificates {
+        &-row {
+          gap: 50px;
+        }
+
+        &--swiper {
+          flex: 0 0 calc(100% - 300px);
+          max-width: calc(100% - 300px);
+        }
+      }
     }
 
     &--business .hero--content {
@@ -279,7 +335,8 @@
   .hero {
     &--content {
       h1 {
-        text-transform: none;
+        font-size: 4.8rem;
+        letter-spacing: -2.4px;
       }
       p {
         max-width: 80%;
@@ -315,6 +372,29 @@
     &--corporate {
       .hero--content {
         padding: 150px 0 80px;
+      }
+
+      .certificates {
+        &-row {
+          gap: 20px;
+          flex-direction: column;
+          padding-bottom: 20px;
+
+          .text {
+            font-size: 1.2rem;
+            max-width: 100%;
+          }
+        }
+
+        &--swiper {
+          flex: 100%;
+          max-width: 100%;
+
+          .swiper-slide {
+            height: 70px;
+            width: 70px;
+          }
+        }
       }
     }
 

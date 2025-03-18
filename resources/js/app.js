@@ -257,6 +257,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // Certificate Slider
+  var swiper = new Swiper(".certificates--swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    autoplay: {
+      delay: 2000,
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+    },
+  });
+
   // Flag images animation
   // Function to animate scrolling
   function animateScrollingCorporate(selector, direction, speed) {

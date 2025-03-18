@@ -7,12 +7,12 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-lg-5 col-xl-6 order-last order-lg-first">
+            <div class="col-lg-5 col-xl-6">
               <div class="image text-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/ten.gif" alt="Image" />
               </div>
             </div>
-            <div class="col-lg-7 col-xl-6 text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 text-lg-start mt-5 mt-lg-0">
               <div class="title-row mb-4">
                 <h3 class="section-title section-title--xl">More than a business account</h3>
               </div>

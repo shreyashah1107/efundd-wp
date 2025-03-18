@@ -7,7 +7,7 @@ if (isset($security_section)):
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-xxl-9">
-                    <div class="title-row text-center">
+                    <div class="title-row text-md-center">
                         <h3 class="section-title section-title--xl">Security You Can Trust</h3>
                         <p>You’ve worked hard for your money. Here is how we work hard to keep your account safe.</p>
                     </div>

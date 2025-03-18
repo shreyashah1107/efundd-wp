@@ -195,7 +195,8 @@
   }
 
   .navbar-toggler {
-    padding: 5px;
+    padding: 0;
+    border: 0;
 
     &-icon {
       width: 25px;
@@ -319,6 +320,21 @@
         border-top: 1px solid rgba($white, 0.1);
       }
     }
+  }
+}
+
+// > 576px
+@include media-breakpoint-up(sm) {
+  .navbar-collapse .sliding-tabs {
+    display: none;
+  }
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+  .navbar-collapse .sliding-tabs {
+    display: block;
+    margin: 10px 0 0;
   }
 }
 

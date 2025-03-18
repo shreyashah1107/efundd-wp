@@ -8,7 +8,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-9">
           <div class="row align-items-center justify-content-between">
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
                 <h3 class="section-title section-title--xl">Your finances, your way</h3>
                 <p>Experience financial management that aligns with your unique preferences and goals, designed for your lifestyle.</p>

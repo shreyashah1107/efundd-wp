@@ -17,7 +17,7 @@
                 </div>
               </div>
 
-              <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-6">
+              <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-6">
                 <div class="image">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six.gif" alt="Image">
 

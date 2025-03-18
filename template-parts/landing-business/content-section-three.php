@@ -14,7 +14,7 @@
           </div>
           <div class="btn-grp justify-content-center">
             <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
-            <a href="#" title="Learn more" class="btn btn-outline-content-link">Learn more</a>
+            <a href="#" title="Learn more" class="btn btn-white">Learn more</a>
           </div>
 
           <div class="image text-center mt-5">

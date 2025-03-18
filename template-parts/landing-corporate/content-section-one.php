@@ -1,13 +1,13 @@
 <section class="corporate-content-section--one">
-  <div class="section-bg section-bg--left">
+  <!-- <div class="section-bg section-bg--left">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/section-left-bg.png" alt="Image">
-  </div>
+  </div> -->
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
                 <h3 class="section-title section-title--xl">A global modular network, for the world's businesses</h3>
               </div>
@@ -15,7 +15,7 @@
 
               <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
                 <a href="#" title="Get started" class="btn btn-bright-green">Get started</a>
-                <a href="#" title="Learn more" class="btn btn-outline-content-link">Learn more</a>
+                <a href="#" title="Learn more" class="btn btn-white">Learn more</a>
               </div>
             </div>
 

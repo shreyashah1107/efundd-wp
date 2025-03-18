@@ -17,7 +17,7 @@
 
             <div class="btn-grp justify-content-center mt-5">
               <a href="#" title="Sign up for free" class="btn btn-bright-green">Sign up for free</a>
-              <a href="#" title="Tell me more" class="btn btn-outline-content-link">Tell me more</a>
+              <a href="#" title="Tell me more" class="btn btn-white">Tell me more</a>
             </div>
           </div>
 

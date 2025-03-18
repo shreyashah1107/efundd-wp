@@ -56,6 +56,10 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="headerNav">
+                                <div class="sliding-tabs">
+                                    <?php include 'inc/tabs.php'; ?>
+                                </div>
+                                
                                 <ul class="navbar-nav ms-auto">
                                     <?php
                                     $main_menu = render_menu($menu_type);
