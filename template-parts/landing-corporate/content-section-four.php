@@ -30,12 +30,12 @@
             <div class="tab-pane show active" id="card-machines" role="tabpanel" aria-labelledby="card-machine-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-5 order-last order-lg-first">
+                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
                     <div class="image text-center">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.gif" alt="Image">
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-7">
+                  <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Plus Card Machine</h4>
@@ -54,12 +54,12 @@
             <div class="tab-pane" id="business-accounts" role="tabpanel" aria-labelledby="business-accounts-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-5  order-last order-lg-first">
+                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
                     <div class="image text-center">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/business-account.png" alt="Image">
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-7">
+                  <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Business Account</h4>
@@ -78,12 +78,12 @@
             <div class="tab-pane" id="plus-cards" role="tabpanel" aria-labelledby="plus-cards-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-5 order-last order-lg-first">
+                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
                     <div class="image text-center">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/mobile-card-machine.png" alt="Image">
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-7">
+                  <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Mobile card machines</h4>
@@ -102,12 +102,12 @@
             <div class="tab-pane" id="terminals" role="tabpanel" aria-labelledby="terminals-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-5 order-last order-lg-first">
+                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
                     <div class="image text-center">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/virtual-terminals.png" alt="Image">
                     </div>
                   </div>
-                  <div class="col-lg-6 col-xl-7">
+                  <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Virtual terminals</h4>
