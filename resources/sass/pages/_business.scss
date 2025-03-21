@@ -431,13 +431,16 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 40px 20px;
-        place-items: center;
+        // place-items: center;
       }
 
       &--item {
         position: relative;
 
         &:first-child {
+          display: flex;
+          align-items: center;
+          
           h3 {
             color: $white;
             text-transform: uppercase;
