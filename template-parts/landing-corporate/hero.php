@@ -21,38 +21,42 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row justify-content-center">
-        <div class="col-xxl-11">
-          <div class="certificates-row">
-            <div class="text">
-              Certified for Security, Privacy & Compliance:
-            </div>
+    <div class="certificates-row--content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-11">
+            <div class="certificates-row">
+              <div class="text">
+                Certified for Security, Privacy & Compliance:
+              </div>
 
-            <div class="certificates--swiper swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-4.png" alt="Image">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-1.png" alt="Image">
-                </div>
+              <div class="certificates--swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-4.png" alt="Image">
+                  </div>
 
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-2.png" alt="Image">
-                </div>
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-1.png" alt="Image">
+                  </div>
 
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-3.png" alt="Image">
-                </div>
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-2.png" alt="Image">
+                  </div>
 
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-5.png" alt="Image">
-                </div>
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-3.png" alt="Image">
+                  </div>
 
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-6.png" alt="Image">
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-5.png" alt="Image">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-6.png" alt="Image">
+                  </div>
                 </div>
               </div>
             </div>

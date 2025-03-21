@@ -184,7 +184,12 @@
         display: flex;
         align-items: center;
         gap: 80px;
-        padding-bottom: 50px;
+
+        &--content {
+          background-color: rgba($white, .1);
+          backdrop-filter: blur(10px);
+          padding: 25px 0;
+        }
 
         .text {
           color: $white;
@@ -343,6 +348,10 @@
         font-size: 1.8rem;
       }
     }
+
+    &--corporate .certificates-row--content {
+      padding: 10px 0;
+    }
   }
 }
 
@@ -376,9 +385,8 @@
 
       .certificates {
         &-row {
-          gap: 20px;
+          gap: 10px;
           flex-direction: column;
-          padding-bottom: 20px;
 
           .text {
             font-size: 1.2rem;
