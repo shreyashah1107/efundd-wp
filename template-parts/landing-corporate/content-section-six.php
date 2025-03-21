@@ -1,4 +1,7 @@
 <section class="corporate-content-section--six">
+  <div class="bg-img">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/six-bg.png" alt="Image">
+  </div>
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">

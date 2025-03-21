@@ -32,6 +32,10 @@
             <div class="certificates--swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-4.png" alt="Image">
+                </div>
+                
+                <div class="swiper-slide">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-1.png" alt="Image">
                 </div>
 
@@ -41,10 +45,6 @@
 
                 <div class="swiper-slide">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-3.png" alt="Image">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/certificate-4.png" alt="Image">
                 </div>
 
                 <div class="swiper-slide">
