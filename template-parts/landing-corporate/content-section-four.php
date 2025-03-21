@@ -32,7 +32,7 @@
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                   <div class="col-lg-6 col-xl-6 order-last order-lg-first">
                     <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.gif" alt="Image">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.png" alt="Image">
                     </div>
                   </div>
                   <div class="col-lg-6 col-xl-6">
