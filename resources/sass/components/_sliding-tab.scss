@@ -23,6 +23,10 @@
       border-radius: 99px;
       cursor: pointer;
       transition: color 0.15s ease-in;
+
+      &.active {
+        color: #00413b;
+      }
     }
 
     input[type="radio"] {
@@ -35,15 +39,15 @@
       }
     }
 
-    input[id="business-tab"]:checked ~ .glider {
+    .business-tab.active ~ .glider {
       transform: translateX(100%);
     }
 
-    input[id="corporate-tab"]:checked ~ .glider {
+    .corporate-tab.active ~ .glider {
       transform: translateX(0);
     }
 
-    input[id="personal-tab"]:checked ~ .glider {
+    .personal-tab.active ~ .glider {
       transform: translateX(200%);
     }
 

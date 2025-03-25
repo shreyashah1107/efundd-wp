@@ -107,8 +107,8 @@
                         </div>
                         <div>
                             <select id="langSelector" class="lang-selector">
-                                <option selected="selected" value="#">EN</option>
-                                <option value="#/fr/">FR</option>
+                                <option value="?lang=en" selected>EN</option>
+                                <option value="?lang=fr">FR</option>
                             </select>
                         </div>
                     </li>

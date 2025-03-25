@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Hello, welcome to my site!"
+msgstr "Hello, welcome to my site!"
+
+msgid "Read More"
+msgstr "Read More"

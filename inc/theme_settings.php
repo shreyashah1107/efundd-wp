@@ -153,3 +153,14 @@ function remove_version_from_app_assets( $src ) {
 add_filter( 'style_loader_src', 'remove_version_from_app_assets', 10, 2 );
 add_filter( 'script_loader_src', 'remove_version_from_app_assets', 10, 2 );
 
+
+function custom_switch_language() {
+    if (isset($_GET['lang'])) {
+        $lang = sanitize_text_field($_GET['lang']);
+        switch_to_locale($lang);
+        setcookie('site_lang', $lang, time() + (86400 * 30), "/"); // Store preference in a cookie
+    } elseif (isset($_COOKIE['site_lang'])) {
+        switch_to_locale($_COOKIE['site_lang']);
+    }
+}
+add_action('init', 'custom_switch_language');
