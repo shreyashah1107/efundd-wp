@@ -16,8 +16,8 @@
           <div class="payment-acceleration--items mt-5">
             <div class="payment-acceleration--item">
               <div class="content-text">
-                <h4>Go global</h4>
-                <p>Process payments globally, with local acquiring</p>
+                <h4>Payment Processing</h4>
+                <p>Process payments globally, with local acquiring rates.</p>
               </div>
               <div class="content-cta">
                 <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
@@ -29,7 +29,7 @@
             <div class="payment-acceleration--item">
               <div class="content-text">
                 <h4>Authorisation</h4>
-                <p>Our intelligent authorization optimization system ensures maximum acceptance rates for your transactions.</p>
+                <p>Our intelligent authorization optimization system ensures maximum acceptance rates.</p>
               </div>
               <div class="content-cta">
                 <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
@@ -53,7 +53,7 @@
             <div class="payment-acceleration--item">
               <div class="content-text">
                 <h4>Anti Fraud</h4>
-                <p>Your security is our top priority! We implement advanced measures to ensure your transactions and data are protected at all times.</p>
+                <p>With advanced Anti Fraud security measures, we ensure your account transactions are protected at all times.</p>
               </div>
               <div class="content-cta">
                 <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
@@ -77,7 +77,7 @@
             <div class="payment-acceleration--item">
               <div class="content-text">
                 <h4>Swift payments</h4>
-                <p>Paayco’s advanced technology offers 3x faster payouts with multi-currency accounts.</p>
+                <p>Paayco’s advanced technology offers faster payouts with multi-currency accounts.</p>
               </div>
               <div class="content-cta">
                 <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>

@@ -10,7 +10,7 @@
                   <h3 class="section-title section-title--xl">Everything you need to send and receive payments globally</h3>
 
                   <p class="mt-4">
-                    Simplify your global transactions, and manage your personal finances conveniently — all in one place with PaayCo.
+                    Simplify your global transactions, and manage your personal finances conveniently — all in one place with Paayco.
                   </p>
                 </div>
 

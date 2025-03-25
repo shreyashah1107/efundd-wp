@@ -74,7 +74,7 @@
                         </div>
 
                         <select class="form-select">
-                          <option value="GBP">PaayCo GBP balance</option>
+                          <option value="GBP">Paayco GBP balance</option>
                           <option value="UK">United Kingdom</option>
                         </select>
                       </div>

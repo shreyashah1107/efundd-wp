@@ -7,7 +7,7 @@
   transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 
   &.scrolled {
-    position: sticky;
+    position: fixed;
     top: 0;
     background: $content-link;
 

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       header.classList.remove("scrolled");
     }
-  });
+  }); 
 
   const navbarToggler = document.querySelector(".navbar-toggler");
   const body = document.body;

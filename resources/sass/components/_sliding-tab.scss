@@ -25,18 +25,18 @@
       transition: color 0.15s ease-in;
 
       &.active {
-        color: #00413b;
+        color: #09140E;
       }
     }
 
     input[type="radio"] {
       display: none;
 
-      &:checked {
-        & + label {
-          color: #00413b;
-        }
-      }
+      // &:checked {
+      //   & + label {
+      //     color: #00413b;
+      //   }
+      // }
     }
 
     .business-tab.active ~ .glider {

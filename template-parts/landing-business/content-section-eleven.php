@@ -37,7 +37,7 @@
               </div>
               <div class="text">
                 <h4>FINANCIAL SERVICES COMPENSATION SCHEME</h4>
-                <p>The Financial Services Compensation Scheme (FSCS) protects up to £85,000 per person, per financial institution.</p>
+                <p>The Financial Services Compensation Scheme (FSCS) is the UK's statutory compensation scheme for customers of UK authorised financial services firms and protects up to £85,000 per person, per financial institution.</p>
               </div>
             </div>
 
