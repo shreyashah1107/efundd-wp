@@ -59,7 +59,7 @@
                                 <div class="sliding-tabs">
                                     <?php include 'inc/tabs.php'; ?>
                                 </div>
-                                
+
                                 <ul class="navbar-nav ms-auto">
                                     <?php
                                     $main_menu = render_menu($menu_type);
@@ -119,8 +119,21 @@
                                         </div>
                                         <div>
                                             <select id="langSelector" class="lang-selector">
-                                                <option value="?lang=en" selected>EN</option>
-                                                <option value="?lang=fr">FR</option>
+
+                                                <?php
+                                                $en_selected = "";
+                                                $fr_selected = "";
+                                                if (isset($_GET["lang"])) {
+                                                    if ($_GET["lang"] == "en") {
+                                                        $en_selected = "selected";
+                                                    }
+                                                    if ($_GET["lang"] == "fr") {
+                                                        $fr_selected = "selected";
+                                                    }
+                                                }
+                                                ?>
+                                                <option value="?lang=en" <?php echo $en_selected ?>>EN</option>
+                                                <option value="?lang=fr" <?php echo $fr_selected ?>>FR</option>
                                             </select>
                                         </div>
                                     </li>

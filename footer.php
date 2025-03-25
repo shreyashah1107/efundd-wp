@@ -93,7 +93,7 @@ $main_footer_menu = render_menu('footer');
                                                 $phone = $col_1["phone"];
                                                 $developers_email = $col_1["developers_email"];
                                                 $sales_email = $col_1["sales_email"];
-                                                ?>
+                                            ?>
                                                 <div class="contact-info">
                                                     <?php if ($support_email || $phone): ?>
                                                         <div class="contact-info--col">
@@ -173,7 +173,7 @@ $main_footer_menu = render_menu('footer');
                                     <div class="download-list">
                                         <div>
                                             <a href="<?php echo $applications_section["ios_app_url"] ?>"
-                                            title="<?php _e("Download on App Store", "darwin") ?>" target="_blank">
+                                                title="<?php _e("Download on App Store", "darwin") ?>" target="_blank">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/app-store.png"
                                                     alt="<?php _e("Download on App Store", "darwin") ?>">
                                             </a>
@@ -181,7 +181,7 @@ $main_footer_menu = render_menu('footer');
 
                                         <div>
                                             <a href="<?php echo $applications_section["android_app_url"] ?>"
-                                            title="<?php _e("Download on Google Play", "darwin") ?>" target="_blank">
+                                                title="<?php _e("Download on Google Play", "darwin") ?>" target="_blank">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/google-pay.png"
                                                     alt="<?php _e("Download on Google Play", "darwin") ?>">
                                             </a>
@@ -209,10 +209,11 @@ $main_footer_menu = render_menu('footer');
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper-bundle.min.js"></script>
 <?php wp_footer(); ?>
 <script>
-    document.getElementById("langSelector").addEventListener("change", function() {
+    document.getElementById("langSelector").addEventListener("change", function(e) {
         window.location.href = this.value;
+
     });
-    jQuery(document).ready(function ($) {
+    jQuery(document).ready(function($) {
         // Define the URLs for each tab
         var tabUrls = {
             'corporate-tab': '<?php echo home_url() ?>',
@@ -221,7 +222,7 @@ $main_footer_menu = render_menu('footer');
         };
 
         // Listen for changes on the radio inputs
-        $('.sliding-tabs input[type="radio"]').change(function () {
+        $('.sliding-tabs input[type="radio"]').change(function() {
             var selectedTab = $(this).attr('id');
             if (tabUrls[selectedTab]) {
                 window.location.href = tabUrls[selectedTab];
