@@ -6,27 +6,27 @@
           <div class="row">
             <div class="col-xl-9 col-xxl-9">
               <div class="title-row mb-5">
-                <h3 class="section-title section-title--xl">Accept payments anytime, anywhere, on any device.</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Accept payments anytime, anywhere, on any device.</h3>
               </div>
             </div>
           </div>
 
           <ul class="nav nav-tabs mt-lg-5" id="paymentTab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item wow fadeInUp" data-wow-delay="0.1s" role="presentation">
               <button class="nav-link active" id="card-machine-tab" data-bs-toggle="tab" data-bs-target="#card-machines" type="button" role="tab" aria-controls="card-machines" aria-selected="true">Card Machines</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item wow fadeInUp" data-wow-delay="0.2s" role="presentation">
               <button class="nav-link" id="business-accounts-tab" data-bs-toggle="tab" data-bs-target="#business-accounts" type="button" role="tab" aria-controls="business-accounts" aria-selected="false">Business accounts</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item wow fadeInUp" data-wow-delay="0.3s" role="presentation">
               <button class="nav-link" id="plus-cards-tab" data-bs-toggle="tab" data-bs-target="#plus-cards" type="button" role="tab" aria-controls="plus-cards" aria-selected="false">Plus cards</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item wow fadeInUp" data-wow-delay="0.4s" role="presentation">
               <button class="nav-link" id="terminals-tab" data-bs-toggle="tab" data-bs-target="#terminals" type="button" role="tab" aria-controls="terminals" aria-selected="false">Terminals</button>
             </li>
           </ul>
 
-          <div class="tab-content" id="paymentTabContent">
+          <div class="tab-content wow fadeInUp" data-wow-delay="0.1s" id="paymentTabContent">
             <div class="tab-pane show active" id="card-machines" role="tabpanel" aria-labelledby="card-machine-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">

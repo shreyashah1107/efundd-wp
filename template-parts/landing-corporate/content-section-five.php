@@ -4,18 +4,18 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="title-row d-flex align-items-center justify-content-between flex-column flex-md-row">
-            <h3 class="section-title section-title--xl mb-md-0 w-50">Sell anywhere and everywhere</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3 mb-md-0 w-50">Sell anywhere and everywhere</h3>
 
             <div class="btn-grp justify-content-center justify-content-md-start flex-shrink-0">
-              <a href="#" title="Get started" class="btn btn-bright-green">Get started</a>
-              <a href="#" title="Request a demo" class="btn btn-outline-content-link">Request a demo</a>
+              <a href="#" title="Get started" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Get started</a>
+              <a href="#" title="Request a demo" class="btn btn-outline-content-link wow fadeInUp" data-wow-delay="0.4s">Request a demo</a>
             </div>
           </div>
 
           <div class="sell--swiper swiper mt-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="card-sell">
+                <div class="card-sell wow fadeInUp" data-wow-delay="0.2s">
                   <div class="card-sell--img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell1.png" alt="Image">
                   </div>
@@ -31,7 +31,7 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card-sell">
+                <div class="card-sell wow fadeInUp" data-wow-delay="0.4s">
                   <div class="card-sell--img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell2.png" alt="Image">
                   </div>
@@ -47,13 +47,13 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card-sell">
+                <div class="card-sell wow fadeInUp" data-wow-delay="0.6s">
                   <div class="card-sell--img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/sell3.png" alt="Image">
                   </div>
                   <div class="card-sell--content">
                     <h4 class="title">Virtual Terminal</h4>
-                    <div class="text">Use  our virtual terminals to accept customer payments by phone, or email</div>
+                    <div class="text">Use our virtual terminals to accept customer payments by phone, or email</div>
 
                     <div class="card-sell--cta">
                       <a href="#" title="Start now" class="btn btn-outline-content-link">Start now</a>

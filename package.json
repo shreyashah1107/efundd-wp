@@ -19,16 +19,19 @@
     "browser-sync": "^2.27.5",
     "browser-sync-webpack-plugin": "^2.3.0",
     "cross-env": "^7.0.3",
+    "gsap": "^3.12.2",
     "laravel-mix": "^6.0.31",
     "resolve-url-loader": "^4.0.0",
-    "node-sass": "^6.0.1",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
-    "gsap": "^3.12.2"
+    "node-sass": "^6.0.1"
   },
   "bugs": {
     "url": "https://github.com/shreyashah1107/efundd-wp/issues"
   },
   "homepage": "https://github.com/shreyashah1107/efundd-wp#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "wowjs": "^1.1.3"
+  }
 }

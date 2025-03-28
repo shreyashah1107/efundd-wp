@@ -4,6 +4,7 @@ function add_theme_scripts()
 {
     wp_enqueue_style( 'swiper', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), '1.1', 'all');
     wp_enqueue_style( 'app', get_template_directory_uri() . '/assets/css/app.css');
+    wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/animate.css');
     wp_enqueue_style( 'developer', get_template_directory_uri() . '/assets/css/developer.css', array(), '1.1', 'all');
 
 }

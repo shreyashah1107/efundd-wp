@@ -7,15 +7,15 @@
     <div class="row justify-content-center text-center">
       <div class="col-xl-8 col-xxl-6">
         <div class="title-row">
-          <h3 class="section-title section-title--xl">Send money anywhere, anytime</h3>
+          <h3 class="section-title section-title--xl text-anime-style-3">Send money anywhere, anytime</h3>
 
-          <p>Transfer money to more than 140 countries, even if your recipient does not have a Paayco account.</p>
+          <p class="wow fadeInUp" data-wow-delay="0.1s">Transfer money to more than 140 countries, even if your recipient does not have a Paayco account.</p>
         </div>
       </div>
     </div>
 
     <div class="mt-5 mt-lg-0">
-      <div class="flags-row flags-row--one">
+      <div class="flags-row flags-row--one wow fadeInUp" data-wow-delay="0.1s">
         <div class="image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-1.svg" alt="Image">
         </div>
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="flags-row flags-row--two my-lg-5 py-5">
+      <div class="flags-row flags-row--two my-lg-5 py-5 wow fadeInUp" data-wow-delay="0.2s">
         <div>
           <img class="title-text" src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/28+PaymentMethods.png" alt="Image">
         </div>
@@ -82,8 +82,8 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/payment-6.png" alt="Image">
         </div>
       </div>
-      
-      <div class="flags-row flags-row--three">
+
+      <div class="flags-row flags-row--three wow fadeInUp" data-wow-delay="0.3s">
         <div class="image">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-10.svg" alt="Image">
         </div>
