@@ -11,14 +11,14 @@
   overflow: hidden;
   transition: 300ms;
 
-  &:before {
+  &:not(.btn-link):before {
+    content: '';
+    position: absolute;
     left: 50%;
     bottom: -200%;
     width: 200%;
     height: 200%;
-    content: '';
     z-index: -1;
-    position: absolute;
     border-radius: 50%;
     transform: translateX(-50%);
     transition: 300ms ease;
