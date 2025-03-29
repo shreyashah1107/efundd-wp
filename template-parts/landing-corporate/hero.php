@@ -15,7 +15,9 @@
             <p class="wow fadeInUp" data-wow-delay="0.1s">Financial management made easy in a single platform</p>
 
             <div class="btn-grp justify-content-center mt-5">
-              <a href="#" title="Open free account" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Open free account</a>
+              <a href="#" title="Open free account" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">
+                Open free account
+              </a>
               <a href="#" title="Start with payments" class="btn btn-white wow fadeInUp" data-wow-delay="0.4s">Start with payments</a>
             </div>
           </div>

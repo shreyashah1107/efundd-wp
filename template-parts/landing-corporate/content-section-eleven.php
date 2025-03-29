@@ -9,7 +9,7 @@
             <p class="mt-4 mt-lg-5 wow fadeInUp" data-wow-delay="0.1s"> We assure you of instant transfers, advanced security, 24/7 customer support, and more. </p>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div class="row justify-content-center">
         <div class="col-xxl-11">

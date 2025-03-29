@@ -437,13 +437,14 @@
       }
 
       &--item {
-        background: rgba(#168e4c, 0.2);
+        background-color: rgba(#168e4c, 0.2);
         box-shadow: 0px 14px 48px 0px rgba($black, 0.05);
         border-radius: 8px;
         padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: 0.3s ease;
 
         .content {
           &-text {
@@ -477,6 +478,12 @@
               }
             }
           }
+        }
+
+        &:hover {
+          background-color: #053a1e;
+          box-shadow: rgba(4, 58, 30, 1) 0px 8px 32px 0px;
+          transform: translateY(-4px);
         }
       }
     }
