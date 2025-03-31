@@ -10,7 +10,7 @@
             <div class="col-xl-6 col-xxl-6">
               <div class="main-content">
                 <div class="title-row mb-5">
-                  <h3 class="section-title section-title--xl text-anime-style-3 mb-5">Switch your phone into a payment device</h3>
+                  <h3 class="section-title section-title--xl text-anime-style-3 mb-5" data-cursor="-opaque">Switch your phone into a payment device</h3>
                   <p class="wow fadeInUp" data-wow-delay="0.1s">Accept contactless card payments through Tap to Pay. Download the app for free on the App Store and Google Play Store to get started.</p>
                 </div>
 

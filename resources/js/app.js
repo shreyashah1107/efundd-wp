@@ -1,3 +1,90 @@
+// Cursor Effect Class
+class Cursor {
+  constructor(options) {
+    this.options = $.extend(true, {
+      container: "body",
+      speed: 0.7,
+      ease: "expo.out",
+      visibleTimeout: 300
+    }, options);
+    this.body = $(this.options.container);
+    this.el = $('<div class="cb-cursor"></div>');
+    this.text = $('<div class="cb-cursor-text"></div>');
+    this.init();
+  }
+
+  init() {
+    this.el.append(this.text);
+    this.body.append(this.el);
+    this.bind();
+    this.move(-window.innerWidth, -window.innerHeight, 0);
+  }
+
+  bind() {
+    const self = this;
+
+    this.body.on('mouseleave', () => self.hide())
+      .on('mouseenter', () => self.show())
+      .on('mousemove', (e) => {
+        this.pos = {
+          x: this.stick ? this.stick.x - ((this.stick.x - e.clientX) * 0.15) : e.clientX,
+          y: this.stick ? this.stick.y - ((this.stick.y - e.clientY) * 0.15) : e.clientY
+        };
+        this.update();
+      })
+      .on('mousedown', () => self.setState('-active'))
+      .on('mouseup', () => self.removeState('-active'))
+      .on('mouseenter', 'a, input, textarea, button', () => self.setState('-pointer'))
+      .on('mouseleave', 'a, input, textarea, button', () => self.removeState('-pointer'))
+      .on('mouseenter', '[data-cursor]', function () {
+        self.setState(this.dataset.cursor);
+      })
+      .on('mouseleave', '[data-cursor]', function () {
+        self.removeState(this.dataset.cursor);
+      });
+  }
+
+  setState(state) {
+    this.el.addClass(state);
+  }
+
+  removeState(state) {
+    this.el.removeClass(state);
+  }
+
+  update() {
+    this.move();
+    this.show();
+  }
+
+  move(x, y, duration) {
+    gsap.to(this.el, {
+      x: x || this.pos.x,
+      y: y || this.pos.y,
+      force3D: true,
+      overwrite: true,
+      ease: this.options.ease,
+      duration: this.visible ? (duration || this.options.speed) : 0
+    });
+  }
+
+  show() {
+    if (this.visible) return;
+    clearTimeout(this.visibleTimeout);
+    this.el.addClass('-visible');
+    this.visibleTimeout = setTimeout(() => (this.visible = true));
+  }
+
+  hide() {
+    clearTimeout(this.visibleTimeout);
+    this.el.removeClass('-visible');
+    this.visibleTimeout = setTimeout(() => (this.visible = false), this.options.visibleTimeout);
+  }
+}
+
+// Initialize Cursor
+const cursor = new Cursor();
+
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "./lib/SplitText";

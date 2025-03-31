@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-9 col-xxl-8">
           <div class="title-row">
-            <h3 class="section-title section-title--xl text-anime-style-3">Accept 20+ payment methods</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Accept 20+ payment methods</h3>
 
             <p class="wow fadeInUp" data-wow-delay="0.1s">Choose from a wide range of payment options, making it easier than ever to receive your earnings globally and without hassle.</p>
           </div>

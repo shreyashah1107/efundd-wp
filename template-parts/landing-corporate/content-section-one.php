@@ -9,11 +9,11 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3">A global modular network, for the world's businesses</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">A global modular network, for the world's businesses</h3>
               </div>
               <p class="wow fadeInUp" data-wow-delay="0.1s">We are a trusted Card Acceptance and Payment Solutions Specialist, offering the latest merchant services and payments technology to a wide range of businesses.</p>
 
-              <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
+              <div class="btn-grp mt-5">
                 <a href="#" title="Get started" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Get started</a>
                 <a href="#" title="Learn more" class="btn btn-white wow fadeInUp" data-wow-delay="0.4s">Learn more</a>
               </div>

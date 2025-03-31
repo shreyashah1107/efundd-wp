@@ -14,11 +14,11 @@
             </div>
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3">Infrastructure for financial payment solutions</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3"  data-cursor="-opaque">Infrastructure for financial payment solutions</h3>
               </div>
               <p class="wow fadeInUp" data-wow-delay="0.1s">Receive a fully integrated suite of e-commerce payment functions</p>
 
-              <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
+              <div class="btn-grp mt-5">
                 <a href="#" title="Open free account" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Open free account</a>
                 <a href="#" title="View demo" class="btn btn-white wow fadeInUp" data-wow-delay="0.4s">View demo</a>
               </div>

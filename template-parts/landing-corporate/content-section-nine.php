@@ -12,7 +12,7 @@
 
             <div class="col-lg-6 col-xl-6 mt-5 mt-lg-0 p-lg-0 ps-lg-4">
               <div class="title-row mb-5">
-                <h3 class="section-title section-title--xl text-anime-style-3">Manage your global payments</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Manage your global payments</h3>
               </div>
 
               <div class="payment-list--items">

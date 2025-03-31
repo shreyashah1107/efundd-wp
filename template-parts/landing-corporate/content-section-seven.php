@@ -8,7 +8,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-9 col-xxl-7 text-center">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl text-anime-style-3">Smart card machines for in-person payments</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Smart card machines for in-person payments</h3>
             <p class="wow fadeInUp" data-wow-delay="0.1s">Find the perfect payment solution for your business, chose from mobile, medium and counter top card machines to accept in-person payments.. .</p>
           </div>
         </div>

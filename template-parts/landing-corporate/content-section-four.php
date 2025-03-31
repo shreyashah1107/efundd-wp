@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-xl-9 col-xxl-9">
               <div class="title-row mb-5">
-                <h3 class="section-title section-title--xl text-anime-style-3">Accept payments anytime, anywhere, on any device.</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Accept payments anytime, anywhere, on any device.</h3>
               </div>
             </div>
           </div>
@@ -30,21 +30,27 @@
             <div class="tab-pane show active" id="card-machines" role="tabpanel" aria-labelledby="card-machine-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
-                    <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.png" alt="Image">
-                    </div>
-                  </div>
                   <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Plus Card Machine</h4>
                         <p>Manage sales, take orders and accept payments with our powerful Point of Sale.</p>
+
+                        <ul>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                          <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
                       </div>
 
-                      <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
+                      <div class="btn-grp mt-4">
                         <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-6">
+                    <div class="image text-center">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine.png" alt="Image">
                     </div>
                   </div>
                 </div>
@@ -54,21 +60,27 @@
             <div class="tab-pane" id="business-accounts" role="tabpanel" aria-labelledby="business-accounts-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
-                    <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/business-account.png" alt="Image">
-                    </div>
-                  </div>
                   <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Business Account</h4>
                         <p>Receive, spend and manage your money with the Paayco Business Account, all in one place.</p>
+
+                        <ul>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                          <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
                       </div>
 
-                      <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
+                      <div class="btn-grp mt-4">
                         <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-6">
+                    <div class="image text-center">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/business-account.png" alt="Image">
                     </div>
                   </div>
                 </div>
@@ -78,21 +90,27 @@
             <div class="tab-pane" id="plus-cards" role="tabpanel" aria-labelledby="plus-cards-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
-                    <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/mobile-card-machine.png" alt="Image">
-                    </div>
-                  </div>
                   <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Mobile card machines</h4>
                         <p>With a ready to accept payments setup, your portable POS terminal is ready for payments</p>
+
+                        <ul>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                          <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
                       </div>
 
-                      <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
+                      <div class="btn-grp mt-4">
                         <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-6">
+                    <div class="image text-center">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/mobile-card-machine.png" alt="Image">
                     </div>
                   </div>
                 </div>
@@ -102,21 +120,27 @@
             <div class="tab-pane" id="terminals" role="tabpanel" aria-labelledby="terminals-tab" tabindex="0">
               <div class="main-content-wrapper">
                 <div class="row align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-6 col-xl-6 order-last order-lg-first">
-                    <div class="image text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/virtual-terminals.png" alt="Image">
-                    </div>
-                  </div>
                   <div class="col-lg-6 col-xl-6">
                     <div class="content">
                       <div class="title-row mb-4">
                         <h4 class="section-title">Virtual terminals</h4>
                         <p>Manage sales, take orders and accept payments with our powerful Point of Sale.</p>
+
+                        <ul>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                          <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+                          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
                       </div>
 
-                      <div class="btn-grp justify-content-center justify-content-lg-start mt-lg-4">
+                      <div class="btn-grp mt-4">
                         <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-6">
+                    <div class="image text-center">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/virtual-terminals.png" alt="Image">
                     </div>
                   </div>
                 </div>

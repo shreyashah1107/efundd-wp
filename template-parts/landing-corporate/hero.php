@@ -11,7 +11,7 @@
       <div class="hero--content">
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-10 col-xxl-9 text-center">
-            <h1 class="text-anime-style-3">Where the world does finance</h1>
+            <h1 class="text-anime-style-3" data-cursor="-opaque">Where the world does finance</h1>
             <p class="wow fadeInUp" data-wow-delay="0.1s">Financial management made easy in a single platform</p>
 
             <div class="btn-grp justify-content-center mt-5">

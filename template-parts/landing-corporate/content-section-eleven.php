@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-lg-9 col-xl-8 col-xxl-7">
           <div class="title-row">
-            <h3 class="section-title section-title--xl text-anime-style-3">Accelerate your payments forward</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Accelerate your payments forward</h3>
 
             <p class="mt-4 mt-lg-5 wow fadeInUp" data-wow-delay="0.1s"> We assure you of instant transfers, advanced security, 24/7 customer support, and more. </p>
           </div>
