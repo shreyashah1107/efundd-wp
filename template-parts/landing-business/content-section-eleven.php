@@ -8,10 +8,10 @@
         <div class="col-xxl-11">
           <div class="content--items">
             <div class="content--item">
-              <h3>Your money is always safeguarded</h3>
+              <h3 class="text-anime-style-3" data-cursor="-opaque">Your money is always safeguarded</h3>
             </div>
 
-            <div class="content--item">
+            <div class="content--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/bank.svg" alt="Bank">
               </div>
@@ -21,7 +21,7 @@
               </div>
             </div>
 
-            <div class="content--item">
+            <div class="content--item wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/bank.svg" alt="Bank">
               </div>
@@ -31,7 +31,7 @@
               </div>
             </div>
 
-            <div class="content--item">
+            <div class="content--item wow fadeInUp" data-wow-delay="0.3s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/bank.svg" alt="Bank">
               </div>
@@ -41,7 +41,7 @@
               </div>
             </div>
 
-            <div class="content--item">
+            <div class="content--item wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/bank.svg" alt="Bank">
               </div>

@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3"  data-cursor="-opaque">Infrastructure for financial payment solutions</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Infrastructure for financial payment solutions</h3>
               </div>
               <p class="wow fadeInUp" data-wow-delay="0.1s">Receive a fully integrated suite of e-commerce payment functions</p>
 

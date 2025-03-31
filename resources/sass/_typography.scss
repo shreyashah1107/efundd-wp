@@ -75,7 +75,7 @@ p,
   }
 
   &--xl {
-    font-size: 7.2rem;
+    font-size: 7rem;
 
     // > 1200px
     @include media-breakpoint-up(xl) {

@@ -217,8 +217,8 @@ $main_footer_menu = render_menu('footer');
         // Define the URLs for each tab
         var tabUrls = {
             'corporate-tab': '<?php echo home_url() ?>',
-            'business-tab': '<?php echo home_url('business-landing-page') ?>',
-            'personal-tab': '<?php echo home_url('personal-landing-page') ?>'
+            'business-tab': '<?php echo home_url('business') ?>',
+            'personal-tab': '<?php echo home_url('personal') ?>'
         };
 
         // Listen for changes on the radio inputs

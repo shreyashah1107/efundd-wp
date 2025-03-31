@@ -4,8 +4,8 @@
       <div class="row justify-content-center">
         <div class="col-xxl-9">
           <div class="title-row text-center">
-            <h3 class="section-title section-title--xl">Reach the world with Paayco</h3>
-            <p>Send and receive payments in 100+ countries with ease</p>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Reach the world with Paayco</h3>
+            <p class="wow fadeInUp" data-wow-delay="0.1s">Send and receive payments in 100+ countries with ease</p>
           </div>
         </div>
       </div>
@@ -13,7 +13,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="country-list--items">
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-1.svg" alt="Image">
               </div>
@@ -22,7 +22,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-19.svg" alt="Image">
               </div>
@@ -31,7 +31,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-6.svg" alt="Image">
               </div>
@@ -40,7 +40,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-2.svg" alt="Image">
               </div>
@@ -49,7 +49,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-16.svg" alt="Image">
               </div>
@@ -58,7 +58,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-20.svg" alt="Image">
               </div>
@@ -67,7 +67,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-21.svg" alt="Image">
               </div>
@@ -76,7 +76,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-22.svg" alt="Image">
               </div>
@@ -85,7 +85,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-12.svg" alt="Image">
               </div>
@@ -94,7 +94,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-18.svg" alt="Image">
               </div>
@@ -103,7 +103,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-3.svg" alt="Image">
               </div>
@@ -112,7 +112,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-23.svg" alt="Image">
               </div>
@@ -121,7 +121,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-9.svg" alt="Image">
               </div>
@@ -130,7 +130,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-8.svg" alt="Image">
               </div>
@@ -139,7 +139,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-17.svg" alt="Image">
               </div>
@@ -148,7 +148,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-5.svg" alt="Image">
               </div>
@@ -157,7 +157,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-11.svg" alt="Image">
               </div>
@@ -166,7 +166,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-14.svg" alt="Image">
               </div>
@@ -175,7 +175,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-10.svg" alt="Image">
               </div>
@@ -184,7 +184,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-24.svg" alt="Image">
               </div>
@@ -193,7 +193,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-25.svg" alt="Image">
               </div>
@@ -202,7 +202,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-13.svg" alt="Image">
               </div>
@@ -211,7 +211,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-7.svg" alt="Image">
               </div>
@@ -220,7 +220,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-15.svg" alt="Image">
               </div>
@@ -229,7 +229,7 @@
               </div>
             </div>
 
-            <div class="country-list--item">
+            <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-20.svg" alt="Image">
               </div>

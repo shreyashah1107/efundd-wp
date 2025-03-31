@@ -8,20 +8,20 @@ if (isset($cta_section)):
         <div class="col-xl-9">
           <div class="cta--content-wrapper">
             <div class="cta--content">
-              <h3 class="section-title section-title--xl text-white">Global transactions made simpler, faster & secure</h3>
+              <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">Global transactions made simpler, faster & secure</h3>
 
-              <p>One account to send and receive payments worldwide. No hidden fees, no complex codes, just lightning-fast transfers across borders. Connect with friends and family all over the world, from Australia to Canada, and manage multiple currencies and your personal finances right from your Paayco dashboard.</p>
+              <p class="wow fadeInUp" data-wow-delay="0.1s">One account to send and receive payments worldwide. No hidden fees, no complex codes, just lightning-fast transfers across borders. Connect with friends and family all over the world, from Australia to Canada, and manage multiple currencies and your personal finances right from your Paayco dashboard.</p>
 
               <div class="btn-grp justify-content-center">
                 <?php if (!empty($cta_section["button_text_1"])): ?>
                   <a href="<?php echo @$cta_section["button_link_1"] ?>"
                     title="<?php echo $cta_section["button_text_1"] ?>"
-                    class="btn btn-bright-green"><?php echo $cta_section["button_text_1"] ?></a>
+                    class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s"><?php echo $cta_section["button_text_1"] ?></a>
                 <?php endif; ?>
                 <?php if (!empty($cta_section["button_text_2"])): ?>
                   <a href="<?php echo $cta_section["button_link_2"] ?>"
                     title="<?php echo $cta_section["button_text_2"] ?>"
-                    class="btn btn-white"><?php echo $cta_section["button_text_2"] ?></a>
+                    class="btn btn-white wow fadeInUp" data-wow-delay="0.4s"><?php echo $cta_section["button_text_2"] ?></a>
                 <?php endif; ?>
               </div>
             </div>

@@ -9,18 +9,18 @@
           <div class="row align-items-center">
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
-                <h3 class="section-title section-title--xl">FREE payments with Paayed<sup><small>®</small></sup></h3>
-                <p>Send money effortlessly to anyone, anywhere, with Paayed®. Email, phone, or Tag, that's all you need. Instantly pay and get paid back for FREE!</p>
-                <p><strong>Paayed® is expanding to more banking apps, so please check if it's available in yours.</strong></p>
+                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">FREE payments with Paayed<sup><small>®</small></sup></h3>
+                <p class="wow fadeInUp" data-wow-delay="0.1s">Send money effortlessly to anyone, anywhere, with Paayed®. Email, phone, or Tag, that's all you need. Instantly pay and get paid back for FREE!</p>
+                <p class="wow fadeInUp" data-wow-delay="0.2s"><strong>Paayed® is expanding to more banking apps, so please check if it's available in yours.</strong></p>
 
                 <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
-                  <a href="#" title="Try it now" class="btn btn-bright-green">Try it now</a>
+                  <a href="#" title="Try it now" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.4s">Try it now</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-5 col-xl-6">
-              <div class="image text-center">
+              <div class="image text-center wow fadeInRight" data-wow-delay="0.2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/mobile-bg.png" alt="Image">
 
                 <div class="images--slider">

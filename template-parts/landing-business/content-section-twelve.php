@@ -4,14 +4,14 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-11 col-xxl-9">
           <div class="title-row">
-            <h3 class="section-title section-title--xl">Hold funds in 28+ currencies</h3>
-            <p class="mt-4">Manage your money effortlessly with multi-currency accounts, enabling you to hold, convert, and transact in over 20 currencies worldwide.</p>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Hold funds in 28+ currencies</h3>
+            <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Manage your money effortlessly with multi-currency accounts, enabling you to hold, convert, and transact in over 20 currencies worldwide.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="country-swiper country-swiper--one swiper">
+    <div class="country-swiper country-swiper--one swiper wow fadeInUp" data-wow-delay="0.1s">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="country-slide">
@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <div class="country-swiper country-swiper--two swiper">
+    <div class="country-swiper country-swiper--two swiper wow fadeInUp" data-wow-delay="0.2s">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="country-slide">
@@ -127,7 +127,7 @@
       </div>
     </div>
 
-    <div class="country-swiper country-swiper--three swiper">
+    <div class="country-swiper country-swiper--three swiper wow fadeInUp" data-wow-delay="0.3s">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="country-slide">

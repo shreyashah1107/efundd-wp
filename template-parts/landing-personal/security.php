@@ -8,8 +8,8 @@ if (isset($security_section)):
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-xxl-9">
                     <div class="title-row text-md-center">
-                        <h3 class="section-title section-title--xl">Security You Can Trust</h3>
-                        <p>You’ve worked hard for your money. Here is how we work hard to keep your account safe.</p>
+                        <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Security You Can Trust</h3>
+                        <p class="wow fadeInUp" data-wow-delay="0.1s">You’ve worked hard for your money. Here is how we work hard to keep your account safe.</p>
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@ if (isset($security_section)):
                 <div class="col-xxl-11">
                     <div class="security-text--grid">
                         <?php if (!empty($securities)): foreach ($securities as $security): ?>
-                                <div class="security-text--col">
+                                <div class="security-text--col wow fadeInUp" data-wow-delay="0.2s">
                                     <?php if (!empty($security["icon"])) : ?>
                                         <div class="security-icon">
                                             <img src="<?php echo $security["icon"]["url"] ?>"

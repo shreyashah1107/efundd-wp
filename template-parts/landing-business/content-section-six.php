@@ -4,14 +4,14 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl">Local and global payments that saves you money</h3>
-            <p> Receive a dedicated IBAN to transact with your clients, and suppliers in over 100 countries – from the America to the Middle East. Make and receive domestic payments in the UK, Europe, and the USA using local account details.</p>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Local and global payments that saves you money</h3>
+            <p class=" wow fadeInUp" data-wow-delay="0.1s"> Receive a dedicated IBAN to transact with your clients, and suppliers in over 100 countries – from the America to the Middle East. Make and receive domestic payments in the UK, Europe, and the USA using local account details.</p>
           </div>
         </div>
 
         <div class="col-12">
           <div class="payment-options--items">
-            <div class="payment-options--item">
+            <div class="payment-options--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-1.png" alt="Image" />
               </div>
@@ -26,7 +26,7 @@
               </div>
             </div>
 
-            <div class="payment-options--item">
+            <div class="payment-options--item wow fadeInUp" data-wow-delay="0.2s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-2.png" alt="Image" />
               </div>
@@ -41,7 +41,7 @@
               </div>
             </div>
 
-            <div class="payment-options--item">
+            <div class="payment-options--item wow fadeInUp" data-wow-delay="0.3s">
               <div class="image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/payment-3.png" alt="Image" />
               </div>

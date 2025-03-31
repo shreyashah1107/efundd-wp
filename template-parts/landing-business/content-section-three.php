@@ -8,16 +8,16 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl">Smart cards to unify company expenses</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Smart cards to unify company expenses</h3>
 
-            <p class="mt-4"> Corporate Mastercard debit cards in 5 currencies across 32+ countries with team spend controls, and real-time spend data analysis. </p>
+            <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s"> Corporate Mastercard debit cards in 5 currencies across 32+ countries with team spend controls, and real-time spend data analysis. </p>
           </div>
           <div class="btn-grp justify-content-center">
-            <a href="#" title="Order now" class="btn btn-bright-green">Order now</a>
-            <a href="#" title="Learn more" class="btn btn-white">Learn more</a>
+            <a href="#" title="Order now" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Order now</a>
+            <a href="#" title="Learn more" class="btn btn-white wow fadeInUp" data-wow-delay="0.4s">Learn more</a>
           </div>
 
-          <div class="image text-center mt-5">
+          <div class="image text-center mt-5 wow fadeInUp" data-wow-delay="0.4s">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/content-three-cards.png" alt="Image">
           </div>
         </div>

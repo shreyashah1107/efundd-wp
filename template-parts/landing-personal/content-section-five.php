@@ -4,12 +4,12 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row position-relative z-1">
-            <h3 class="section-title section-title--xl">One Account. Unlimited Possibilities.</h3>
-            <p>Spend, send, and manage your money from anywhere in the world.</p>
+            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">One Account. Unlimited Possibilities.</h3>
+            <p class="wow fadeInUp" data-wow-delay="0.1s">Spend, send, and manage your money from anywhere in the world.</p>
 
             <div class="btn-grp justify-content-center mt-5">
-              <a href="#" title="Sign up for free" class="btn btn-bright-green">Sign up for free</a>
-              <a href="#" title="Tell me more" class="btn btn-white">Tell me more</a>
+              <a href="#" title="Sign up for free" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Sign up for free</a>
+              <a href="#" title="Tell me more" class="btn btn-white wow fadeInUp" data-wow-delay="0.4s">Tell me more</a>
             </div>
           </div>
         </div>
@@ -18,27 +18,27 @@
 
     <div class="globe-img text-center">
       <div class="country--list-items">
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.1s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-2.png" alt="Image">
         </div>
 
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.2s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-4.png" alt="Image">
         </div>
 
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.3s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-6.png" alt="Image">
         </div>
 
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.4s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-5.png" alt="Image">
         </div>
 
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.5s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-3.png" alt="Image">
         </div>
 
-        <div class="country--list--item">
+        <div class="country--list--item  wow fadeInUp" data-wow-delay="0.6s">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/country-1.png" alt="Image">
         </div>
       </div>

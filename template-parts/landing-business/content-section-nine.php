@@ -4,14 +4,14 @@
       <div class="row justify-content-center">
         <div class="col-xl-11 col-xxl-9">
           <div class="title-row text-center mb-5">
-            <h3 class="section-title section-title--xl text-white">Multiple Accounts to Simplify Your Financial Management</h3>
-            <p class="mt-4">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
+            <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">Multiple Accounts to Simplify Your Financial Management</h3>
+            <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
           </div>
         </div>
 
         <div class="col-12">
           <div class="financial-management--items">
-            <div class="financial-management--item">
+            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.1s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-1.svg" alt="Image" />
               </div>
@@ -27,7 +27,7 @@
               </div>
             </div>
 
-            <div class="financial-management--item">
+            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-2.svg" alt="Image" />
               </div>
@@ -43,7 +43,7 @@
               </div>
             </div>
 
-            <div class="financial-management--item">
+            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.3s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-3.svg" alt="Image" />
               </div>
@@ -59,7 +59,7 @@
               </div>
             </div>
 
-            <div class="financial-management--item">
+            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-4.svg" alt="Image" />
               </div>

@@ -14,12 +14,12 @@
                     <div class="col-xxl-11">
                         <div class="row">
                             <div class="col-xl-7">
-                                <h1>Send money globally in seconds</h1>
-                                <p>Enjoy lightning-fast transfers at a low cost with no hidden fees.</p>
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">Send money globally in seconds</h1>
+                                <p class="wow fadeInUp" data-wow-delay="0.1s">Enjoy lightning-fast transfers at a low cost with no hidden fees.</p>
 
                                 <div class="btn-grp">
-                                    <a href="#" title="Open free account" class="btn btn-bright-green">Open free account</a>
-                                    <a href="#" title="Watch Demo" class="btn btn-outline-white">Watch Demo</a>
+                                    <a href="#" title="Open free account" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Open free account</a>
+                                    <a href="#" title="Watch Demo" class="btn btn-outline-white wow fadeInUp" data-wow-delay="0.4s">Watch Demo</a>
                                 </div>
                             </div>
                         </div>

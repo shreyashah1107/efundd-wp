@@ -59,6 +59,8 @@
 
     .hero--content {
       padding: 200px 0;
+      position: relative;
+      z-index: 2;
 
       h1 {
         color: $white;

@@ -14,7 +14,7 @@
         <input type="radio" id="corporate-tab" name="tabs"/>
         <label class="tab" for="corporate-tab">Corporate</label>
     <?php } ?>
-    <?php if ($current_slug == 'business-landing-page' || $menu_type == "main") {
+    <?php if ($current_slug == 'business' || $menu_type == "main") {
         $menu_type ="main";
         ?>
         <input type="radio" class="business-tab active" id="business-tab" name="tabs" checked/>
@@ -23,7 +23,7 @@
         <input type="radio" id="business-tab" name="tabs"/>
         <label class="tab" for="business-tab">Business</label>
     <?php } ?>
-    <?php if ($current_slug == 'personal-landing-page' || $menu_type == "personal_menu") {
+    <?php if ($current_slug == 'personal' || $menu_type == "personal_menu") {
         $menu_type ="personal_menu";
         ?>
         <input type="radio" class="personal-tab active" id="personal-tab" name="tabs" checked/>

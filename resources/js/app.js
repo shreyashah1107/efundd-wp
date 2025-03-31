@@ -245,8 +245,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sectionAnimations = [
     { selector: ".personal-content-section--one .image img", trigger: ".personal-content-section--one" },
     { selector: ".personal-content-section--two .image img", trigger: ".personal-content-section--two" },
-    { selector: ".personal-content-section--four .image img", trigger: ".personal-content-section--four" },
-    { selector: ".personal-content-section--seven .image img", trigger: ".personal-content-section--seven" },
+    // { selector: ".personal-content-section--four .image img", trigger: ".personal-content-section--four" },
+    // { selector: ".personal-content-section--seven .image img", trigger: ".personal-content-section--seven" },
     // { selector: ".personal-content-section--eight .image img", trigger: ".personal-content-section--eight" },
   ];
 
