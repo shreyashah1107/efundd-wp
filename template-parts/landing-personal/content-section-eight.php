@@ -9,7 +9,7 @@
           <div class="row align-items-center">
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">FREE payments with Paayed<sup><small>®</small></sup></h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">FREE payments with Paayed<sup><small>®</small></sup></h3>
                 <p class="wow fadeInUp" data-wow-delay="0.1s">Send money effortlessly to anyone, anywhere, with Paayed®. Email, phone, or Tag, that's all you need. Instantly pay and get paid back for FREE!</p>
                 <p class="wow fadeInUp" data-wow-delay="0.2s"><strong>Paayed® is expanding to more banking apps, so please check if it's available in yours.</strong></p>
 

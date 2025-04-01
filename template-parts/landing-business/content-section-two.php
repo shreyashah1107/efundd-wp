@@ -98,7 +98,7 @@
             </div>
             <div class="col-md-10 col-lg-6 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Always know what you pay</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Always know what you pay</h3>
               </div>
               <p class="wow fadeInUp" data-wow-delay="0.1s">Fees as low as 0.15%. Enjoy seamless transactions with fees so low, you'll wonder why you ever paid more.</p>
               <p class="wow fadeInUp" data-wow-delay="0.2s"> No hidden fees—just clear, transparent pricing every time.</p>

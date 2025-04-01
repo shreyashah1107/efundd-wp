@@ -9,7 +9,7 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-md-10 col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">All your business needs to operate globally</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">All your business needs to operate globally</h3>
               </div>
               <p class="wow fadeInUp" data-wow-delay="0.1s">From cross-border payments to multi-currency accounts, we provide the tools to power your global transactions. </p>
             </div>

@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-9">
           <div class="title-row">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Business account without borders</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Business account without borders</h3>
 
             <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Apply now to experience the power of simple business banking!</p>
           </div>

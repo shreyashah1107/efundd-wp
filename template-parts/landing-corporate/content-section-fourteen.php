@@ -6,7 +6,7 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-7 col-xl-6 text-center text-lg-start mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Ready to start saving on payment processing?</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Ready to start saving on payment processing?</h3>
 
                 <p class="wow fadeInUp" data-wow-delay="0.1s">Accept online, in person, or over the phone payments and let your clients pay anytime, anyway. </p>
               </div>

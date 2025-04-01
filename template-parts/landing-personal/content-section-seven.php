@@ -15,7 +15,7 @@
             </div>
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Tap. Pay. Done.</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Tap. Pay. Done.</h3>
                 <p class="wow fadeInUp" data-wow-delay="0.1s">Experience a new way to pay. No cards, no PINs, no limits, just your unique print, and you're done. Security is literally at your fingertips!</p>
                 <p class="wow fadeInUp" data-wow-delay="0.2s">With our biometric payment solution, you can make payments seamlessly using your fingerprint at any Paayco card machine.</p> 
                 <p class="wow fadeInUp" data-wow-delay="0.3s">No more worrying about lost or stolen cards, card skimming, forgotten PINs, or contactless payment limits.</p>

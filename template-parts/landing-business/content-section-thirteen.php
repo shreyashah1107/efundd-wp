@@ -7,7 +7,7 @@
             <div class="col-lg-7 col-xl-7 text-lg-start mb-5 mb-lg-0">
               <div class="body-block">
                 <div class="title-row text-center text-lg-start mb-4">
-                  <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Everything you need to send and receive payments globally</h3>
+                  <h3 class="section-title section-title--xl text-anime-style-3">Everything you need to send and receive payments globally</h3>
 
                   <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">
                     Simplify your global transactions, and manage your personal finances conveniently — all in one place with Paayco.

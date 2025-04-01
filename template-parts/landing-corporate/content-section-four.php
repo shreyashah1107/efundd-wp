@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-xl-9 col-xxl-9">
               <div class="title-row mb-5">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Accept payments anytime, anywhere, on any device.</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Accept payments anytime, anywhere, on any device.</h3>
               </div>
             </div>
           </div>

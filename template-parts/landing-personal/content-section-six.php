@@ -10,7 +10,7 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-7 col-xl-6 mb-5 mb-lg-0">
               <div class="title-row">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Your finances, your way</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Your finances, your way</h3>
                 <p class="wow fadeInUp" data-wow-delay="0.1s">Experience financial management that aligns with your unique preferences and goals, designed for your lifestyle.</p>
               </div>
             </div>

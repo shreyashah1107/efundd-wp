@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Local and global payments that saves you money</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Local and global payments that saves you money</h3>
             <p class=" wow fadeInUp" data-wow-delay="0.1s"> Receive a dedicated IBAN to transact with your clients, and suppliers in over 100 countries – from the America to the Middle East. Make and receive domestic payments in the UK, Europe, and the USA using local account details.</p>
           </div>
         </div>

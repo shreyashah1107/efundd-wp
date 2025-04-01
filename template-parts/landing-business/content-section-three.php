@@ -8,7 +8,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Smart cards to unify company expenses</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Smart cards to unify company expenses</h3>
 
             <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s"> Corporate Mastercard debit cards in 5 currencies across 32+ countries with team spend controls, and real-time spend data analysis. </p>
           </div>

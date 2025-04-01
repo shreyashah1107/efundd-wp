@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-9">
           <div class="title-row">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Switch to Paayco or integrate with the e-commerce platforms you use</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Switch to Paayco or integrate with the e-commerce platforms you use</h3>
 
             <p class="wow fadeInUp" data-wow-delay="0.1s">Trusted by major eCommerce brands worldwide.</p>
           </div>

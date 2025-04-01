@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-9">
           <div class="title-row text-center">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Reach the world with Paayco</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Reach the world with Paayco</h3>
             <p class="wow fadeInUp" data-wow-delay="0.1s">Send and receive payments in 100+ countries with ease</p>
           </div>
         </div>

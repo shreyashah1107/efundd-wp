@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row position-relative z-1">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">One Account. Unlimited Possibilities.</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">One Account. Unlimited Possibilities.</h3>
             <p class="wow fadeInUp" data-wow-delay="0.1s">Spend, send, and manage your money from anywhere in the world.</p>
 
             <div class="btn-grp justify-content-center mt-5">

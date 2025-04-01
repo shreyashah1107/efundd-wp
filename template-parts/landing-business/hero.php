@@ -4,7 +4,7 @@
       <div class="hero--content">
         <div class="row align-items-center justify-content-center">
           <div class="col-xxl-10 text-center">
-            <h1 class="text-anime-style-3" data-cursor="-opaque">All-in-one business infrastructure</h1>
+            <h1 class="text-anime-style-3">All-in-one business infrastructure</h1>
             <p class="wow fadeInUp" data-wow-delay="0.1s">Financial account management in a single platform</p>
 
             <div class="btn-grp justify-content-center mt-5">

@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-7 col-xl-6 text-lg-start mt-5 mt-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">More than a business account</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">More than a business account</h3>
               </div>
 
               <div class="content-list--items">

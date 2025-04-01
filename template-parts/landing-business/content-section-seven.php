@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center mb-md-5">
         <div class="col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">All payments, in one digital enterprise solution</h3>
+            <h3 class="section-title section-title--xl text-white text-anime-style-3">All payments, in one digital enterprise solution</h3>
           </div>
         </div>
       </div>

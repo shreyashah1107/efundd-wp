@@ -7,7 +7,7 @@
     <div class="row justify-content-center text-center">
       <div class="col-xl-8 col-xxl-6">
         <div class="title-row">
-          <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Send money anywhere, anytime</h3>
+          <h3 class="section-title section-title--xl text-anime-style-3">Send money anywhere, anytime</h3>
 
           <p class="wow fadeInUp" data-wow-delay="0.1s">Transfer money to more than 140 countries, even if your recipient does not have a Paayco account.</p>
         </div>

@@ -14,7 +14,7 @@
                     <div class="col-xxl-11">
                         <div class="row">
                             <div class="col-xl-7">
-                                <h1 class="text-anime-style-3" data-cursor="-opaque">Send money globally in seconds</h1>
+                                <h1 class="text-anime-style-3">Send money globally in seconds</h1>
                                 <p class="wow fadeInUp" data-wow-delay="0.1s">Enjoy lightning-fast transfers at a low cost with no hidden fees.</p>
 
                                 <div class="btn-grp">

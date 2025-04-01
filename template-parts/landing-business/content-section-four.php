@@ -4,7 +4,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-xl-10 col-xxl-8">
           <div class="title-row mb-5">
-            <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Send and receive money worldwide, in seconds</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3">Send and receive money worldwide, in seconds</h3>
 
             <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Send, spend and get paid in over 28+ currencies. All you need in a single business account</p>
           </div>

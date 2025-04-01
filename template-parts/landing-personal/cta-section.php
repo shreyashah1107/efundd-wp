@@ -8,7 +8,7 @@ if (isset($cta_section)):
         <div class="col-xl-9">
           <div class="cta--content-wrapper">
             <div class="cta--content">
-              <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">Global transactions made simpler, faster & secure</h3>
+              <h3 class="section-title section-title--xl text-white text-anime-style-3">Global transactions made simpler, faster & secure</h3>
 
               <p class="wow fadeInUp" data-wow-delay="0.1s">One account to send and receive payments worldwide. No hidden fees, no complex codes, just lightning-fast transfers across borders. Connect with friends and family all over the world, from Australia to Canada, and manage multiple currencies and your personal finances right from your Paayco dashboard.</p>
 

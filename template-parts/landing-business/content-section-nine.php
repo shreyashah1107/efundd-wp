@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-11 col-xxl-9">
           <div class="title-row text-center mb-5">
-            <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">Multiple Accounts to Simplify Your Financial Management</h3>
+            <h3 class="section-title section-title--xl text-white text-anime-style-3">Multiple Accounts to Simplify Your Financial Management</h3>
             <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
           </div>
         </div>

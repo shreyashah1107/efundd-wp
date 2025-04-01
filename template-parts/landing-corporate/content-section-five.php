@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-11">
           <div class="title-row d-flex align-items-md-center justify-content-between flex-column flex-md-row">
-            <h3 class="section-title section-title--xl text-anime-style-3 mb-md-0 w-50" data-cursor="-opaque">Sell anywhere and everywhere</h3>
+            <h3 class="section-title section-title--xl text-anime-style-3 mb-md-0 w-50">Sell anywhere and everywhere</h3>
 
             <div class="btn-grp justify-content-md-start flex-shrink-0">
               <a href="#" title="Get started" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Get started</a>

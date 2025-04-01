@@ -6,7 +6,7 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-7 col-xl-7 mb-5 mb-lg-0">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Multi-currency personal accounts</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Multi-currency personal accounts</h3>
               </div>
 
               <div class="option-list--items">

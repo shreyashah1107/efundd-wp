@@ -6,7 +6,7 @@
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-6 col-xl-6 mb-5 mb-lg-0 p-lg-0 pe-lg-4">
               <div class="title-row mb-4">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Single API, Endless Options.</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Single API, Endless Options.</h3>
               </div>
 
               <div class="option-list--items">

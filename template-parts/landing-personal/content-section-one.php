@@ -98,7 +98,7 @@
             </div>
             <div class="col-lg-7 col-xl-6 text-lg-start">
               <div class="title-row">
-                <h3 class="section-title section-title--xl text-anime-style-3" data-cursor="-opaque">Convert funds faster here</h3>
+                <h3 class="section-title section-title--xl text-anime-style-3">Convert funds faster here</h3>
                 <p class="wow fadeInUp" data-wow-delay="0.1s">Enjoy seamless transactions with fees so low, you'll wonder why you ever paid more. No hidden fees—just clear, transparent pricing every time.</p>
               </div>
             </div>

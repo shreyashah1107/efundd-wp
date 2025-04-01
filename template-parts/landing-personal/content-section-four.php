@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-7 col-xl-5 mt-5 mt-lg-0">
               <div class="title-row mb-0">
-                <h3 class="section-title section-title--xl text-white text-anime-style-3" data-cursor="-opaque">Split Bills in Seconds</h3>
+                <h3 class="section-title section-title--xl text-white text-anime-style-3">Split Bills in Seconds</h3>
                 <p class="text-white wow fadeInUp" data-wow-delay="0.1s">Share expenses in seconds… No calculators required.</p>
 
                 <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
