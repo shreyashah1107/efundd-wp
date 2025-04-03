@@ -35,3 +35,10 @@ function display_matching_menu() {
     // Fallback: If no menu matches, you can display a default menu or a message
     // echo '<p>No matching menu found.</p>';
 }
+
+function allow_svg_gif_upload($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['gif'] = 'image/gif';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_gif_upload');
