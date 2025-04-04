@@ -1,93 +1,59 @@
-<section class="corporate-content-section--eleven">
-  <div class="content-wrapper">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-9 col-xl-8 col-xxl-7">
-          <div class="title-row">
-            <h3 class="section-title section-title--xl text-anime-style-3">Accelerate your payments forward</h3>
+<?php
+$ninth_content_section = get_field('ninth_content_section');
+if ($ninth_content_section) {
+    $title = $ninth_content_section['title'];
+    $text = $ninth_content_section['text'];
+    $cards = $ninth_content_section['cards'];
+    ?>
+    <section class="corporate-content-section--eleven">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-9 col-xl-8 col-xxl-7">
+                        <div class="title-row">
+                            <h3 class="section-title section-title--xl text-anime-style-3"><?php echo $title ?></h3>
 
-            <p class="mt-4 mt-lg-5 wow fadeInUp" data-wow-delay="0.1s"> We assure you of instant transfers, advanced security, 24/7 customer support, and more. </p>
-          </div>
+                            <p class="mt-4 mt-lg-5 wow fadeInUp" data-wow-delay="0.1s"><?php echo $text ?></p>
+                        </div>
+                    </div>
+                </div>
+                <?php if (!empty($cards)) { ?>
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-11">
+                            <div class="payment-acceleration--items mt-5">
+                                <?php
+                                $delay = 0.1;
+                                foreach ($cards as $card) {
+                                    $delay = 0.1 + $delay;
+                                    $title = $card['title'];
+                                    $text = $card['text'];
+                                    $primary_button = $card['primary_button'];
+                                    $secondary_button = $card['secondary_button'];
+                                    ?>
+                                    <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="<?php echo $delay ?>s">
+                                        <div class="content-text">
+                                            <h4><?php echo $title ?></h4>
+                                            <p><?php echo $text ?></p>
+                                        </div>
+                                        <div class="content-cta">
+                                            <?php if ($primary_button) { ?>
+                                                <a href="<?php echo $primary_button["url"] ?>"
+                                                   title="<?php echo $primary_button["title"] ?>"
+                                                   class="btn btn-outline-bright-green"><?php echo $primary_button["title"] ?></a>
+                                            <?php } ?>
+                                            <?php if ($secondary_button) { ?>
+                                                <a href="<?php echo $secondary_button["url"] ?>"
+                                                   title="<?php echo $secondary_button["title"] ?>"
+                                                   class="btn btn-link btn-link--bright-green"><?php echo $secondary_button["title"] ?></a>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
-      </div> 
-
-      <div class="row justify-content-center">
-        <div class="col-xxl-11">
-          <div class="payment-acceleration--items mt-5">
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.1s">
-              <div class="content-text">
-                <h4>Payment Processing</h4>
-                <p>Process payments globally, with local acquiring rates.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.2s">
-              <div class="content-text">
-                <h4>Authorisation</h4>
-                <p>Our intelligent authorization optimization system ensures maximum acceptance rates.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.3s">
-              <div class="content-text">
-                <h4>Linked accounts</h4>
-                <p>Link your accounts seamlessly to multiple platforms and payment systems with just a few clicks.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.4s">
-              <div class="content-text">
-                <h4>Anti Fraud</h4>
-                <p>With advanced Anti Fraud security measures, we ensure your account transactions are protected at all times.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.5s">
-              <div class="content-text">
-                <h4>24/7 Support</h4>
-                <p>Our dedicated team is always here to assist you, no matter the time or day.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-
-            <div class="payment-acceleration--item wow fadeInUp" data-wow-delay="0.6s">
-              <div class="content-text">
-                <h4>Swift payments</h4>
-                <p>Paayco’s advanced technology offers faster payouts with multi-currency accounts.</p>
-              </div>
-              <div class="content-cta">
-                <a href="#" title="Get started" class="btn btn-outline-bright-green">Get started</a>
-
-                <a href="#" title="Learn more" class="btn btn-link btn-link--bright-green">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+<?php } ?>

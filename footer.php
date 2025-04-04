@@ -209,10 +209,10 @@ $main_footer_menu = render_menu('footer');
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper-bundle.min.js"></script>
 <?php wp_footer(); ?>
 <script>
-    document.getElementById("langSelector").addEventListener("change", function(e) {
-        window.location.href = this.value;
-
-    });
+    // document.getElementById("langSelector").addEventListener("change", function(e) {
+    //     window.location.href = this.value;
+    //
+    // });
     jQuery(document).ready(function($) {
         // Define the URLs for each tab
         var tabUrls = {
