@@ -1,82 +1,63 @@
-<section class="business-content-section--nine">
-  <div class="content-wrapper">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-11 col-xxl-9">
-          <div class="title-row text-center mb-5">
-            <h3 class="section-title section-title--xl text-white text-anime-style-3">Multiple Accounts to Simplify Your Financial Management</h3>
-            <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s">Join the ultimate financial partner that empowers your business with innovative financial solutions and also: </p>
-          </div>
+<?php
+$ninth_content_section = get_field("ninth_content_section");
+if ($ninth_content_section) {
+    $title = $ninth_content_section["title"];
+    $text = $ninth_content_section["text"];
+    $cards = $ninth_content_section["cards"];
+    ?>
+    <section class="business-content-section--nine">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-11 col-xxl-9">
+                        <div class="title-row text-center mb-5">
+                            <h3 class="section-title section-title--xl text-white text-anime-style-3"><?php echo $title ?></h3>
+                            <p class="mt-4 wow fadeInUp" data-wow-delay="0.1s"><?php echo $text ?></p>
+                        </div>
+                    </div>
+                    <?php if ($cards) { ?>
+                        <div class="col-12">
+                            <div class="financial-management--items">
+                                <?php
+                                $delay = "0.1";
+                                foreach ($cards as $card) {
+                                    $image = $card["icon"];
+                                    $title = $card["title"];
+                                    $text = $card["text"];
+                                    $button = $card["button"];
+                                    $delay = $delay + 0.1;
+                                    ?>
+                                    <div class="financial-management--item wow fadeInUp" data-wow-delay="<?php echo $delay; ?>s">
+                                        <div class="icon">
+                                            <?php if ($image) { ?>
+                                                <img src="<?php echo $image["url"] ?>"
+                                                     alt="<?php echo @$image["alt"] ?>">
+                                            <?php } else { ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-1.svg"
+                                                     alt="<?php echo get_the_title() ?>">
+                                            <?php } ?>
+                                        </div>
+                                        <div class="content">
+                                            <div class="content-text">
+                                                <h4><?php echo $title ?></h4>
+                                                <p><?php echo $text ?></p>
+                                            </div>
+                                            <?php if ($button) { ?>
+                                                <div class="content-cta">
+                                                    <a href="<?php echo @$button["url"] ?>"
+                                                       title="<?php echo $button["title"] ?>"
+                                                       class="btn btn-outline-bright-green"><?php echo $button["title"] ?></a>
+                                                </div>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
         </div>
-
-        <div class="col-12">
-          <div class="financial-management--items">
-            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.1s">
-              <div class="icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-1.svg" alt="Image" />
-              </div>
-              <div class="content">
-                <div class="content-text">
-                  <h4>Makes Payments and payback simple</h4>
-                  <p>Send, receive, and manage payments with ease.</p>
-                </div>
-
-                <div class="content-cta">
-                  <a href="#" title="Tell me more" class="btn btn-outline-bright-green">Tell me more</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-2.svg" alt="Image" />
-              </div>
-              <div class="content">
-                <div class="content-text">
-                  <h4>Provides market- leading API Integrations</h4>
-                  <p>Integrate our advanced APIs to power your business operations.</p>
-                </div>
-
-                <div class="content-cta">
-                  <a href="#" title="Contact Sales Team" class="btn btn-outline-bright-green">Contact Sales Team</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.3s">
-              <div class="icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-3.svg" alt="Image" />
-              </div>
-              <div class="content">
-                <div class="content-text">
-                  <h4>Offers no monthly fees on digital wallets</h4>
-                  <p>Enjoy complete flexibility with zero maintenance fees for your wallet.</p>
-                </div>
-
-                <div class="content-cta">
-                  <a href="#" title="Open account for free" class="btn btn-outline-bright-green">Open account for free</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="financial-management--item wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/finance-4.svg" alt="Image" />
-              </div>
-              <div class="content">
-                <div class="content-text">
-                  <h4>Provides excellent customer service</h4>
-                  <p>Get round-the-clock support from our dedicated and friendly team.</p>
-                </div>
-
-                <div class="content-cta">
-                  <a href="#" title="Open account for free" class="btn btn-outline-bright-green">Open account for free</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+<?php } ?>

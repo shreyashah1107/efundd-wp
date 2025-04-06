@@ -1,199 +1,32 @@
-<section class="business-content-section--eight">
-  <div class="content-wrapper">
-    <div class="flags-row flags-row--one wow fadeInUp" data-wow-delay="0.2s">
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-1.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-2.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-3.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-4.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-5.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-6.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-7.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-8.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-1.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-2.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-3.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-4.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-5.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-6.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-7.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-8.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-1.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-2.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-3.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-4.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-5.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-6.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-7.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-8.svg" alt="Image">
-      </div>
-    </div>
-
-    <div class="flags-row flags-row--two mt-lg-5 wow fadeInUp" data-wow-delay="0.4s">
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-9.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-10.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-11.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-12.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-13.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-14.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-15.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-16.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-9.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-10.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-11.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-12.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-13.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-14.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-15.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-16.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-9.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-10.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-11.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-12.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-13.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-14.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-15.svg" alt="Image">
-      </div>
-
-      <div class="image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-16.svg" alt="Image">
-      </div>
-    </div>
-  </div>
-</section>
+<?php
+$eight_content_section = get_field("eight_content_section");
+if ($eight_content_section) {
+    $currencies = $eight_content_section["currencies"];
+    $supported_countries = $eight_content_section["supported_countries"];
+    ?>
+    <section class="business-content-section--eight">
+        <div class="content-wrapper">
+            <?php if ($currencies) { ?>
+                <div class="flags-row flags-row--one wow fadeInUp" data-wow-delay="0.2s">
+                    <?php foreach ($currencies as $currency) {
+                        ?>
+                        <div class="image">
+                            <img src="<?php echo $currency["url"] ?>"
+                                 alt="<?php echo @$currency["alt"] ?>">
+                        </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+            <?php if ($supported_countries) { ?>
+                <div class="flags-row flags-row--two mt-lg-5 wow fadeInUp" data-wow-delay="0.4s">
+                    <?php foreach ($supported_countries as $supported_country) { ?>
+                        <div class="image">
+                            <img src="<?php echo $supported_country["url"] ?>"
+                                 alt="<?php echo @$supported_country["alt"] ?>">
+                        </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+    </section>
+<?php } ?>
