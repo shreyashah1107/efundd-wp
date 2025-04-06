@@ -1,12 +1,27 @@
+import Header from "./modules/Header";
+import MobileNav from "./modules/MobileNav";
+
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import SplitText from "./lib/SplitText";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+import { WOW } from "wowjs";
+
 // Cursor Effect Class
 class Cursor {
   constructor(options) {
-    this.options = $.extend(true, {
-      container: "body",
-      speed: 0.7,
-      ease: "expo.out",
-      visibleTimeout: 300
-    }, options);
+    this.options = $.extend(
+      true,
+      {
+        container: "body",
+        speed: 0.7,
+        ease: "expo.out",
+        visibleTimeout: 300,
+      },
+      options
+    );
     this.body = $(this.options.container);
     this.el = $('<div class="cb-cursor"></div>');
     this.text = $('<div class="cb-cursor-text"></div>');
@@ -23,23 +38,24 @@ class Cursor {
   bind() {
     const self = this;
 
-    this.body.on('mouseleave', () => self.hide())
-      .on('mouseenter', () => self.show())
-      .on('mousemove', (e) => {
+    this.body
+      .on("mouseleave", () => self.hide())
+      .on("mouseenter", () => self.show())
+      .on("mousemove", (e) => {
         this.pos = {
-          x: this.stick ? this.stick.x - ((this.stick.x - e.clientX) * 0.15) : e.clientX,
-          y: this.stick ? this.stick.y - ((this.stick.y - e.clientY) * 0.15) : e.clientY
+          x: this.stick ? this.stick.x - (this.stick.x - e.clientX) * 0.15 : e.clientX,
+          y: this.stick ? this.stick.y - (this.stick.y - e.clientY) * 0.15 : e.clientY,
         };
         this.update();
       })
-      .on('mousedown', () => self.setState('-active'))
-      .on('mouseup', () => self.removeState('-active'))
-      .on('mouseenter', 'a, input, textarea, button', () => self.setState('-pointer'))
-      .on('mouseleave', 'a, input, textarea, button', () => self.removeState('-pointer'))
-      .on('mouseenter', '[data-cursor]', function () {
+      .on("mousedown", () => self.setState("-active"))
+      .on("mouseup", () => self.removeState("-active"))
+      .on("mouseenter", "a, input, textarea, button", () => self.setState("-pointer"))
+      .on("mouseleave", "a, input, textarea, button", () => self.removeState("-pointer"))
+      .on("mouseenter", "[data-cursor]", function () {
         self.setState(this.dataset.cursor);
       })
-      .on('mouseleave', '[data-cursor]', function () {
+      .on("mouseleave", "[data-cursor]", function () {
         self.removeState(this.dataset.cursor);
       });
   }
@@ -64,20 +80,20 @@ class Cursor {
       force3D: true,
       overwrite: true,
       ease: this.options.ease,
-      duration: this.visible ? (duration || this.options.speed) : 0
+      duration: this.visible ? duration || this.options.speed : 0,
     });
   }
 
   show() {
     if (this.visible) return;
     clearTimeout(this.visibleTimeout);
-    this.el.addClass('-visible');
+    this.el.addClass("-visible");
     this.visibleTimeout = setTimeout(() => (this.visible = true));
   }
 
   hide() {
     clearTimeout(this.visibleTimeout);
-    this.el.removeClass('-visible');
+    this.el.removeClass("-visible");
     this.visibleTimeout = setTimeout(() => (this.visible = false), this.options.visibleTimeout);
   }
 }
@@ -85,13 +101,27 @@ class Cursor {
 // Initialize Cursor
 const cursor = new Cursor();
 
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import SplitText from "./lib/SplitText";
+const initApp = () => {
+  // Header
+  const header = document.querySelector("#header");
+  if (header) {
+    new Header(header);
+  }
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+  // Mobile Navigation
+  const mobileNav = document.querySelector("#mobileNav");
+  if (mobileNav) {
+    new MobileNav(mobileNav);
+  }
+};
 
-import { WOW } from "wowjs";
+if (document.readyState === "loading") {
+  // Loading hasn't finished yet
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  // `DOMContentLoaded` has already fired
+  initApp();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const wow = new WOW();
@@ -170,36 +200,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  const header = document.querySelector(".header");
+  // const header = document.querySelector(".header");
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   if (window.scrollY > 200) {
+  //     header.classList.add("scrolled");
+  //   } else {
+  //     header.classList.remove("scrolled");
+  //   }
+  // });
 
-  const navbarToggler = document.querySelector(".navbar-toggler");
-  const body = document.body;
+  // const navbarToggler = document.querySelector(".navbar-toggler");
+  // const body = document.body;
 
-  navbarToggler.addEventListener("click", function () {
-    const isExpanded = body.classList.contains("no-scroll");
+  // navbarToggler.addEventListener("click", function () {
+  //   const isExpanded = body.classList.contains("no-scroll");
 
-    if (isExpanded) {
-      body.classList.remove("no-scroll");
-    } else {
-      body.classList.add("no-scroll");
-    }
-  });
+  //   if (isExpanded) {
+  //     body.classList.remove("no-scroll");
+  //   } else {
+  //     body.classList.add("no-scroll");
+  //   }
+  // });
 
-  document.getElementById("headerNav").addEventListener("hidden.bs.collapse", function () {
-    body.classList.remove("no-scroll");
-  });
+  // document.getElementById("headerNav").addEventListener("hidden.bs.collapse", function () {
+  //   body.classList.remove("no-scroll");
+  // });
 
-  document.getElementById("headerNav").addEventListener("shown.bs.collapse", function () {
-    body.classList.add("no-scroll");
-  });
+  // document.getElementById("headerNav").addEventListener("shown.bs.collapse", function () {
+  //   body.classList.add("no-scroll");
+  // });
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -643,4 +673,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // End: Business page
 });
-

@@ -64,7 +64,8 @@ main {
   transition: 500ms $cubic-transition;
 }
 
-.no-scroll {
+.no-scroll,
+.html-overflow-hidden {
   overflow: hidden;
 }
 

@@ -22,7 +22,8 @@
       font-weight: 600;
       border-radius: 99px;
       cursor: pointer;
-      transition: color 0.15s ease-in;
+      color: $white;
+      transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
 
       &.active {
         color: #09140E;
@@ -89,8 +90,8 @@
   }
 }
 
-// < 576px
-@include media-breakpoint-down(sm) {
+// < 768px
+@include media-breakpoint-down(md) {
   .sliding-tabs {
     display: none;
   }

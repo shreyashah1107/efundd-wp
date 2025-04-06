@@ -1,0 +1,195 @@
+.header {
+  &__nav-mobile {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 75px);
+    border-top: 1px solid rgba(9, 20, 14, 0.122);
+    padding: 15px 0 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::-webkit-scrollbar {
+      background-color: rgba(#2d3336, 0.1);
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(#2d3336, 0.2);
+      border-radius: 1em;
+      width: 4px;
+    }
+
+    &-inner {
+      overflow: hidden;
+    }
+
+    &-wrapper {
+      display: none;
+    }
+
+    &-list {
+      padding: 20px 0 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      &-item {
+        position: relative;
+
+        &-inner {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 15px;
+          padding: 16px 0;
+        }
+
+        &-link {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #09140E !important;
+          text-decoration: none;
+
+          &.active {
+            color: #09140E;
+          }
+        }
+
+        &-btn {
+          background-color: transparent;
+          border: 0;
+          cursor: pointer;
+          transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
+
+          span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/other/menu-black.svg) center no-repeat;
+            background-size: 10px;
+            vertical-align: middle;
+          }
+        }
+
+        &-submenu {
+          overflow: hidden;
+
+          &-wrapper {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
+
+            &.--expanded {
+              grid-template-rows: 1fr;
+            }
+          }
+
+          &-list {
+            list-style: none;
+            margin: 0;
+            padding: 5px 0 5px 18px;
+            display: grid;
+            gap: 20px;
+
+            &-item {
+              position: relative;
+
+              &-link {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #09140E !important;
+                text-decoration: none;
+
+                &.active {
+                  color: #09140E;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+
+        &.--expanded {
+          .header__nav-mobile-list-item {
+            &-inner {
+              .header__nav-mobile-list-item-link {
+                color: #09140E;
+              }
+            }
+
+            &-btn {
+              &[aria-expanded="true"] {
+                rotate: 180deg;
+              }
+            }
+          }
+        }
+
+        .--active-link,
+        &.active {
+          color: #0056a4;
+        }
+      }
+    }
+
+    .auth-btns {
+      margin-top: 10px;
+      padding: $grid-gutter-width/2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid rgba(9, 20, 14, 0.122);
+
+      > * {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .header {
+    &__nav-mobile {
+      &-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: grid;
+        grid-template-rows: 0fr;
+        width: 100%;
+        background-color: $white;
+        transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
+        z-index: 3;
+
+        &.--expanded {
+          grid-template-rows: 1fr;
+          height: calc(100vh - 75px);
+        }
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .header__nav-mobile {
+    .sliding-tabs {
+      display: block;
+      margin: 0 $grid-gutter-width/2;
+
+      .tab {
+        color: #09140E !important;
+      }
+
+      .tab,
+      .glider {
+        width: 88px !important;
+        height: 30px !important;
+      }
+    }
+  }
+}
