@@ -1,15 +1,17 @@
 <?php
-$security_section = get_field("security_section");
+$security_section = get_field("ninth_content_section");
 if (isset($security_section)):
-    $securities = $security_section["securities"];
+    $title = $security_section["title"];
+    $text = $security_section["text"];
+    $securities = $security_section["lists"];
 ?>
     <section class="security">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-xxl-9">
                     <div class="title-row text-md-center">
-                        <h3 class="section-title section-title--xl text-anime-style-3">Security You Can Trust</h3>
-                        <p class="wow fadeInUp" data-wow-delay="0.1s">You’ve worked hard for your money. Here is how we work hard to keep your account safe.</p>
+                        <h3 class="section-title section-title--xl text-anime-style-3"><?php echo $title ?></h3>
+                        <p class="wow fadeInUp" data-wow-delay="0.1s"><?php echo $text ?></p>
                     </div>
                 </div>
             </div>
@@ -26,7 +28,6 @@ if (isset($security_section)):
                                         </div>
                                     <?php endif; ?>
                                     <div class="security-content">
-                                        <h4><?php echo $security["title"] ?></h4>
                                         <p><?php echo $security["text"] ?></p>
                                     </div>
                                 </div>

@@ -50,7 +50,7 @@ if ($hero_section) {
                                     <img src="<?php echo $banner_image["url"] ?>"
                                          alt="<?php echo @$banner_image["alt"] ?>">
                                 <?php } else { ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero.jpg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/business/hero.jpg"
                                          alt="<?php echo get_the_title() ?>">
                                 <?php } ?>
                             </div>

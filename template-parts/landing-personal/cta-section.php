@@ -1,6 +1,10 @@
 <?php
 $cta_section = get_field("cta_section");
 if (isset($cta_section)):
+    $title = $cta_section["title"];
+    $text = $cta_section["text"];
+    $primary_button = $cta_section["primary_button"];
+    $secondary_button = $cta_section["secondary_button"];
 ?>
   <section class="cta">
     <div class="container">
@@ -8,7 +12,7 @@ if (isset($cta_section)):
         <div class="col-xl-9">
           <div class="cta--content-wrapper">
             <div class="cta--content">
-              <h3 class="section-title section-title--xl text-white text-anime-style-3">Global transactions made simpler, faster & secure</h3>
+              <h3 class="section-title section-title--xl text-white text-anime-style-3"><?php echo $title ?></h3>
 
               <p class="wow fadeInUp" data-wow-delay="0.1s">One account to send and receive payments worldwide. No hidden fees, no complex codes, just lightning-fast transfers across borders. Connect with friends and family all over the world, from Australia to Canada, and manage multiple currencies and your personal finances right from your Paayco dashboard.</p>
 
