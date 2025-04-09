@@ -11,3 +11,6 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 50px 30px;
 }
+.header .lang-selector option{
+  color: #000000;
+}

@@ -24,42 +24,42 @@ if ($fifth_content_section) {
                             <div class="col-lg-5 col-xl-5">
                                 <?php if ($slides) {
                                     ?>
-                                <!-- Stacked Card Slider -->
-                                <div class="stacked-slider">
-                                    <?php $i = 1;
-                                    foreach ($slides
+                                    <!-- Stacked Card Slider -->
+                                    <div class="stacked-slider">
+                                        <?php $i = 1;
+                                        foreach ($slides
+                                                 as $slide) {
+                                            $title = $slide["title"];
+                                            $text = $slide["text"];
+                                            $image = $slide["image"];
+                                            $button = $slide["button"];
+                                            $class = "";
+                                            if ($i == 1) {
+                                                $class = "active";
+                                            }
+                                            ?>
+                                            <div class="stacked-slider--card <?php echo $class ?>">
+                                                <div class="card-content">
+                                                    <h4><?php echo $title ?></h4>
+                                                    <p><?php echo $text ?></p>
 
-                                             as $slide) {
-                                    $title = $slide["title"];
-                                    $text = $slide["text"];
-                                    $image = $slide["image"];
-                                    $button = $slide["button"];
-                                    $class = "";
-                                    if ($i == 1) {
-                                        $class = "active";
-                                    }
-                                    ?>
-                                    <div class="stacked-slider--card <?php echo $class ?>">
-                                        <div class="card-content">
-                                            <h4><?php echo $title ?></h4>
-                                            <p><?php echo $text ?></p>
+                                                    <div class="image">
+                                                        <?php if ($image) { ?>
+                                                            <img src="<?php echo $image["url"] ?>"
+                                                                 alt="<?php echo @$image["alt"] ?>">
+                                                        <?php } ?>
+                                                    </div>
 
-                                            <div class="image">
-                                                <?php if ($image) { ?>
-                                                    <img src="<?php echo $image["url"] ?>"
-                                                         alt="<?php echo @$image["alt"] ?>">
-                                                <?php } ?>
+                                                    <div>
+                                                        <?php if ($button) { ?>
+                                                            <a href="<?php echo $button["url"] ?>"
+                                                               title="<?php echo $button["title"] ?>"
+                                                               class="btn btn-bright-green btn-block"><?php echo $button["title"] ?></a>
+                                                        <?php } ?>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                            <div>
-                                                <?php if ($button) { ?>
-                                                    <a href="<?php echo $button["url"] ?>"
-                                                       title="<?php echo $button["title"] ?>"
-                                                       class="btn btn-bright-green btn-block"><?php echo $button["title"] ?></a>
-                                                <?php } ?>
-                                            </div>
-                                        </div>
-                                        <?php $i++;
+                                            <?php $i++;
                                         } ?>
                                         <div class="slider-controls">
                                             <div class="slider-navigation">
@@ -77,10 +77,9 @@ if ($fifth_content_section) {
                                                 1 of <?php echo count($slides); ?>
                                             </div>
                                         </div>
+                                        <!-- End Stacked Slider -->
                                     </div>
-                                    <!-- End Stacked Slider -->
-                                    <?php } ?>
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

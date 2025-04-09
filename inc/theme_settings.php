@@ -153,14 +153,23 @@ function remove_version_from_app_assets( $src ) {
 add_filter( 'style_loader_src', 'remove_version_from_app_assets', 10, 2 );
 add_filter( 'script_loader_src', 'remove_version_from_app_assets', 10, 2 );
 
-
-function custom_switch_language() {
-    if (isset($_GET['lang'])) {
-        $lang = sanitize_text_field($_GET['lang']);
-        switch_to_locale($lang);
-        setcookie('site_lang', $lang, time() + (86400 * 30), "/"); // Store preference in a cookie
-    } elseif (isset($_COOKIE['site_lang'])) {
-        switch_to_locale($_COOKIE['site_lang']);
+function the_language_switcher() {
+    $current_lang = apply_filters( 'wpml_current_language', null );
+    $language = '';
+    $language .= '<div class="flag-img">';
+    $language_details = apply_filters( 'wpml_active_languages', NULL, 'orderby=id&order=desc' );
+    if ( isset( $language_details[ $current_lang ] ) ) {
+        $flag_url = $language_details[ $current_lang ]['country_flag_url'];
+        $language .= '<img src="' . esc_url( $flag_url ) . '" alt="' . esc_attr( $current_lang ) . ' Flag"></div><div>';
+    };
+    $language .= '<select id="langSelector" class="lang-selector">';
+    foreach( $language_details as $l ) {
+        $selected = '';
+        if($l['active'] == 1)
+            $selected = 'selected="selected"';
+        $language .= '<option '.$selected.' value="'.$l['url'].'">'.strtoupper($l['code']).'</option>';
     }
+    $language .= '</select></div>';
+
+    return $language;
 }
-add_action('init', 'custom_switch_language');

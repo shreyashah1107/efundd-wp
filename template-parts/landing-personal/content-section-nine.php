@@ -28,8 +28,8 @@ if ($eight_content_section) {
                                     <div class="country-list--item wow fadeInUp" data-wow-delay="0.1s">
                                         <?php if ($image) { ?>
                                             <div class="image">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/country-slide-1.svg"
-                                                     alt="Image">
+                                                <img src="<?php echo $image["url"] ?>"
+                                                     alt="<?php echo @$image["alt"] ?>">
                                             </div>
                                         <?php } ?>
                                         <div class="text">
