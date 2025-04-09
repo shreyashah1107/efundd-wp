@@ -23,6 +23,10 @@
       .lang-selector {
         background-image: url(../img/other/menu-black.svg);
         color: $body-color;
+
+        option {
+          background-color: $body-color;
+        }
       }
 
       .sliding-tabs .tabs .tab {
