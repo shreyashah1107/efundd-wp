@@ -899,8 +899,14 @@
           flex-direction: column;
         }
 
-        &--item:nth-child(2) {
-          margin-top: 0;
+        &--item {
+          &:nth-child(2) {
+            margin-top: 0;
+          }
+
+          img {
+            max-height: 300px;
+          }
         }
       }
     }

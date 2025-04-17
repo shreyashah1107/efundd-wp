@@ -80,7 +80,7 @@
 
   &__logo {
     height: auto;
-    width: 120px;
+    width: 150px;
     transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
 
     &-wrapper {
@@ -383,6 +383,9 @@
   .header {
     &__wrapper {
       gap: 15px;
+    }
+    &__logo {
+      width: 120px;
     }
     .lang-selector--wrapper {
       margin: 0;
