@@ -30,8 +30,7 @@
 
 		.image {
 			position: relative;
-			// width: 850px;
-			// height: 400px;
+			width: 900px;
 		}
 
 		.location {
@@ -789,12 +788,11 @@
 // < 1500px
 @include media-breakpoint-down(xxl) {
 	.business-content-section {
-		// &--one {
-		//   .image {
-		//     width: 700px;
-		//     height: 350px;
-		//   }
-		// }
+		&--one {
+			.image {
+				width: 900px;
+			}
+		}
 
 		&--thirteen {
 			.image {
@@ -815,10 +813,9 @@
 		&--one {
 			padding-bottom: 50px;
 
-			// .image {
-			//   width: 470px;
-			//   height: 260px;
-			// }
+			.image {
+				width: 650px;
+			}
 		}
 
 		&--two {
@@ -910,10 +907,9 @@
 @include media-breakpoint-down(lg) {
 	.business-content-section {
 		&--one {
-			// .image {
-			//   width: 600px;
-			//   height: 320px;
-			// }
+			.image {
+				width: 100%;
+			}
 		}
 
 		&--nine {
@@ -1109,11 +1105,6 @@
 @include media-breakpoint-down(sm) {
 	.business-content-section {
 		&--one {
-			// .image {
-			//   width: 300px;
-			//   height: 140px;
-			// }
-
 			.location {
 				width: 10px;
 				height: 10px;
