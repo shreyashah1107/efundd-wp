@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
   wow.init();
 
   // Start: Language dropdown
-  const langSelected = document.getElementById("langSelected");
-  const langOptions = document.getElementById("langOptions");
+  const langSelected = document.querySelector(".lang-selected");
+  const langOptions = document.querySelector(".lang-options");
   const selectedFlagImg = langSelected.querySelector(".flag-img img");
   const selectedLangText = langSelected.querySelector("span");
 
