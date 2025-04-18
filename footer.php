@@ -83,7 +83,7 @@ $main_footer_menu = render_menu('footer');
                                     ?>
                                 </div>
 
-                                <div class="footer--nav-col">
+                                <!-- <div class="footer--nav-col">
                                     <h4><?php _e('Help', 'fundd'); ?></h4>
                                     <?php
                                     wp_nav_menu(array(
@@ -92,7 +92,7 @@ $main_footer_menu = render_menu('footer');
                                         'menu_class' => 'footer--nav-list',
                                     ));
                                     ?>
-                                </div>
+                                </div> -->
 
                                 <div class="footer--nav-col">
                                     <h4><?php _e('Legal', 'fundd'); ?></h4>
