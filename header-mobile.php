@@ -55,8 +55,10 @@
       </div>
 
       <div class="auth-btns">
-        <a href="#" class="btn btn-bright-green" title="Sign up">Sign up</a>
-        <a href="#" class="btn btn-white" title="Log in">Log in</a>
+        <div class="container">
+          <a href="#" class="btn btn-bright-green" title="Sign up">Sign up</a>
+          <a href="#" class="btn btn-white" title="Log in">Log in</a>
+        </div>
       </div>
     </nav>
   </div>

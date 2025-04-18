@@ -6,20 +6,22 @@
   z-index: 3;
   transition: 0.5s cubic-bezier(0.6, 0.01, 0.1, 0.96);
 
+  &.--menu-open {
+    color: $body-color;
+    background-color: $white !important;
+
+    .logo-white {
+      display: none;
+    }
+
+    .logo-primary {
+      display: flex;
+    }
+  }
+
   // > 768px
   @include media-breakpoint-up(md) {
     &.--menu-open {
-      color: $body-color;
-      background-color: $white;
-
-      .logo-white {
-        display: none;
-      }
-
-      .logo-primary {
-        display: flex;
-      }
-
       .lang-selector {
         background-image: url(../img/other/menu-black.svg);
         color: $body-color;
@@ -433,6 +435,32 @@
     .btn {
       font-size: 1.4rem;
       padding: 6px 15px;
+    }
+  }
+}
+
+// > 1200px
+@include media-breakpoint-up(xl) {
+  .header {
+    &.--menu-open {
+      color: $white;
+      background-color: transparent !important;
+
+      .sliding-tabs .tabs .tab {
+        color: $white;
+
+        &.active {
+          color: #09140e;
+        }
+      }
+
+      .logo-white {
+        display: flex;
+      }
+
+      .logo-primary {
+        display: none;
+      }
     }
   }
 }
