@@ -106,10 +106,10 @@ $main_footer_menu = render_menu('footer');
                                 </div> -->
 
                                 <div class="footer--nav-col">
-                                    <h4><?php _e('Legal', 'fundd'); ?></h4>
+                                    <h4><?php _e('Integrations', 'fundd'); ?></h4>
                                     <?php
                                     wp_nav_menu(array(
-                                        'theme_location' => 'footer_legal',
+                                        'theme_location' => 'footer_integrations',
                                         'container' => false,
                                         'menu_class' => 'footer--nav-list',
                                     ));
@@ -117,10 +117,10 @@ $main_footer_menu = render_menu('footer');
                                 </div>
 
                                 <div class="footer--nav-col">
-                                    <h4><?php _e('Integrations', 'fundd'); ?></h4>
+                                    <h4><?php _e('Legal', 'fundd'); ?></h4>
                                     <?php
                                     wp_nav_menu(array(
-                                        'theme_location' => 'footer_integrations',
+                                        'theme_location' => 'footer_legal',
                                         'container' => false,
                                         'menu_class' => 'footer--nav-list',
                                     ));
