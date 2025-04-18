@@ -1,22 +1,23 @@
 <?php
 
-if ( ! function_exists( 'fundd_theme_setup' ) ) :
+if (!function_exists('fundd_theme_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features
      *
-     *  @since Terranova 1.0
+     * @since Terranova 1.0
      */
-    function fundd_theme_setup(){
+    function fundd_theme_setup()
+    {
 
         /**
          * Create Custom Menus
          */
-        register_nav_menus( array(
-            'main'   => __( 'Business Menu', 'fundd' ),
-            'corporate_menu'   => __( 'Corporate Menu', 'fundd' ),
-            'personal_menu'   => __( 'Personal Menu', 'fundd' ),
-         //   'top-header-menu'   => __( 'Top Header Menu', 'fundd' ),
-            'footer' => __( 'Footer Menu', 'fundd' ),
+        register_nav_menus(array(
+            'main' => __('Business Menu', 'fundd'),
+            'corporate_menu' => __('Corporate Menu', 'fundd'),
+            'personal_menu' => __('Personal Menu', 'fundd'),
+            //   'top-header-menu'   => __( 'Top Header Menu', 'fundd' ),
+            'footer' => __('Footer Menu', 'fundd'),
             'footer_business_accounts' => __('Footer Business Accounts', 'fundd'),
             'footer_plus_crm' => __('Footer Plus CRM', 'fundd'),
             'footer_card_machines' => __('Footer Card Machines', 'fundd'),
@@ -25,7 +26,7 @@ if ( ! function_exists( 'fundd_theme_setup' ) ) :
             'footer_company' => __('Footer Company', 'fundd'),
             'footer_help_centre' => __('Footer Help Centre', 'fundd'),
             'footer_quick_links' => __('Footer Quick Links', 'fundd'),
-        ) );
+        ));
         /**
          * Load translations for fundd
          */
@@ -34,16 +35,16 @@ if ( ! function_exists( 'fundd_theme_setup' ) ) :
         /**
          * Add Theme Options
          */
-        add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video', 'link', 'status', 'chat' ) ); // Richmedia Supprt
-        add_theme_support( 'custom-logo' ); // Custom logo
-        add_theme_support( 'post-thumbnails' ); // Feature Imaged
+        add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video', 'link', 'status', 'chat')); // Richmedia Supprt
+        add_theme_support('custom-logo'); // Custom logo
+        add_theme_support('post-thumbnails'); // Feature Imaged
 
-        add_theme_support( 'automatic-feed-links' ); // Comments RSS Feed
+        add_theme_support('automatic-feed-links'); // Comments RSS Feed
         /**
          * Hide Admin Bar in User does Not have Admin Permissions
          */
-        if ( ! current_user_can( 'manage_options' ) ) {
-            show_admin_bar( false );
+        if (!current_user_can('manage_options')) {
+            show_admin_bar(false);
         }
 
     }
@@ -77,14 +78,16 @@ if (function_exists('acf_add_options_page')) {
 }
 
 //add SVG to allowed file uploads
-function add_file_types_to_uploads($file_types){
+function add_file_types_to_uploads($file_types)
+{
 
     $new_filetypes = array();
     $new_filetypes['svg'] = 'image/svg';
-    $file_types = array_merge($file_types, $new_filetypes );
+    $file_types = array_merge($file_types, $new_filetypes);
 
     return $file_types;
 }
+
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
@@ -131,8 +134,7 @@ function render_menu($menu_name)
                     // Second-level items
                     if (isset($menu[$item->menu_item_parent])) {
                         $menu[$item->menu_item_parent]['children'][$item->ID] = &$child_items[$item->ID];
-                    }
-                    // Third-level items
+                    } // Third-level items
                     elseif (isset($child_items[$item->menu_item_parent])) {
                         $child_items[$item->menu_item_parent]['children'][] = &$child_items[$item->ID];
                     }
@@ -144,32 +146,48 @@ function render_menu($menu_name)
     return [];
 }
 
-function remove_version_from_app_assets( $src ) {
-    if ( strpos( $src, 'app.css' ) !== false || strpos( $src, 'app.js' ) !== false ) {
-        $src = remove_query_arg( 'ver', $src );
+function remove_version_from_app_assets($src)
+{
+    if (strpos($src, 'app.css') !== false || strpos($src, 'app.js') !== false) {
+        $src = remove_query_arg('ver', $src);
     }
     return $src;
 }
-add_filter( 'style_loader_src', 'remove_version_from_app_assets', 10, 2 );
-add_filter( 'script_loader_src', 'remove_version_from_app_assets', 10, 2 );
 
-function the_language_switcher() {
-    $current_lang = apply_filters( 'wpml_current_language', null );
+add_filter('style_loader_src', 'remove_version_from_app_assets', 10, 2);
+add_filter('script_loader_src', 'remove_version_from_app_assets', 10, 2);
+
+function the_language_switcher()
+{
+    $current_lang = apply_filters('wpml_current_language', null);
     $language = '';
-    $language .= '<div class="flag-img">';
-    $language_details = apply_filters( 'wpml_active_languages', NULL, 'orderby=id&order=desc' );
-    if ( isset( $language_details[ $current_lang ] ) ) {
-        $flag_url = $language_details[ $current_lang ]['country_flag_url'];
-        $language .= '<img src="' . esc_url( $flag_url ) . '" alt="' . esc_attr( $current_lang ) . ' Flag"></div><div>';
+    $language .= '<div class="lang-dropdown-wrapper">';
+    $language_details = apply_filters('wpml_active_languages', NULL, 'orderby=id&order=desc');
+    if (isset($language_details[$current_lang])) {
+        $flag_url = $language_details[$current_lang]['country_flag_url'];
+        $language .= '<div class="lang-selected" id="langSelected">
+                                                    <div class="flag-img">
+                                                        <img src="' . esc_url($flag_url) . '"
+                                                             alt="' . esc_attr($current_lang) . '"/>
+                                                    </div>
+                                                    <span>' . esc_attr(strtoupper($current_lang)) . '</span>
+                                                </div>';
     };
-    $language .= '<select id="langSelector" class="lang-selector">';
-    foreach( $language_details as $l ) {
+    $language .= '<div class="lang-options" id="langOptions">';
+    foreach ($language_details as $l) {
         $selected = '';
-        if($l['active'] == 1)
-            $selected = 'selected="selected"';
-        $language .= '<option '.$selected.' value="'.$l['url'].'">'.strtoupper($l['code']).'</option>';
+        if ($l['active'] == 1) {
+            $selected = 'active';
+        }
+        $language .= '<div class="lang-option ' . $selected . '" data-lang="' . $l['code'] . '" data-value="' . $l['url'] . '">
+                                                        <div class="flag-img">
+                                                            <img src="' . $l['country_flag_url'] . '"
+                                                                 alt="' . $l['native_name'] . '"/>
+                                                        </div>
+                                                        <span>' . $l['native_name'] . '</span>
+                                                    </div>';
     }
-    $language .= '</select></div>';
+    $language .= '</div></div>';
 
     return $language;
 }

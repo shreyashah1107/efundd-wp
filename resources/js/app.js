@@ -151,8 +151,10 @@ document.addEventListener("DOMContentLoaded", function () {
       option.classList.remove("active");
     });
     clickedOption.classList.add("active");
+    const theurl = clickedOption.getAttribute('data-value');
 
     langOptions.classList.remove("open");
+    window.location.href = theurl;
   });
 
   document.addEventListener("click", (e) => {
