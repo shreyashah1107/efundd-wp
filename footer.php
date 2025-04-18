@@ -69,6 +69,17 @@ $main_footer_menu = render_menu('footer');
                                     ));
                                     ?>
                                 </div>
+
+                                <div class="footer--nav-col">
+                                    <h4><?php _e('Developers', 'fundd'); ?></h4>
+                                    <?php
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'footer_developers',
+                                        'container' => false,
+                                        'menu_class' => 'footer--nav-list',
+                                    ));
+                                    ?>
+                                </div>
                             </div>
 
                             <div>
@@ -104,6 +115,17 @@ $main_footer_menu = render_menu('footer');
                                     ));
                                     ?>
                                 </div>
+
+                                <div class="footer--nav-col">
+                                    <h4><?php _e('Integrations', 'fundd'); ?></h4>
+                                    <?php
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'footer_integrations',
+                                        'container' => false,
+                                        'menu_class' => 'footer--nav-list',
+                                    ));
+                                    ?>
+                                </div>
                             </div>
 
                             <div>
@@ -120,7 +142,7 @@ $main_footer_menu = render_menu('footer');
                                                 <div class="contact-info">
                                                     <?php if ($support_email || $phone): ?>
                                                         <div class="contact-info--col">
-                                                            <h4><?php _e("Support", "darwin") ?></h4>
+                                                            <h4><?php _e("Get Support", "darwin") ?></h4>
                                                             <div><a href="mailto:<?php echo $support_email ?>"
                                                                     title="<?php echo $support_email ?>"><?php echo $support_email ?></a>
                                                             </div>
@@ -129,14 +151,14 @@ $main_footer_menu = render_menu('footer');
                                                             </div>
                                                         </div>
                                                     <?php endif; ?>
-                                                    <?php if ($developers_email): ?>
+                                                    <!-- <?php if ($developers_email): ?>
                                                         <div class="contact-info--col">
                                                             <h4><?php _e("Developers", "darwin") ?></h4>
                                                             <div><a href="mailto:<?php echo $developers_email ?>"
                                                                     title="<?php echo $developers_email ?>"><?php echo $developers_email ?></a>
                                                             </div>
                                                         </div>
-                                                    <?php endif; ?>
+                                                    <?php endif; ?> -->
                                                 </div>
                                             </div>
                                         </div>

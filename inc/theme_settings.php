@@ -26,6 +26,8 @@ if (!function_exists('fundd_theme_setup')) :
             'footer_company' => __('Footer Company', 'fundd'),
             'footer_help_centre' => __('Footer Help Centre', 'fundd'),
             'footer_quick_links' => __('Footer Quick Links', 'fundd'),
+            'footer_developers' => __('Footer Developers', 'fundd'),
+            'footer_integrations' => __('Footer Integrations', 'fundd'),
         ));
         /**
          * Load translations for fundd
