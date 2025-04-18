@@ -127,6 +127,41 @@ document.addEventListener("DOMContentLoaded", function () {
   const wow = new WOW();
   wow.init();
 
+  // Start: Language dropdown
+  const langSelected = document.getElementById("langSelected");
+  const langOptions = document.getElementById("langOptions");
+  const selectedFlagImg = langSelected.querySelector(".flag-img img");
+  const selectedLangText = langSelected.querySelector("span");
+
+  langSelected.addEventListener("click", () => {
+    langOptions.classList.toggle("open");
+  });
+
+  langOptions.addEventListener("click", (e) => {
+    const clickedOption = e.target.closest(".lang-option");
+    if (!clickedOption) return;
+
+    const selectedLangCode = clickedOption.dataset.lang.toUpperCase();
+    const selectedImgSrc = clickedOption.querySelector("img").src;
+
+    selectedLangText.textContent = selectedLangCode;
+    selectedFlagImg.src = selectedImgSrc;
+
+    document.querySelectorAll(".lang-option").forEach((option) => {
+      option.classList.remove("active");
+    });
+    clickedOption.classList.add("active");
+
+    langOptions.classList.remove("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".lang-dropdown-wrapper")) {
+      langOptions.classList.remove("open");
+    }
+  });
+  // End: Language dropdown
+
   if (document.querySelectorAll(".text-anime-style-1").length) {
     let staggerAmount = 0.05,
       delayValue = 0.5,
@@ -200,37 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // const header = document.querySelector(".header");
-
-  // window.addEventListener("scroll", function () {
-  //   if (window.scrollY > 200) {
-  //     header.classList.add("scrolled");
-  //   } else {
-  //     header.classList.remove("scrolled");
-  //   }
-  // });
-
-  // const navbarToggler = document.querySelector(".navbar-toggler");
-  // const body = document.body;
-
-  // navbarToggler.addEventListener("click", function () {
-  //   const isExpanded = body.classList.contains("no-scroll");
-
-  //   if (isExpanded) {
-  //     body.classList.remove("no-scroll");
-  //   } else {
-  //     body.classList.add("no-scroll");
-  //   }
-  // });
-
-  // document.getElementById("headerNav").addEventListener("hidden.bs.collapse", function () {
-  //   body.classList.remove("no-scroll");
-  // });
-
-  // document.getElementById("headerNav").addEventListener("shown.bs.collapse", function () {
-  //   body.classList.add("no-scroll");
-  // });
-
   gsap.registerPlugin(ScrollTrigger);
 
   // Start: Personal page
@@ -275,9 +279,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const sectionAnimations = [
     { selector: ".personal-content-section--one .image img", trigger: ".personal-content-section--one" },
     { selector: ".personal-content-section--two .image img", trigger: ".personal-content-section--two" },
-    // { selector: ".personal-content-section--four .image img", trigger: ".personal-content-section--four" },
-    // { selector: ".personal-content-section--seven .image img", trigger: ".personal-content-section--seven" },
-    // { selector: ".personal-content-section--eight .image img", trigger: ".personal-content-section--eight" },
   ];
 
   sectionAnimations.forEach(({ selector, trigger }) => {
@@ -288,34 +289,6 @@ document.addEventListener("DOMContentLoaded", function () {
       { trigger, start: "top center", toggleActions: "play none none none" }
     );
   });
-
-  // Section three animations
-  // if (document.querySelector(".personal-content-section--three")) {
-  //   const timeline = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".personal-content-section--three",
-  //       start: "top center+=100",
-  //       toggleActions: "play none none none",
-  //     },
-  //   });
-
-  //   timeline
-  //     .fromTo(
-  //       ".personal-content-section--three .images--center .center-left",
-  //       { x: "-100%", opacity: 0 },
-  //       { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
-  //     )
-  //     .fromTo(
-  //       ".personal-content-section--three .images--center .center-right",
-  //       { x: "100%", opacity: 0 },
-  //       { x: "0%", opacity: 1, duration: 0.8, ease: "power2.out" }
-  //     )
-  //     .fromTo(
-  //       ".personal-content-section--three .country--item",
-  //       { opacity: 0, scale: 0.8 },
-  //       { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out", stagger: 0.2 }
-  //     );
-  // }
 
   // Section five animations
   animateElements(
