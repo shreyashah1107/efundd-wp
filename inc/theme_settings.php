@@ -165,7 +165,7 @@ function the_language_switcher()
     $language_details = apply_filters('wpml_active_languages', NULL, 'orderby=id&order=desc');
     if (isset($language_details[$current_lang])) {
         $flag_url = $language_details[$current_lang]['country_flag_url'];
-        $language .= '<div class="lang-selected" id="langSelected">
+        $language .= '<div class="lang-selected">
                                                     <div class="flag-img">
                                                         <img src="' . esc_url($flag_url) . '"
                                                              alt="' . esc_attr($current_lang) . '"/>
@@ -173,7 +173,7 @@ function the_language_switcher()
                                                     <span>' . esc_attr(strtoupper($current_lang)) . '</span>
                                                 </div>';
     };
-    $language .= '<div class="lang-options" id="langOptions">';
+    $language .= '<div class="lang-options">';
     foreach ($language_details as $l) {
         $selected = '';
         if ($l['active'] == 1) {

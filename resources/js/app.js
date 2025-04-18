@@ -128,39 +128,42 @@ document.addEventListener("DOMContentLoaded", function () {
   wow.init();
 
   // Start: Language dropdown
-  const langSelected = document.querySelector(".lang-selected");
-  const langOptions = document.querySelector(".lang-options");
-  const selectedFlagImg = langSelected.querySelector(".flag-img img");
-  const selectedLangText = langSelected.querySelector("span");
+  document.querySelectorAll(".lang-dropdown-wrapper").forEach((wrapper) => {
+    const langSelected = wrapper.querySelector(".lang-selected");
+    const langOptions = wrapper.querySelector(".lang-options");
+    const selectedFlagImg = langSelected.querySelector(".flag-img img");
+    const selectedLangText = langSelected.querySelector("span");
 
-  langSelected.addEventListener("click", () => {
-    langOptions.classList.toggle("open");
-  });
-
-  langOptions.addEventListener("click", (e) => {
-    const clickedOption = e.target.closest(".lang-option");
-    if (!clickedOption) return;
-
-    const selectedLangCode = clickedOption.dataset.lang.toUpperCase();
-    const selectedImgSrc = clickedOption.querySelector("img").src;
-
-    selectedLangText.textContent = selectedLangCode;
-    selectedFlagImg.src = selectedImgSrc;
-
-    document.querySelectorAll(".lang-option").forEach((option) => {
-      option.classList.remove("active");
+    langSelected.addEventListener("click", () => {
+      langOptions.classList.toggle("open");
     });
-    clickedOption.classList.add("active");
-    const theurl = clickedOption.getAttribute('data-value');
 
-    langOptions.classList.remove("open");
-    window.location.href = theurl;
-  });
+    langOptions.addEventListener("click", (e) => {
+      const clickedOption = e.target.closest(".lang-option");
+      if (!clickedOption) return;
 
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".lang-dropdown-wrapper")) {
+      const selectedLangCode = clickedOption.dataset.lang.toUpperCase();
+      const selectedImgSrc = clickedOption.querySelector("img").src;
+
+      selectedLangText.textContent = selectedLangCode;
+      selectedFlagImg.src = selectedImgSrc;
+
+      wrapper.querySelectorAll(".lang-option").forEach((option) => {
+        option.classList.remove("active");
+      });
+      clickedOption.classList.add("active");
+
       langOptions.classList.remove("open");
-    }
+
+      const theurl = clickedOption.getAttribute("data-value");
+      window.location.href = theurl;
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".lang-dropdown-wrapper")) {
+        langOptions.classList.remove("open");
+      }
+    });
   });
   // End: Language dropdown
 
