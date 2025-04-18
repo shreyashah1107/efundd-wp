@@ -17,20 +17,16 @@
     .logo-primary {
       display: flex;
     }
+
+    .lang-dropdown-wrapper {
+      color: $body-color;
+      background-image: url(../img/other/menu-black.svg);
+    }
   }
 
   // > 768px
   @include media-breakpoint-up(md) {
     &.--menu-open {
-      .lang-selector {
-        background-image: url(../img/other/menu-black.svg);
-        color: $body-color;
-
-        option {
-          background-color: $body-color;
-        }
-      }
-
       .sliding-tabs .tabs .tab {
         color: $body-color;
       }
@@ -460,6 +456,15 @@
 
       .logo-primary {
         display: none;
+      }
+
+      .lang-dropdown-wrapper {
+        color: $white;
+        background-image: url(../img/other/menu-white.svg);
+      }
+
+      &.--sticky {
+        background-color: $content-link !important;
       }
     }
   }

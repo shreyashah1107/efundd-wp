@@ -64,14 +64,10 @@ main {
   transition: 500ms $cubic-transition;
 }
 
-.no-scroll,
-.html-overflow-hidden {
-  overflow: hidden;
-}
-
 // < 1200px
-// @include media-breakpoint-down(xl) {
-//   main {
-//     margin-top: 77px;
-//   }
-// }
+@include media-breakpoint-down(xl) {
+  .no-scroll,
+  .html-overflow-hidden {
+    overflow: hidden;
+  }
+}
