@@ -300,6 +300,67 @@
 			}
 		}
 	}
+
+	&--payment-link {
+		position: relative;
+		background-color: $content-link;
+		overflow: hidden;
+
+		.hero--content {
+			padding: 200px 0;
+			position: relative;
+			z-index: 2;
+
+			h1 {
+				color: $white;
+				line-height: 1;
+				margin-bottom: 30px;
+
+				// > 1500px
+				@include media-breakpoint-up(xxl) {
+					letter-spacing: -4.8px;
+				}
+			}
+
+			p {
+				color: $white;
+
+				// > 1200px
+				@include media-breakpoint-up(xl) {
+					max-width: 80%;
+					margin-left: 0;
+				}
+			}
+
+			.btn-grp {
+				margin-top: 50px;
+			}
+
+			&-images {
+				position: absolute;
+				right: -60px;
+				bottom: 0;
+				top: 150px;
+				width: 50%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					object-position: right bottom;
+				}
+			}
+		}
+
+		.section-bg--hero {
+			left: auto;
+			width: 70%;
+
+			img {
+				object-fit: contain;
+			}
+		}
+	}
 }
 
 // > 2000px
@@ -375,13 +436,44 @@
 			}
 		}
 
-		&--business .hero--content,
-		&--components .hero--content {
-			padding: 100px 0 0;
+		&--business,
+		&--components {
+			.hero--content {
+				padding: 100px 0 0;
+			}
 		}
 
-		&--components .hero--content p {
-			max-width: 80%;
+		&--components {
+			.hero--content p {
+				max-width: 80%;
+			}
+		}
+
+		&--payment-link {
+			padding-bottom: 100px;
+
+			.hero--content {
+				padding: 150px 0 80px;
+				text-align: center !important;
+
+				p {
+					max-width: 80%;
+				}
+
+				.btn-grp {
+					justify-content: center;
+				}
+
+				&-images {
+					position: static;
+					margin: 0 auto;
+
+					img {
+						object-position: center;
+						max-width: 100%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -424,7 +516,8 @@
 			}
 		}
 
-		&--personal {
+		&--personal,
+		&--payment-link {
 			padding-bottom: 50px;
 
 			.hero--content {
@@ -470,8 +563,22 @@
 			}
 		}
 
-		&--components .hero--content p {
-			max-width: 100%;
+		&--components,
+		&--payment-link {
+			.hero--content p {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+// < 575px
+@include media-breakpoint-down(sm) {
+	.hero {
+		&--payment-link {
+			.hero--content-images {
+				width: 90%;
+			}
 		}
 	}
 }
