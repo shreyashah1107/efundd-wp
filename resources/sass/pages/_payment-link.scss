@@ -1,20 +1,183 @@
 .payment-link-content-section {
-  &--one {
-    padding: 100px 0;
-    background-color: #EFF3F1;
-  }
+	&--one,
+	&--two,
+	&--four,
+	&--five,
+	&--seven {
+		padding: 100px 0;
+	}
 
-  &--two {
-    padding: 100px 0;
-  }
+	&--one,
+	&--five {
+		background-color: #eff3f1;
+	}
+
+	&--three {
+		position: relative;
+		background-color: #002913;
+		overflow: hidden;
+
+		.main-content {
+			position: relative;
+			padding: 200px 0;
+
+			.section-title,
+			p {
+				color: $white;
+			}
+
+			p {
+				max-width: 80%;
+			}
+		}
+
+		.image {
+			position: absolute;
+			right: -250px;
+			top: 130px;
+			bottom: 0;
+		}
+	}
+
+	&--five {
+		.title-row p {
+			max-width: 65%;
+			margin: 0 auto;
+		}
+	}
+
+	&--six,
+	&--eight {
+		background-color: #00371a;
+		padding: 150px 0;
+		color: $white;
+
+		.section-title,
+		p {
+			color: inherit;
+		}
+
+		.title-row p {
+			max-width: 50%;
+			margin: 0 auto;
+		}
+	}
+}
+
+// > 2000px
+@media (min-width: 2001px) {
+	.payment-link-content-section {
+		&--three {
+			.image {
+				right: -80px;
+			}
+		}
+	}
+}
+
+// < 1600px
+@media (max-width: 1599px) {
+	.payment-link-content-section {
+		&--three {
+			.image {
+				right: -340px;
+			}
+		}
+
+		&--six,
+		&--eight {
+			.title-row p {
+				max-width: 70%;
+			}
+		}
+	}
+}
+
+// < 1400px
+@media (max-width: 1399px) {
+	.payment-link-content-section {
+		&--three {
+			padding: 100px 0 0;
+
+			.col-xl-6 {
+				width: 80%;
+			}
+
+			.main-content {
+				padding: 0;
+			}
+
+			.image {
+				position: static;
+				max-width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 50px;
+				margin-bottom: -80px;
+			}
+		}
+	}
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+	.payment-link-content-section {
+		&--three {
+			.col-xl-6 {
+				width: 100%;
+			}
+
+			.main-content p {
+				margin: 0 auto;
+			}
+		}
+
+		&--six,
+		&--eight {
+			padding: 100px 0;
+		}
+
+		&--five,
+		&--six,
+		&--eight {
+			.title-row p {
+				max-width: 80%;
+			}
+		}
+	}
 }
 
 // < 768px
 @include media-breakpoint-down(md) {
 	.payment-link-content-section {
 		&--one,
-		&--two {
+		&--two,
+		&--four,
+		&--five,
+		&--six,
+		&--seven,
+		&--eight {
 			padding: 50px 0;
 		}
-  }
+
+		&--three {
+			padding-top: 50px;
+
+			.main-content p {
+				max-width: 100%;
+			}
+
+			.image {
+				max-width: 95%;
+			}
+		}
+
+		&--five,
+		&--six,
+		&--eight {
+			.title-row p {
+				max-width: 100%;
+			}
+		}
+	}
 }

@@ -153,10 +153,49 @@
 	}
 }
 
+.payment {
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 24px;
+	}
+
+	&-card {
+		background-color: rgba($white, 0.4);
+		border-radius: 8px;
+		padding: 24px;
+		text-align: center;
+
+		&__img {
+			height: 420px;
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&__title {
+			font-size: 2.4rem;
+			margin-bottom: 32px;
+		}
+	}
+}
+
 // < 1200px
 @include media-breakpoint-down(xl) {
-	.feature-card__title {
-		font-size: 2rem;
+	.feature,
+	.payment {
+		&-card__title {
+			font-size: 2rem;
+		}
+	}
+
+	.payment {
+		&-card__img {
+			height: 250px;
+		}
 	}
 }
 
@@ -186,6 +225,12 @@
 	.feature-card {
 		padding: 25px;
 	}
+
+	.payment {
+		&-card__img {
+			height: auto;
+		}
+	}
 }
 
 // < 768px
@@ -205,9 +250,18 @@
 		}
 	}
 
-	.feature {
+	.feature,
+	.payment {
 		&-cards {
 			grid-template-columns: auto;
+		}
+	}
+
+	.payment {
+		&-card__img {
+			img {
+				max-width: 320px;
+			}
 		}
 	}
 }
