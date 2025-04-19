@@ -5,6 +5,107 @@
 		padding: 100px 0;
 	}
 
+	&--one {
+		position: relative;
+		padding: 150px 0;
+
+		.currency-conversion-form {
+			background-color: rgba(239, 243, 241, 0.4);
+			padding: 48px;
+			border-radius: 16px;
+			box-shadow: none;
+
+			&--wrapper {
+				background: $white;
+				border-radius: 16px;
+				padding: 48px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				width: 100%;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+
+			.btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+
+				&.btn-outline-content-link:hover .icon img {
+					filter: brightness(50);
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0 0 50px 0;
+			padding: 0;
+			display: grid;
+			gap: 40px;
+			counter-reset: payment-methods;
+
+			li {
+				padding-left: 60px;
+
+				h4 {
+					position: relative;
+					font-size: 2rem;
+					font-weight: 700;
+					margin-bottom: 20px;
+
+					&::before,
+					&::after {
+						content: '';
+						position: absolute;
+						left: -60px;
+						top: 0;
+						width: 35px;
+						height: 35px;
+						border-radius: 50%;
+					}
+
+					&::before {
+						background-color: #004520;
+					}
+
+					&::after {
+						content: counter(payment-methods);
+						counter-increment: payment-methods;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: $white;
+					}
+				}
+
+				p {
+					position: relative;
+					font-size: 1.6rem;
+					letter-spacing: -0.3px;
+					line-height: 1.8;
+					margin: 0;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: -43px;
+						width: 2px;
+						background-color: #00423c;
+					}
+				}
+
+				&:last-child p::before {
+					display: none;
+				}
+			}
+		}
+	}
+
 	&--two {
 		background-color: #eff3f1;
 		border-radius: 32px;
@@ -112,6 +213,50 @@
 // < 1200px
 @include media-breakpoint-down(xl) {
 	.component-content-section {
+		&--one,
+		&--seven {
+			padding: 100px 0;
+		}
+
+		&--one {
+			.currency-conversion-form {
+				padding: 20px;
+
+				&--wrapper {
+					padding: 20px;
+				}
+			}
+
+			ul {
+				gap: 25px;
+
+				li {
+					padding-left: 40px;
+
+					h4 {
+						font-size: 1.8rem;
+
+						&::before,
+						&::after {
+							left: -40px;
+							width: 20px;
+							height: 20px;
+						}
+
+						&::after {
+							font-size: 1.2rem;
+						}
+					}
+
+					p {
+						&::before {
+							left: -30px;
+						}
+					}
+				}
+			}
+		}
+
 		&--four {
 			.component-content-card--items.grid-3 {
 				.component-content-card--item:last-child {
@@ -125,10 +270,6 @@
 				margin: 0 auto;
 				max-width: 80%;
 			}
-		}
-
-		&--seven {
-			padding: 100px 0;
 		}
 	}
 

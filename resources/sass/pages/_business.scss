@@ -668,21 +668,25 @@
 		}
 	}
 
+	.form-control,
+	.form-select {
+		border-color: #25693a;
+		border-radius: 8px;
+		font-size: 1.6rem;
+		padding: 12px 20px;
+		color: #143230;
+		height: auto;
+
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+
 	.input-group {
 		.form-control,
 		.form-select {
 			border-right: 0;
-			border-color: #25693a;
-			border-radius: 8px;
-			font-size: 1.6rem;
-			padding: 12px 20px;
-			color: #143230;
-			height: auto;
-
-			&:focus {
-				outline: none;
-				box-shadow: none;
-			}
 		}
 
 		.input-group-text {
@@ -1131,13 +1135,13 @@
 			}
 		}
 
-		.input-group {
-			.form-control,
-			.form-select {
-				font-size: 1.2rem;
-				padding: 5px 10px;
-			}
+		.form-control,
+		.form-select {
+			font-size: 1.2rem;
+			padding: 5px 10px;
+		}
 
+		.input-group {
 			.input-group-text {
 				padding: 5px 10px;
 
