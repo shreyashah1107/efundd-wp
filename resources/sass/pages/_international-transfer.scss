@@ -1,0 +1,84 @@
+.international-transfer-content-section {
+	&--three,
+	&--four,
+	&--five {
+		padding: 80px 0;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				position: relative;
+				padding-left: 35px;
+				font-size: 1.6rem;
+				color: #0c0a09;
+				line-height: 1.4;
+
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 2px;
+					width: 20px;
+					height: 20px;
+					background: url(../img/redesign/list-marker-green.svg) center center
+						no-repeat;
+					background-size: 20px;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 24px;
+				}
+
+				strong {
+					font-weight: 600;
+				}
+			}
+		}
+
+		p {
+			font-size: 2rem;
+			font-weight: 500;
+			margin-bottom: 30px;
+			color: #0c0a09;
+		}
+	}
+
+	&--three {
+		margin-top: 20px;
+	}
+
+	&--five {
+		margin-bottom: 20px;
+	}
+
+	&--eight {
+		padding: 100px 0;
+	}
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+	.international-transfer-content-section {
+		&--four {
+			background-color: #eff3f1;
+		}
+	}
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+	.international-transfer-content-section {
+		&--three,
+		&--four,
+		&--five {
+			padding: 30px 0;
+		}
+
+		&--eight {
+			padding: 50px 0;
+		}
+	}
+}
