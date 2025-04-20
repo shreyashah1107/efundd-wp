@@ -361,6 +361,67 @@
 			}
 		}
 	}
+
+	&--contact {
+		padding-top: 80px;
+		background-color: #004520;
+
+		.hero--content {
+			padding: 180px 0;
+
+			h1 {
+				color: $white;
+				text-transform: none;
+			}
+		}
+
+		.search-wrapper {
+			position: relative;
+			max-width: 550px;
+			margin: 30px auto 0;
+
+			.icon {
+				position: absolute;
+				left: 15px;
+				top: 13px;
+				bottom: 13px;
+				display: flex;
+
+				img {
+					max-width: 20px;
+				}
+			}
+
+			.form-control {
+				border: 1px solid $white;
+				border-radius: 8px;
+				background-color: rgba($white, 0.1);
+				padding: 14px 14px 14px 48px;
+				color: $white;
+				font-size: 1.6rem;
+
+				&::placeholder {
+					color: $white;
+				}
+
+				&::-webkit-input-placeholder {
+					color: $white;
+				}
+
+				&::-moz-placeholder {
+					color: $white;
+				}
+
+				&:-ms-input-placeholder {
+					color: $white;
+				}
+
+				&:-moz-placeholder {
+					color: $white;
+				}
+			}
+		}
+	}
 }
 
 // > 2000px
@@ -475,6 +536,18 @@
 				}
 			}
 		}
+
+		&--contact {
+			padding-top: 50px;
+
+			.hero--content {
+				padding: 150px 0;
+			}
+
+			.search-wrapper {
+				max-width: 400px;
+			}
+		}
 	}
 }
 
@@ -498,6 +571,14 @@
 
 		&--components .hero--content p {
 			max-width: 85%;
+		}
+
+		&--contact {
+			padding-top: 0;
+
+			.hero--content {
+				padding: 140px 0 100px;
+			}
 		}
 	}
 }
@@ -567,6 +648,12 @@
 		&--payment-link {
 			.hero--content p {
 				max-width: 100%;
+			}
+		}
+
+		&--contact {
+			.hero--content {
+				padding: 100px 0 80px;
 			}
 		}
 	}
