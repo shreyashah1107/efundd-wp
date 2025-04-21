@@ -657,4 +657,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   // End: Business page
+
+  document.querySelectorAll(".step-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".step-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const targetId = btn.getAttribute("data-tab");
+
+      document.querySelectorAll(".tab-pane").forEach((pane) => {
+        pane.classList.remove("show", "active");
+      });
+      document.getElementById(targetId).classList.add("show", "active");
+    });
+  });
 });

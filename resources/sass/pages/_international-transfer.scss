@@ -45,10 +45,15 @@
     }
   }
 
-	&--two,
-	&--eight {
-		padding: 100px 0;
-	}
+  &--one,
+  &--two,
+  &--eight {
+    padding: 100px 0;
+  }
+
+  &--one {
+    background-color: #eff3f1;
+  }
 
   &--three {
     margin-top: 20px;
@@ -58,21 +63,21 @@
     margin-bottom: 20px;
   }
 
-	&--six {
-		padding-top: 100px;
-		background-color: #072F19;
-		color: $white;
+  &--six {
+    padding-top: 100px;
+    background-color: #072f19;
+    color: $white;
 
-		p,
-		.section-title {
-			color: inherit;
-		}
+    p,
+    .section-title {
+      color: inherit;
+    }
 
-		p {
-			max-width: 80%;
-			margin: 0 auto;
-		}
-	}
+    p {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
 
   &--nine {
     background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
@@ -82,17 +87,17 @@
 // < 1200px
 @include media-breakpoint-down(xl) {
   .international-transfer-content-section {
-		&--six {
-			p {
-				max-width: 90%;
-			}
+    &--six {
+      p {
+        max-width: 90%;
+      }
 
-			.image {
-				max-width: 500px;
-				margin: 0 auto;
-			}
-		}
-	}
+      .image {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 // < 992px
@@ -113,17 +118,18 @@
       padding: 30px 0;
     }
 
-		&--two,
+    &--one,
+    &--two,
     &--eight {
       padding: 50px 0;
     }
 
-		&--six {
-			padding-top: 50px;
+    &--six {
+      padding-top: 50px;
 
-			p {
-				max-width: 100%;
-			}
-		}
+      p {
+        max-width: 100%;
+      }
+    }
   }
 }

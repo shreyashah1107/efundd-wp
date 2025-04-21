@@ -29,7 +29,7 @@ if (!empty($eight_content_section)) {
                     <div class="flags-row flags-row--one">
                         <?php foreach ($currencies as $currency) { ?>
                             <div class="image">
-                                <img src="<?php echo $currency["url"] ?>"
+                                <img src="<?php echo wp_get_attachment_image_url($currency) ?>"
                                     alt="<?php echo @$currency["alt"] ?>">
                             </div>
                         <?php } ?>
@@ -50,7 +50,7 @@ if (!empty($eight_content_section)) {
                         </div>
                         <?php foreach ($payment_methods as $payment_method) { ?>
                             <div class="image">
-                                <img src="<?php echo $payment_method["url"] ?>"
+                                <img src="<?php echo wp_get_attachment_image_url($payment_method) ?>"
                                     alt="<?php echo @$payment_method["alt"] ?>">
                             </div>
                         <?php } ?>
@@ -60,7 +60,7 @@ if (!empty($eight_content_section)) {
                     <div class="flags-row flags-row--three">
                         <?php foreach ($supported_countries as $supported_country) { ?>
                             <div class="image">
-                                <img src="<?php echo $supported_country["url"] ?>"
+                                <img src="<?php echo wp_get_attachment_image_url($supported_country) ?>"
                                     alt="<?php echo @$supported_country["alt"] ?>">
                             </div>
                         <?php } ?>
