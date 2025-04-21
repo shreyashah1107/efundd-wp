@@ -405,80 +405,6 @@
 		}
 	}
 
-	&--eleven {
-		position: relative;
-		padding: 100px 0;
-		background-color: #004520;
-		overflow: hidden;
-
-		.content {
-			&--img {
-				position: absolute;
-				bottom: -20px;
-				right: -20px;
-				opacity: 0.2;
-
-				// > 1200px
-				@include media-breakpoint-up(xl) {
-					img {
-						width: 520px;
-					}
-				}
-			}
-
-			&--items {
-				display: grid;
-				grid-template-columns: repeat(3, minmax(0, 1fr));
-				gap: 40px 20px;
-				// place-items: center;
-			}
-
-			&--item {
-				position: relative;
-
-				&:first-child {
-					display: flex;
-					align-items: center;
-
-					h3 {
-						color: $white;
-						text-transform: uppercase;
-						// > 992px
-						@include media-breakpoint-up(lg) {
-							font-size: 5rem;
-						}
-					}
-				}
-
-				&:not(:first-child) {
-					background-color: $white;
-					border-radius: 16px;
-					padding: 24px;
-					text-align: center;
-
-					.icon {
-						margin-bottom: 20px;
-
-						img {
-							height: 50px;
-						}
-					}
-
-					.text {
-						h4 {
-							text-transform: uppercase;
-							margin-bottom: 10px;
-						}
-
-						p {
-							font-size: 1.6rem;
-						}
-					}
-				}
-			}
-		}
-	}
-
 	&--twelve {
 		padding: 100px 0 150px;
 		overflow: hidden;
@@ -870,25 +796,6 @@
 			}
 		}
 
-		&--eleven {
-			.content {
-				&--items {
-					grid-template-columns: repeat(2, minmax(0, 1fr));
-				}
-
-				&--item {
-					&:first-child {
-						grid-column: 1 / span 2;
-						text-align: center;
-
-						h3 {
-							margin-bottom: 30px;
-						}
-					}
-				}
-			}
-		}
-
 		&--thirteen {
 			.image {
 				margin-top: 0;
@@ -951,7 +858,6 @@
 		&--seven,
 		&--eight,
 		&--ten,
-		&--eleven,
 		&--twelve,
 		&--thirteen {
 			padding: 50px 0;
@@ -1015,29 +921,6 @@
 			.financial-management {
 				&--items {
 					grid-template-columns: auto;
-				}
-			}
-		}
-
-		&--eleven {
-			.content {
-				&--img {
-					width: 250px;
-				}
-
-				&--items {
-					grid-template-columns: auto;
-					gap: 20px;
-				}
-
-				&--item {
-					&:first-child {
-						grid-column: 1;
-
-						h3 {
-							margin-bottom: 15px;
-						}
-					}
 				}
 			}
 		}
