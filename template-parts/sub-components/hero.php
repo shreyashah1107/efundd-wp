@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="col-xl-10 col-xxl-8">
-            <div class="image mt-5 pt-5 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="image mt-2 wow fadeInUp" data-wow-delay="0.3s">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/components/hero.png" alt="Image">
             </div>
           </div>
