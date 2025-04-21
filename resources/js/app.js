@@ -167,46 +167,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // End: Language dropdown
 
-  if (document.querySelectorAll(".text-anime-style-1").length) {
-    let staggerAmount = 0.05,
-      delayValue = 0.5,
-      animatedTextElements = document.querySelectorAll(".text-anime-style-1");
+  // if (document.querySelectorAll(".text-anime-style-1").length) {
+  //   let staggerAmount = 0.05,
+  //     delayValue = 0.5,
+  //     animatedTextElements = document.querySelectorAll(".text-anime-style-1");
 
-    animatedTextElements.forEach((element) => {
-      let animationSplitText = new SplitText(element, { type: "chars, words" });
+  //   animatedTextElements.forEach((element) => {
+  //     let animationSplitText = new SplitText(element, { type: "chars, words" });
 
-      gsap.from(animationSplitText.words, {
-        duration: 1,
-        delay: delayValue,
-        x: 20,
-        autoAlpha: 0,
-        stagger: staggerAmount,
-        scrollTrigger: { trigger: element, start: "top 85%" },
-      });
-    });
-  }
+  //     gsap.from(animationSplitText.words, {
+  //       duration: 1,
+  //       delay: delayValue,
+  //       x: 20,
+  //       autoAlpha: 0,
+  //       stagger: staggerAmount,
+  //       scrollTrigger: { trigger: element, start: "top 85%" },
+  //     });
+  //   });
+  // }
 
-  if (document.querySelector(".text-anime-style-2")) {
-    let staggerAmount = 0.03,
-      translateXValue = 20,
-      delayValue = 0.1,
-      easeType = "power2.out",
-      animatedTextElements = document.querySelectorAll(".text-anime-style-2");
+  // if (document.querySelector(".text-anime-style-2")) {
+  //   let staggerAmount = 0.03,
+  //     translateXValue = 20,
+  //     delayValue = 0.1,
+  //     easeType = "power2.out",
+  //     animatedTextElements = document.querySelectorAll(".text-anime-style-2");
 
-    animatedTextElements.forEach((element) => {
-      let animationSplitText = new SplitText(element, { type: "chars, words" });
+  //   animatedTextElements.forEach((element) => {
+  //     let animationSplitText = new SplitText(element, { type: "chars, words" });
 
-      gsap.from(animationSplitText.chars, {
-        duration: 1,
-        delay: delayValue,
-        x: translateXValue,
-        autoAlpha: 0,
-        stagger: staggerAmount,
-        ease: easeType,
-        scrollTrigger: { trigger: element, start: "top 85%" },
-      });
-    });
-  }
+  //     gsap.from(animationSplitText.chars, {
+  //       duration: 1,
+  //       delay: delayValue,
+  //       x: translateXValue,
+  //       autoAlpha: 0,
+  //       stagger: staggerAmount,
+  //       ease: easeType,
+  //       scrollTrigger: { trigger: element, start: "top 85%" },
+  //     });
+  //   });
+  // }
 
   if (document.querySelectorAll(".text-anime-style-3").length) {
     let animatedTextElements = document.querySelectorAll(".text-anime-style-3");
@@ -465,65 +465,72 @@ document.addEventListener("DOMContentLoaded", function () {
       x: xMovement,
       ease: "none",
       scrollTrigger: {
-        trigger: ".corporate-content-section--ten",
+        trigger: selector,
         start: "top bottom",
         end: "bottom top",
         scrub: speed,
+        // markers: true,
       },
     });
   }
 
   // Function to animate flag rotation
   function animateRotationOnScrollCorporate(selector, rotationAngle) {
-    gsap.to(selector + " .image img:not(.title-text)", {
+    gsap.to(selector + " .image img", {
       rotation: rotationAngle,
       ease: "none",
       scrollTrigger: {
-        trigger: ".corporate-content-section--ten",
+        trigger: selector,
         start: "top bottom",
         end: "bottom top",
         scrub: 1.5,
+        // markers: true,
       },
     });
   }
 
   // Apply scrolling effect
-  animateScrollingCorporate(".flags-row--one", "left", 1.5);
-  animateScrollingCorporate(".flags-row--two", "right", 1.5);
-  animateScrollingCorporate(".flags-row--three", "left", 1.5);
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      animateScrollingCorporate(".flags-row--one", "left", 1.5);
+      animateScrollingCorporate(".flags-row--two", "right", 1.5);
+      animateScrollingCorporate(".flags-row--three", "left", 1.5);
 
-  // Apply independent rotation to each flag
-  animateRotationOnScrollCorporate(".flags-row--one", 90);
-  animateRotationOnScrollCorporate(".flags-row--two", 90);
-  animateRotationOnScrollCorporate(".flags-row--three", 90);
+      animateRotationOnScrollCorporate(".flags-row--one", 90);
+      animateRotationOnScrollCorporate(".flags-row--two", 90);
+      animateRotationOnScrollCorporate(".flags-row--three", 90);
+
+      ScrollTrigger.refresh();
+    }, 200);
+  });
 
   // Animate the coin-slider on scroll
-  const coinsTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".corporate-content-section--nine",
-      start: "top +=50%",
-      end: "bottom +=50%",
-      scrub: 1.2,
-      invalidateOnRefresh: true,
-    },
-  });
-  coinsTl
-    .fromTo(
-      ".coin-slider--wrapper",
-      {
-        xPercent: -100,
-      },
-      { xPercent: 0 },
-      "coins"
-    )
-    .fromTo(
-      ".coin",
-      {
-        rotate: -720,
-      },
-      { rotate: 0 },
-      "coins"
-    );
+  // const coinsTl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".corporate-content-section--nine",
+  //     start: "top +=50%",
+  //     end: "bottom +=50%",
+  //     scrub: 1.2,
+  //     invalidateOnRefresh: true,
+  //   },
+  // });
+  // coinsTl
+  //   .fromTo(
+  //     ".coin-slider--wrapper",
+  //     {
+  //       xPercent: -100,
+  //     },
+  //     { xPercent: 0 },
+  //     "coins"
+  //   )
+  //   .fromTo(
+  //     ".coin",
+  //     {
+  //       rotate: -720,
+  //     },
+  //     { rotate: 0 },
+  //     "coins"
+  //   );
 
   gsap.from(".corporate-content-section--six .list--image", {
     opacity: 0,

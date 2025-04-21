@@ -1,3 +1,94 @@
+.corporate-content-section--ten,
+.international-transfer-content-section--two {
+  position: relative;
+  overflow: hidden;
+
+  .title-row {
+    p {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .content-wrapper {
+    position: relative;
+
+    .transfer-row {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  // .fixed-text {
+  //   position: relative;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: auto;
+  //   padding: 0 30px;
+  //   display: inline-flex;
+  //   z-index: 1;
+  //   overflow: hidden;
+
+  //   h3 {
+  //     margin: 0;
+  //     font-size: 5rem;
+  //   }
+  // }
+
+  .flags-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    position: relative;
+
+    > div {
+      flex-shrink: 0;
+    }
+
+    .image {
+      display: flex;
+      flex-shrink: 0;
+
+      img:not(.title-text) {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+      }
+    }
+
+    .title-text {
+      width: auto;
+      height: 140px;
+    }
+
+    &--one {
+      .fixed-text {
+        right: 0;
+      }
+    }
+
+    &--two {
+      justify-content: flex-end;
+
+      .fixed-text {
+        left: 0;
+      }
+    }
+
+    &--three {
+      .fixed-text {
+        left: 0;
+      }
+    }
+  }
+}
+
 .personal-content-section--nine,
 .international-transfer-content-section--eight {
   background-color: #eff3f1;
@@ -115,6 +206,44 @@
   }
 }
 
+.explore-ways {
+  padding: 100px 0;
+
+  .explore {
+    &--items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    &--item {
+      position: relative;
+      padding: 24px 40px 24px 24px;
+      border-radius: 8px;
+      background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
+      color: $white;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: background 0.3s ease-in;
+
+      &:hover {
+        background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #a8ffb0 0%, #0e5e33 100%);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 24px;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background: url(../img/other/right-arrow.svg) 50% no-repeat;
+        background-size: 20px;
+      }
+    }
+  }
+}
+
 // < 1500px
 @include media-breakpoint-down(xxl) {
   .personal-content-section--nine,
@@ -127,6 +256,22 @@
 
 // < 1200px
 @include media-breakpoint-down(xl) {
+  .corporate-content-section--ten,
+  .international-transfer-content-section--two {
+    .flags-row {
+      .image {
+        img {
+          width: 100px !important;
+          height: 100px !important;
+        }
+      }
+
+      .title-text {
+        height: 100px;
+      }
+    }
+  }
+
   .personal-content-section--nine,
   .international-transfer-content-section--eight {
     .country-list--items {
@@ -135,7 +280,7 @@
   }
 
   .business-content-section--eleven,
-	.international-transfer-content-section--nine {
+  .international-transfer-content-section--nine {
     .content {
       &--items {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -144,7 +289,7 @@
       &--item {
         &:first-child {
           grid-column: 1 / span 2;
-					justify-content: center;
+          justify-content: center;
           text-align: center;
 
           h3 {
@@ -158,6 +303,32 @@
 
 // < 768px
 @include media-breakpoint-down(md) {
+  .corporate-content-section--ten,
+  .international-transfer-content-section--two {
+    .title-row {
+      p {
+        max-width: 100%;
+      }
+    }
+
+    .content-wrapper .transfer-row:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .flags-row {
+      .image {
+        img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+      }
+
+      .title-text {
+        height: 70px;
+      }
+    }
+  }
+
   .personal-content-section--nine,
   .international-transfer-content-section--eight {
     .country-list {
@@ -181,6 +352,21 @@
       }
     }
   }
+
+  .explore-ways {
+    padding: 50px 0;
+
+    .explore {
+      &--items {
+        grid-template-columns: auto;
+        gap: 15px;
+      }
+
+      &--item {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 // < 575px
@@ -198,7 +384,7 @@
   }
 
   .business-content-section--eleven,
-	.international-transfer-content-section--nine {
+  .international-transfer-content-section--nine {
     padding: 50px 0;
 
     .content {
@@ -217,7 +403,7 @@
 
           h3 {
             margin-bottom: 15px;
-						font-size: 2.8rem;
+            font-size: 2.8rem;
           }
         }
       }

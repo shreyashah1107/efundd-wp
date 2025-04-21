@@ -358,94 +358,7 @@
   }
 
   &--ten {
-    position: relative;
     padding: 120px 0;
-    overflow: hidden;
-
-    .title-row {
-      p {
-        max-width: 70%;
-        margin: 0 auto;
-      }
-    }
-
-    .content-wrapper {
-      position: relative;
-
-      .transfer-row {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        &:not(:last-child) {
-          margin-bottom: 40px;
-        }
-      }
-    }
-
-    .fixed-text {
-      position: relative;
-      top: 0;
-      bottom: 0;
-      width: auto;
-      padding: 0 30px;
-      display: inline-flex;
-      z-index: 1;
-      overflow: hidden;
-
-      h3 {
-        margin: 0;
-        font-size: 5rem;
-      }
-    }
-
-    .flags-row {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      white-space: nowrap;
-      position: relative;
-
-      > div {
-        flex-shrink: 0;
-      }
-
-      .image {
-        display: flex;
-        flex-shrink: 0;
-
-        img:not(.title-text) {
-          width: 140px;
-          height: 140px;
-          border-radius: 50%;
-        }
-      }
-
-      .title-text {
-        width: auto;
-        height: 140px;
-      }
-
-      &--one {
-        .fixed-text {
-          right: 0;
-        }
-      }
-
-      &--two {
-        justify-content: flex-end;
-
-        .fixed-text {
-          left: 0;
-        }
-      }
-
-      &--three {
-        .fixed-text {
-          left: 0;
-        }
-      }
-    }
   }
 
   &--eleven {
@@ -653,12 +566,6 @@
         max-width: 720px;
       }
     }
-
-    &--ten {
-      .fixed-text h3 {
-        font-size: 3rem;
-      }
-    }
   }
 }
 
@@ -712,25 +619,6 @@
     &--eight,
     &--thirteen {
       padding-top: 0;
-    }
-
-    &--ten {
-      .fixed-text {
-        display: none;
-      }
-
-      .flags-row {
-        .image {
-          img {
-            width: 100px !important;
-            height: 100px !important;
-          }
-        }
-
-        .title-text {
-          height: 100px;
-        }
-      }
     }
 
     &--eleven {
@@ -836,7 +724,6 @@
     &--six,
     &--seven,
     &--eight,
-    &--ten,
     &--eleven,
     &--thirteen {
       p,
@@ -920,25 +807,6 @@
           h4 {
             font-size: 1.6rem;
           }
-        }
-      }
-    }
-
-    &--ten {
-      .content-wrapper .transfer-row:not(:last-child) {
-        margin-bottom: 20px;
-      }
-
-      .flags-row {
-        .image {
-          img {
-            width: 70px !important;
-            height: 70px !important;
-          }
-        }
-
-        .title-text {
-          height: 70px;
         }
       }
     }
