@@ -28,7 +28,7 @@ if ($sixth_content_section) {
                 </div>
 
                 <div class="content-img wow fadeInTop" data-wow-delay="0.1s">
-                    <img src="<?php echo $image["url"]; ?>" alt="<?php echo @$image["alt"] ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/card-machine-updated.gif" alt="Image">
                 </div>
 
                 <!-- <?php $s = 1;
