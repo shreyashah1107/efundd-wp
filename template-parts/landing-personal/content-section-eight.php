@@ -5,6 +5,7 @@ if ($seventh_content_section) {
     $text = $seventh_content_section["text"];
     $button = $seventh_content_section["button"];
     $images = $seventh_content_section["images"];
+    $secondary_button = $seventh_content_section["secondary_button"];
 ?>
     <section class="personal-content-section--eight">
         <div class="section-bg section-bg--right">
@@ -21,16 +22,22 @@ if ($seventh_content_section) {
                                     </h3>
                                     <p class="wow fadeInUp" data-wow-delay="0.1s"><?php echo $text ?></h3>
                                     </p>
-                                    <?php if ($button) { ?>
+
                                         <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
+                                            <?php if ($button) { ?>
                                             <a href="<?php echo @$button["url"] ?>"
                                                 title="<?php echo $button["title"] ?>"
                                                 class="btn btn-bright-green wow fadeInUp"
                                                 data-wow-delay="0.4s"><?php echo $button["title"] ?></a>
-
-                                            <a href="#" title="Learn more" class="btn btn-outline-content-link wow fadeInUp" data-wow-delay="0.4s">Learn more</a>
+                                            <?php } ?>
+                                            <?php if ($secondary_button) { ?>
+                                                <a href="<?php echo $secondary_button["url"] ?>"
+                                                   title="<?php echo $secondary_button["title"] ?>"
+                                                   class="btn btn-outline-content-link wow fadeInUp"
+                                                   data-wow-delay="0.4s"><?php echo $secondary_button["title"] ?></a>
+                                            <?php } ?>
                                         </div>
-                                    <?php } ?>
+
                                 </div>
                             </div>
 
