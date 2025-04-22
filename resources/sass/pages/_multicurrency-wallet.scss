@@ -5,6 +5,66 @@
     padding: 100px 0;
   }
 
+  &--one {
+    position: relative;
+    padding: 100px 0 50px;
+
+    .currency {
+      &--items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        counter-reset: currency-items;
+      }
+
+      &--item {
+        position: relative;
+        padding: 110px 40px 40px;
+        background-color: $white;
+        border-radius: 16px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        &::before,
+        &::after {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          left: 40px;
+          top: 40px;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+
+        &::before {
+          content: "";
+          background-color: #004520;
+        }
+
+        &::after {
+          content: counter(currency-items);
+          counter-increment: currency-items;
+          color: $white;
+          font-size: 3.2rem;
+          font-weight: 700;
+        }
+
+        h4 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 1.1;
+          color: #002913;
+          margin-bottom: 16px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
   &--two {
     position: relative;
     padding: 100px 0 50px;
@@ -156,6 +216,27 @@
   }
 }
 
+// < 992px
+@include media-breakpoint-down(lg) {
+  .multicurrency-wallet-content-section {
+    &--one {
+      padding-bottom: 0;
+
+      .currency {
+        &--item {
+          &::after {
+            font-size: 2.4rem;
+          }
+
+          h4 {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 // < 768px
 @include media-breakpoint-down(md) {
   .multicurrency-wallet-content-section {
@@ -165,12 +246,48 @@
       padding: 50px 0;
     }
 
+    &--one {
+      padding: 50px 0 25px;
+
+      .currency {
+        &--item {
+          padding: 90px 20px 20px;
+
+          &::before,
+          &::after {
+            left: 20px;
+            top: 30px;
+            width: 35px;
+            height: 35px;
+            font-size: 2rem;
+          }
+
+          h4 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
     &--two {
       padding: 50px 0 25px;
     }
 
     &--three {
       padding: 25px 0 50px;
+    }
+  }
+}
+
+// < 575px
+@include media-breakpoint-down(sm) {
+  .multicurrency-wallet-content-section {
+    &--one {
+      .currency--items {
+        grid-template-columns: auto;
+        gap: 15px;
+      }
     }
   }
 }
