@@ -5,7 +5,7 @@ if ($third_content_section) {
     $text = $third_content_section["text"];
     $image = $third_content_section["image"];
     $button = $third_content_section["button"];
-    ?>
+?>
     <section class="personal-content-section--four">
         <div class="section-bg section-bg--left">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/section-left-bg.svg" alt="Image">
@@ -13,12 +13,12 @@ if ($third_content_section) {
 
         <div class="pattern-bg">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/pattern-bg.jpg"
-                 alt="Image">
+                alt="Image">
         </div>
 
         <div class="pattern-shadow">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/personal/pattern-shadow.png"
-                 alt="Image">
+                alt="Image">
         </div>
 
         <div class="content-wrapper">
@@ -30,7 +30,7 @@ if ($third_content_section) {
                                 <div class="image text-center wow fadeInLeft" data-wow-delay="0.2s">
                                     <?php if ($image) { ?>
                                         <img src="<?php echo $image["url"] ?>"
-                                             alt="<?php echo @$image["alt"] ?>">
+                                            alt="<?php echo @$image["alt"] ?>">
                                     <?php } ?>
                                 </div>
                             </div>
@@ -42,8 +42,10 @@ if ($third_content_section) {
                                     <div class="btn-grp justify-content-center justify-content-lg-start mt-5">
                                         <?php if ($button) { ?>
                                             <a href="<?php echo $button["url"] ?>" title="<?php echo $button["title"] ?>" class="btn btn-bright-green wow fadeInUp"
-                                               data-wow-delay="0.2s"><?php echo $button["title"] ?></a>
+                                                data-wow-delay="0.2s"><?php echo $button["title"] ?></a>
                                         <?php } ?>
+
+                                        <a href="#" title="How Split Bills works" class="btn btn-outline-white wow fadeInUp" data-wow-delay="0.4s">How Split Bills works</a>
                                     </div>
                                 </div>
                             </div>

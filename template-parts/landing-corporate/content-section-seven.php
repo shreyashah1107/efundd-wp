@@ -4,11 +4,11 @@ if ($sixth_content_section) {
     $title = $sixth_content_section["title"];
     $text = $sixth_content_section["text"];
     $images = $sixth_content_section["images"];
-    ?>
+?>
     <section class="corporate-content-section--seven">
         <div class="section-bg section-bg--center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/section-center-bg.png"
-                 alt="Image">
+                alt="Image">
         </div>
 
         <div class="content-wrapper">
@@ -18,6 +18,11 @@ if ($sixth_content_section) {
                         <div class="title-row mb-5">
                             <h3 class="section-title section-title--xl text-anime-style-3"><?php echo $title ?></h3>
                             <p class="wow fadeInUp" data-wow-delay="0.1s"><?php echo $text ?></p>
+                        </div>
+
+                        <div class="btn-grp justify-content-center">
+                            <a href="#" title="Order card machine" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Order card machine</a>
+                            <a href="#" title="View options" class="btn btn-outline-content-link wow fadeInUp" data-wow-delay="0.4s">View options</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +43,7 @@ if ($sixth_content_section) {
                                     <img src="<?php echo $image["url"]; ?>" alt="<?php echo @$image["alt"] ?>">
                                 </div>
                             <?php } ?>
-                            <?php $s++;
+                        <?php $s++;
                         } ?>
                     </div>
                 <?php } ?>
