@@ -26,8 +26,13 @@ if ($sixth_content_section) {
                         </div>
                     </div>
                 </div>
-                <?php $s = 1;
-                if ($images) { ?>
+
+                <div class="content-img wow fadeInTop" data-wow-delay="0.1s">
+                    <img src="<?php echo $image["url"]; ?>" alt="<?php echo @$image["alt"] ?>">
+                </div>
+
+                <!-- <?php $s = 1;
+                        if ($images) { ?>
                     <div class="content-img--items">
                         <?php foreach ($images as $image) { ?>
                             <?php if ($s == 1) { ?>
@@ -44,9 +49,9 @@ if ($sixth_content_section) {
                                 </div>
                             <?php } ?>
                         <?php $s++;
-                        } ?>
+                            } ?>
                     </div>
-                <?php } ?>
+                <?php } ?> -->
             </div>
         </div>
     </section>

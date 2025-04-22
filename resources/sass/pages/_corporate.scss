@@ -282,6 +282,8 @@
       }
 
       &-img {
+        margin-top: 100px;
+
         &--items {
           margin-top: 100px;
           display: flex;
@@ -611,7 +613,7 @@
     }
 
     &--seven {
-      .content-img--items {
+      .content-img {
         margin-top: 50px;
       }
     }
@@ -781,6 +783,8 @@
 
     &--seven {
       .content-img {
+        margin-top: 0;
+        
         &--items {
           gap: 15px;
           margin-top: 0;
