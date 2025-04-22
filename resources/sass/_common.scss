@@ -90,7 +90,8 @@
 }
 
 .personal-content-section--nine,
-.international-transfer-content-section--eight {
+.international-transfer-content-section--eight,
+.multicurrency-wallet-content-section--seven {
   background-color: #eff3f1;
 
   .country-list {
@@ -132,7 +133,8 @@
 }
 
 .business-content-section--eleven,
-.international-transfer-content-section--nine {
+.international-transfer-content-section--nine,
+.multicurrency-wallet-content-section--eight {
   position: relative;
   padding: 100px 0;
   background-color: #004520;
@@ -242,6 +244,21 @@
       }
     }
   }
+
+  &--light {
+    .explore--item {
+      background: #eff3f1;
+      color: #000000;
+
+      &::after {
+        background-image: url(../img/other/right-arrow-black.svg);
+      }
+
+      &:hover {
+        background: #d3e1da;
+      }
+    }
+  }
 }
 
 .vertical-tab-wrapper {
@@ -272,7 +289,7 @@
       cursor: pointer;
 
       h3 {
-				display: inline;
+        display: inline;
         margin: 0;
         font-size: 3.2rem;
         font-weight: 700;
@@ -304,7 +321,8 @@
 // < 1500px
 @include media-breakpoint-down(xxl) {
   .personal-content-section--nine,
-  .international-transfer-content-section--eight {
+  .international-transfer-content-section--eight,
+  .multicurrency-wallet-content-section--seven {
     .country-list--items {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -330,14 +348,16 @@
   }
 
   .personal-content-section--nine,
-  .international-transfer-content-section--eight {
+  .international-transfer-content-section--eight,
+  .multicurrency-wallet-content-section--seven {
     .country-list--items {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
   .business-content-section--eleven,
-  .international-transfer-content-section--nine {
+  .international-transfer-content-section--nine,
+  .multicurrency-wallet-content-section--eight {
     .content {
       &--items {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -411,7 +431,8 @@
   }
 
   .personal-content-section--nine,
-  .international-transfer-content-section--eight {
+  .international-transfer-content-section--eight,
+  .multicurrency-wallet-content-section--seven {
     .country-list {
       &--items {
         gap: 15px;
@@ -451,7 +472,7 @@
 
   .vertical-tab-wrapper {
     .mockup-img {
-			margin-bottom: 30px;
+      margin-bottom: 30px;
 
       img {
         max-height: 500px;
@@ -462,7 +483,7 @@
       gap: 20px;
 
       .step-btn {
-				padding: 5px 0;
+        padding: 5px 0;
 
         h3 {
           font-size: 2rem;
@@ -475,7 +496,8 @@
 // < 575px
 @include media-breakpoint-down(sm) {
   .personal-content-section--nine,
-  .international-transfer-content-section--eight {
+  .international-transfer-content-section--eight,
+  .multicurrency-wallet-content-section--seven {
     .country-list {
       &--items {
         grid-template-columns: auto;
@@ -487,7 +509,8 @@
   }
 
   .business-content-section--eleven,
-  .international-transfer-content-section--nine {
+  .international-transfer-content-section--nine,
+  .multicurrency-wallet-content-section--eight {
     padding: 50px 0;
 
     .content {
