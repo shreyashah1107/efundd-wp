@@ -17,7 +17,7 @@
               </div>
             </div>
             <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-6">
-              <div class="image text-center wow fadeInRight" data-wow-delay="0.2s">
+              <div class="image text-center wow fadeInRight" data-wow-delay="0.1s">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/expense-card/two.png" alt="Image">
               </div>
             </div>

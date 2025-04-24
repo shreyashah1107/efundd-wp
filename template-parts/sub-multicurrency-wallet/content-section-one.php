@@ -16,22 +16,22 @@
       <div class="row justify-content-center mt-2 mt-md-5 mt-lg-0">
         <div class="col-xxl-9">
           <div class="currency--items">
-            <div class="currency--item">
+            <div class="currency--item wow fadeInUp" data-wow-delay="0.1s">
               <h4>Hold & Manage Multiple Currencies</h4>
               <p>tore and organize funds in various currencies without hidden fees.</p>
             </div>
 
-            <div class="currency--item">
+            <div class="currency--item wow fadeInUp" data-wow-delay="0.1s">
               <h4>Seamless International Payments</h4>
               <p>Send and receive money across borders with competitive exchange rates.</p>
             </div>
 
-            <div class="currency--item">
+            <div class="currency--item wow fadeInUp" data-wow-delay="0.1s">
               <h4>Automatic Currency Conversion</h4>
               <p>Pay in the right currency instantly, at the best rates.</p>
             </div>
 
-            <div class="currency--item">
+            <div class="currency--item wow fadeInUp" data-wow-delay="0.1s">
               <h4>Real-Time Balance Overview</h4>
               <p>Get a clear, up-to-date view of all your currency balances.</p>
             </div>

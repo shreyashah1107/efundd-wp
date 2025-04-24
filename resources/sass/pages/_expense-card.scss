@@ -1,8 +1,17 @@
 .expense-card-content-section {
+  &--one,
+  &--two,
+  &--four,
+  &--five,
+  &--six,
+  &--seven,
+  &--nine {
+    background-color: #fbfcfb;
+  }
+
   &--one {
     position: relative;
     padding: 100px 0 50px;
-    background-color: #fbfcfb;
 
     .section-bg--left {
       width: 50%;
@@ -19,7 +28,6 @@
   &--two {
     position: relative;
     padding: 50px 0 100px;
-    background-color: #fbfcfb;
 
     .section-bg--right {
       left: 0;
@@ -30,6 +38,204 @@
         object-fit: contain;
         object-position: right;
       }
+    }
+  }
+
+  &--three {
+    padding-top: 100px;
+    background-color: #004520;
+    color: $white;
+
+    p,
+    .section-title {
+      color: inherit;
+    }
+
+    p {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  &--four {
+    padding: 100px 0;
+  }
+
+  &--five {
+    padding: 50px 0;
+
+    .image {
+      position: relative;
+
+      &-list {
+        &--items {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          width: 70%;
+          display: grid;
+          gap: 20px;
+        }
+
+        &--item {
+          position: relative;
+          background-color: $white;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          border-radius: 8px;
+          padding: 25px 16px 25px 70px;
+          flex-grow: 1;
+          text-align: left;
+
+          p {
+            margin: 0;
+            color: #001208;
+            font-size: 1.6rem;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            background: url(../img/other/list-icon.png) 50% no-repeat;
+            background-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  &--six {
+    padding: 100px 0 50px;
+  }
+
+  &--seven {
+    padding: 100px 0;
+
+    .possibilities {
+      &--items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      &--item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 24px;
+        background: radial-gradient(113.31% 160.11% at 24.06% 206.84%, #24ec7f 0%, #0e5e33 100%);
+        border-radius: 16px;
+
+        &-content {
+          flex-grow: 1;
+        }
+
+        h4 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 1.1;
+          color: $white;
+          margin-bottom: 16px;
+        }
+
+        p {
+          margin: 0;
+          color: $white;
+          font-size: 1.6rem;
+        }
+
+        .btn {
+          border-radius: 8px;
+          font-size: 1.2rem;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  &--eight {
+    background: #eff3f1;
+
+    .content {
+      &--img {
+        opacity: 1;
+      }
+
+      &--item {
+        &:first-child {
+          h3 {
+            color: #002913;
+          }
+        }
+
+        &:not(:first-child) {
+          border: 1px solid #002913;
+        }
+      }
+    }
+  }
+
+  &--ten {
+    padding: 150px 0;
+    background-color: #004520;
+    color: $white;
+
+    .section-title {
+      color: inherit;
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .expense-card-content-section {
+    &--three {
+      p {
+        max-width: 90%;
+      }
+
+      .image {
+        margin: 0 auto;
+      }
+    }
+
+    &--five {
+    .image {
+      &-list {
+        &--items {
+          width: 90%;
+          gap: 10px;
+        }
+
+        &--item {
+          padding: 15px 15px 15px 55px;
+
+          &::before {
+            width: 30px;
+            background-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+    &--seven {
+      .possibilities {
+        &--item {
+          h4 {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+
+    &--ten {
+      padding: 100px 0;
     }
   }
 }
@@ -64,6 +270,32 @@
 
     &--two {
       padding: 25px 0 50px;
+    }
+
+    &--three {
+      padding-top: 50px;
+
+      p {
+        max-width: 100%;
+      }
+    }
+
+    &--seven {
+      .possibilities {
+        &--items {
+          grid-template-columns: auto;
+        }
+
+        &--item {
+          gap: 20px;
+        }
+      }
+    }
+
+    &--six,
+    &--seven,
+    &--ten {
+      padding: 50px 0;
     }
   }
 }

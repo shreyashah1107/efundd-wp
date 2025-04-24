@@ -8,7 +8,7 @@
         <div class="col-xxl-11">
           <div class="row align-items-center justify-content-center justify-content-lg-start">
             <div class="col-md-8 col-lg-5 col-xl-6 order-last order-lg-first">
-              <div class="image text-center wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="image text-center wow fadeInLeft" data-wow-delay="0.1s">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/expense-card/one.png" alt="Image">
               </div>
             </div>
