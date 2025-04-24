@@ -540,6 +540,21 @@
       }
     }
   }
+
+  &--expense-card {
+    position: relative;
+    padding-top: 100px;
+    background: #004520;
+
+    .hero--content {
+      padding: 80px 0 0;
+
+      h1,
+      p {
+        color: $white;
+      }
+    }
+  }
 }
 
 // > 2000px
@@ -706,6 +721,12 @@
         object-fit: cover;
       }
     }
+
+    &--expense-card {
+      .hero--content {
+        padding: 50px 0 0;
+      }
+    }
   }
 }
 
@@ -796,7 +817,8 @@
     }
 
     &--business,
-    &--components {
+    &--components,
+    &--expense-card {
       padding-top: 60px;
 
       .hero--content {

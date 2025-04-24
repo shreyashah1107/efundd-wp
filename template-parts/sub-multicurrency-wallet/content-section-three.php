@@ -14,7 +14,7 @@
                 <p class="wow fadeInUp" data-wow-delay="0.2s">Easily send, receive, and hold funds in over 20 currencies, giving you the flexibility to transact globally without unnecessary conversion fees. </p>
               </div>
 
-              <div class=" btn-grp mt-5">
+              <div class="btn-grp mt-5">
                 <a href="#" title="Create account now" class="btn btn-bright-green wow fadeInUp" data-wow-delay="0.2s">Create account now</a>
               </div>
             </div>
