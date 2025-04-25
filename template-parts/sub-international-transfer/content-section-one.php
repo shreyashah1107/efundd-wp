@@ -11,7 +11,7 @@
         <div class="col-xxl-10">
           <div class="vertical-tab-wrapper">
             <div class="row align-items-center">
-              <div class="col-md-5 col-lg-5 col-xl-6 text-center">
+              <div class="col-md-5 col-lg-5 col-xl-6 text-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="mockup-img tab-content">
                   <div class="tab-pane fade show active" id="step1">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/international-transfer/one-1.png" alt="Step 1" />
@@ -25,7 +25,7 @@
                 </div>
               </div>
 
-              <div class="col-md-7 col-lg-7 col-xl-6">
+              <div class="col-md-7 col-lg-7 col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="steps-nav">
                   <button class="step-btn active" data-tab="step1">
                     <h3>Select your recipient</h3>

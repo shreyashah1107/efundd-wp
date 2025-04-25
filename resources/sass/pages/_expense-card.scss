@@ -205,24 +205,24 @@
     }
 
     &--five {
-    .image {
-      &-list {
-        &--items {
-          width: 90%;
-          gap: 10px;
-        }
+      .image {
+        &-list {
+          &--items {
+            width: 90%;
+            gap: 10px;
+          }
 
-        &--item {
-          padding: 15px 15px 15px 55px;
+          &--item {
+            padding: 15px 15px 15px 55px;
 
-          &::before {
-            width: 30px;
-            background-size: 30px;
+            &::before {
+              width: 30px;
+              background-size: 30px;
+            }
           }
         }
       }
     }
-  }
 
     &--seven {
       .possibilities {
@@ -292,6 +292,7 @@
       }
     }
 
+    &--four,
     &--six,
     &--seven,
     &--ten {

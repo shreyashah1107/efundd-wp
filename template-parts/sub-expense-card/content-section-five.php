@@ -1,4 +1,4 @@
-5<section class="expense-card-content-section--five">
+<section class="expense-card-content-section--five">
   <div class="content-wrapper">
     <div class="container">
       <div class="row justify-content-center">

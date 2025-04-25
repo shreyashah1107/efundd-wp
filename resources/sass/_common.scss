@@ -288,13 +288,14 @@
       padding: 10px 0;
       transition: all 0.3s ease;
       cursor: pointer;
+      opacity: 0.4;
 
       h3 {
         display: inline;
         margin: 0;
         font-size: 3.2rem;
         font-weight: 700;
-        color: rgba(#002913, 0.4);
+        color: #002913;
         transition: color 0.3s;
       }
 
@@ -306,6 +307,8 @@
       }
 
       &.active {
+        opacity: 1;
+
         h3 {
           color: #002913;
         }
@@ -313,6 +316,49 @@
         p {
           display: block;
           color: #000;
+        }
+      }
+    }
+  }
+
+  &--alt {
+    .steps-nav {
+      counter-reset: step-items;
+
+      .step-btn {
+        h3 {
+          position: relative;
+          padding-left: 60px;
+
+          &::before,
+          &::after {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            top: -5px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+          }
+
+          &::before {
+            content: "";
+            background-color: #004520;
+          }
+
+          &::after {
+            content: counter(step-items);
+            counter-increment: step-items;
+            color: $white;
+            font-size: 2rem;
+            font-weight: 700;
+          }
+        }
+
+        p {
+          display: block;
         }
       }
     }
@@ -496,6 +542,27 @@
 
         h3 {
           font-size: 2rem;
+        }
+      }
+    }
+
+    &--alt {
+      .steps-nav {
+        .step-btn {
+          h3 {
+            padding-left: 40px;
+
+            &::before,
+            &::after {
+              top: -3px;
+              width: 30px;
+              height: 30px;
+            }
+
+            &::after {
+              font-size: 1.6rem;
+            }
+          }
         }
       }
     }
