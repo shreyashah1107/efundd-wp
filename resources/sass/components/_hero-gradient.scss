@@ -75,6 +75,26 @@
 		margin-top: 70px;
 	}
 
+  &__assets {
+    position: absolute;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        max-width: 225px;
+      }
+    }
+  }
+
 	.signup-form-wrapper {
 		margin-top: 32px;
 
@@ -138,12 +158,44 @@
 			}
 		}
 	}
+
+  // =====
+
+
+  &__corporate-2 {
+    background: linear-gradient(194.08deg, #FFFFFF 13.47%, rgba(169, 192, 179, 0.6) 33.02%, #759A86 55.44%, #336A4C 67.79%, #004520 87.38%);
+
+    .signup-form-wrapper {
+      .signup-input-wrapper,
+      .btn-contact {
+        background: rgba($white, 0.2);
+      }
+    }
+  }
+}
+
+// >=2000px
+@media (min-width: 2000px) {
+  .hero-gradient {
+		&__assets {
+      &-left,
+      &-right {
+        img {
+          max-width: 500px;
+        }
+      }
+    }
+	}
 }
 
 // < 1200px
 @include media-breakpoint-down(xl) {
 	.hero-gradient {
 		padding-top: 120px;
+
+    &__assets {
+      display: none;
+    }
 	}
 }
 

@@ -1,4 +1,4 @@
-<section class="hero-gradient hero-gradient__corporate">
+<section class="hero-gradient hero-gradient__corporate hero-gradient__corporate-2">
     <div class="hero-gradient--content">
         <div class="container">
             <div class="row justify-content-center">
