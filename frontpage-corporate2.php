@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Template Name: Corporate Landing Template
+ * Template Name: Corporate Landing 2 Template
  */
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 get_header('landing'); ?>
 <!-- Start: Hero -->
-<?php include "template-parts/landing-corporate/hero-gradient.php" ?>
+<?php include "template-parts/landing-corporate/hero-gradient-2.php" ?>
 <!-- End: Hero -->
 
 <!-- Start: Content Section One -->

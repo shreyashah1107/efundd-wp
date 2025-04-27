@@ -1,0 +1,262 @@
+.hero-gradient {
+	padding: 150px 0 0;
+	background: linear-gradient(
+		206.54deg,
+		#fbfcfb 14.64%,
+		#dbf0e2 50.41%,
+		#aadebb 65.87%,
+		#95d6aa 74.31%,
+		#5dc27e 92.82%
+	);
+
+	&__corporate {
+		position: relative;
+		overflow: hidden;
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 900px;
+			height: 900px;
+			background: url(../img/redesign/corporate/hero-gradient-top-right.svg) top
+				right no-repeat;
+		}
+	}
+
+	&--content {
+		position: relative;
+		z-index: 1;
+
+		h1 {
+			text-transform: uppercase;
+			font-size: 6.8rem;
+			font-weight: 600;
+			line-height: 1.2;
+			letter-spacing: -2px;
+			color: #1d3f2b;
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: rgba(#1d3f2b, 0.8);
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	&--tagline {
+		margin-bottom: 20px;
+
+		span {
+			padding: 10px 16px;
+			border-radius: 50px;
+			background: rgba(#5dc27e, 0.2);
+			color: #1d3f2b;
+			font-weight: 500;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -9px;
+				left: -9px;
+				width: 25px;
+				height: 25px;
+				background: url(../img/redesign/hero-badge-tag.svg) center center
+					no-repeat;
+				background-size: 25px;
+			}
+		}
+	}
+
+	&--img {
+		margin-top: 70px;
+	}
+
+  &__assets {
+    position: absolute;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        max-width: 225px;
+      }
+    }
+  }
+
+	.signup-form-wrapper {
+		margin-top: 32px;
+
+		form {
+			position: relative;
+		}
+
+		.signup-form-content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+		}
+
+		.signup-input-wrapper {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			align-items: center;
+			gap: 16px;
+			padding: 4px;
+			background: rgba(#1d3f2b, 0.05);
+			border: 1px solid rgba(#1d3f2b, 0.15);
+			border-radius: 32px;
+			min-height: 50px;
+			transition: background 0.3s ease;
+		}
+
+		input[type='email'] {
+			width: 100%;
+			height: 100%;
+			padding: 15px 20px;
+			border: none;
+			background: transparent;
+			outline: none;
+			font-size: 16px;
+			font-weight: 500;
+			border-radius: 2rem 0 0 2rem;
+
+			&::placeholder {
+				color: #5a5548;
+			}
+		}
+
+		.btn:hover {
+			transform: none;
+		}
+
+		.btn-contact {
+			background: rgba(#1d3f2b, 0.1);
+			border: 1px solid rgba(#1d3f2b, 0.15);
+			color: #374151;
+
+			&:hover {
+				color: $white;
+				background: #004520;
+				border-color: #004520;
+
+				&::before {
+					background-color: #004520;
+				}
+			}
+		}
+	}
+
+  // =====
+
+
+  &__corporate-2 {
+    background: linear-gradient(194.08deg, #FFFFFF 13.47%, rgba(169, 192, 179, 0.6) 33.02%, #759A86 55.44%, #336A4C 67.79%, #004520 87.38%);
+
+    .signup-form-wrapper {
+      .signup-input-wrapper,
+      .btn-contact {
+        background: rgba($white, 0.2);
+      }
+    }
+  }
+}
+
+// >=2000px
+@media (min-width: 2000px) {
+  .hero-gradient {
+		&__assets {
+      &-left,
+      &-right {
+        img {
+          max-width: 500px;
+        }
+      }
+    }
+	}
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+	.hero-gradient {
+		padding-top: 120px;
+
+    &__assets {
+      display: none;
+    }
+	}
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+	.hero-gradient {
+		&--content {
+			h1 {
+				font-size: 4.5rem;
+				letter-spacing: 0;
+			}
+
+			p {
+				max-width: 100%;
+			}
+		}
+
+		&--tagline {
+			span {
+				display: inline-block;
+				font-size: 1.4rem;
+			}
+		}
+
+		&--img {
+			margin-top: 40px;
+		}
+
+		.signup-form-wrapper {
+			.signup-form-content {
+				flex-direction: column;
+				max-width: 500px;
+				margin: 0 auto;
+
+				> div {
+					width: 100%;
+
+					.btn-contact {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// < 576px
+@include media-breakpoint-down(sm) {
+	.hero-gradient {
+		.signup-form-wrapper .signup-input-wrapper {
+			grid-template-columns: auto;
+			gap: 8px;
+			border: 0;
+			padding: 0;
+			background: none;
+
+			input[type='email'] {
+				background: rgba(#1d3f2b, 0.05);
+				border: 1px solid rgba(#1d3f2b, 0.15);
+				border-radius: 32px;
+			}
+		}
+	}
+}
