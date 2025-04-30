@@ -2,7 +2,7 @@
     <div class="hero-gradient--content">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10 col-xl-8 col-xxl-7 text-center">
+                <div class="col-xxl-10 text-center">
                     <div class="hero-gradient--tagline wow fadeInUp">
                         <span>Earn while you spend—get rewarded with every swipe, tap, or click.</span>
                     </div>
