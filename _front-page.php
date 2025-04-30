@@ -3,9 +3,9 @@
 /**
  * Template Name: Business Landing Template
  */
-get_header(); ?>
+get_header('landing'); ?>
 <!-- Start: Hero -->
-<?php include "template-parts/landing-business/hero.php" ?>
+<?php include "template-parts/landing-business/hero-gradient.php" ?>
 <!-- End: Hero -->
 
 <!-- Start: Content Section One -->

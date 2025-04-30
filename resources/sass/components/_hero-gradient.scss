@@ -1,4 +1,6 @@
 .hero-gradient {
+  position: relative;
+  overflow: hidden;
   padding: 150px 0 0;
   background: linear-gradient(
     206.54deg,
@@ -10,9 +12,6 @@
   );
 
   &__corporate {
-    position: relative;
-    overflow: hidden;
-
     &::after {
       content: "";
       position: absolute;
@@ -22,6 +21,36 @@
       height: 900px;
       background: url(../img/redesign/corporate/hero-gradient-top-right.svg) top right no-repeat;
     }
+  }
+
+  &__personal {
+    background: linear-gradient(to top, #b8e7a1, #c9f2b7, #e6fbe4, #ffffff);
+
+    .hero-gradient {
+      &__assets {
+        &-left,
+        &-right {
+          img {
+            max-width: 20vw;
+          }
+        }
+      }
+
+      &--img {
+        max-width: 45%;
+      }
+    }
+  }
+
+  &__business {
+    background: linear-gradient(
+      171.22deg,
+      #fbfcfb 6.69%,
+      #dbf0e2 27.35%,
+      #aadebb 54.69%,
+      #95d6aa 73.9%,
+      #5dc27e 93.31%
+    );
   }
 
   &--content {
@@ -70,7 +99,17 @@
   }
 
   &--img {
+    max-width: 70%;
+    margin: 70px auto 0;
+  }
+
+  &--slider {
     margin-top: 70px;
+
+    .swiper-slide {
+      width: auto;
+      flex-shrink: 0;
+    }
   }
 
   &__assets {
@@ -85,10 +124,11 @@
     &-right {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       gap: 20px;
 
       img {
-        max-width: 15vw;
+        max-width: 14vw;
       }
     }
   }
@@ -178,55 +218,26 @@
   }
 }
 
-// >=2000px
-@media (min-width: 2000px) {
-  .hero-gradient {
-    &__assets {
-      &-left,
-      &-right {
-        img {
-          max-width: 20vw;
-        }
-      }
-    }
-  }
-}
-
-// Between 1700px to 2000px
-@media (min-width: 1700px) and (max-width: 1999px) {
-  .hero-gradient {
-    &__assets {
-      &-left,
-      &-right {
-        img {
-          max-width: 18vw;
-        }
-      }
-    }
-  }
-}
-
-// < 1400px
-@media (max-width: 1399px) {
-  .hero-gradient__assets {
-    left: 0;
-
-    &-left,
-    &-right {
-      img {
-        max-width: 10vw;
-      }
-    }
-  }
-}
-
 // < 1200px
 @include media-breakpoint-down(xl) {
   .hero-gradient {
     padding-top: 120px;
 
+    &--img {
+      max-width: 80%;
+    }
+
     &__assets {
       display: none;
+    }
+  }
+}
+
+// < 992px
+@include media-breakpoint-down(lg) {
+  .hero-gradient {
+    &--img {
+      max-width: 90%;
     }
   }
 }
@@ -238,6 +249,7 @@
       h1 {
         font-size: 4.5rem;
         letter-spacing: 0;
+        word-break: break-word;
       }
 
       p {
@@ -249,10 +261,18 @@
       span {
         display: inline-block;
         font-size: 1.4rem;
+        border-radius: 12px;
       }
     }
 
     &--img {
+      margin-top: 40px;
+      max-width: 100%;
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+    }
+
+    &--slider {
       margin-top: 40px;
     }
 
@@ -268,6 +288,14 @@
           .btn-contact {
             width: 100%;
           }
+        }
+      }
+    }
+
+    &__personal {
+      .hero-gradient {
+        &--img {
+          max-width: 70%;
         }
       }
     }
@@ -288,6 +316,14 @@
         background: rgba(#1d3f2b, 0.05);
         border: 1px solid rgba(#1d3f2b, 0.15);
         border-radius: 32px;
+      }
+    }
+
+    &__personal {
+      .hero-gradient {
+        &--img {
+          max-width: 90%;
+        }
       }
     }
   }

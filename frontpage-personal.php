@@ -6,9 +6,9 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
-get_header(); ?>
+get_header('landing'); ?>
 <!-- Start: Hero -->
-<?php include "template-parts/landing-personal/hero.php" ?>
+<?php include "template-parts/landing-personal/hero-gradient.php" ?>
 <!-- End: Hero -->
 
 <!-- Start: Content Section One -->

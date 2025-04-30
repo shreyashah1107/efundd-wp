@@ -671,4 +671,16 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById(targetId).classList.add("show", "active");
     });
   });
+
+  var swiper = new Swiper(".hero-gradient--slider", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
 });

@@ -17,22 +17,19 @@
                                     <input type="email" id="signup-email" name="email" placeholder="Enter your email">
                                     <button type="submit" class="btn btn-bright-green">Open Account</button>
                                 </div>
-                                
+
                                 <div class="signup-buttons">
-                                    <a href="#" class="btn btn-contact">Contact Sales</a>
+                                    <a href="#" title="Contact Sales" class="btn btn-contact">Contact Sales</a>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-
-                <div class="col-xl-10 col-xxl-9">
-                    <div class="hero-gradient--img text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero-new.png"
-                    alt="Hero Image">
-                    </div>
-                </div>
             </div>
+        </div>
+
+        <div class="hero-gradient--img text-center wow fadeInUp" data-wow-delay="0.1s">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/redesign/corporate/hero-new.png" alt="Hero Image">
         </div>
     </div>
 
