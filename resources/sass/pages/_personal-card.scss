@@ -1,0 +1,141 @@
+.personal-card-content-section {
+  &--one,
+  &--two,
+  &--four,
+  &--five,
+  &--six,
+  &--seven,
+  &--nine {
+    background-color: #fbfcfb;
+  }
+
+  &--one {
+    position: relative;
+    padding: 100px 0 50px;
+  }
+
+  &--two {
+    position: relative;
+    padding: 50px 0;
+
+    .section-bg--left {
+      right: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &--three {
+    position: relative;
+    padding: 50px 0 100px;
+  }
+
+  &--four {
+    padding: 100px 0;
+    background-color: #002913;
+    color: $white;
+
+    p,
+    .section-title {
+      color: inherit;
+    }
+  }
+
+  &--five {
+    padding: 100px 0;
+  }
+
+  &--six {
+    background-color: #00371a;
+    padding: 150px 0;
+    color: $white;
+
+    .section-title,
+    p {
+      color: inherit;
+    }
+
+    .title-row p {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &--seven {
+    background: #eff3f1;
+
+    .content {
+      &--img {
+        opacity: 1;
+      }
+
+      &--item {
+        &:first-child {
+          h3 {
+            color: #002913;
+          }
+        }
+      }
+    }
+  }
+
+  &--nine {
+    padding: 150px 0;
+    background-color: #004520;
+    color: $white;
+
+    .section-title,
+    p {
+      color: inherit;
+    }
+  }
+}
+
+// < 1200px
+@include media-breakpoint-down(xl) {
+  .personal-card-content-section {
+    &--six,
+    &--nine {
+      padding: 100px 0;
+    }
+
+    &--six {
+      .title-row p {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+// < 768px
+@include media-breakpoint-down(md) {
+  .personal-card-content-section {
+    &--one {
+      padding: 50px 0 25px;
+    }
+
+    &--two {
+      padding: 25px 0;
+    }
+
+    &--three {
+      padding: 25px 0 50px;
+    }
+
+    &--four,
+    &--five,
+    &--six,
+    &--seven,
+    &--nine {
+      padding: 50px 0;
+    }
+
+    &--six {
+      .title-row p {
+        max-width: 100%;
+      }
+    }
+  }
+}

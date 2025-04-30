@@ -135,7 +135,8 @@
 .business-content-section--eleven,
 .international-transfer-content-section--nine,
 .multicurrency-wallet-content-section--eight,
-.expense-card-content-section--eight {
+.expense-card-content-section--eight,
+.personal-card-content-section--seven {
   position: relative;
   padding: 100px 0;
   background-color: #004520;
@@ -405,7 +406,8 @@
   .business-content-section--eleven,
   .international-transfer-content-section--nine,
   .multicurrency-wallet-content-section--eight,
-  .expense-card-content-section--eight {
+  .expense-card-content-section--eight,
+  .personal-card-content-section--seven {
     .content {
       &--items {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -506,7 +508,8 @@
   .business-content-section--eleven,
   .international-transfer-content-section--nine,
   .multicurrency-wallet-content-section--eight,
-  .expense-card-content-section--eight {
+  .expense-card-content-section--eight,
+  .personal-card-content-section--seven {
     padding: 50px 0;
   }
 
@@ -587,7 +590,8 @@
   .business-content-section--eleven,
   .international-transfer-content-section--nine,
   .multicurrency-wallet-content-section--eight,
-  .expense-card-content-section--eight {
+  .expense-card-content-section--eight,
+  .personal-card-content-section--seven {
     .content {
       &--img {
         width: 250px;
